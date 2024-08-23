@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ContributeView from '../views/ContributeView.vue'
+import CookieSettingsView from '../views/CookieSettingsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/contribute',
       name: 'contribute',
       component: ContributeView
+    },
+    {
+      path: '/cookie-settings',
+      name: 'cookie',
+      component: CookieSettingsView
     }
   ]
 })

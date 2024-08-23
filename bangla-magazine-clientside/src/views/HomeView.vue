@@ -1,20 +1,20 @@
 <template>
-  <body class=" text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-rose-50 to-emerald-50">
+  <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-rose-50 to-emerald-50">
     
     <!-- Header -->
     <Header />
 
     <!-- Navigation bar -->
     <div class="relative flex-grow">
-      <div class="relative z-30">
+      <div class="relative z-20">
         <NavBar />
       </div>
       <img src="../assets/img/alphabets.jpg" alt="Background"
-            class="absolute inset-0 w-full h-full object-cover opacity-5 clip-smooth z-10">
+            class="absolute inset-0 w-full h-full object-cover opacity-5  z-10">
       <div class="absolute inset-0 bg-opacity-60 z-15"></div>
 
       <!-- Main Content -->
-      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 p-4 md:p-6 mt-2">
+      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 p-4 md:p-6 flex-grow">
         <div class="relative flex flex-col rounded-lg shadow-lg md:flex-row overflow-hidden z-30">
           <!-- Left Section with Welcome Note -->
           <div class="relative w-full md:w-2/5 h-auto flex-shrink-0 overflow-hidden">
@@ -83,8 +83,8 @@
                 </li>
               </ul>
               <div class="flex md:justify-start mt-1">
-                <a href="./src/contribute.html"
-                   class="px-4 sm:px-6 py-2 sm:py-3 bg-rose-900 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">Submit your work here</a>
+                <button @click="contribute"
+                   class="px-4 sm:px-6 py-2 sm:py-3 bg-rose-900 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">Submit your work here</button>
               </div>
             </div>
           </div>
@@ -122,6 +122,9 @@ export default {
     }
   },
   methods: {
+    contribute() {
+        this.$router.push('/contribute');
+      }
 
   }
 
@@ -131,7 +134,7 @@ export default {
 <style>
 
 .founding-note {
-  font-family: 'Georgia', serif;
+  
   color: #1a202c;
 }
 

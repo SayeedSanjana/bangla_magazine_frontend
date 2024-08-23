@@ -6,8 +6,8 @@
           We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.
         </p>
         <div class="flex justify-between items-center">
-          <a href="#" class="text-cyan-600 font-semibold hover:underline text-sm">Cookie Management</a>
-          <button @click="acceptCookies" class="bg-cyan-600 text-white font-bold py-2 px-4 rounded hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+          <button @click="cookie" class="text-rose-900 font-semibold hover:underline text-sm">Cookie Management</button>
+          <button @click="acceptCookies" class="bg-rose-900 text-white font-bold py-2 px-4 rounded hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-cyan-400">
             Accept it!
           </button>
         </div>
@@ -29,6 +29,9 @@
       acceptCookies() {
         localStorage.setItem('cookies_accepted', 'true');
         this.visible = false;
+      },
+      cookie(){
+        this.$router.push('/cookie-settings');
       }
     },
     created() {
@@ -39,6 +42,7 @@
       }
     }, 7000); // 5000 milliseconds = 5 seconds
     console.log('CookieConsent mounted: visible =', this.visible);
+    
   }
 };
   </script>
