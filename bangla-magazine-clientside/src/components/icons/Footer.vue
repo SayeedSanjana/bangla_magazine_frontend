@@ -1,7 +1,7 @@
 <template>
     
   <!-- Footer -->
-  <footer class="bg-gradient-to-r from-gray-800 to-red-900 text-white py-6 mt-12">
+  <footer class="bg-gradient-to-r fx  from-gray-700 to-midnight-sapphire text-white py-6 mt-12">
     <div class="container mx-auto text-center space-y-4">
       <div class="space-x-4 sm:space-x-6">
         <button  class="hover:underline">Terms and Conditions of Use</button>

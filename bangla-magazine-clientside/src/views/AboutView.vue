@@ -1,5 +1,5 @@
 <template>
-  <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-rose-50 to-emerald-50">
+  <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-blue-50 to-amber-50">
       <!-- Header -->
       <Header />
       <!-- Navigation bar -->
@@ -19,7 +19,7 @@
                   <div class="relative z-10 text-center note">
                     <blockquote class="fade-in">
                       <h2 class="text-3xl md:text-4xl font-bold mb-2 md:mb-4 text-white">Who We Are?</h2>
-                      <p class="text-lg md:text-xl max-w-3xl mx-auto text-rose-300">Our mission is to celebrate and
+                      <p class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold">Our mission is to celebrate and
                           sustain Bengali language and culture globally, fostering connections among the diaspora and
                           promoting cultural exchanges. We aim to provide spaces for learning, cultural exchanges, and
                           celebrations that acknowledge and promote the diverse experiences of Bengalis worldwide.
@@ -31,27 +31,27 @@
               <!-- Activities and Goals -->
               <section class="mb-8">
                   <h2
-                      class="text-3xl md:text-4xl font-bold mb-4 text-rose-900 px-2 py-2 underline underline-offset-8 decoration-solid decoration-2">
+                      class="text-3xl md:text-4xl font-bold mb-4 text-midnight-sapphire px-2 py-2 underline underline-offset-8 decoration-solid decoration-2">
                       What We Do?</h2>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div
-                          class="bg-gradient-to-r from-rose-200 to-gray-200 p-6 rounded-lg shadow-md flex flex-col justify-between note">
+                          class="bg-gradient-to-r from-amber-100 to-gray-200 p-6 rounded-lg shadow-md flex flex-col justify-between note">
                         <blockquote class="fade-in">
-                          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-rose-800 mt-4 md:mt-0">Celebration of
+                          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 mt-4 md:mt-0">Celebration of
                               Bengali Culture Globally</h3>
                           <p class="text-lg md:text-xl text-gray-700 "><span
-                                  class="md:text:3xl text-2xl text-rose-700 font-bold">W</span>e acknowledge the
+                                  class="md:text:3xl text-2xl text-blue-800 font-bold">W</span>e acknowledge the
                               existence of Bengalis both outside and inside their territorial borderlands, situating
                               ourselves in the global distribution of Bengalis as a linguo-cultural group.</p>
                             </blockquote>
                       </div>
                       <div
-                          class="bg-gradient-to-l from-rose-200 to-gray-200 p-6 rounded-lg shadow-md flex flex-col justify-between note">
+                          class="bg-gradient-to-l from-amber-100 to-gray-200 p-6 rounded-lg shadow-md flex flex-col justify-between note">
                         <blockquote class="fade-in">
-                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-rose-800 ">Cultural Diaspora
+                            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 ">Cultural Diaspora
                                 Experiences</h3>
                             <p class="text-lg md:text-xl text-gray-700  "><span
-                                    class="md:text:3xl text-2xl text-rose-700 font-bold">U</span>sing Bengali as a medium
+                                    class="md:text:3xl text-2xl text-blue-800 font-bold">U</span>sing Bengali as a medium
                                 of instruction to teach foreign languages and to interact with other languages through
                                 literary-cultural translations, we promote symbiotic coexistence of different diasporic
                                 identities.</p>
@@ -63,7 +63,7 @@
               <!-- Meet Our Team -->
               <section class="mb-8">
                   <h2
-                      class="text-3xl font-bold mb-4 text-rose-900 px-2 py-2 mt-4 md:mt-0 underline underline-offset-8 decoration-solid decoration-2">
+                      class="text-3xl font-bold mb-4 text-midnight-sapphire px-2 py-2 mt-4 md:mt-0 underline underline-offset-8 decoration-solid decoration-2">
                       Meet Our Team</h2>
                   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div class="bg-white p-4 rounded-lg shadow">
@@ -121,7 +121,7 @@
                   <div class="flex flex-col md:flex-row md:space-x-6 mt-4">
                       <h2 class="text-2xl font-bold mb-4 text-gray-800 px-2 py-2">Contact us on- </h2>
                       <p class="text-2xl mb-4 py-2"><a href="mailto:info@bangaliabhibasi.org"
-                              class="text-rose-600 hover:underline">info@bangaliabhibasi.org</a>.</p>
+                              class="text-midnight-sapphire hover:underline">info@bangaliabhibasi.org</a>.</p>
                   </div>
               </section>
 

@@ -1,5 +1,5 @@
 <template>
-    <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-rose-50 to-emerald-50">
+    <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-blue-100 to-emerald-100">
       <!-- Header -->
       <Header/>
   

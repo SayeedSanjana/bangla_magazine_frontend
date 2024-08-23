@@ -1,6 +1,6 @@
 <template>
     <!-- Navigation Bar -->
-    <nav class="bg-gradient-to-r from-gray-800 to-red-900 shadow-lg">
+    <nav class="bg-gradient-to-r from-gray-600 to-midnight-sapphire shadow-lg ">
       <div class="container mx-auto p-4 flex justify-between md:justify-around lg:justify-around">
         <!-- Mobile Menu Button -->
         <button @click="toggleMenu" id="menu-toggle" class="md:hidden flex text-white focus:outline-none">
@@ -13,20 +13,20 @@
         <div :class="{'block': isMenuVisible, 'hidden': !isMenuVisible}" 
              class="space-y-2 md:space-y-0 md:flex md:flex-row md:space-x-6 md:w-full md:justify-center text-lg">
           <router-link to="/" 
-                       class="text-gray-200 hover:text-rose-400 font-bold flex items-center" 
-                       :class="{ 'underline decoration-2 text-rose-400  underline-offset-8': isActiveRoute('/') }">
+                       class="text-gray-200 hover:text-honey-gold font-bold flex items-center" 
+                       :class="{ 'underline decoration-2 text-honey-gold  underline-offset-8': isActiveRoute('/') }">
             <img src="../../assets/svg/home.svg" class="w-5 md:w-6 h-5 md:h-6" alt="Home">
             <span class="ml-2">Home</span>
           </router-link>
           <router-link to="/about-us" 
-                       class="text-gray-200 hover:text-rose-400 font-semibold flex items-center" 
-                       :class="{ 'underline decoration-2 text-rose-400  underline-offset-8': isActiveRoute('/about-us') }">
+                       class="text-gray-200 hover:text-honey-gold font-semibold flex items-center" 
+                       :class="{ 'underline decoration-2 text-honey-gold  underline-offset-8': isActiveRoute('/about-us') }">
             <img src="../../assets/svg/about.svg" class="w-5 md:w-6 h-5 md:h-6" alt="About Us">
             <span class="ml-2">About Us</span>
           </router-link>
           <router-link to="/contribute" 
-                       class="text-gray-200 hover:text-rose-400 font-semibold flex items-center" 
-                       :class="{ 'underline underline decoration-2 text-rose-400  underline-offset-8': isActiveRoute('/contribute') }">
+                       class="text-gray-200 hover:text-honey-gold font-semibold flex items-center" 
+                       :class="{ 'underline decoration-2 text-honey-gold underline-offset-8': isActiveRoute('/contribute') }">
             <img src="../../assets/svg/contribute.svg" class="w-5 md:w-6 h-5 md:h-6" alt="Contribute">
             <span class="ml-2">How To Get Involved?</span>
           </router-link>

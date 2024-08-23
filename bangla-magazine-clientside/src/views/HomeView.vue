@@ -1,6 +1,5 @@
 <template>
-  <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-rose-50 to-emerald-50">
-    
+  <body class=" text-gray-800 flex flex-col min-h-screen bg-gradient-to-l from-blue-50 to-amber-50">
     <!-- Header -->
     <Header />
 
@@ -10,14 +9,14 @@
         <NavBar />
       </div>
       <img src="../assets/img/alphabets.jpg" alt="Background"
-            class="absolute inset-0 w-full h-full object-cover opacity-5  z-10">
+            class="absolute inset-0 w-full h-full object-cover opacity-5 z-10">
       <div class="absolute inset-0 bg-opacity-60 z-15"></div>
 
       <!-- Main Content -->
-      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 p-4 md:p-6 flex-grow">
-        <div class="relative flex flex-col rounded-lg shadow-lg md:flex-row overflow-hidden z-30">
+      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 p-4 md:p-6 flex-grow ">
+        <div class="relative flex flex-col rounded-lg shadow-lg md:flex-row overflow-hidden z-30 bg-regal-blue">
           <!-- Left Section with Welcome Note -->
-          <div class="relative w-full md:w-2/5 h-auto flex-shrink-0 overflow-hidden">
+          <div class="relative w-full md:w-2/5 h-auto flex-shrink-0 overflow-hidden ">
             <img src="../assets/img/culture.jpg" alt="Background"
                  class="absolute inset-0 w-full h-full object-cover opacity-10 clip-smooth z-30">
             <div class="absolute inset-0 bg-opacity-60 z-20"></div>
@@ -26,7 +25,7 @@
                 Welcome to Bangla Abhibashi Network, a Glocal Linguo-cultural Association
               </h2>
               <blockquote class="fade-in">
-                <svg class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-rose-900 mb-2 sm:mb-4" aria-hidden="true"
+                <svg class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-honey-gold mb-2 sm:mb-4" aria-hidden="true"
                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
                   <path
                     d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
@@ -34,18 +33,18 @@
                 <p class="text-sm md:text-lg pl-1 sm:pl-2 mb-2 sm:mb-4 font-semibold text-gray-500">
                   We are a Montreal-based Bangali diaspora committed to connecting Bengalis worldwide and promoting our rich cultural heritage.
                 </p>
-                <p class="text-lg md:text-2xl font-semibold text-rose-800">"Bridging Distances, Celebrating Culture"</p>
+                <p class="text-lg md:text-2xl font-semibold text-amber-700">"Bridging Distances, Celebrating Culture"</p>
               </blockquote>
             </div>
           </div>
 
           <!-- Right Section with Call for Contributions -->
           <div class="relative w-full md:w-3/5 border-gray-300 flex flex-col p-3 sm:p-4 overflow-hidden z-40">
-            <img src="../assets/img/announcement.gif" alt="Background"
-                 class="absolute inset-0 w-full h-full object-cover opacity-35 z-0 clip-smooth-right">
+            <img src="../assets/img/bg3.gif" alt="Background"
+                class="absolute h-full w-full object-cover opacity-35 z-0 bg3 ">
             <div class="absolute inset-0 bg-opacity-60 z-10"></div>
             <div class="relative text-gray-600 z-20">
-              <h2 class="text-2xl underline md:text-4xl font-bold mb-2 md:mb-4 text-rose-900">Call for Contributions</h2>
+              <h2 class="text-xl md:text-3xl underline font-semibold mb-2 md:mb-4 text-amber-700">Transform Ideas into Inspiration – Share Your Work with Us!</h2>
               <p class="mb-6 text-base md:text-xl font-medium">Share your creativity and join us in celebrating Bengali culture! We welcome:</p>
               <ul class="list-none mb-4 text-base md:text-lg space-y-4">
                 <li class="flex-col">
@@ -78,13 +77,13 @@
                 </li>
                 <li class="block py-2 px-2 border-l-4 border-gray-600">
                   <p>
-                    <i>For any queries email us at</i><a href="mailto:info@bangaliabhibasi.org" class="ml-1 font-semibold">info@bangaliabhibasi.org</a>
+                    <i>For any queries email us at</i><a href="mailto:info@bangaliabhibasi.org" class="ml-1 font-semibold text-midnight-sapphire">info@bangaliabhibasi.org</a>
                   </p>
                 </li>
               </ul>
               <div class="flex md:justify-start mt-1">
                 <button @click="contribute"
-                   class="px-4 sm:px-6 py-2 sm:py-3 bg-rose-900 text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">Submit your work here</button>
+                   class="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-l from-amber-600 to-honey-gold text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">Submit your work here</button>
               </div>
             </div>
           </div>
@@ -102,39 +101,32 @@
   </body>
 </template>
 
-
 <script>
 import NavBar from "../components/icons/Navigation.vue";
 import Footer from "../components/icons/Footer.vue";
 import CookieConsent from "../components/icons/CookieConsent.vue";
 import Header from "../components/icons/Header.vue";
-export default {
 
+export default {
   components: {
     NavBar,
     Footer,
     CookieConsent,
-    Header
+    Header,
   },
   data() {
-    return {
-
-    }
+    return {};
   },
   methods: {
     contribute() {
-        this.$router.push('/contribute');
-      }
-
-  }
-
-}
+      this.$router.push('/contribute');
+    },
+  },
+};
 </script>
 
 <style>
-
 .founding-note {
-  
   color: #1a202c;
 }
 
@@ -153,7 +145,6 @@ export default {
     transform: translateY(0);
   }
 }
-
 
 main {
   flex-grow: 1;
@@ -192,5 +183,57 @@ body::-webkit-scrollbar {
 /* Ensuring the alphabets background blends well */
 .mix-blend-overlay {
   mix-blend-mode: overlay;
+}
+
+/* Updated CSS for the image bg3 */
+.bg3 {
+  transform: translateX(60px); /* Adjust the value as needed */
+  left: 50px; 
+  top: 100px;
+}
+/* Updated CSS for the image bg3 */
+.bg3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(60px); /* Initial value */
+  left: 50px;
+  top: 100px;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .bg3 {
+    transform: translateX(30px);
+    left: 25px;
+    top: 80px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .bg3 {
+    display: none; /* Hide the image on screens 892px or less */
+  }
+}
+
+@media (max-width: 768px) {
+  .bg3 {
+    display: none; /* Ensure it's still hidden at smaller sizes */
+  }
+}
+
+@media (max-width: 640px) {
+  .bg3 {
+    display: none; /* Ensure it's still hidden at smaller sizes */
+  }
+}
+
+@media (max-width: 480px) {
+  .bg3 {
+    display: none; /* Ensure it's still hidden at smaller sizes */
+  }
 }
 </style>
