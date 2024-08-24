@@ -6,8 +6,10 @@
           We use cookies to enhance your experience. By continuing to visit this site, you agree to our use of cookies.
         </p>
         <div class="flex justify-between items-center">
-          <button @click="cookie" class="text-rose-900 font-semibold hover:underline text-sm">Cookie Management</button>
-          <button @click="acceptCookies" class="bg-rose-900 text-white font-bold py-2 px-4 rounded hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+          <button @click="cookie" class="text-honey-gold font-semibold hover:underline text-sm">Cookie Management</button>
+          <button @click="acceptCookies" class=" py-2 px-4 bg-gradient-to-l from-amber-400 to-honey-gold
+                    text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500
+                     hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">
             Accept it!
           </button>
         </div>

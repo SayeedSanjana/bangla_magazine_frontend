@@ -1,5 +1,5 @@
 <template>
-    <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-blue-100 to-emerald-100">
+    <body class="text-gray-800 flex flex-col min-h-screen bg-gradient-to-r from-blue-50 to-amber-50">
       <!-- Header -->
       <Header/>
   
@@ -20,20 +20,20 @@
               
               <!-- Left Section with Scroll -->
               <div class="md:w-3/5 relative w-full h-auto flex-shrink-0 overflow-hidden p-6 scrollable">
-                <img src="../assets/img/alphabets.jpg" alt="Background"
+                <!-- <img src="../assets/img/alphabets.jpg" alt="Background"
                   class="absolute inset-0 w-full h-full object-cover opacity-5 z-10">
-                <div class="absolute inset-0 bg-opacity-60 z-15"></div>
+                <div class="absolute inset-0 bg-opacity-60 z-15"></div> -->
   
                 <!-- CTA -->
                 <section name="cta_section" class="border-b-2 border-gray-100 px-4 mb-4">
-                  <h3 class="text-3xl font-bold mb-6 text-shadow text-rose-900 px-2 py-2">Write for Us / Share your Art | Photography</h3>
-                  <p class="text-xl mb-4 font-medium border-l-4 border-rose-600 text-gray-700 px-4">
+                  <h3 class="text-3xl font-bold mb-6 text-shadow text-midnight-sapphire px-2 py-2">Write for Us / Share your Art | Photography</h3>
+                  <p class="text-xl mb-4 font-medium border-l-4 border-blue-900 text-gray-700 px-4">
                     We are always seeking fresh perspectives and new voices. Whether you are a seasoned writer or just starting out, we welcome your contributions. If you are an artist or photographer, we would love to feature your work in our magazine. Below are some guidelines to help you get started.
                   </p>
                 </section>
   
                 <section name="themes" class="border-b-2 border-gray-100 px-4 mb-4">
-                  <h4 class="text-2xl font-bold mb-4 text-rose-900 px-2 py-2">Themes We Are Interested In</h4>
+                  <h4 class="text-2xl font-bold mb-4 text-midnight-sapphire px-2 py-2">Themes We Are Interested In</h4>
                   <ul class="text-xl space-y-2 mb-4">
                     <li class="flex items-center">
                       <img src="../assets/svg/check-circle.svg" alt="" class="w-6 h-6">
@@ -62,7 +62,7 @@
                   </ul>
                 </section>
   
-                <section name="guidelines" class="border-4 border-rose-100 rounded-lg px-4 py-4">
+                <section name="guidelines" class="border-4 border-amber-100 rounded-lg px-4 py-4">
                   <h4 class="text-2xl font-bold mb-4 px-2 py-2">Submission Guidelines</h4>
                   <ul class="list-disc list-inside text-xl space-y-2 mb-4 font-medium">
                     <li>Choose a topic that aligns with our themes of Bengali culture and diaspora experiences.</li>
@@ -85,7 +85,7 @@
   
               <!-- Submission Form -->
               <div class="md:w-2/5 md:pl-6 w-full p-6">
-                <h3 class="text-3xl font-bold mb-6 text-shadow text-rose-900">Submit Your Work</h3>
+                <h3 class="text-3xl font-bold mb-6 text-shadow text-midnight-sapphire">Submit Your Work</h3>
                 <form action="#" method="POST" class="space-y-4">
                   <!-- First name & Last name -->
                   <div class="flex">
@@ -105,7 +105,7 @@
                   </div>
                   <div class="px-2 relative flex-grow">
                     <label for="submission-type" class="block text-lg font-medium">Submission Type</label>
-                    <select id="submission-type" name="submission-type" class="w-full p-2 border border-gray-300 bg-rose-50 rounded-lg" required>
+                    <select id="submission-type" name="submission-type" class="w-full p-2 border border-gray-300 bg-amber-50 rounded-lg" required>
                       <option value="">None</option>
                       <option value="non_fiction_annual_theme">Annual Theme</option>
                       <option value="non_fiction_open_submissions">Open Submissions</option>
@@ -142,7 +142,7 @@
                     <label for="description" class="block text-lg font-medium">Brief description of your work</label>
                     <textarea id="description" name="description" rows="4" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
                   </div>
-                  <button class="bg-rose-900 w-full text-white font-bold py-3 px-4 rounded hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500">
+                  <button class=" bg-gradient-to-l from-amber-400 to-honey-gold w-full text-white font-bold py-3 px-4 rounded hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">
                     Submit
                   </button>
                 </form>

@@ -83,7 +83,9 @@
               </ul>
               <div class="flex md:justify-start mt-1">
                 <button @click="contribute"
-                   class="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-l from-amber-600 to-honey-gold text-white font-semibold rounded-lg shadow-md hover:bg-rose-800 transition duration-300">Submit your work here</button>
+                   class="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-l from-amber-400 to-honey-gold
+                    text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500
+                     hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">Submit your work here</button>
               </div>
             </div>
           </div>
