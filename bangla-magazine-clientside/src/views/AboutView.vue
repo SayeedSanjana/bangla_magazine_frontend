@@ -77,7 +77,7 @@
                                 </h3>
                                 <span class="text-gray-200 ">{{ member.position }}</span>
                                 <p class="mt-3 mb-4 font-light text-honey-gold">{{ member.description }}</p>
-                                <ul class="flex space-x-4 sm:mt-0">
+                                <!-- <ul class="flex space-x-4 sm:mt-0">
                                     <li v-for="(social, i) in member.socialLinks" :key="i">
                                         <a :href="social.link" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                             <svg class="w-5 h-5" fill="currentColor" :viewBox="social.viewBox" aria-hidden="true">
@@ -85,7 +85,7 @@
                                             </svg>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                     </div>  
