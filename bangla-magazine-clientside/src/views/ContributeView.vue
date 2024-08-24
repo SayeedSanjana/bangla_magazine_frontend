@@ -127,7 +127,8 @@
                     <input type="text" id="tags" name="tags" class="w-full p-2 border border-gray-300 rounded-lg" required>
                   </div>
                   <div class="px-2">
-                    <label for="head_shot" class="block text-lg font-medium">Upload Headshot</label>
+                    <label for="head_shot" class="block text-lg font-medium">Upload Headshot <span class="text-sm text-gray-500"> (Upload an image in JPEG, PNG, or WebP format, within  300KB.)</span>
+                    </label>
                     <input type="file" id="head_shot" name="head_shot" class="w-full p-2 border border-gray-300 rounded-lg" required>
                   </div>
                   <div class="px-2">
@@ -142,8 +143,8 @@
                     <label for="description" class="block text-lg font-medium">Brief description of your work</label>
                     <textarea id="description" name="description" rows="4" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
                   </div>
-                  <button class=" bg-gradient-to-l from-amber-400 to-honey-gold w-full text-white font-bold py-3 px-4 rounded hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">
-                    Submit
+                  <button class=" bg-gradient-to-l from-amber-400 to-honey-gold w-full text-midnight-sapphire font-bold py-3 px-4 rounded hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">
+                    Submit Your Work
                   </button>
                 </form>
               </div>

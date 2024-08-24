@@ -16,7 +16,7 @@
               <section
                   class="background-img relative bg-cover bg-center bg-no-repeat p-6 h-auto md:mb-16 mb-8 flex items-center justify-center rounded-lg shadow-md">
                   <div class="absolute inset-0 bg-gray-900 opacity-80 rounded-lg "></div>
-                  <div class="relative z-10 text-center note">
+                  <div class="relative z-10 text-center note lg:py-8">
                     <blockquote class="fade-in">
                       <h2 class="text-3xl md:text-4xl font-bold mb-2 md:mb-8 text-white ">Who We Are?</h2>
                       <p class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light ">Our mission is to celebrate and
@@ -29,11 +29,11 @@
               </section>
 
               <!-- Activities and Goals -->
-              <section class="md:mb-16 mb-8">
+              <section class="md:mb-16 mb-8 lg:py-8 ">
                 <h2 class="text-3xl md:text-4xl font-bold mb-2 md:mb-8 text-midnight-sapphire text-center ">What We Do?</h2>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div
-                          class=" p-6 rounded-lg shadow-lg border-2  border-amber-100 bg-gradient-to-r from-regal-blue to-blue-50  flex flex-col justify-between note">
+                          class=" p-6 rounded-lg shadow-lg border-2  border-amber-100 bg-gradient-to-r from-regal-blue to-gray-300  flex flex-col justify-between note">
                         <blockquote class="fade-in">
                           <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 mt-4 md:mt-0">Celebration of
                               Bengali Culture Globally</h3>
@@ -44,7 +44,7 @@
                             </blockquote>
                       </div>
                       <div
-                          class="p-6 rounded-lg shadow-lg border-2  border-amber-100 bg-gradient-to-r from-regal-blue to-blue-50  flex flex-col justify-between note">
+                          class="p-6 rounded-lg shadow-lg border-2  border-amber-100 bg-gradient-to-r from-regal-blue to-gray-300  flex flex-col justify-between note">
                         <blockquote class="fade-in">
                             <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 ">Cultural Diaspora
                                 Experiences</h3>
@@ -59,9 +59,9 @@
               </section>
 
               <!-- Meet Our Team -->
-                <!-- Meet Our Team -->
+
                 <section class="bg-gradient-to-r from-amber-100 to-gray-200 shadow-lg mb-8">
-                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
                     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                         <h2 class="text-3xl md:text-4xl font-bold mb-2 md:mb-8 text-midnight-sapphire">Our Team</h2>
                         <p class="font-light lg:mb-16 sm:text-xl text-gray-600">Passionate about preserving and promoting Bengali culture, our team is a vibrant mix of storytellers, artists, and language enthusiasts. Together, we celebrate our heritage and connect the global Bengali community</p>

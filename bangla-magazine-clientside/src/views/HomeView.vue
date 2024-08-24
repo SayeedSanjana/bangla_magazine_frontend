@@ -44,7 +44,7 @@
                 class="absolute h-full w-full object-cover opacity-35 z-0 bg3 ">
             <div class="absolute inset-0 bg-opacity-60 z-10"></div>
             <div class="relative text-gray-600 z-20">
-              <h2 class="text-xl md:text-3xl underline font-semibold mb-2 md:mb-4 text-amber-700">Transform Ideas into Inspiration – Share Your Work with Us!</h2>
+              <h2 class="text-xl md:text-3xl underline font-semibold mb-2 md:mb-4 text-gray-600">Transform Ideas into Inspiration – Share Your Work with Us!</h2>
               <p class="mb-6 text-base md:text-xl font-medium">Share your creativity and join us in celebrating Bengali culture! We welcome:</p>
               <ul class="list-none mb-4 text-base md:text-lg space-y-4">
                 <li class="flex-col">
@@ -77,14 +77,14 @@
                 </li>
                 <li class="block py-2 px-2 border-l-4 border-gray-600">
                   <p>
-                    <i>For any queries email us at</i><a href="mailto:info@bangaliabhibasi.org" class="ml-1 font-semibold text-midnight-sapphire">info@bangaliabhibasi.org</a>
+                    <i>For any queries email us at</i><a href="mailto:info@bangaliabhibasi.org" class="ml-1 font-semibold text-gray-700">info@bangaliabhibasi.org</a>
                   </p>
                 </li>
               </ul>
               <div class="flex md:justify-start mt-1">
                 <button @click="contribute"
                    class="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-l from-amber-400 to-honey-gold
-                    text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500
+                    text-blue-950 font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500
                      hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">Submit your work here</button>
               </div>
             </div>
