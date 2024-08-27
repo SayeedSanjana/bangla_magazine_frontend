@@ -13,12 +13,12 @@
       <div class="absolute inset-0 bg-opacity-60 z-15"></div>
 
       <!-- Main Content -->
-      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 p-4 md:p-6 flex-grow ">
-        <div class="relative flex flex-col rounded-lg shadow-lg md:flex-row overflow-hidden z-30 bg-regal-blue">
+      <main class="md:container overflow-hidden md:mx-auto relative border-gray-50 mt-8 p-4 md:p-6  flex-grow ">
+        <div class="relative flex flex-col rounded-lg shadow-lg md:flex-row overflow-hidden z-30 ">
           <!-- Left Section with Welcome Note -->
-          <div class="relative w-full md:w-2/5 h-auto flex-shrink-0 overflow-hidden ">
+          <div class="relative w-full md:w-3/5 h-auto flex-shrink-0 overflow-hidden ">
             <img src="../assets/img/culture.jpg" alt="Background"
-                 class="absolute inset-0 w-full h-full object-cover opacity-10 clip-smooth z-30">
+                 class="absolute inset-0 w-full h-full object-cover opacity-10  z-30">
             <div class="absolute inset-0 bg-opacity-60 z-20"></div>
             <div class="relative p-4 md:p-8 founding-note flex flex-col justify-start z-30">
               <h2 class="text-2xl font-bold mb-2 sm:mb-4 text-gray-700 md:text-gray-600">
@@ -39,8 +39,17 @@
           </div>
 
           <!-- Right Section with Call for Contributions -->
-          <div class="relative w-full md:w-3/5 border-gray-300 flex flex-col p-3 sm:p-4 overflow-hidden z-40">
-            <img src="../assets/img/bg3.gif" alt="Background"
+          <div class="w-full md:w-2/5 bg-gray-100 flex flex-col items-center">
+          <img src="../assets/img/bg-1.gif" alt="GIF Description"
+            class="w-full h-full mb-0  bg-cover max-w-xs sm:max-w-md md:max-w-full">
+          <!-- Button -->
+          <button @click="contribute"
+                   class="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-l from-amber-300 to-honey-gold w-full
+                    text-blue-950  text-lg rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500 font-extrabold
+                     hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">Submit your work here !</button>
+        </div>
+          <!-- <div class="relative w-full md:w-3/5 border-gray-300 flex flex-col p-3 sm:p-4 overflow-hidden z-40">
+            <img src="../assets/img/bg-1.gif" alt="Background"
                 class="absolute h-full w-full object-cover opacity-35 z-0 bg3 ">
             <div class="absolute inset-0 bg-opacity-60 z-10"></div>
             <div class="relative text-gray-600 z-20">
@@ -88,13 +97,13 @@
                      hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300">Submit your work here</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </main>
     </div>
 
     <!-- Footer -->
-    <footer class="relative">
+    <footer class="">
       <Footer />
     </footer>
 
