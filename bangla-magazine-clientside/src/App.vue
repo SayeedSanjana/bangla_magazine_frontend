@@ -8,7 +8,7 @@
 </template>
 
 <style scoped>
-@font-face {
+/* @font-face {
   font-family: 'Clarendon';
   src: url('@/assets/fonts/Clarendon.woff2') format('woff2'),
        url('@/assets/fonts/Clarendon.woff') format('woff'),
@@ -19,5 +19,5 @@
 
 body {
   font-family: 'Clarendon', serif;
-}
+} */
 </style>
