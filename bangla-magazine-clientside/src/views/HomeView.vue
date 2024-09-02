@@ -39,7 +39,7 @@
                 We are a Montreal-based Bangali diaspora committed to connecting
                 Bengalis worldwide and promoting our rich cultural heritage.
               </p>
-              <p class="text-lg md:text-2xl font-semibold text-amber-700">
+              <p class="text-lg md:text-2xl font-semibold text-amber-600">
                 "Bridging Distances, Celebrating Culture"
               </p>
             </blockquote>
@@ -48,13 +48,10 @@
 
         <!-- Right Section with Call for Contributions -->
 
-        <div class="w-full md:w-2/5 bg-gradient-to-b  from-regal-blue to-purple-200 flex flex-col items-center rounded-xl shadow-xl">
+        <div class="w-full md:w-2/5 flex flex-col items-center rounded-xl shadow-xl">
           <!-- Image Container with Enhanced Glass Effect and Bluish Tint -->
           <div class="relative w-full  rounded-xl shadow-lg" style="
-              background: rgba(30, 60, 90, 0.2);
-              backdrop-filter: blur(10px);
-              -webkit-backdrop-filter: blur(10px);
-              border: 1px solid rgba(255, 255, 255, 0.3);
+              
             ">
             <div class="relative w-full h-auto p-2  rounded-lg shadow-md">
               <img
@@ -66,8 +63,9 @@
           </div>
 
           <!-- Button with Enhanced Styling -->
-          <button @click="contribute" class="px-4 py-4 w-full bg-gradient-to-r from-gray-400 to-amber-500 text-midnight-sapphire hover:text-indigo-800 text-lg font-semibold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-4 focus:ring-amber-500 transition duration-300">
-            Submit Your Work Now!!
+          <button @click="contribute" class="w-full bg-gradient-to-r tracking-wide border-2 border-amber-500 from-honey-gold to-amber-600 text-indigo-950 hover:text-indigo-800 text-base font-bold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300 flex items-center justify-center py-2 px-4">
+            <img src="../assets/img/file.png" alt="Submit" class="animate-bounce w-14 h-12 p-0.5 object-contain"/>
+            <span class="text-lg font-bold">Click to submit your work!!</span>
           </button>
         </div>
       </div>
