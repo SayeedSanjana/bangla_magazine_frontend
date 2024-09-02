@@ -1,5 +1,4 @@
 <template>
-    
   <!-- Footer -->
   <footer class="bg-gradient-to-r fx  from-gray-700 to-midnight-sapphire text-white py-6">
     <div class="container mx-auto text-center space-y-4">
@@ -16,6 +15,7 @@
 
 <script>
 export default {
+  name: "Footer",
     methods:{
         cookie(){
             this.$router.push("/cookie-settings")
@@ -26,6 +26,4 @@ export default {
 </script>
 
 <style>
-
-
 </style>
