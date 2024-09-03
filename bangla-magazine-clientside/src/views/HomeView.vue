@@ -23,7 +23,7 @@
             </h2>
             <blockquote class="fade-in">
               <svg
-                class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-honey-gold mb-2 sm:mb-4"
+                class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-crimson-bloom mb-2 sm:mb-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -53,7 +53,7 @@
           <div class="relative w-full  rounded-xl shadow-lg" style="
               
             ">
-            <div class="relative w-full h-auto p-2  rounded-lg shadow-md">
+            <div class="relative w-full h-auto  rounded-lg shadow-md">
               <img
                 src="../assets/img/bg-1.gif"
                 alt="Cultural GIF"
@@ -63,8 +63,8 @@
           </div>
 
           <!-- Button with Enhanced Styling -->
-          <button @click="contribute" class="w-full bg-gradient-to-r tracking-wide border-2 border-amber-500 from-honey-gold to-amber-600 text-indigo-950 hover:text-indigo-800 text-base font-bold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300 flex items-center justify-center py-2 px-4">
-            <img src="../assets/img/file.png" alt="Submit" class="animate-bounce w-14 h-12 p-0.5 object-contain"/>
+          <button @click="contribute" class="w-full bg-gradient-to-r tracking-tight border-2 border-amber-500 from-honey-gold to-amber-600 text-burgundy-crush hover:text-autumn-auburn text-base font-bold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300 flex items-center justify-center py-2 px-4">
+            <img src="../assets/img/arrow.png" alt="Submit" class="animate-bounce w-14 h-12 p-0.5 object-contain"/>
             <span class="text-lg font-bold">Click to submit your work!!</span>
           </button>
         </div>

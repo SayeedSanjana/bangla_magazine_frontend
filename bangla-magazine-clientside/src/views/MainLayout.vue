@@ -47,8 +47,8 @@ body::before {
   bottom: 0;
   background-image: linear-gradient(
       to right,
-      rgba(255, 165, 0, 0.7),
-      rgba(0, 0, 255, 0.7)
+      rgba(250, 183, 57, 0.7),
+      rgba(236, 86, 111, 0.7)
     ),
     url("../assets/img/alphabets.jpg");
   background-size: cover;

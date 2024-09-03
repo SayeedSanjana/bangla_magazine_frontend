@@ -1,6 +1,6 @@
 <template>
   <!-- Navigation Bar -->
-  <nav class="bg-gradient-to-r from-gray-600 to-midnight-sapphire shadow-lg">
+  <nav class="bg-gradient-to-r from-autumn-auburn to-burgundy-crush shadow-lg">
     <div class="container mx-auto p-4 md:p-5 flex justify-between md:justify-around lg:justify-around">
       <!-- Mobile Menu Button -->
       <button @click="toggleMenu" id="menu-toggle" class="md:hidden flex text-white focus:outline-none">

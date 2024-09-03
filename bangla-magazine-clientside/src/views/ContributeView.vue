@@ -8,10 +8,10 @@
           <!-- Left Section with Scroll -->
           <div class="md:w-3/5 w-full flex-shrink-0 p-4 md:p-8 scrollable">
             <div name="cta_section" class="border-b-2 border-gray-100 px-4 mb-4">
-              <h3 class="text-3xl font-bold mb-6 text-shadow text-midnight-sapphire px-2 py-2" >
+              <h3 class="text-3xl font-bold mb-6 text-shadow text-burgundy-crush px-2 py-2" >
                 Write for Us / Share your Art | Photography
               </h3>
-              <p class="text-xl mb-4 font-medium border-l-4 border-blue-900 text-gray-700 px-4" >
+              <p class="text-xl mb-4 font-medium border-l-4 border-crimson-bloom text-gray-700 px-4" >
                 We are always seeking fresh perspectives and new voices. Whether
                 you are a seasoned writer or just starting out, we welcome your
                 contributions. If you are an artist or photographer, we would
@@ -21,7 +21,7 @@
             </div>
 
             <div name="themes" class="border-b-2 border-gray-100 px-4 mb-4">
-              <h4 class="text-2xl font-bold mb-4 text-midnight-sapphire px-2 py-2"
+              <h4 class="text-2xl font-bold mb-4 text-burgundy-crush px-2 py-2"
               >
                 Themes We Are Interested In
               </h4>
@@ -79,7 +79,7 @@
 
           <!-- Submission Form -->
           <div class="md:w-2/5 w-full p-4 md:p-8">
-            <h3 class="text-3xl font-bold mb-6 text-shadow text-midnight-sapphire">Submit Your Work</h3>
+            <h3 class="text-3xl font-bold mb-6 text-shadow text-burgundy-crush">Submit Your Work</h3>
             <form action="#" method="POST" class="space-y-4">
               <div class="flex">
                 <div class="w-1/2 px-2">
@@ -192,7 +192,7 @@
                 </textarea>
               </div>
               <button
-                class="bg-gradient-to-l from-amber-400 to-honey-gold w-full text-midnight-sapphire font-bold py-3 px-4 rounded hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none hover:text-indigo-800 focus:ring-2 focus:ring-amber-500 transition duration-300" >
+                class="bg-gradient-to-l from-amber-400 to-honey-gold w-full text-autumn-auburn font-bold py-3 px-4 rounded hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none hover:text-crimson-bloom focus:ring-2 focus:ring-amber-500 transition duration-300" >
                 Submit Your Work
               </button>
             </form>

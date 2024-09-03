@@ -21,21 +21,21 @@
 
       <!-- Activities and Goals -->
       <div class="mb-16 lg:py-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-midnight-sapphire text-center">What We Do?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-burgundy-crush text-center">What We Do?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-r from-amber-100 to-indigo-200 border-gray-200">
-            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 fade-in">Celebration of Bengali Culture Globally </h3>
+          <div class="p-8 rounded-lg shadow-lg  bg-gradient-to-r from-orange-100 to-red-200 border-x-8 border-x-autumn-auburn border-opacity-20">
+            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-autumn-auburn fade-in">Celebration of Bengali Culture Globally </h3>
             <p class="text-lg md:text-xl text-gray-700 fade-in">
-              <span class="text-2xl md:text-3xl text-blue-800 font-bold">W</span
+              <span class="text-2xl md:text-3xl text-crimson-bloom font-bold">W</span
               >e acknowledge the existence of Bengalis both outside and inside
               their territorial borderlands, situating ourselves in the global
               distribution of Bengalis as a linguo-cultural group.
             </p>
           </div>
-          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-l from-amber-100 to-indigo-200 border-gray-200">
-            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 fade-in">Cultural Diaspora Experiences</h3>
+          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-l from-orange-100 to-red-200 border-orange-100  border-x-8 border-x-autumn-auburn border-opacity-20">
+            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-autumn-auburn fade-in">Cultural Diaspora Experiences</h3>
             <p class="text-lg md:text-xl text-gray-700 fade-in">
-              <span class="text-2xl md:text-3xl text-blue-800 font-bold">U</span
+              <span class="text-2xl md:text-3xl text-crimson-bloom font-bold">U</span
               >sing Bengali as a medium of instruction to teach foreign
               languages and to interact with other languages through
               literary-cultural translations, we promote symbiotic coexistence
@@ -46,10 +46,10 @@
       </div>
 
       <!-- Meet Our Team -->
-      <div class="bg-gradient-to-r from-regal-blue to-gray-200 mb-8 md:p-8 border border-gray-200 rounded-lg shadow-lg">
+      <div class="bg-gradient-to-r from-regal-blue to-amber-50 mb-8 md:p-8 border border-gray-200 rounded-lg shadow-lg border-x-2 border-x-autumn-auburn border-opacity-20">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
           <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-midnight-sapphire">Our Team</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-burgundy-crush">Our Team</h2>
             <p class="font-light sm:text-xl text-gray-700">
               Passionate about preserving and promoting Bengali culture, our
               team is a vibrant mix of storytellers, artists, and language
@@ -63,7 +63,7 @@
               <div class="relative w-56 h-56 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300" >
                 <img :src="member.image" alt="Profile Image" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" :class="{ 'opacity-55': hoveredIndex === index }"/>
                 <!-- Title section that is always visible -->
-                <div class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2  rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                <div class="absolute bottom-0 left-0 right-16 bg-burgundy-crush bg-opacity-70 text-gray-100 p-2  rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-8 border-honey-gold border-opacity-80"
                   :class="hoveredIndex === index ? 'h-full ' : 'h-10'">
                   <h3 v-if="hoveredIndex !== index" class="text-lg font-bold"> {{ member.name }}</h3>
                   <div v-else class="flex flex-col justify-center h-full">
@@ -116,8 +116,8 @@
         <!-- Connect us on Section -->
         <div class="flex flex-col md:flex-row md:space-x-6 mt-4 items-center justify-end">
           <h2 class="text-2xl font-bold text-gray-800 px-4 py-2"> Connect us on:</h2>
-          <div class="text-xl p-2 border rounded-md border-gray-300 bg-regal-blue bg-opacity-90">
-            <a href="mailto:info@bangaliabhibasi.org" class="text-midnight-sapphire hover:underline font-semibold transition-colors duration-200">
+          <div class="text-xl p-2 border rounded-md bg-gradient-to-br from-red-200 to-amber-200 bg-opacity-90">
+            <a href="mailto:info@bangaliabhibasi.org" class="text-burgundy-crush hover:underline font-semibold transition-colors duration-200">
             info@bangaliabhibasi.org</a>
           </div>
         </div>
