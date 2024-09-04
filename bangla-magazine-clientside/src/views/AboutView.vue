@@ -23,7 +23,7 @@
       <div class="mb-16 lg:py-8">
         <h2 class="text-3xl md:text-4xl font-bold mb-8 text-burgundy-crush text-center">What We Do?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="p-8 rounded-lg shadow-lg  bg-gradient-to-r from-orange-100 to-red-200 border-x-8 border-x-autumn-auburn border-opacity-20">
+          <div class="p-8 rounded-lg shadow-lg  bg-gradient-to-r from-orange-100 to-red-200 border-l-8 border-l-autumn-auburn border-opacity-20">
             <h3 class="text-xl md:text-2xl font-semibold mb-4 text-autumn-auburn fade-in">Celebration of Bengali Culture Globally </h3>
             <p class="text-lg md:text-xl text-gray-700 fade-in">
               <span class="text-2xl md:text-3xl text-crimson-bloom font-bold">W</span
@@ -32,7 +32,7 @@
               distribution of Bengalis as a linguo-cultural group.
             </p>
           </div>
-          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-l from-orange-100 to-red-200 border-orange-100  border-x-8 border-x-autumn-auburn border-opacity-20">
+          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-l from-orange-100 to-red-200 border-orange-100  border-l-8 border-l-autumn-auburn border-opacity-20">
             <h3 class="text-xl md:text-2xl font-semibold mb-4 text-autumn-auburn fade-in">Cultural Diaspora Experiences</h3>
             <p class="text-lg md:text-xl text-gray-700 fade-in">
               <span class="text-2xl md:text-3xl text-crimson-bloom font-bold">U</span
@@ -46,7 +46,7 @@
       </div>
 
       <!-- Meet Our Team -->
-      <div class="bg-gradient-to-r from-regal-blue to-amber-50 mb-8 md:p-8 border border-gray-200 rounded-lg shadow-lg border-x-2 border-x-autumn-auburn border-opacity-20">
+      <div class="bg-gradient-to-r from-regal-blue to-amber-50 mb-8 md:p-8 border border-gray-200 rounded-lg shadow-lg border-l-2 border-l-autumn-auburn border-opacity-20">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
           <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-burgundy-crush">Our Team</h2>

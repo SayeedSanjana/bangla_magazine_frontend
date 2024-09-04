@@ -55,7 +55,7 @@
             ">
             <div class="relative w-full h-auto  rounded-lg shadow-md">
               <img
-                src="../assets/img/bg-1.gif"
+                src="../assets/img/bg-2.gif"
                 alt="Cultural GIF"
                 class="w-full h-auto rounded-lg"
               />
@@ -63,8 +63,7 @@
           </div>
 
           <!-- Button with Enhanced Styling -->
-          <button @click="contribute" class="w-full bg-gradient-to-r tracking-tight border-2 border-amber-500 from-honey-gold to-amber-600 text-burgundy-crush hover:text-autumn-auburn text-base font-bold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300 flex items-center justify-center py-2 px-4">
-            <img src="../assets/img/arrow.png" alt="Submit" class="animate-bounce w-14 h-12 p-0.5 object-contain"/>
+          <button @click="contribute" class="w-full bg-gradient-to-r tracking-tight border border-amber-500 from-honey-gold to-amber-400 text-gray-700 hover:text-autumn-auburn text-base font-bold rounded-lg shadow-md hover:from-amber-600 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300 flex items-center justify-center py-3 px-4">
             <span class="text-lg font-bold">Click to submit your work!!</span>
           </button>
         </div>
