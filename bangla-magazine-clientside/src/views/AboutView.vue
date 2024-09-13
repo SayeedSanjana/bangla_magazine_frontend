@@ -1,55 +1,316 @@
 <template>
-  <section>
-    <div class="md:container md:mx-auto mt-8 p-4 md:p-6 flex-grow">
+  <section class="">
+    <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div
-        class="relative p-10 h-auto mb-16 flex items-center justify-center rounded-lg shadow-md bg-cover bg-center background-img">
-        <div class="absolute inset-0 bg-gray-900 opacity-80 rounded-lg"></div>
-        <div class="relative z-10 text-center lg:py-8">
-          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white fade-in">
+      <div class="relative h-auto shadow-md bg-cover bg-center background-img">
+        <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
+        <div class="relative z-10 lg:py-8">
+          <!-- <h2
+            class="text-4xl md:text-6xl font-bold mb-8 text-white fade-in font-cormorant"
+          >
             Who We Are?
-          </h2>
-          <p class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light fade-in">
-            Our mission is to celebrate and sustain Bengali language and culture
-            globally, fostering connections among the diaspora and promoting
-            cultural exchanges. We aim to provide spaces for learning, cultural
-            exchanges, and celebrations that acknowledge and promote the diverse
-            experiences of Bengalis worldwide.
+          </h2> -->
+          <div
+            class="text-lg md:text-3xl font-bold mb-1 text-honey-gold fade-in font-cormorant italic tracking-wide text-center mt-8 md:mt-14"
+          >
+            <p>" In Bangla I love</p>
+            <p>Bangla is my love</p>
+            <p>Holding my hands, Bangla brings me to people in distant lands</p>
+            <p>With humility I regard all there is to revere</p>
+            <p>As seven seas and thirteen rivers</p>
+            <p>In Ganga and Padma appear… "</p>
+          </div>
+
+          <div class="md:mb-14 mb-8">
+            <p
+              class="text-base max-w-7xl text-gray-300 font-semibold fade-in mt-4 text-right"
+            >
+              - Protul Mukhopadhyay (Ami Banglay Gaan Gaai)
+            </p>
+          </div>
+
+          <!-- <p
+            class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light fade-in"
+          >
+            B.A.N.G.L.A. (Bangali Abhibasi Network: a Glocal Linguo-cultural
+            Association) is an international network dedicated to connecting the
+            global Bangali diaspora with their homeland(s) while promoting
+            Bangla as a dynamic language of expression across cultures and
+            borders. Our mission is to preserve and promote Bangla language,
+            culture, and identity in a globalized world, fostering an inclusive
+            space for Bangla speakers to explore and share diverse worldviews,
+            cultural forms, and linguistic traditions.
           </p>
+
+          <p
+            class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light fade-in mt-5"
+          >
+            At B.A.N.G.L.A., we believe in nurturing Bangla as a vibrant
+            language of thought, creativity, and communication for future
+            generations. By creating a platform that encourages cultural
+            exchange, learning, and artistic expression, we aim to strengthen
+            connections within the Bangali diaspora and ensure that Bangla
+            thrives both locally and globally.
+          </p> -->
         </div>
       </div>
 
-      <!-- Activities and Goals -->
-      <div class="mb-16 lg:py-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-midnight-sapphire text-center">What We Do?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-r from-amber-100 to-indigo-200 border-gray-200">
-            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 fade-in">Celebration of Bengali Culture Globally </h3>
-            <p class="text-lg md:text-xl text-gray-700 fade-in">
-              <span class="text-2xl md:text-3xl text-blue-800 font-bold">W</span
-              >e acknowledge the existence of Bengalis both outside and inside
-              their territorial borderlands, situating ourselves in the global
-              distribution of Bengalis as a linguo-cultural group.
+      <!-- Who We Are -->
+      <div
+        class="bg-gradient-to-r from-regal-blue to-amber-100 border border-gray-200 rounded-lg shadow pt-8 mb:pt-16 mb-8 md:mb-16"
+      >
+        <div class="py-8 px-2 mx-auto max-w-screen-xl">
+          <div class="text-center mb-16">
+            <h2
+              class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire font-cormorant"
+            >
+              Who We Are?
+            </h2>
+            <p class="font-light text-lg text-gray-700 text-justify">
+              Bangla continues to be the shared language of expression for a
+              considerable part of the global population (approximately, 250
+              million native speakers and 41 million second language speakers)
+              even though many of them, like us, continue to drift away
+              physically from the geographical area where it is a major spoken
+              and written language - primarily, in
+              <span class="text-midnight-sapphire font-semibold"
+                >Bangladesh</span
+              >
+              and some parts of
+              <span class="text-midnight-sapphire font-semibold">India</span>. A
+              corollary to being a migrant or an expat is the often
+              unintentional and unnoticed assimilation in their adopted land(s)
+              and language(s) driven by the constant need of communication in a
+              non-native language in both professional spaces and social
+              circles. While this results in a certain ‘globalization’ of
+              Bangalis through the movement of people and ideas, it also
+              diminishes the presence of Bangla, the language, in our daily
+              parlance. Oftentimes, the language is relegated to silent musings
+              and nostalgic reveries of a world left behind. At times, this is
+              directly reflected through the lives of second-generation Bangalis
+              across the world for whom the transition from a linguistic
+              familiarity to a shared collective identity remains a constant
+              struggle. Yet certain moments of collective engagement in Bangla,
+              the language, during religio-cultural events, family and friendly
+              gatherings, academic conferences, protest movements or even social
+              media interactions provide a sense of camaraderie in lands far
+              from home. This makes the language and its cultural coordinates
+              accessible to not only those who ethnically identify as Bangali or
+              use Bangla as their native language, but also those who have
+              adopted it through their mediated or lived experiences. The
+              recognition of
+              <span class="text-midnight-sapphire font-semibold"
+                >February 21</span
+              >
+              as the
+              <span class="text-midnight-sapphire font-semibold"
+                >International Mother Language Day</span
+              >
+              by
+              <span class="text-midnight-sapphire font-semibold">UNESCO</span>
+              (observed since 2000) commemorates one of the most significant
+              events in the recent history of the language, that is,
+              <span class="text-midnight-sapphire font-semibold"
+                >Bhasha Andolon</span
+              >
+              (transliterated as “The Language Movement”). Nonetheless, what
+              remains untapped is an immensely diverse potential that
+              characterises Bangla as the cradle for a collective of
+              intersectional worldviews and not just a landmass or language. The
+              huge geographical presence of Bangla speakers implies that this
+              ‘worldview’ currently encompasses large swathes of the globe.
+              Therefore, the diverse - and many - ‘Bengals’ that exist now could
+              perhaps fully appreciate or explore their modern multifarious
+              contours and identities by forging connections with Bangalis of
+              different perspectives and across different countries. Building on
+              such observations, we have ideated our network,
+              <span class="text-midnight-sapphire font-bold italic"
+                >B.A.N.G.L.A.</span
+              >, an acronym for Bangali Abhibasi Network: a Glocal
+              Linguo-cultural Association. We endeavour to build an
+              intersectional space for engagement between the Bangali diaspora,
+              their homeland(s), and consciously extend it to everyone in
+              between.
             </p>
           </div>
-          <div class="p-8 rounded-lg shadow-lg border-2 bg-gradient-to-l from-amber-100 to-indigo-200 border-gray-200">
-            <h3 class="text-xl md:text-2xl font-semibold mb-4 text-blue-900 fade-in">Cultural Diaspora Experiences</h3>
-            <p class="text-lg md:text-xl text-gray-700 fade-in">
-              <span class="text-2xl md:text-3xl text-blue-800 font-bold">U</span
-              >sing Bengali as a medium of instruction to teach foreign
-              languages and to interact with other languages through
-              literary-cultural translations, we promote symbiotic coexistence
-              of different diasporic identities.
-            </p>
+        </div>
+      </div>
+
+      <!-- Objective -->
+      <div
+        class="mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2 mx-auto max-w-screen-xl"
+      >
+        <h2
+          class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire text-center font-cormorant"
+        >
+          What We Aim?
+        </h2>
+
+        <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3">
+          <!-- Row 1: Text on Left, SVG on Right -->
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10"
+          >
+            <!-- Text on Left -->
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4 font-cormorant">
+                Bangla as the language of thinking, questioning, and expressing
+              </h2>
+              <p
+                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
+              >
+                We believe that nurturing the use of Bangla in a land away from
+                home can only be effectivized if communicating and reading
+                Bangla texts works in tandem with a platform for writing. A
+                language like Bangla, that is not regularly deployed to map the
+                new nodal points of enquiring the global order, may often lose
+                out on dynamism of thought and a holistic worldview. Hence, the
+                use of Bangla vocabulary as well as stretching its limits by
+                introducing new forms of expression or refurbishing obscure ones
+                is one of our primary initiatives. The long term goal of this
+                initiative will be to ensure that such conversations in and
+                around Bangla are recognized through a publication enterprise
+                with an ISSN registration that will facilitate a literary
+                exchange and develop an internationally standardized publication
+                process.
+              </p>
+            </div>
+
+            <!-- SVG on Right -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="../assets/svg/Thinking1.svg"
+                alt="SVG Image 1"
+                class="w-80 h-auto"
+              />
+            </div>
+          </div>
+
+          <!-- Row 2: SVG on Left, Text on Right -->
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 lg:space-x-reverse md:p-8"
+          >
+            <!-- Text on Right -->
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4 font-cormorant">
+                Bangla as a mode of exchange
+              </h2>
+              <p
+                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
+              >
+                Based out of Canada, our network will primarily focus on
+                building a platform of trilingual exchange in Bangla, French,
+                and English. We believe that such a platform is required to
+                posit Bangla as a world language in all its diverse formations
+                including its specific dialects and creole forms. Furthermore,
+                we intend to trace the historicity of international as well as
+                intersectional exchange associated with Bangla. Going forward
+                one of the primary objectives of the network will be to create a
+                polyvocal space across class, caste, religious, gender, and
+                other identities. We also intend to actively engage with
+                indigenous languages and cultures beginning with North America
+                but expanding into other parts of the world when the network
+                develops bases in other continents.
+              </p>
+            </div>
+
+            <!-- SVG on Left -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="../assets/svg/exchange.svg"
+                alt="SVG Image 2"
+                class="w-2/3 h-auto"
+              />
+            </div>
+          </div>
+
+          <!-- Row 3: Text on Left, SVG on Right -->
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10"
+          >
+            <!-- Text on Left -->
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4 font-cormorant">
+                Bangla Language Teaching
+              </h2>
+              <p
+                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
+              >
+                We believe that without a sense of Bangla, as a language and its
+                literary lineage, it becomes quite difficult for the second and
+                successive generations to negotiate questions of familial as
+                well as linguistic identity. To put it broadly, it leads to a
+                feeling of disconnection. Lack of linguistic knowledge also acts
+                as an obstruction while accessing the historicity of literary or
+                cultural productions in and around Bangla. Therefore, we have
+                resolved to focus on providing a platform for Bangla language
+                teaching. This will act as a platform that will bring first
+                generation immigrants as teachers to engage with successive
+                generations and other language enthusiasts as students in a
+                classroom set-up.
+              </p>
+            </div>
+
+            <!-- SVG on Right -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="../assets/svg/Knowledge-bro.svg"
+                alt="SVG Image 1"
+                class="w-96 h-96"
+              />
+            </div>
+          </div>
+
+          <!-- Row 4: SVG on Left, Text on Right -->
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-16 lg:space-x-reverse"
+          >
+            <!-- Text on Right -->
+            <div class="w-full lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 mb-4 font-cormorant">
+                Tracing international and global experiences of Bangalis
+              </h2>
+              <p
+                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
+              >
+                One of our primary objectives is to identify the global and
+                glocal existence(s) of Bangalis across the world - and in the
+                geographical region of Bangla - in order to situate ourselves
+                against the varied lived realities of these spaces. We start off
+                as a venture of expats based out of Canada and would like to
+                eventually grow as an international cultural emissary of
+                Bangalis who will encourage and nurture art and culture in
+                relation to their homeland(s). We would like to enter into
+                dialogues with other migrant as well as expat Bangalis around
+                the world to reflect on questions of symbiotic relationships
+                with the different communities that we encounter during our
+                voyage across the world.
+              </p>
+            </div>
+
+            <!-- SVG on Left -->
+            <div class="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="../assets/svg/world.svg"
+                alt="SVG Image 2"
+                class="w-96 h-96"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Meet Our Team -->
-      <div class="bg-gradient-to-r from-regal-blue to-gray-200 mb-8 md:p-8 border border-gray-200 rounded-lg shadow-lg">
+      <div
+        class="bg-gradient-to-r from-regal-blue to-gray-200 pt-8 mb:pt-16 py-8 px-2 rounded-lg shadow"
+      >
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-midnight-sapphire">Our Team</h2>
+          <div class="text-center mb-8">
+            <h2
+              class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire font-cormorant"
+            >
+              Meet The Team
+            </h2>
             <p class="font-light sm:text-xl text-gray-700">
               Passionate about preserving and promoting Bengali culture, our
               team is a vibrant mix of storytellers, artists, and language
@@ -57,18 +318,238 @@
               global Bengali community.
             </p>
           </div>
-          <div class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full">
-            <div v-for="(member, index) in teamMembers" :key="index" @mouseover="handleMouseOver(index)" @mouseleave="handleMouseLeave(index)"
-              class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5">
-              <div class="relative w-56 h-56 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300" >
-                <img :src="member.image" alt="Profile Image" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" :class="{ 'opacity-55': hoveredIndex === index }"/>
-                <!-- Title section that is always visible -->
-                <div class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2  rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
-                  :class="hoveredIndex === index ? 'h-full ' : 'h-10'">
-                  <h3 v-if="hoveredIndex !== index" class="text-lg font-bold"> {{ member.name }}</h3>
-                  <div v-else class="flex flex-col justify-center h-full">
-                    <h3 class="text-lg font-bold">{{ member.name }}</h3>
-                    <p class="text-sm mt-2">{{ member.bio }}</p>
+          <div>
+            <!-- Section 1: Founders -->
+            <div class="mt-12 p-8">
+              <h2
+                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+              >
+                Founders
+              </h2>
+              <div
+                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+              >
+                <div
+                  v-for="(member, index) in filteredTeamMembers('Founder')"
+                  :key="'founder' + index"
+                  @mouseover="handleMouseOver(index, 'Founder')"
+                  @mouseleave="handleMouseLeave"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                >
+                  <div
+                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                  >
+                    <img
+                      :src="member.image"
+                      alt="Profile Image"
+                      class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                      :class="{
+                        'opacity-55':
+                          hoveredIndex.section === 'Founder' &&
+                          hoveredIndex.index === index,
+                      }"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      :class="
+                        hoveredIndex.section === 'Founder' &&
+                        hoveredIndex.index === index
+                          ? 'h-full '
+                          : 'h-10'
+                      "
+                    >
+                      <h3
+                        v-if="
+                          hoveredIndex.section !== 'Founder' ||
+                          hoveredIndex.index !== index
+                        "
+                        class="text-lg font-bold"
+                      >
+                        {{ member.name }}
+                      </h3>
+                      <div v-else class="flex flex-col justify-center h-full">
+                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 2: Content Sculptors -->
+            <div class="mt-12 p-8">
+              <h2
+                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+              >
+                Content Sculptors
+              </h2>
+              <div
+                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+              >
+                <div
+                  v-for="(member, index) in filteredTeamMembers(
+                    'Content Sculptor'
+                  )"
+                  :key="'contentSculptors' + index"
+                  @mouseover="handleMouseOver(index, 'Content Sculptor')"
+                  @mouseleave="handleMouseLeave"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                >
+                  <div
+                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                  >
+                    <img
+                      :src="member.image"
+                      alt="Profile Image"
+                      class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                      :class="{
+                        'opacity-55':
+                          hoveredIndex.section === 'Content Sculptor' &&
+                          hoveredIndex.index === index,
+                      }"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      :class="
+                        hoveredIndex.section === 'Content Sculptor' &&
+                        hoveredIndex.index === index
+                          ? 'h-full '
+                          : 'h-10'
+                      "
+                    >
+                      <h3
+                        v-if="
+                          hoveredIndex.section !== 'Content Sculptor' ||
+                          hoveredIndex.index !== index
+                        "
+                        class="text-lg font-bold"
+                      >
+                        {{ member.name }}
+                      </h3>
+                      <div v-else class="flex flex-col justify-center h-full">
+                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: Creative Visionaries -->
+            <div class="mt-12 p-8">
+              <h2
+                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+              >
+                Creative Visionaries
+              </h2>
+              <div
+                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+              >
+                <div
+                  v-for="(member, index) in filteredTeamMembers(
+                    'Creative Visionary'
+                  )"
+                  :key="'creativeVisionaries' + index"
+                  @mouseover="handleMouseOver(index, 'Creative Visionary')"
+                  @mouseleave="handleMouseLeave"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                >
+                  <div
+                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                  >
+                    <img
+                      :src="member.image"
+                      alt="Profile Image"
+                      class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                      :class="{
+                        'opacity-55':
+                          hoveredIndex.section === 'Creative Visionary' &&
+                          hoveredIndex.index === index,
+                      }"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      :class="
+                        hoveredIndex.section === 'Creative Visionary' &&
+                        hoveredIndex.index === index
+                          ? 'h-full '
+                          : 'h-10'
+                      "
+                    >
+                      <h3
+                        v-if="
+                          hoveredIndex.section !== 'Creative Visionary' ||
+                          hoveredIndex.index !== index
+                        "
+                        class="text-lg font-bold"
+                      >
+                        {{ member.name }}
+                      </h3>
+                      <div v-else class="flex flex-col justify-center h-full">
+                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 4: Tech Wizards -->
+            <div class="mt-12 p-8">
+              <h2
+                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+              >
+                Tech Wizards
+              </h2>
+              <div
+                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+              >
+                <div
+                  v-for="(member, index) in filteredTeamMembers('Tech Wizard')"
+                  :key="'techWizards' + index"
+                  @mouseover="handleMouseOver(index, 'Tech Wizard')"
+                  @mouseleave="handleMouseLeave"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                >
+                  <div
+                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                  >
+                    <img
+                      :src="member.image"
+                      alt="Profile Image"
+                      class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                      :class="{
+                        'opacity-55':
+                          hoveredIndex.section === 'Tech Wizard' &&
+                          hoveredIndex.index === index,
+                      }"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      :class="
+                        hoveredIndex.section === 'Tech Wizard' &&
+                        hoveredIndex.index === index
+                          ? 'h-full '
+                          : 'h-10'
+                      "
+                    >
+                      <h3
+                        v-if="
+                          hoveredIndex.section !== 'Tech Wizard' ||
+                          hoveredIndex.index !== index
+                        "
+                        class="text-lg font-bold"
+                      >
+                        {{ member.name }}
+                      </h3>
+                      <div v-else class="flex flex-col justify-center h-full">
+                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -77,52 +558,69 @@
         </div>
       </div>
 
-      <!-- Follow Us or Contact Us -->
-      <div class="m-16 lg:py-8">
-        <div class="flex flex-col md:flex-row md:space-x-6 items-center justify-end">
-          <h2 class="text-2xl font-bold text-gray-800 py-2 px-2">Follow us on:</h2>
-          <div class="flex space-x-6">
-            <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 border-r border-gray-400 pr-4" aria-label="Facebook">
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.494v-9.294h-3.124v-3.622h3.124v-2.671c0-3.1 1.893-4.787 4.659-4.787 1.325 0 2.462.098 2.793.142v3.24l-1.918.001c-1.505 0-1.794.715-1.794 1.764v2.311h3.588l-.467 3.622h-3.121v9.293h6.116c.733 0 1.325-.592 1.325-1.325v-21.349c0-.733-.592-1.325-1.325-1.325z"
-                />
-              </svg>
-            </a>
-            <a  href="#"  class="text-blue-400 hover:text-blue-600 transition-colors duration-200 border-r border-gray-400 pr-4" aria-label="Twitter"  >
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.956-2.178-1.555-3.594-1.555-2.72 0-4.924 2.204-4.924 4.924 0 .386.043.763.127 1.124-4.092-.205-7.719-2.165-10.148-5.144-.424.726-.667 1.57-.667 2.473 0 1.707.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.412.112-.847.171-1.296.171-.317 0-.626-.031-.928-.089.627 1.956 2.444 3.379 4.6 3.418-1.68 1.318-3.804 2.103-6.104 2.103-.396 0-.787-.023-1.175-.068 2.179 1.397 4.768 2.211 7.557 2.211 9.055 0 14.002-7.504 14.002-14.002 0-.213-.005-.425-.014-.637.964-.695 1.8-1.562 2.46-2.549z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="text-pink-600 hover:text-pink-800 transition-colors duration-200 border-r border-gray-400 pr-4" aria-label="Instagram" >
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.315 3.608 1.29.975.975 1.228 2.243 1.29 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.315 2.633-1.29 3.608-.975.975-2.243 1.228-3.608 1.29-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.315-3.608-1.29-.975-.975-1.228-2.243-1.29-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.315-2.633 1.29-3.608.975-.975 2.243-1.228 3.608-1.29 1.265-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.485.066-2.966.314-4.064 1.412s-1.346 2.579-1.412 4.064c-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.066 1.485.314 2.966 1.412 4.064s2.579 1.346 4.064 1.412c1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.485-.066 2.966-.314 4.064-1.412s1.346-2.579 1.412-4.064c.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.066-1.485-.314-2.966-1.412-4.064s-2.579-1.346-4.064-1.412c-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.758-6.162 6.162s2.758 6.162 6.162 6.162 6.162-2.758 6.162-6.162-2.758-6.162-6.162-6.162zm0 10.162c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm6.406-11.845c-.796 0-1.441-.645-1.441-1.441s.645-1.441 1.441-1.441 1.441.645 1.441 1.441-.645 1.441-1.441 1.441z"
-                />
-              </svg>
-            </a>
-            <a  href="#"  class="text-red-600 hover:text-red-800 transition-colors duration-200"   aria-label="YouTube" >
-              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M23.498 6.186a2.9 2.9 0 0 0-2.047-2.047c-1.809-.497-9.067-.497-9.067-.497s-7.257 0-9.067.497a2.9 2.9 0 0 0-2.047 2.047c-.497 1.809-.497 5.586-.497 5.586s0 3.778.497 5.586a2.9 2.9 0 0 0 2.047 2.047c1.809.497 9.067.497 9.067.497s7.257 0 9.067-.497a2.9 2.9 0 0 0 2.047-2.047c.497-1.809.497-5.586.497-5.586s0-3.778-.497-5.586zm-14.182 8.814v-6.8l6.332 3.4-6.332 3.4z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
+      <!-- conclusion -->
+      <section class="bg-gradient-to-r from-regal-blue to-gray-200">
+        <div class="container mx-auto px-4"></div>
+      </section>
 
-        <!-- Connect us on Section -->
-        <div class="flex flex-col md:flex-row md:space-x-6 mt-4 items-center justify-end">
-          <h2 class="text-2xl font-bold text-gray-800 px-4 py-2"> Connect us on:</h2>
-          <div class="text-xl p-2 border rounded-md border-gray-300 bg-regal-blue bg-opacity-90">
-            <a href="mailto:info@bangaliabhibasi.org" class="text-midnight-sapphire hover:underline font-semibold transition-colors duration-200">
-            info@bangaliabhibasi.org</a>
-          </div>
-        </div>
+      <div class="wave-divider bg-gradient-to-r from-amber-50 to-blue-50">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <!-- Gradient Definition -->
+          <defs>
+            <linearGradient
+              id="gradient-fill"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="0%"
+            >
+              <stop offset="0%" style="stop-color: #e2e9ed; stop-opacity: 1" />
+              <!-- Ending color gray-200 #e5e7eb -->
+              <stop
+                offset="100%"
+                style="stop-color: #e5e7eb; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            fill="url(#gradient-fill)"
+          ></path>
+        </svg>
       </div>
 
+      <section class="bg-gradient-to-r from-amber-50 to-blue-50 py-12 sm:py-20">
+        <div class="container mx-auto px-4">
+          <p
+            class="text-lg md:text-3xl text-gray-700 fade-in font-semibold font-cormorant tracking-wide text-center mb-16"
+          >
+            <span>
+              <svg
+                class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-midnight-sapphire mb-2 sm:mb-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 18 14"
+              >
+                <path
+                  d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                />
+              </svg>
+            </span>
+            Our network is set to publish an online digital magazine. We
+            sincerely hope that this magazine will begin as a trilingual
+            platform of exchanging literary and cultural forms between Bangla,
+            English, and French but eventually expand into an intersectional
+            space of multilingual and polyvocal exchange.
+          </p>
+        </div>
+      </section>
     </div>
   </section>
 </template>
@@ -133,77 +631,111 @@ export default {
   components: {},
   data() {
     return {
-      hoveredIndex: null,
+      hoveredIndex: { section: null, index: null },
       teamMembers: [
         {
           name: "Antonio Roberto",
           position: "Founder",
           image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Founder Bio",
         },
         {
           name: "Patricia Angely",
-          position: "Co-Founder",
+          position: "Tech Wizard",
           image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Tech Wizard Bio",
         },
         {
           name: "Jerom Bell",
-          position: "Chairman",
+          position: "Founder",
           image: "https://pagedone.io/asset/uploads/1696238411.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        },
-        {
-          name: "Yasmine Tano",
-          position: "CEO",
-          image: "https://pagedone.io/asset/uploads/1696238425.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        },
-        {
-          name: "Martin Darbys",
-          position: "Product Manager",
-          image: "https://pagedone.io/asset/uploads/1696238446.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Founder Bio",
         },
         {
           name: "Antonio Roberto",
           position: "Founder",
           image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Founder Bio",
         },
         {
           name: "Patricia Angely",
-          position: "Co-Founder",
+          position: "Founder",
           image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        },
-        {
-          name: "Jerom Bell",
-          position: "Chairman",
-          image: "https://pagedone.io/asset/uploads/1696238411.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Founder Bio",
         },
         {
           name: "Yasmine Tano",
-          position: "CEO",
+          position: "Tech Wizard",
           image: "https://pagedone.io/asset/uploads/1696238425.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          bio: "Tech Wizard Bio",
         },
         {
-          name: "Martin Darbys",
-          position: "Product Manager",
-          image: "https://pagedone.io/asset/uploads/1696238446.png",
-          bio: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          name: "John Doe",
+          position: "Content Sculptor",
+          image: "https://pagedone.io/asset/uploads/1696238374.png",
+          bio: "Content Sculptor Bio",
+        },
+        {
+          name: "Jane Smith",
+          position: "Creative Visionary",
+          image: "https://pagedone.io/asset/uploads/1696238396.png",
+          bio: "Creative Visionary Bio",
+        },
+        {
+          name: "Patricia Angely",
+          position: "Creative Visionary",
+          image: "https://pagedone.io/asset/uploads/1696238396.png",
+          bio: "Creative Visionary Bio",
+        },
+        {
+          name: "Patricia Angely",
+          position: "Creative Visionary",
+          image: "https://pagedone.io/asset/uploads/1696238396.png",
+          bio: "TCreative Visionary Bio",
+        },
+        {
+          name: "Yasmine Tano",
+          position: "Creative Visionary Bio",
+          image: "https://pagedone.io/asset/uploads/1696238425.png",
+          bio: "Creative Visionary Bio",
+        },
+        {
+          name: "John Doe",
+          position: "Creative Visionary",
+          image: "https://pagedone.io/asset/uploads/1696238374.png",
+          bio: "Creative Visionary Bio",
+        },
+        {
+          name: "Jane Smith",
+          position: "Content Sculptor",
+          image: "https://pagedone.io/asset/uploads/1696238396.png",
+          bio: "Content Sculptor Bio",
+        },
+        {
+          name: "Yasmine Tano",
+          position: "Creative Visionary Bio",
+          image: "https://pagedone.io/asset/uploads/1696238425.png",
+          bio: "Content Sculptor Bio",
+        },
+        {
+          name: "John Doe",
+          position: "Content Sculptor",
+          image: "https://pagedone.io/asset/uploads/1696238374.png",
+          bio: "Content Sculptor Bio",
         },
       ],
     };
   },
   methods: {
-    handleMouseOver(index) {
-      this.hoveredIndex = index;
+    handleMouseOver(index, section) {
+      this.hoveredIndex = { section, index }; // Store both section and index
     },
-    handleMouseLeave(index) {
-      this.hoveredIndex = null;
+    handleMouseLeave() {
+      this.hoveredIndex = { section: null, index: null }; // Reset on mouse leave
+    },
+    filteredTeamMembers(position) {
+      // Filter team members based on the passed position
+      return this.teamMembers.filter((member) => member.position === position);
     },
   },
 };
@@ -213,7 +745,27 @@ export default {
 .background-img {
   background-image: url("../assets/img/unity_symbol.webp");
 }
+.wave-divider {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .wave-divider svg {
+    height: 150px;
+  }
+}
 .fade-in {
   animation: fadeIn 2s ease-in-out;
 }

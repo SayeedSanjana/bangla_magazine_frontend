@@ -2,12 +2,12 @@
   <section>
 
     <!-- Main Content -->
-    <div class="md:container md:mx-auto m-8 p-4 md:p-6 ">
+    <div class="md:container md:mx-auto md:mt-16 mt-8 p-4 md:p-6 min-h-screen ">
       <div class="space-y-6">
         <div class="bg-gray-50 rounded-lg shadow-md p-4 md:p-8 ">
-          <h1 class="text-3xl font-bold mb-4">Cookie Management Policy</h1>
+          <h1 class="text-3xl font-bold mb-4 font-cormorant text-midnight-sapphire">Cookie Management Policy</h1>
           <p class="text-gray-600 mb-6"><strong>Effective Date:</strong> [Insert Date]</p>
-          <h2 class="text-2xl font-semibold mb-4">1. Introduction</h2>
+          <h2 class="text-2xl font-semibold mb-4 text-midnight-sapphire font-cormorant">1. Introduction</h2>
           <p class="mb-4">
             This Cookie Management Policy outlines the use of cookies on our
             magazine website. We are committed to protecting your privacy and
@@ -16,7 +16,7 @@
             cookies.
           </p>
 
-          <h2 class="text-2xl font-semibold mb-4">2. What are Cookies?</h2>
+          <h2 class="text-2xl font-semibold mb-4  text-midnight-sapphire font-cormorant">2. What are Cookies?</h2>
           <p class="mb-4">
             Cookies are small text files stored on your device (computer,
             smartphone, tablet) when you visit a website. They are used to make
@@ -24,7 +24,7 @@
             collect information about how the website is being used.
           </p>
 
-          <h2 class="text-2xl font-semibold mb-4">3. Types of Cookies We Use</h2>
+          <h2 class="text-2xl font-bold mb-4  text-midnight-sapphire font-cormorant">3. Types of Cookies We Use</h2>
           <p class="mb-4">
             Our website uses only essential cookies necessary for the operation
             of the website. These include:
@@ -38,7 +38,7 @@
             </li>
           </ul>
 
-          <h2 class="text-2xl font-semibold mb-4">4. How We Use Cookies</h2>
+          <h2 class="text-2xl font-semibold mb-4  text-midnight-sapphire font-cormorant">4. How We Use Cookies</h2>
           <p class="mb-4">We use JWT authentication cookies for the following purposes:</p>
           <ul class="list-disc list-inside mb-4">
             <li>
@@ -55,7 +55,7 @@
             </li>
           </ul>
 
-          <h2 class="text-2xl font-semibold mb-4">5. Managing Cookies</h2>
+          <h2 class="text-2xl font-bold mb-4  text-midnight-sapphire font-cormorant">5. Managing Cookies</h2>
           <p class="mb-4">
             You have control over the cookies stored on your device. Here’s how
             you can manage them:
@@ -70,7 +70,7 @@
             </li>
           </ul>
 
-          <h2 class="text-2xl font-semibold mb-4">6. Your Consent</h2>
+          <h2 class="text-2xl font-bold mb-4  text-midnight-sapphire font-cormorant">6. Your Consent</h2>
           <p class="mb-4">
             By using our website, you consent to the use of essential cookies as
             described in this policy. If you do not agree to our use of cookies,
@@ -78,7 +78,7 @@
             using our website.
           </p>
 
-          <h2 class="text-2xl font-semibold mb-4">7. Changes to This Policy</h2>
+          <h2 class="text-2xl font-bold mb-4  text-midnight-sapphire font-cormorant">7. Changes to This Policy</h2>
           <p class="mb-4">
             We may update this Cookie Management Policy from time to time to
             reflect changes in our practices or for other operational, legal, or
@@ -87,7 +87,7 @@
             date.
           </p>
 
-          <h2 class="text-2xl font-semibold mb-4">8. Contact Us</h2>
+          <h2 class="text-2xl font-bold mb-4  text-midnight-sapphire font-cormorant">8. Contact Us</h2>
           <p class="mb-4">
             If you have any questions or concerns about this Cookie Management
             Policy, please contact us at:

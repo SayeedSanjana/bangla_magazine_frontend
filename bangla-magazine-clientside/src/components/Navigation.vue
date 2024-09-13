@@ -1,9 +1,17 @@
 <template>
   <!-- Navigation Bar -->
-  <nav class="bg-gradient-to-r from-gray-600 to-midnight-sapphire shadow-lg">
-    <div class="container mx-auto p-4 md:p-5 flex justify-between md:justify-around lg:justify-around">
+  <nav
+    class="bg-gradient-to-r from-gray-200 to-amber-50 shadow-lg font-semibold"
+  >
+    <div
+      class="container mx-auto p-4 md:p-6 flex justify-between md:justify-around lg:justify-around"
+    >
       <!-- Mobile Menu Button -->
-      <button @click="toggleMenu" id="menu-toggle" class="md:hidden flex text-white focus:outline-none">
+      <button
+        @click="toggleMenu"
+        id="menu-toggle"
+        class="md:hidden flex text-white focus:outline-none"
+      >
         <svg
           class="w-8 h-8"
           fill="none"
@@ -21,44 +29,60 @@
       </button>
 
       <!-- Navigation Links -->
-      <div :class="{ block: isMenuVisible, hidden: !isMenuVisible }" class="space-y-2 md:space-y-0 md:flex md:flex-row md:space-x-6 md:w-full md:justify-center text-lg">
+      <div
+        :class="{ block: isMenuVisible, hidden: !isMenuVisible }"
+        class="space-y-2 md:space-y-0 md:flex md:flex-row md:space-x-6 md:w-full md:justify-center"
+      >
         <router-link
           to="/"
-          class="text-gray-200 hover:text-honey-gold font-bold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
           :class="{
-            'underline decoration-2 text-gray-200  underline-offset-8':
+            'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/'),
-          }">
-          <img src="../assets/svg/home.svg" class="w-5 md:w-6 h-5 md:h-6" alt="Home"/>
+          }"
+        >
+          <img
+            src="../assets/svg/home.svg"
+            class="w-5 md:w-6 h-5 md:h-6 font-bold"
+            alt="Home"
+          />
           <span class="ml-2">Home</span>
         </router-link>
         <router-link
           to="/about-us"
-          class="text-gray-200 hover:text-honey-gold font-semibold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
           :class="{
-            'underline decoration-2 text-gray-200  underline-offset-8':
+            'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/about-us'),
           }"
         >
-          <img src="../assets/svg/about.svg" class="w-5 md:w-6 h-5 md:h-6" alt="About Us"/>
+          <img
+            src="../assets/svg/about.svg"
+            class="w-5 md:w-6 h-5 md:h-6 font-bold"
+            alt="About Us"
+          />
           <span class="ml-2">About Us</span>
         </router-link>
         <router-link
           to="/contribute"
-          class="text-gray-200 hover:text-honey-gold font-semibold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
           :class="{
-            'underline decoration-2 text-gray-200 underline-offset-8':
+            'underline decoration-2 text-amber-700 underline-offset-8':
               isActiveRoute('/contribute'),
           }"
         >
-          <img src="../assets/svg/contribute.svg" class="w-5 md:w-6 h-5 md:h-6" alt="Contribute" />
-          <span class="ml-2">How To Get Involved?</span>
+          <img
+            src="../assets/svg/contribute.svg"
+            class="w-5 md:w-6 h-5 md:h-6 font-bold"
+            alt="Contribute"
+          />
+          <span class="ml-2">Contribute Now</span>
         </router-link>
       </div>
     </div>
   </nav>
 </template>
-  
+
 <script>
 export default {
   name: "Navigation",
@@ -77,7 +101,5 @@ export default {
   },
 };
 </script>
-  
-<style>
-</style>
-  
+
+<style></style>
