@@ -13,11 +13,14 @@
               class="border-b-2 border-gray-100 pb-4 mb-4"
             >
               <h3
-                class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-midnight-sapphire px-2 py-1 font-cormorant"
+                class="text-xl sm:text-2xl md:text-3xl mb-4 sm:mb-6 text-midnight-sapphire px-2 py-1"
               >
-                Join the conversation with the B.A.N.G.L.A. community
+                <span class="font-cormorant font-bold">
+                  Join the conversation with the B.A.N.G.L.A. community</span
+                >
+
                 <br />
-                <span class="text-sm sm:text-lg md:text-xl mt-2 text-gray-800"
+                <span class="text-base mt-2 text-gray-800"
                   >Contribute with your visual/performance art, prose, poetry,
                   essays, and more..</span
                 >
@@ -47,7 +50,7 @@
                       :aria-expanded="isOpen(index)"
                       :aria-controls="`accordion-open-body-${index}`"
                     >
-                      <span class="flex items-center text-gray-700">
+                      <span class="flex items-center text-base text-gray-700">
                         <svg
                           class="w-5 h-5 me-2 shrink-0 text-amber-600"
                           fill="currentColor"
@@ -97,7 +100,7 @@
                   <div
                     v-show="isOpen(index)"
                     :id="`accordion-open-body-${index}`"
-                    class="p-5 border border-b-0 border-gray-200 bg-slate-100 text-gray-700 text-sm sm:text-base md:text-lg"
+                    class="p-5 border border-b-0 border-gray-200 bg-slate-100 text-gray-700 text-sm md:text-base"
                     :aria-labelledby="`accordion-open-heading-${index}`"
                     v-html="item.content"
                   ></div>
@@ -113,12 +116,10 @@
             >
               Submit Your Work For Review
             </h3>
-            <p
-              class="text-sm sm:text-lg font-cormorant font-bold py-6 text-gray-700 md:mb-6"
-            >
+            <p class="text-base py-6 text-gray-800 md:mb-6">
               Complete the form below to submit your work.
             </p>
-            <form action="#" method="POST" class="space-y-4">
+            <form action="#" method="POST" class="space-y-4 text-base">
               <div class="flex flex-col sm:flex-row">
                 <div class="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
                   <label for="first_name" class="block font-medium"
@@ -269,7 +270,7 @@
                   </svg>
                 </span>
                 <span
-                  class="ease uppercase absolute flex h-full w-full transform items-center text-center text-white font-semibold tracking-widest text-xs justify-center transition-all duration-300 group-hover:translate-x-full"
+                  class="ease text-base absolute flex h-full w-full transform items-center text-center text-white font-semibold tracking-widest justify-center transition-all duration-300 group-hover:translate-x-full"
                   >Submit Form</span
                 >
                 <span class="invisible relative">Submit</span>

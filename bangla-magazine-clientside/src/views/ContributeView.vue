@@ -22,7 +22,7 @@
               </p>
               <button
                 @click="submissionForm"
-                class="text-lg px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg mt-3 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
+                class="text-base px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg mt-3 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
               >
                 Contribute Now..
               </button>
@@ -49,7 +49,7 @@
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
               The Magazine
             </h2>
-            <p class="font-light sm:text-xl text-gray-700 mb-4">
+            <p class="font-light text-base text-gray-700 mb-4">
               Join us as
               <span class="text-midnight-sapphire font-bold">Porijaan</span>,
               BANGLA’s premier digital magazine, embarks on a journey of
@@ -59,18 +59,20 @@
               more. Submit today and let your voice resonate in a global,
               multicultural dialogue.
             </p>
-            <p class="font-light sm:text-xl text-gray-700">
+            <p class="font-light text-base text-gray-700">
               The magazine features two main sections with sub-sections covering
               fiction, non-fiction, travel, science, health, sports, art,
               photography, cartoons, interviews, and scripts. One section will
               introduce an
-              <span class="text-midnight-sapphire font-bold">Annual Theme</span>
+              <span class="text-midnight-sapphire font-semibold"
+                >Annual Theme</span
+              >
               , starting with ‘Bangla-French Crossings,’ exploring interactions
               between Bangla and French languages, cultures, and worldviews. It
               will include public articles on artistic or literary
               interventions, translations, and personal experiences. The second
               section, the
-              <span class="text-midnight-sapphire font-bold"
+              <span class="text-midnight-sapphire font-semibold"
                 >Annual Celebration</span
               >
               , will honor significant Bangla literary and cultural figures on
@@ -158,7 +160,7 @@
 
                 <div>
                   <!-- Title -->
-                  <h5 class="mt-6 mb-2 text-2xl tracking-tight text-amber-600">
+                  <h5 class="mt-6 mb-2 text-lg tracking-tight text-amber-600">
                     {{ topic.name }}
                   </h5>
 
@@ -168,7 +170,7 @@
                   ></div>
 
                   <!-- Description -->
-                  <p class="font-normal text-gray-600">
+                  <p class="font-normal text-base text-gray-600">
                     {{ topic.description }}
                   </p>
                 </div>
@@ -177,7 +179,7 @@
                 <div class="mt-4">
                   <button
                     href="#"
-                    class="inline-flex font-medium items-center text-midnight-sapphire hover:underline"
+                    class="inline-flex font-medium text-sm items-center text-midnight-sapphire hover:underline"
                   >
                     See our guideline
                     <svg
@@ -215,7 +217,7 @@
           >
             <!-- Left Section: Sticky on Scroll -->
             <div class="w-full lg:w-1/2 md:pr-6 lg:sticky lg:top-0 self-start">
-              <p class="text-amber-600 text-3xl text-justify pb-4">
+              <p class="text-amber-600 text-xl text-justify pb-4">
                 Bangla-French-Crossings
               </p>
 
@@ -231,10 +233,10 @@
             <!-- Right Section: Accordion -->
             <div class="lg:w-1/2 w-full lg:overflow-y-auto">
               <div>
-                <p class="text-amber-600 text-3xl text-justify p-4">
+                <p class="text-amber-600 text-xl text-justify p-4">
                   Become part of-
                 </p>
-                <p class="text-gray-600 text-lg text-justify mt-2 p-4">
+                <p class="text-gray-600 text-base text-justify mt-2 p-4">
                   Our inaugural issue explores the rich connections between
                   Bangla and French languages, cultures, and histories. We
                   invite submissions that delve into the intersections of these
@@ -249,7 +251,7 @@
                     <h2 :id="`accordion-open-heading-${index}`">
                       <button
                         type="button"
-                        class="flex items-center justify-between w-full p-4 sm:p-5 font-medium text-gray-400 rounded-xl border text-base sm:text-lg border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3"
+                        class="flex items-center justify-between w-full p-4 sm:p-5 font-medium text-gray-400 rounded-xl border text-base border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3"
                         @click="toggleAccordion(index)"
                         :aria-expanded="isOpen(index)"
                         :aria-controls="`accordion-open-body-${index}`"
@@ -304,7 +306,7 @@
                     <div
                       v-show="isOpen(index)"
                       :id="`accordion-open-body-${index}`"
-                      class="p-5 border border-b-0 border-gray-200 bg-slate-100 text-gray-700 text-sm sm:text-base md:text-lg"
+                      class="p-5 border border-b-0 border-gray-200 bg-slate-100 text-gray-700 text-sm md:text-base"
                       :aria-labelledby="`accordion-open-heading-${index}`"
                       v-html="item.content"
                     ></div>
@@ -325,10 +327,10 @@
           >
             Literary and Cultural Figures
           </h2>
-          <p class="text-amber-600 text-3xl text-justify my-2">
+          <p class="text-amber-600 text-xl text-justify my-2">
             Celebrating Icons
           </p>
-          <p class="text-gray-600 text-lg text-justify my-8">
+          <p class="text-gray-600 text-base text-justify my-8">
             This section honors literary and cultural icons whose works have
             left an indelible mark on Bangla and world culture. For the
             inaugural issue, we commemorate the anniversaries of figures who
@@ -373,7 +375,9 @@
                     <p class="text-red-500 mb-4">
                       {{ card.anniversary }}
                     </p>
-                    <p class="text-gray-500 mb-4">{{ card.content }}</p>
+                    <p class="text-gray-500 mb-4 text-sm">
+                      {{ card.content }}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -408,7 +412,7 @@
           >
             Memory of Luminaries
           </h2>
-          <p class="text-amber-600 text-3xl text-justify my-2">
+          <p class="text-amber-600 text-xl text-justify my-2">
             In Memory of Luminaries
           </p>
           <p class="text-gray-600 text-lg text-justify my-8">
@@ -421,12 +425,7 @@
           <div class="flex justify-center items-center md:pt-12">
             <div class="overflow-hidden relative w-full">
               <!-- Slider wrapper -->
-              <div
-                class="flex transition-transform duration-300 ease-out"
-                :style="`transform: translateX(-${
-                  currentSlide * (100 / figuresPerPage)
-                }%)`"
-              >
+              <div class="flex transition-transform duration-300 ease-out">
                 <!-- Cards -->
                 <div
                   v-for="(card, index) in luminaries"
@@ -451,7 +450,9 @@
                       {{ card.birthdate }}
                     </p>
 
-                    <p class="text-gray-500 mb-4">{{ card.description }}</p>
+                    <p class="text-gray-500 mb-4 text-sm">
+                      {{ card.description }}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -474,12 +475,12 @@
           >
             Join Now...
           </h2>
-          <p class="text-white text-xl text-justify my-2 mb-6">
+          <p class="text-white text-lg text-justify my-2 mb-6">
             Share your work and become a valued member of our community!
           </p>
           <button
             @click="submissionForm"
-            class="text-lg px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
+            class="text-base px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
           >
             Contribute Now..
           </button>

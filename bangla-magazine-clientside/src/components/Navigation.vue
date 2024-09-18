@@ -35,7 +35,7 @@
       >
         <router-link
           to="/"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/'),
@@ -50,7 +50,7 @@
         </router-link>
         <router-link
           to="/about-us"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/about-us'),
@@ -65,7 +65,7 @@
         </router-link>
         <router-link
           to="/contribute"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center"
+          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700 underline-offset-8':
               isActiveRoute('/contribute'),

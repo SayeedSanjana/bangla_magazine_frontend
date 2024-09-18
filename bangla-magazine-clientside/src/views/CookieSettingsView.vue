@@ -2,7 +2,7 @@
   <section>
 
     <!-- Main Content -->
-    <div class="md:container md:mx-auto md:mt-16 mt-8 p-4 md:p-6 min-h-screen ">
+    <div class="md:container md:mx-auto md:mt-16 mt-8 p-4 md:p-6 min-h-screen text-base ">
       <div class="space-y-6">
         <div class="bg-gray-50 rounded-lg shadow-md p-4 md:p-8 ">
           <h1 class="text-3xl font-bold mb-4 font-cormorant text-midnight-sapphire">Cookie Management Policy</h1>

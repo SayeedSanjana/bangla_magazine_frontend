@@ -32,7 +32,7 @@
                   />
                 </svg>
                 <p
-                  class="text-sm md:text-xl pl-1 sm:pl-2 mb-2 sm:mb-4 text-gray-500"
+                  class="text-sm md:text-lg pl-1 sm:pl-2 mb-2 sm:mb-4 text-gray-500"
                 >
                   We are a Montreal-based Bangali diaspora committed to
                   connecting Bengalis worldwide and promoting our rich cultural
@@ -77,7 +77,7 @@
                     </svg>
                   </span>
                   <span
-                    class="ease absolute flex h-full w-full transform items-center text-gray-800 font-semibold tracking-wider justify-center transition-all duration-300 group-hover:translate-x-full"
+                    class="ease absolute flex h-full w-full transform items-center text-gray-700 font-semibold text-base justify-center transition-all duration-300 group-hover:translate-x-full"
                     >Click to Begin Your Journey</span
                   >
                   <span class="invisible relative">Get Started</span>
@@ -105,7 +105,7 @@
     <div class="bg-regal-blue py-10 sm:py-20 hidden md:block">
       <div class="md:container md:mx-auto">
         <h2
-          class="text-2xl sm:text-3xl font-semibold font-cormorant text-midnight-sapphire text-center pb-4"
+          class="text-2xl sm:text-3xl font-cormorant text-midnight-sapphire text-center pb-4"
         >
           "Step in, publish your work and start making an impact with our
           vibrant community today!"

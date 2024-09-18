@@ -78,7 +78,7 @@
                 >
                   Who We Are?
                 </h2>
-                <p class="font-light text-lg text-gray-700 text-justify">
+                <p class="font-light text-base text-gray-700 text-justify">
                   Bangla continues to be the shared language of expression for a
                   considerable part of the global population (approximately, 250
                   million native speakers and 41 million second language
@@ -111,7 +111,7 @@
                   but also those who have adopted it through their mediated or
                   lived experiences.
                 </p>
-                <p class="font-light text-lg text-gray-700 text-justify pt-6">
+                <p class="font-light text-base text-gray-700 text-justify pt-6">
                   The recognition of
                   <span class="text-midnight-sapphire">February 21</span> as the
                   <span class="text-midnight-sapphire"
@@ -134,7 +134,7 @@
                   connections with Bangalis of different perspectives and across
                   different countries.
                 </p>
-                <p class="font-light text-lg text-gray-700 text-justify pt-6">
+                <p class="font-light text-base text-gray-700 text-justify pt-6">
                   Building on such observations, we have ideated our network,
                   <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>, an
                   acronym for Bangali Abhibasi Network: a Glocal Linguo-cultural
@@ -169,7 +169,7 @@
                 Bangla as the language of thinking, questioning, and expressing
               </h2>
               <p
-                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
+                class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
               >
                 We believe that nurturing the use of Bangla in a land away from
                 home can only be effectivized if communicating and reading
@@ -208,7 +208,7 @@
                 Bangla as a mode of exchange
               </h2>
               <p
-                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
+                class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
               >
                 Based out of Canada, our network will primarily focus on
                 building a platform of trilingual exchange in Bangla, French,
@@ -246,7 +246,7 @@
                 Bangla Language Teaching
               </h2>
               <p
-                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
+                class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
               >
                 We believe that without a sense of Bangla, as a language and its
                 literary lineage, it becomes quite difficult for the second and
@@ -283,7 +283,7 @@
                 Tracing international and global experiences of Bangalis
               </h2>
               <p
-                class="text-gray-700 text-lg text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
+                class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
               >
                 One of our primary objectives is to identify the global and
                 glocal existence(s) of Bangalis across the world - and in the
@@ -321,7 +321,7 @@
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
               Meet The Team
             </h2>
-            <p class="font-light sm:text-xl text-gray-700">
+            <p class="font-light text-lg text-gray-700">
               Passionate about preserving and promoting Bengali culture, our
               team is a vibrant mix of storytellers, artists, and language
               enthusiasts. Together, we celebrate our heritage and connect the
@@ -373,7 +373,7 @@
                           hoveredIndex.section !== 'Founder' ||
                           hoveredIndex.index !== index
                         "
-                        class="text-lg font-bold"
+                        class="text-base font-semibold"
                       >
                         {{ member.name }}
                       </h3>
@@ -438,7 +438,9 @@
                         {{ member.name }}
                       </h3>
                       <div v-else class="flex flex-col justify-center h-full">
-                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <h3 class="text-base font-semibold">
+                          {{ member.name }}
+                        </h3>
                         <p class="text-sm mt-2">{{ member.bio }}</p>
                       </div>
                     </div>
@@ -498,7 +500,9 @@
                         {{ member.name }}
                       </h3>
                       <div v-else class="flex flex-col justify-center h-full">
-                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
+                        <h3 class="text-base font-semibold">
+                          {{ member.name }}
+                        </h3>
                         <p class="text-sm mt-2">{{ member.bio }}</p>
                       </div>
                     </div>
@@ -551,7 +555,7 @@
                           hoveredIndex.section !== 'Tech Wizard' ||
                           hoveredIndex.index !== index
                         "
-                        class="text-lg font-bold"
+                        class="text-base font-semibold"
                       >
                         {{ member.name }}
                       </h3>
@@ -609,7 +613,7 @@
       <div class="bg-gradient-to-r from-amber-50 to-blue-50 py-12 sm:py-20">
         <div class="container mx-auto px-4">
           <p
-            class="text-lg md:text-3xl text-gray-700 fade-in font-semibold font-cormorant tracking-wide text-center mb-16"
+            class="text-lg md:text-3xl text-gray-700 fade-in font-cormorant tracking-wide text-center mb-16"
           >
             <span>
               <svg

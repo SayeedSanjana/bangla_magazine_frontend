@@ -40,6 +40,11 @@
                 About Us
               </button>
             </li>
+          </ul>
+        </div>
+        <!--End Col-->
+        <div class="lg:mx-auto text-left text-sm sm:text-base mx-8">
+          <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
                 @click="contribute"
@@ -48,25 +53,12 @@
                 Contribute to Our Organization
               </button>
             </li>
-          </ul>
-        </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left text-sm sm:text-base mx-8">
-          <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
                 @click="cookie"
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
               >
                 Cookie Management
-              </button>
-            </li>
-
-            <li class="mb-4 sm:mb-6">
-              <button
-                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
-              >
-                Registration Details
               </button>
             </li>
           </ul>
@@ -92,9 +84,7 @@
       >
         <div class="lg:mx-8">
           <div class="py-4 lg:px-16 pb-0">
-            <p
-              class="text-lg text-gray-600 lg:max-w-xs lg:text-left font-semibold"
-            >
+            <p class="text-lg text-gray-800 lg:max-w-xs lg:text-left">
               Address:
             </p>
             <p class="text-gray-600 text-base">
@@ -102,9 +92,7 @@
             </p>
           </div>
           <div class="pt-4 lg:px-16 pb-0">
-            <p
-              class="text-base text-gray-600 lg:max-w-xs lg:text-left font-semibold"
-            >
+            <p class="text-base text-gray-800 lg:max-w-xs lg:text-left">
               Email Us:
             </p>
             <a
@@ -151,11 +139,14 @@
       <!--Grid-->
       <div class="py-7 border-t border-gray-300">
         <div class="text-center lg:flex-row py-2">
-          <p class="text-sm sm:text-lg text-gray-500">
+          <p class="text-sm sm:text-base text-gray-500">
             © 2024 B.A.N.G.L.A • All rights reserved.
           </p>
-          <p class="text-sm sm:text-lg text-gray-500">
+          <p class="text-sm sm:text-base text-gray-500">
             Quebec Non-Profit Registration Number: 1180053424
+          </p>
+          <p class="text-sm sm:text-base text-gray-500">
+            Federal Non-Profit Registration Number: 1618784-6
           </p>
         </div>
       </div>
