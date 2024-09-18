@@ -11,7 +11,7 @@
             Who We Are?
           </h2> -->
           <div
-            class="text-lg md:text-3xl font-bold mb-1 text-honey-gold fade-in font-cormorant italic tracking-wide text-center mt-8 md:mt-14"
+            class="text-lg md:text-4xl mb-1 text-honey-gold fade-in font-marck italic tracking-wide text-center pt-8 md:pt-14"
           >
             <p>" In Bangla I love</p>
             <p>Bangla is my love</p>
@@ -21,7 +21,7 @@
             <p>In Ganga and Padma appear… "</p>
           </div>
 
-          <div class="md:mb-14 mb-8">
+          <div class="md:pb-14 pb-8">
             <p
               class="text-base max-w-7xl text-gray-300 font-semibold fade-in mt-4 text-right"
             >
@@ -57,81 +57,93 @@
 
       <!-- Who We Are -->
       <div
-        class="bg-gradient-to-r from-regal-blue to-amber-100 border border-gray-200 rounded-lg shadow pt-8 mb:pt-16 mb-8 md:mb-16"
+        class="bg-gradient-to-r from-amber-100 to-regal-blue border border-gray-200 rounded-lg shadow pt-8 mb:pt-16 mb-8 md:mb-16"
       >
         <div class="py-8 px-2 mx-auto max-w-screen-xl">
-          <div class="text-center mb-16">
-            <h2
-              class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire font-cormorant"
-            >
-              Who We Are?
-            </h2>
-            <p class="font-light text-lg text-gray-700 text-justify">
-              Bangla continues to be the shared language of expression for a
-              considerable part of the global population (approximately, 250
-              million native speakers and 41 million second language speakers)
-              even though many of them, like us, continue to drift away
-              physically from the geographical area where it is a major spoken
-              and written language - primarily, in
-              <span class="text-midnight-sapphire font-semibold"
-                >Bangladesh</span
-              >
-              and some parts of
-              <span class="text-midnight-sapphire font-semibold">India</span>. A
-              corollary to being a migrant or an expat is the often
-              unintentional and unnoticed assimilation in their adopted land(s)
-              and language(s) driven by the constant need of communication in a
-              non-native language in both professional spaces and social
-              circles. While this results in a certain ‘globalization’ of
-              Bangalis through the movement of people and ideas, it also
-              diminishes the presence of Bangla, the language, in our daily
-              parlance. Oftentimes, the language is relegated to silent musings
-              and nostalgic reveries of a world left behind. At times, this is
-              directly reflected through the lives of second-generation Bangalis
-              across the world for whom the transition from a linguistic
-              familiarity to a shared collective identity remains a constant
-              struggle. Yet certain moments of collective engagement in Bangla,
-              the language, during religio-cultural events, family and friendly
-              gatherings, academic conferences, protest movements or even social
-              media interactions provide a sense of camaraderie in lands far
-              from home. This makes the language and its cultural coordinates
-              accessible to not only those who ethnically identify as Bangali or
-              use Bangla as their native language, but also those who have
-              adopted it through their mediated or lived experiences. The
-              recognition of
-              <span class="text-midnight-sapphire font-semibold"
-                >February 21</span
-              >
-              as the
-              <span class="text-midnight-sapphire font-semibold"
-                >International Mother Language Day</span
-              >
-              by
-              <span class="text-midnight-sapphire font-semibold">UNESCO</span>
-              (observed since 2000) commemorates one of the most significant
-              events in the recent history of the language, that is,
-              <span class="text-midnight-sapphire font-semibold"
-                >Bhasha Andolon</span
-              >
-              (transliterated as “The Language Movement”). Nonetheless, what
-              remains untapped is an immensely diverse potential that
-              characterises Bangla as the cradle for a collective of
-              intersectional worldviews and not just a landmass or language. The
-              huge geographical presence of Bangla speakers implies that this
-              ‘worldview’ currently encompasses large swathes of the globe.
-              Therefore, the diverse - and many - ‘Bengals’ that exist now could
-              perhaps fully appreciate or explore their modern multifarious
-              contours and identities by forging connections with Bangalis of
-              different perspectives and across different countries. Building on
-              such observations, we have ideated our network,
-              <span class="text-midnight-sapphire font-bold italic"
-                >B.A.N.G.L.A.</span
-              >, an acronym for Bangali Abhibasi Network: a Glocal
-              Linguo-cultural Association. We endeavour to build an
-              intersectional space for engagement between the Bangali diaspora,
-              their homeland(s), and consciously extend it to everyone in
-              between.
-            </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <!-- Left 1/3 with Image -->
+            <div class="md:col-span-1 hidden md:block">
+              <img
+                src="../assets/img/about1-img.png"
+                alt="Image representing Bangla culture"
+                class="w-full h-auto object-cover rounded shadow\sm"
+              />
+            </div>
+
+            <!-- Right 2/3 with Content -->
+            <div class="md:col-span-2">
+              <div class="text-center md:text-left mb-16">
+                <h2
+                  class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
+                >
+                  Who We Are?
+                </h2>
+                <p class="font-light text-lg text-gray-700 text-justify">
+                  Bangla continues to be the shared language of expression for a
+                  considerable part of the global population (approximately, 250
+                  million native speakers and 41 million second language
+                  speakers) even though many of them, like us, continue to drift
+                  away physically from the geographical area where it is a major
+                  spoken and written language - primarily, in
+                  <span class="text-midnight-sapphire">Bangladesh</span> and
+                  some parts of
+                  <span class="text-midnight-sapphire">India</span>. A corollary
+                  to being a migrant or an expat is the often unintentional and
+                  unnoticed assimilation in their adopted land(s) and
+                  language(s) driven by the constant need of communication in a
+                  non-native language in both professional spaces and social
+                  circles. While this results in a certain ‘globalization’ of
+                  Bangalis through the movement of people and ideas, it also
+                  diminishes the presence of Bangla, the language, in our daily
+                  parlance. Oftentimes, the language is relegated to silent
+                  musings and nostalgic reveries of a world left behind. At
+                  times, this is directly reflected through the lives of
+                  second-generation Bangalis across the world for whom the
+                  transition from a linguistic familiarity to a shared
+                  collective identity remains a constant struggle. Yet certain
+                  moments of collective engagement in Bangla, the language,
+                  during religio-cultural events, family and friendly
+                  gatherings, academic conferences, protest movements or even
+                  social media interactions provide a sense of camaraderie in
+                  lands far from home. This makes the language and its cultural
+                  coordinates accessible to not only those who ethnically
+                  identify as Bangali or use Bangla as their native language,
+                  but also those who have adopted it through their mediated or
+                  lived experiences.
+                </p>
+                <p class="font-light text-lg text-gray-700 text-justify pt-6">
+                  The recognition of
+                  <span class="text-midnight-sapphire">February 21</span> as the
+                  <span class="text-midnight-sapphire"
+                    >International Mother</span
+                  >
+                  Language Day by
+                  <span class="text-midnight-sapphire">UNESCO</span> (observed
+                  since 2000) commemorates one of the most significant events in
+                  the recent history of the language, that is,
+                  <span class="text-midnight-sapphire">Bhasha Andolon</span>
+                  (transliterated as “The Language Movement”). Nonetheless, what
+                  remains untapped is an immensely diverse potential that
+                  characterises Bangla as the cradle for a collective of
+                  intersectional worldviews and not just a landmass or language.
+                  The huge geographical presence of Bangla speakers implies that
+                  this ‘worldview’ currently encompasses large swathes of the
+                  globe. Therefore, the diverse - and many - ‘Bengals’ that
+                  exist now could perhaps fully appreciate or explore their
+                  modern multifarious contours and identities by forging
+                  connections with Bangalis of different perspectives and across
+                  different countries.
+                </p>
+                <p class="font-light text-lg text-gray-700 text-justify pt-6">
+                  Building on such observations, we have ideated our network,
+                  <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>, an
+                  acronym for Bangali Abhibasi Network: a Glocal Linguo-cultural
+                  Association. We endeavour to build an intersectional space for
+                  engagement between the Bangali diaspora, their homeland(s),
+                  and consciously extend it to everyone in between.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -141,7 +153,7 @@
         class="mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2 mx-auto max-w-screen-xl"
       >
         <h2
-          class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire text-center font-cormorant"
+          class="text-4xl md:text-6xl mb-8 text-gray-800 text-center font-cormorant"
         >
           What We Aim?
         </h2>
@@ -179,9 +191,9 @@
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <img
-                src="../assets/svg/Thinking1.svg"
+                src="../assets/img/Vector1.png"
                 alt="SVG Image 1"
-                class="w-80 h-auto"
+                class="w-96 h-auto"
               />
             </div>
           </div>
@@ -217,9 +229,9 @@
             <!-- SVG on Left -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <img
-                src="../assets/svg/exchange.svg"
+                src="../assets/img/Vector2.png"
                 alt="SVG Image 2"
-                class="w-2/3 h-auto"
+                class="w-96 h-auto"
               />
             </div>
           </div>
@@ -254,9 +266,9 @@
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <img
-                src="../assets/svg/Knowledge-bro.svg"
+                src="../assets/img/Vector3.png"
                 alt="SVG Image 1"
-                class="w-96 h-96"
+                class="w-96 h-auto"
               />
             </div>
           </div>
@@ -291,9 +303,9 @@
             <!-- SVG on Left -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <img
-                src="../assets/svg/world.svg"
+                src="../assets/img/Vector4.png"
                 alt="SVG Image 2"
-                class="w-96 h-96"
+                class="w-96 h-auto"
               />
             </div>
           </div>
@@ -306,9 +318,7 @@
       >
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
           <div class="text-center mb-8">
-            <h2
-              class="text-4xl md:text-6xl font-bold mb-8 text-midnight-sapphire font-cormorant"
-            >
+            <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
               Meet The Team
             </h2>
             <p class="font-light sm:text-xl text-gray-700">
@@ -322,7 +332,7 @@
             <!-- Section 1: Founders -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
                 Founders
               </h2>
@@ -380,7 +390,7 @@
             <!-- Section 2: Content Sculptors -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
                 Content Sculptors
               </h2>
@@ -440,7 +450,7 @@
             <!-- Section 3: Creative Visionaries -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
                 Creative Visionaries
               </h2>
@@ -500,7 +510,7 @@
             <!-- Section 4: Tech Wizards -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-amber-700 font-cormorant mb-12"
+                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
                 Tech Wizards
               </h2>
@@ -559,9 +569,9 @@
       </div>
 
       <!-- conclusion -->
-      <section class="bg-gradient-to-r from-regal-blue to-gray-200">
+      <div class="bg-gradient-to-r from-regal-blue to-gray-200">
         <div class="container mx-auto px-4"></div>
-      </section>
+      </div>
 
       <div class="wave-divider bg-gradient-to-r from-amber-50 to-blue-50">
         <svg
@@ -595,14 +605,15 @@
         </svg>
       </div>
 
-      <section class="bg-gradient-to-r from-amber-50 to-blue-50 py-12 sm:py-20">
+      <!-- Note -->
+      <div class="bg-gradient-to-r from-amber-50 to-blue-50 py-12 sm:py-20">
         <div class="container mx-auto px-4">
           <p
             class="text-lg md:text-3xl text-gray-700 fade-in font-semibold font-cormorant tracking-wide text-center mb-16"
           >
             <span>
               <svg
-                class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-midnight-sapphire mb-2 sm:mb-4"
+                class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-honey-gold mb-2 sm:mb-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -620,7 +631,7 @@
             space of multilingual and polyvocal exchange.
           </p>
         </div>
-      </section>
+      </div>
     </div>
   </section>
 </template>

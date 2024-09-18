@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation Bar -->
   <nav
-    class="bg-gradient-to-r from-gray-200 to-amber-50 shadow-lg font-semibold"
+    class="bg-gradient-to-r from-gray-200 to-amber-50 shadow-lg font-semibold border-b border-opacity-30 border-gray-300"
   >
     <div
       class="container mx-auto p-4 md:p-6 flex justify-between md:justify-around lg:justify-around"
@@ -41,11 +41,11 @@
               isActiveRoute('/'),
           }"
         >
-          <img
+          <!-- <img
             src="../assets/svg/home.svg"
             class="w-5 md:w-6 h-5 md:h-6 font-bold"
             alt="Home"
-          />
+          /> -->
           <span class="ml-2">Home</span>
         </router-link>
         <router-link
@@ -56,11 +56,11 @@
               isActiveRoute('/about-us'),
           }"
         >
-          <img
+          <!-- <img
             src="../assets/svg/about.svg"
             class="w-5 md:w-6 h-5 md:h-6 font-bold"
             alt="About Us"
-          />
+          /> -->
           <span class="ml-2">About Us</span>
         </router-link>
         <router-link
@@ -71,11 +71,11 @@
               isActiveRoute('/contribute'),
           }"
         >
-          <img
+          <!-- <img
             src="../assets/svg/contribute.svg"
             class="w-5 md:w-6 h-5 md:h-6 font-bold"
             alt="Contribute"
-          />
+          /> -->
           <span class="ml-2">Contribute Now</span>
         </router-link>
       </div>

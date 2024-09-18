@@ -5,8 +5,11 @@ export default {
     extend: {
       fontFamily: {
         cormorant: ["Cormorant", "serif"],
+        marck: ['"Marck Script"', "cursive"],
       },
       colors: {
+        "light-red": "#ff8b7d",
+        "light-blue": "#e0e7ff",
         "midnight-sapphire": "#280B8B",
         "honey-gold": "#EAA52C",
         "deep-red-wine": "#970F34",

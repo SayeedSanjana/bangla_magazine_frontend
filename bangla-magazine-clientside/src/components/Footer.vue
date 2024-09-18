@@ -14,15 +14,9 @@
             <img src="../assets/img/logo.jpg" alt="logo" class="h-20 m-2" />
             <div>
               <p
-                class="font-cormorant text-lg sm:text-2xl font-semibold text-amber-600 p-2 pt-1"
+                class="font-cormorant text-lg sm:text-2xl text-midnight-sapphire p-2 pt-2 font-bold"
               >
                 Bangali Abhibasi Network: a Glocal Linguo-cultural Association
-              </p>
-              <p
-                class="font-cormorant text-lg sm:text-2xl font-semibold text-midnight-sapphire p-2 pt-1"
-              >
-                Le Réseau Bangali Abhibasi: une Association Linguo-culturelle
-                Glocale
               </p>
             </div>
           </button>
@@ -126,7 +120,7 @@
           class="flex mt-4 space-x-4 sm:justify-center md:justify-end lg:mt-0 md:py-6 pb-0 mx-8"
         >
           <button
-            class="w-9 h-9 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
           >
             <img
               src="../assets/svg/facebook.svg"
@@ -135,7 +129,7 @@
             />
           </button>
           <button
-            class="w-9 h-9 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
           >
             <img
               src="../assets/svg/instagram.svg"
@@ -144,7 +138,7 @@
             />
           </button>
           <button
-            class="w-9 h-9 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
           >
             <img
               src="../assets/svg/youtube.svg"
@@ -166,9 +160,9 @@
         </div>
       </div>
     </div>
-    <div
+    <!-- <div
       class="lg:h-24 bg-gradient-to-r from-midnight-sapphire to-gray-600"
-    ></div>
+    ></div> -->
   </footer>
 </template>
 

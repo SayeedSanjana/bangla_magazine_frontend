@@ -9,11 +9,8 @@
       <button @click="home" class="hidden md:block">
         <img src="../assets/img/logo.jpg" alt="logo" class="h-14" />
       </button>
-      <h1
-        class="text-3xl md:text-5xl font-bold text-center md:text-left text-gray-800"
-      >
-        <span class="text-honey-gold">B.A.N.G.L.A.</span>
-        <span class="text-gray-200"> Magazine</span>
+      <h1 class="text-4xl md:text-6xl font-bold text-center">
+        <span class="text-gray-200">B.A.N.G.L.A.</span>
       </h1>
       <nav class="flex space-x-4 md:space-x-6 mt-4 md:mt-0">
         <button>
