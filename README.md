@@ -1,2 +1,29 @@
-# bangla_magazine_frontend
-A frontend service designed to manage the diverse content of a Bangla web magazine, including articles, artwork, photography, and podcasts. Developed using Vue.js and Tailwind CSS, this application offers a robust and scalable solution for effective content management, ensuring a seamless user experience and efficient content organization.
+# bangla-magazine-clientside
+
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
