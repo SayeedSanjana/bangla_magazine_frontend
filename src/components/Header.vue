@@ -7,7 +7,11 @@
       class="container mx-auto flex flex-col md:flex-row justify-between items-center p-6 md:p-8"
     >
       <button @click="home" class="hidden md:block">
-        <img src="../assets/img/logo.jpg" alt="logo" class="h-14" />
+        <img
+          src="../assets/img/logo.png"
+          alt="logo"
+          class="h-28 w-full object-cover"
+        />
       </button>
       <h1 class="text-4xl md:text-6xl font-bold text-center">
         <span class="text-gray-200">B.A.N.G.L.A.</span>

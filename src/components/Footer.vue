@@ -11,7 +11,7 @@
             @click="home"
             class="flex justify-center lg:justify-start hover:underline"
           >
-            <img src="../assets/img/logo.jpg" alt="logo" class="h-20 m-2" />
+            <img src="../assets/img/logo.png" alt="logo" class="h-24 m-2" />
             <div>
               <p
                 class="font-cormorant text-lg sm:text-2xl text-midnight-sapphire p-2 pt-2 font-bold"
