@@ -146,7 +146,7 @@
             <div
               v-for="(topic, i) in topics"
               :key="i"
-              class="p-6 relative z-10"
+              class="md:p-6 relative z-10"
             >
               <div
                 class="relative border border-gray-200 rounded-xl shadow-lg bg-white md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
