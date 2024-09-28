@@ -61,7 +61,7 @@
             </div>
 
             <!-- Right 2/3 with Content -->
-            <div class="md:col-span-2">
+            <div class="md:col-span-2 mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2">
               <div class="text-center md:text-left mb-16">
                 <h2
                   class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
@@ -394,7 +394,7 @@
                   class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5 xl:mr-10"
                 >
                   <div
-                    class="relative md:w-auto w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
+                    class="relative md:w-auto w-full h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"
@@ -457,7 +457,7 @@
                   class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5 xl:mr-10"
                 >
                   <div
-                    class="relative md:w-auto w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
+                    class="relative w-full h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"

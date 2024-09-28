@@ -149,7 +149,7 @@
               class="p-6 relative z-10"
             >
               <div
-                class="relative border border-gray-200 rounded-xl shadow-lg bg-white p-6 h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
+                class="relative border border-gray-200 rounded-xl shadow-lg bg-white md:p- p-2 h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
               >
                 <!-- Positioned and Rounded SVG -->
                 <div
