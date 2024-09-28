@@ -28,30 +28,6 @@
               - Protul Mukhopadhyay (Ami Banglay Gaan Gaai)
             </p>
           </div>
-
-          <!-- <p
-            class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light fade-in"
-          >
-            B.A.N.G.L.A. (Bangali Abhibasi Network: a Glocal Linguo-cultural
-            Association) is an international network dedicated to connecting the
-            global Bangali diaspora with their homeland(s) while promoting
-            Bangla as a dynamic language of expression across cultures and
-            borders. Our mission is to preserve and promote Bangla language,
-            culture, and identity in a globalized world, fostering an inclusive
-            space for Bangla speakers to explore and share diverse worldviews,
-            cultural forms, and linguistic traditions.
-          </p>
-
-          <p
-            class="text-lg md:text-xl max-w-3xl mx-auto text-honey-gold font-light fade-in mt-5"
-          >
-            At B.A.N.G.L.A., we believe in nurturing Bangla as a vibrant
-            language of thought, creativity, and communication for future
-            generations. By creating a platform that encourages cultural
-            exchange, learning, and artistic expression, we aim to strengthen
-            connections within the Bangali diaspora and ensure that Bangla
-            thrives both locally and globally.
-          </p> -->
         </div>
       </div>
 
@@ -401,7 +377,7 @@
           </div>
           <div>
             <!-- Section 1: Founding Board of Directors -->
-            <div class="mt-12 p-8">
+            <div class="mt-12 p-4">
               <h2
                 class="text-5xl text-center text-gray-800 font-cormorant mb-12"
               >
@@ -415,10 +391,10 @@
                   :key="'founder' + index"
                   @mouseover="handleMouseOver(index, 'Founder')"
                   @mouseleave="handleMouseLeave"
-                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5 xl:mr-10"
                 >
                   <div
-                    class="relative w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
+                    class="relative md:w-auto w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"
@@ -431,7 +407,7 @@
                       }"
                     />
                     <div
-                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      class="absolute bottom-0 left-0 right-8 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
                       :class="
                         hoveredIndex.section === 'Founder' &&
                         hoveredIndex.index === index
@@ -444,13 +420,15 @@
                           hoveredIndex.section !== 'Founder' ||
                           hoveredIndex.index !== index
                         "
-                        class="text-base font-semibold"
+                        class="text-sm md:text-xs lg:text-sm font-semibold"
                       >
                         {{ member.name }}
                       </h3>
                       <div v-else class="flex flex-col justify-center h-full">
-                        <h3 class="text-lg font-bold">{{ member.name }}</h3>
-                        <p class="text-sm mt-2 font-bold text-honey-gold">
+                        <h3 class="text-sm md:text-xs lg:text-sm font-bold">
+                          {{ member.name }}
+                        </h3>
+                        <p class="text-xs mt-2 font-bold text-honey-gold">
                           {{ member.location }}
                         </p>
                         <p class="text-xs mt-2">{{ member.bio }}</p>
@@ -462,7 +440,7 @@
             </div>
 
             <!-- Section 2: Content Sculptors -->
-            <div class="mt-12 p-8">
+            <div class="mt-12 p-4">
               <h2
                 class="text-5xl text-center text-gray-800 font-cormorant mb-12"
               >
@@ -474,12 +452,12 @@
                 <div
                   v-for="(member, index) in filteredTeamMembers('Member')"
                   :key="'contentSculptors' + index"
-                  @mouseover="handleMouseOver(index, 'Content Sculptor')"
+                  @mouseover="handleMouseOver(index, 'Member')"
                   @mouseleave="handleMouseLeave"
-                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5 xl:mr-10"
                 >
                   <div
-                    class="relative w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
+                    class="relative md:w-auto w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"
@@ -487,14 +465,14 @@
                       class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
                       :class="{
                         'opacity-55':
-                          hoveredIndex.section === 'Content Sculptor' &&
+                          hoveredIndex.section === 'Member' &&
                           hoveredIndex.index === index,
                       }"
                     />
                     <div
-                      class="absolute bottom-0 left-0 right-16 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      class="absolute bottom-0 left-0 right-8 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
                       :class="
-                        hoveredIndex.section === 'Content Sculptor' &&
+                        hoveredIndex.section === 'Member' &&
                         hoveredIndex.index === index
                           ? 'h-full '
                           : 'h-10'
@@ -502,16 +480,16 @@
                     >
                       <h3
                         v-if="
-                          hoveredIndex.section !== 'Content Sculptor' ||
+                          hoveredIndex.section !== 'Member' ||
                           hoveredIndex.index !== index
                         "
-                        class="text-base font-bold"
+                        class="text-sm md:text-xs lg:text-sm font-bold"
                       >
                         {{ member.name }}
                       </h3>
 
                       <div v-else class="flex flex-col justify-center h-full">
-                        <h3 class="text-base font-semibold">
+                        <h3 class="text-sm md:text-xs lg:text-sm font-semibold">
                           {{ member.name }}
                         </h3>
                         <p class="text-xs font-bold mt-2 text-honey-gold">

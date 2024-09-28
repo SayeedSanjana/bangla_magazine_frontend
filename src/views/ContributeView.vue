@@ -323,7 +323,7 @@
       <div class="pt-8 px-2 bg-gradient-to-r min-h-screen">
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <h2
-            class="text-4xl md:text-5xl mb-2 text-gray-800 font-cormorant pt-6 lg:pt-16"
+            class="text-4xl md:text-5xl mb-2 text-gray-800 font-cormorant pt-6"
           >
             Literary and Cultural Figures
           </h2>
@@ -405,8 +405,10 @@
       </div>
 
       <!-- Memory of Luminaries-->
-      <div class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen">
-        <div class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32">
+      <div
+        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-8"
+      >
+        <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <h2
             class="text-4xl md:text-5xl mb-2 text-gray-800 font-cormorant pt-6"
           >
@@ -465,7 +467,7 @@
       <!-- Submission Form Section -->
 
       <div
-        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group"
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
       >
         <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
@@ -862,22 +864,6 @@ export default {
         this.currentSlide--;
       }
     },
-    // nextSlide() {
-    //   const totalSlides = Math.ceil(this.figures.length);
-    //   if (this.currentSlide < totalSlides - 1) {
-    //     this.currentSlide++;
-    //   } else {
-    //     this.currentSlide = 0; // Loop back to the first slide
-    //   }
-    // },
-    // prevSlide() {
-    //   const totalSlides = Math.ceil(this.figures.length);
-    //   if (this.currentSlide > 0) {
-    //     this.currentSlide--;
-    //   } else {
-    //     this.currentSlide = totalSlides - 1; // Loop to the last slide
-    //   }
-    // },
     updateFiguresPerPage() {
       const width = window.innerWidth;
       if (width >= 1280) {

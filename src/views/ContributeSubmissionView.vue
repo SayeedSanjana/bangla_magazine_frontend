@@ -395,7 +395,6 @@
                 Submit Form
               </button>
             </form>
-            <p v-if="submissionResult">{{ submissionResult }}</p>
           </div>
         </div>
       </div>
@@ -537,7 +536,6 @@ export default {
       this.v$.$touch();
       if (!this.v$.$error && this.hashtagError == "") {
         try {
-          console.log("Entered");
           // Create FormData object for the request
           const formData = new FormData();
           formData.append("firstname", this.form.firstname);
