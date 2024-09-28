@@ -1,7 +1,7 @@
 <template>
   <!-- Navigation Bar -->
   <nav
-    class="bg-gradient-to-r from-gray-200 to-amber-50 shadow-lg font-semibold border-b border-opacity-30 border-gray-300"
+    class="nav-bg shadow-lg font-semibold border-b border-opacity-30 border-gray-300"
   >
     <div
       class="container mx-auto p-4 md:p-6 flex justify-between md:justify-around lg:justify-around"
@@ -35,7 +35,7 @@
       >
         <router-link
           to="/"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
+          class="text-white flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/'),
@@ -50,7 +50,7 @@
         </router-link>
         <router-link
           to="/about-us"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
+          class="text-white flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700  underline-offset-8':
               isActiveRoute('/about-us'),
@@ -65,7 +65,7 @@
         </router-link>
         <router-link
           to="/contribute"
-          class="text-midnight-sapphire hover:text-honey-gold flex items-center text-base font-light"
+          class="text-white flex items-center text-base font-light"
           :class="{
             'underline decoration-2 text-amber-700 underline-offset-8':
               isActiveRoute('/contribute'),
@@ -102,4 +102,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.nav-bg {
+  background: linear-gradient(
+    90deg,
+    #5f7aa0,
+    #280b8b,
+    rgb(109, 109, 138)
+  ); /* 90 degrees, red -> blue -> green */
+}
+</style>

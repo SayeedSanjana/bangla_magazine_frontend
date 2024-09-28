@@ -123,7 +123,7 @@
               action="#"
               method="POST"
               class="space-y-4 text-base"
-              @submit.prevent="handleSubmit"
+              @submit.prevent="submitForm"
             >
               <div class="flex flex-col sm:flex-row">
                 <div class="w-full sm:w-1/2 px-2 mb-4 sm:mb-0">
@@ -131,31 +131,60 @@
                     >First Name</label
                   >
                   <input
+                    @blur="v$.form.firstname.$touch()"
                     type="text"
                     id="first_name"
                     name="first_name"
                     class="w-full p-2 border border-gray-300 rounded-lg"
                     required
-                    v-model="form.firstName"
+                    v-model="form.firstname"
                   />
+                  <span
+                    v-show="v$.form.firstname.$error"
+                    class="mt-2 text-sm text-crimson-bloom"
+                  >
+                    <div
+                      v-for="error of v$.form.firstname.$errors"
+                      :key="error.$uid"
+                    >
+                      <small class="form-error-text">
+                        {{ error.$message }}
+                      </small>
+                    </div>
+                  </span>
                 </div>
                 <div class="w-full sm:w-1/2 px-2">
                   <label for="last_name" class="block font-medium"
                     >Last Name</label
                   >
                   <input
-                    v-model="form.lastName"
+                    @blur="v$.form.lastname.$touch()"
+                    v-model="form.lastname"
                     type="text"
                     id="last_name"
                     name="last_name"
                     class="w-full p-2 border border-gray-300 rounded-lg"
                     required
                   />
+                  <span
+                    v-show="v$.form.lastname.$error"
+                    class="mt-2 text-sm text-crimson-bloom"
+                  >
+                    <div
+                      v-for="error of v$.form.lastname.$errors"
+                      :key="error.$uid"
+                    >
+                      <small class="form-error-text">
+                        {{ error.$message }}
+                      </small>
+                    </div>
+                  </span>
                 </div>
               </div>
               <div class="px-2">
                 <label for="email" class="block font-medium">Email</label>
                 <input
+                  @blur="v$.form.email.$touch()"
                   type="email"
                   id="email"
                   name="email"
@@ -163,12 +192,23 @@
                   required
                   v-model="form.email"
                 />
+                <span
+                  v-show="v$.form.email.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div v-for="error of v$.form.email.$errors" :key="error.$uid">
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <div class="px-2 relative flex-grow">
                 <label for="submission-type" class="block font-medium"
                   >Submission Type</label
                 >
                 <select
+                  @blur="v$.form.submissionType.$touch()"
                   id="submission-type"
                   name="submission-type"
                   class="w-full p-2 border border-gray-300 bg-white rounded-lg"
@@ -176,57 +216,100 @@
                   v-model="form.submissionType"
                 >
                   <option value="">None</option>
-                  <option value="non_fiction_annual_theme">Annual Theme</option>
-                  <option value="non_fiction_open_submissions">
-                    Open Submissions
-                  </option>
-                  <option value="non_fiction_travel">Travel Writing</option>
-                  <option value="non_fiction_memoirs">Memoirs</option>
-                  <option value="non_fiction_personal_accounts">
+                  <option value="Annual Theme">Annual Theme</option>
+                  <option value="Open Submissions">Open Submissions</option>
+                  <option value="Travel Writing">Travel Writing</option>
+                  <option value="Memoirs">Memoirs</option>
+                  <option value="1st Person Accounts">
                     1st Person Accounts
                   </option>
-                  <option value="non_fiction_interviews">Interviews</option>
-                  <option value="non_fiction_science_tech">
+                  <option value="Interviews">Interviews</option>
+                  <option value="Science and Technology">
                     Science & Technology
                   </option>
-                  <option value="fiction_poetry">Fiction (Poetry)</option>
-                  <option value="fiction_short">Fiction (Short)</option>
-                  <option value="fiction_long">Fiction (Long)</option>
-                  <option value="fiction_scripts">Fiction (Scripts)</option>
-                  <option value="artwork">Artwork</option>
-                  <option value="photography">Photography</option>
+                  <option value="Fiction Poetry">Fiction Poetry</option>
+                  <option value="Fiction Short">Fiction Short</option>
+                  <option value="Fiction Long">Fiction Long</option>
+                  <option value="Fiction Scripts">Fiction Scripts</option>
+                  <option value="Artwork">Artwork</option>
+                  <option value="Photography">Photography</option>
                 </select>
+                <span
+                  v-show="v$.form.submissionType.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div
+                    v-for="error of v$.form.submissionType.$errors"
+                    :key="error.$uid"
+                  >
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <div class="px-2">
-                <label for="tags" class="block font-medium">Hash tags</label>
+                <label for="tags" class="block font-medium"
+                  >Hash tags
+                  <span class="text-sm text-gray-500"
+                    >(Start each with #, separate by space or comma)</span
+                  ></label
+                >
                 <input
                   type="text"
                   id="tags"
                   name="tags"
                   class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
-                  v-model="form.hashtags"
+                  v-model="hashtags"
                 />
+                <span
+                  v-if="hashtagError"
+                  class="mt-2 text-xs text-crimson-bloom"
+                  >{{ hashtagError }}</span
+                >
               </div>
               <div class="px-2">
                 <label for="head_shot" class="block font-medium"
                   >Upload Headshot
                   <span class="text-sm text-gray-500">
-                    (Upload an image in JPEG or PNG format, within 5MB.)</span
+                    (Upload an image in JPEG, JPG or PNG format, Maximum size
+                    limit: 10MB.)</span
                   >
                 </label>
                 <input
-                  @change="handleFileUpload('headshot', $event)"
+                  @blur="v$.form.headshot.$touch()"
                   type="file"
+                  @change="handleHeadshotUpload($event)"
+                  accept="image/jpeg, image/png, image/jpg"
                   id="head_shot"
                   name="head_shot"
                   class="w-full p-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
                 />
+                <span
+                  v-show="v$.form.headshot.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div
+                    v-for="error of v$.form.headshot.$errors"
+                    :key="error.$uid"
+                  >
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <div class="px-2">
-                <label for="bio" class="block font-medium">Bio</label>
+                <label for="bio" class="block font-medium"
+                  >Bio
+                  <span class="text-sm text-gray-500">
+                    (Maximum 255 characters.)</span
+                  >
+                </label>
                 <textarea
+                  @blur="v$.form.bio.$touch()"
                   v-model="form.bio"
                   id="bio"
                   name="bio"
@@ -234,18 +317,28 @@
                   class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
                 ></textarea>
+                <span
+                  v-show="v$.form.bio.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div v-for="error of v$.form.bio.$errors" :key="error.$uid">
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <div class="px-2">
                 <label for="file" class="block font-medium"
                   >Upload File
                   <span class="text-sm text-gray-500">
-                    (You can upload a single file or select multiple files at
-                    once, in formats such as .doc, .pdf, and .docx, with a total
-                    size limit of 10MB.)</span
+                    (You can upload multiple files , in formats such as .doc,
+                    .pdf, and .docx, images , maximum size limit: 20MB .)</span
                   ></label
                 >
                 <input
-                  @change="handleFileUpload('files', $event)"
+                  @blur="v$.form.files.$touch()"
+                  @change="handleFileUpload($event)"
                   multiple
                   type="file"
                   id="file"
@@ -253,48 +346,53 @@
                   class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
                 />
+                <span
+                  v-show="v$.form.files.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div v-for="error of v$.form.files.$errors" :key="error.$uid">
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <div class="px-2">
                 <label for="description" class="block text-lg font-medium"
-                  >Brief description of your work</label
+                  >Brief description of your work
+                  <span class="text-sm text-gray-500">
+                    (Maximum 255 characters.)</span
+                  ></label
                 >
                 <textarea
+                  @blur="v$.form.description.$touch()"
                   id="description"
                   name="description"
                   rows="4"
                   class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
-                  v-model="this.form.briefDescriptionOfWork"
+                  v-model="this.form.description"
                 >
                 </textarea>
+                <span
+                  v-show="v$.form.description.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div
+                    v-for="error of v$.form.description.$errors"
+                    :key="error.$uid"
+                  >
+                    <small class="form-error-text">
+                      {{ error.$message }}
+                    </small>
+                  </div>
+                </span>
               </div>
               <button
-                @click="handleSubmit"
-                class="group relative inline-flex items-center w-full overflow-hidden border-4 border-yellow-400 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg px-6 py-3 font-medium text-midnight-sapphire shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
+                type="submit"
+                class="text-base w-full text-center px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
               >
-                <span
-                  class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-gray-50 text-gray-600 duration-300 group-hover:translate-x-0"
-                >
-                  <svg
-                    class="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
-                </span>
-                <span
-                  class="ease text-base absolute flex h-full w-full transform items-center text-center text-white font-semibold tracking-widest justify-center transition-all duration-300 group-hover:translate-x-full"
-                  >Submit Form</span
-                >
-                <span class="invisible relative">Submit</span>
+                Submit Form
               </button>
             </form>
             <p v-if="submissionResult">{{ submissionResult }}</p>
@@ -306,36 +404,41 @@
 </template>
 
 <script>
+import {
+  required,
+  email,
+  maxLength,
+  minLength,
+  helpers,
+} from "@vuelidate/validators";
+import useVuelidate from "@vuelidate/core";
 import axios from "axios";
+import Swal from "sweetalert2";
 export default {
   name: "ContributeView",
   mounted() {
     // Initialize the Google API and Token Client when the component is mounted
-    this.initializeGoogleAPI();
+  },
+  setup() {
+    return { v$: useVuelidate() };
   },
   data() {
     return {
+      hashtagError: "",
+      hashtags: "",
       form: {
-        firstName: "",
-        lastName: "",
+        firstname: "",
+        lastname: "",
         email: "",
         submissionType: "",
-        hashtags: "",
-        bio: "",
+        hashtags: [], // This will hold the processed hashtags as an array
         headshot: null,
+        bio: "",
         files: [],
-        briefDescriptionOfWork: "",
+        description: "",
       },
-      submissionResult: "",
-      tokenClient: null,
-      accessToken: "",
-      userId: "",
-      documentId: "",
+
       activeIndex: null,
-      apiKey: "AIzaSyAA4Oz0AN_hvg8cDAUCZNAPx3Qiuwd5Tf4",
-      clientId:
-        "356074979133-fsktc1d6jn7o1vkad83jp567lmnl0lh5.apps.googleusercontent.com",
-      spreadsheetId: "18-GorhLZsJzKDo5COFDO_bWD5M2AO6ZHUWHfp4tCh9M",
       accordionItems: [
         {
           title: "Stylesheet",
@@ -380,351 +483,134 @@ export default {
       ],
     };
   },
+  validations() {
+    return {
+      form: {
+        firstname: { required },
+        lastname: { required },
+        bio: { required, maxLength: maxLength(255), minLength: minLength(10) },
+        description: {
+          required,
+          maxLength: maxLength(255),
+          minLength: minLength(10),
+        },
+        submissionType: { required },
+        // hashtags: {
+        //   required,
+        //   validHashtags: helpers.withParams(
+        //     { message: "Each hashtag must start with #" },
+        //     (value) =>
+        //       Array.isArray(value) && value.every((tag) => tag.startsWith("#"))
+        //   ), // Ensure every hashtag starts with #
+        // },
+        email: { required, email },
+        headshot: {
+          required,
+          fileType: helpers.withParams({ type: "fileType" }, (value) =>
+            ["image/jpeg", "image/png", "image/jpg"].includes(value?.type)
+          ),
+          size: helpers.withParams(
+            { type: "size" },
+            (value) => value?.size <= 10 * 1024 * 1024
+          ), // 10MB limit
+        },
+        files: {
+          required,
+          size: helpers.withParams(
+            { type: "size" },
+            (value) =>
+              Array.from(value || []).reduce(
+                (acc, file) => acc + file.size,
+                0
+              ) <=
+              20 * 1024 * 1024 // 20MB total
+          ),
+        },
+      },
+    };
+  },
+  setup() {
+    return { v$: useVuelidate() };
+  },
   methods: {
-    async initializeGoogleAPI() {
-      try {
-        // Load the Google API client library
-        await new Promise((resolve) => {
-          gapi.load("client", async () => {
-            await gapi.client.init({
-              apiKey: this.apiKey, // Replace with your API Key
-              discoveryDocs: [
-                "https://sheets.googleapis.com/$discovery/rest?version=v4",
-                "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
-              ],
-            });
-            console.log("Google API initialized");
-            resolve();
+    async submitForm() {
+      this.v$.$touch();
+      if (!this.v$.$error && this.hashtagError == "") {
+        try {
+          console.log("Entered");
+          // Create FormData object for the request
+          const formData = new FormData();
+          formData.append("firstname", this.form.firstname);
+          formData.append("lastname", this.form.lastname);
+          formData.append("email", this.form.email);
+          formData.append("submissionType", this.form.submissionType);
+          // Append hashtags as an array
+          this.form.hashtags.forEach((tag) => {
+            formData.append("hashtags[]", tag);
           });
-        });
+          formData.append("hashtags", this.form.hashtags); // Convert array to JSON string
+          formData.append("headshot", this.form.headshot);
+          formData.append("bio", this.form.bio);
+          formData.append("description", this.form.description);
 
-        // Initialize Google Identity Services token client
-        this.tokenClient = google.accounts.oauth2.initTokenClient({
-          client_id: this.clientId, // Replace with your Client ID
-
-          scope:
-            "https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive.file",
-
-          // prompt: "consent",
-          callback: (response) => {
-            if (response.error) {
-              console.error("Error obtaining token:", response);
-            } else {
-              console.log("Token received:", response.access_token);
-              this.accessToken = response.access_token; // Store the token for further requests
-              this.finalizeSubmission(); // Proceed with the form submission after authorization
-            }
-          },
-        });
-      } catch (error) {
-        console.error("Error initializing Google API:", error);
-      }
-    },
-
-    // Finalize form submission after authorization
-    async finalizeSubmission() {
-      try {
-        // Step 1: Check if the user already exists in the Google Sheet
-        const existingUserId = await this.checkIfUserExists(this.form.email);
-
-        // Step 2: If user exists, reuse the same User ID; otherwise, generate a new one
-        if (existingUserId) {
-          this.userId = existingUserId;
-          console.log(`User exists. Reusing User ID: ${this.userId}`);
-        } else {
-          this.userId = this.generateUUID(); // Generate a new UUID if the user doesn't exist
-          console.log(`New user. Generated new User ID: ${this.userId}`);
-        }
-
-        // Step 3: Always generate a new Document ID for each submission
-        this.documentId = this.generateDocumentId();
-        console.log(`Generated new Document ID: ${this.documentId}`);
-
-        // Step 4: Upload files to Google Drive
-        await this.uploadFilesToGoogleDrive();
-      } catch (error) {
-        console.error("Error during form submission:", error);
-        this.submissionResult = "Error occurred while submitting the form.";
-      }
-    },
-
-    // Check if the user already exists in the Google Sheet
-    async checkIfUserExists(email) {
-      const sheets = gapi.client.sheets;
-      const request = {
-        spreadsheetId: this.spreadsheetId, // Replace with your Google Sheets ID
-        range: "Sheet1!A1:Z1000", // Adjust the range to cover all rows where emails may exist
-      };
-
-      const response = await sheets.spreadsheets.values.get(request);
-      const rows = response.result.values;
-
-      if (rows) {
-        for (let i = 0; i < rows.length; i++) {
-          const row = rows[i];
-          // Assuming email is in the 3rd column (index 2)
-          if (row[2] === email) {
-            // Assuming User ID is in the 8th column (index 7)
-            return row[7]; // Return the existing User ID
+          // Append files
+          for (let i = 0; i < this.form.files.length; i++) {
+            formData.append("files", this.form.files[i]);
           }
-        }
-      }
-
-      return null; // Return null if the user doesn't exist
-    },
-
-    // Generate a unique UUID for the user
-    generateUUID() {
-      const uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
-        /[xy]/g,
-        function (c) {
-          const r = (Math.random() * 16) | 0,
-            v = c === "x" ? r : (r & 0x3) | 0x8;
-          return v.toString(16);
-        }
-      );
-      console.log("Generated UUID:", uuid); // Check if UUID is being generated
-      return uuid;
-    },
-
-    // Generate a unique Document ID (based on timestamp)
-    generateDocumentId() {
-      const docId = `doc-${Date.now()}`;
-      console.log("Generated Document ID:", docId); // Check if Document ID is being generated
-      return docId;
-    },
-
-    // Upload files to Google Drive
-    //   if (!this.form.headshot) {
-    //     console.error("No headshot file to upload.");
-    //     return null;
-    //   }
-
-    //   const folderId = "1McXenBj_Naz28o-Q3Ij21LQNWhLGjCRK"; // Your Folder ID
-
-    //   const fileMetadata = {
-    //     name: "Headshot-" + this.form.email,
-    //     mimeType: this.form.headshot.type,
-    //     parents: [folderId],
-    //   };
-
-    //   const media = {
-    //     mimeType: this.form.headshot.type,
-    //     body: this.form.headshot,
-    //   };
-
-    //   try {
-    //     const response = await gapi.client.drive.files.create({
-    //       resource: fileMetadata,
-    //       media: media,
-    //       fields: "id, parents, webContentLink",
-    //     });
-
-    //     if (response.status === 200) {
-    //       console.log("File uploaded successfully", response.result);
-    //       return `https://drive.google.com/drive/folders/${folderId}`;
-    //     } else {
-    //       console.error("Failed to upload file", response);
-    //       return null;
-    //     }
-    //   } catch (err) {
-    //     console.error("API Error during file upload: ", err);
-    //     return null;
-    //   }
-    // },
-
-    // Helper function to upload a file to Google Drive
-    // async uploadFileToDrive(file, folderId) {
-    //   try {
-    //     const response = await gapi.client.drive.files.create({
-    //       resource: {
-    //         name: file.name,
-    //         parents: [folderId],
-    //       },
-    //       media: {
-    //         mimeType: file.type,
-    //         body: new Blob([file]),
-    //       },
-    //       fields: "id",
-    //       headers: {
-    //         Authorization: `Bearer ${this.accessToken}`,
-    //       },
-    //     });
-
-    //     console.log("File uploaded successfully: ", response.result);
-    //     return response.result.id;
-    //   } catch (error) {
-    //     console.error("Error uploading file: ", error);
-    //   }
-    // },
-
-    // Store form data in Google Sheets
-    // async storeDataInGoogleSheets(folderLink) {
-    //   const sheets = gapi.client.sheets;
-
-    //   // Prepare row data for the spreadsheet
-    //   const rowData = [
-    //     this.form.firstName,
-    //     this.form.lastName,
-    //     this.form.email,
-    //     this.form.submissionType,
-    //     this.form.hashtags,
-    //     folderLink, // Link to the uploaded files in Google Drive
-    //     this.form.bio,
-    //     this.userId, // Include the unique User ID
-    //     this.documentId, // Include the unique Document ID
-    //     new Date().toLocaleDateString(), // Date of submission
-    //   ];
-
-    //   const request = {
-    //     spreadsheetId: this.spreadsheetId, // Replace with your Google Sheets ID
-    //     range: "Sheet1!A1",
-    //     valueInputOption: "RAW",
-    //     insertDataOption: "INSERT_ROWS",
-    //     resource: {
-    //       values: [rowData],
-    //     },
-    //   };
-
-    //   const response = await sheets.spreadsheets.values.append(request);
-    //   return response.status === 200;
-    // },
-
-    handleFileUpload(type, event) {
-      if (type === "headshot") {
-        this.form.headshot = event.target.files[0]; // Single headshot file
-      } else if (type === "files") {
-        this.form.files = Array.from(event.target.files); // Store multiple files as an array
-      }
-    },
-
-    handleSubmit() {
-      if (!this.accessToken) {
-        this.tokenClient.requestAccessToken();
-      } else {
-        finalizeSubmission();
-      }
-    },
-
-    async uploadFilesToGoogleDrive() {
-      try {
-        const folderId = await this.createGoogleDriveFolder(); // Create folder for other files
-        let uploadedFiles = [];
-
-        let headshotLink = null;
-
-        // Upload headshot if available
-        if (this.form.headshot) {
-          headshotLink = await this.uploadFile(
-            this.form.headshot,
-            folderId,
-            "Headshot"
+          // Send form data to the backend API
+          const response = await axios.post(
+            "http://localhost:3000/api/upload",
+            formData,
+            {
+              headers: { "Content-Type": "multipart/form-data" },
+            }
           );
+          if (response.status === 200) {
+            Swal.fire({
+              icon: "success",
+              title: "Form Submitted",
+              text: "Your form has been submitted successfully! Please check your email for confirmation.",
+            });
+
+            // Reset form
+            this.hashtags = "";
+            this.form = {
+              firstname: "",
+              lastname: "",
+              email: "",
+              submissionType: "",
+              hashtags: [], // This will hold the processed hashtags as an array
+              headshot: null,
+              bio: "",
+              files: [],
+              description: "",
+            };
+          } else {
+            Swal.fire({
+              icon: "error",
+              title: "Submission Failed",
+              text: "There was an error submitting the form. Please try again.",
+            });
+          }
+        } catch (error) {
+          Swal.fire({
+            icon: "error",
+            title: "Submission Failed",
+            text: "There was an error submitting the form. Please try again.",
+          });
+          console.error("Error submitting form:", error);
         }
-
-        // Upload additional files to the same folder
-        for (let file of this.form.files) {
-          const fileLink = await this.uploadFile(file, folderId, "File");
-          uploadedFiles.push(fileLink);
-        }
-
-        // Generate the folder link (all other files are uploaded in this folder)
-        const folderLink = `https://drive.google.com/drive/folders/${folderId}`;
-
-        // Store data in Google Sheets
-        const success = await this.storeDataInGoogleSheets(
-          headshotLink,
-          folderLink
-        );
-
-        if (success) {
-          this.submissionResult = "Form submitted successfully!";
-        } else {
-          this.submissionResult = "Failed to store data in Google Sheets.";
-        }
-      } catch (error) {
-        console.error("Error during file upload or data storage:", error);
-        this.submissionResult = "An error occurred while uploading files.";
+      } else {
+        return;
       }
     },
-
-    async createGoogleDriveFolder() {
-      const response = await axios.post(
-        "https://www.googleapis.com/drive/v3/files",
-        {
-          name: `${this.form.email}-${this.documentId}`,
-          mimeType: "application/vnd.google-apps.folder",
-          parents: [this.folderId],
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${this.accessToken}`,
-          },
-        }
-      );
-      return response.data.id;
+    handleHeadshotUpload(event) {
+      const file = event.target.files[0];
+      this.form.headshot = file;
     },
-
-    async uploadFile(file, folderId, fileType) {
-      const fileMetadata = {
-        name: `${fileType}-${this.userId}-${this.documentId}`,
-        parents: [folderId],
-      };
-
-      const formData = new FormData();
-      formData.append(
-        "metadata",
-        new Blob([JSON.stringify(fileMetadata)], { type: "application/json" })
-      );
-      formData.append("file", file);
-
-      const response = await axios.post(
-        "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",
-        formData,
-        {
-          headers: {
-            Authorization: `Bearer ${this.accessToken}`,
-            "Content-Type": "multipart/related",
-          },
-        }
-      );
-      return `https://drive.google.com/file/d/${response.data.id}`;
+    handleFileUpload(event) {
+      this.form.files = event.target.files;
     },
-
-    async storeDataInGoogleSheets(headshotLink, folderLink) {
-      const sheets = gapi.client.sheets;
-
-      // Prepare row data for the spreadsheet
-      const rowData = [
-        this.form.firstName,
-        this.form.lastName,
-        this.form.email,
-        this.form.submissionType,
-        this.form.hashtags,
-        headshotLink, // Store the headshot link in one column
-        folderLink, // Store the folder link (containing other files) in another column
-
-        this.userId, // Include the unique User ID
-        this.documentId, // Include the unique Document ID
-        new Date().toLocaleDateString(), // Date of submission
-        this.form.bio,
-        this.briefDescriptionOfWork,
-      ];
-
-      const request = {
-        spreadsheetId: this.spreadsheetId, // Replace with your Google Sheets ID
-        range: "Sheet1!A1",
-        valueInputOption: "RAW",
-        insertDataOption: "INSERT_ROWS",
-        resource: {
-          values: [rowData],
-        },
-      };
-
-      const response = await sheets.spreadsheets.values.append(request);
-      return response.status === 200;
-    },
-
     contribute() {
       this.$router.push("/contribute");
     },
@@ -733,6 +619,36 @@ export default {
     },
     isOpen(index) {
       return this.activeIndex === index;
+    },
+    validateHashtagsBeforeArray(newValue) {
+      // Check if all hashtags are valid before processing
+      const invalidTags = newValue
+        .split(/[ ,\n]+/) // Split input on spaces, commas, or newlines
+        .filter((tag) => tag && !tag.startsWith("#"));
+
+      if (invalidTags.length > 0) {
+        this.hashtagError = `Hashtags must start with #. Invalid tags: ${invalidTags.join(
+          ", "
+        )}`;
+      } else {
+        this.hashtagError = ""; // No error if all hashtags are valid
+      }
+    },
+  },
+  watch: {
+    // Whenever the hashtags input changes, update the form.hashtags array
+    hashtags(newValue) {
+      // Validate hashtags before processing them into an array
+      this.validateHashtagsBeforeArray(newValue);
+
+      if (!this.hashtagError) {
+        this.form.hashtags = newValue
+          .split(/[ ,\n]+/) // Split input on spaces, commas, or newlines
+          .filter((tag) => tag) // Remove empty strings
+          .map((tag) => tag.trim()); // Remove excess whitespace
+      } else {
+        this.form.hashtags = []; // Reset hashtags if invalid
+      }
     },
   },
 };

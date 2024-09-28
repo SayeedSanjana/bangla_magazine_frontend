@@ -1,48 +1,50 @@
 <template>
   <!-- Header -->
   <header
-    class="bg-gradient-to-r from-gray-600 to-midnight-sapphire shadow font-cormorant"
+    class="bg-gradient-to-r from-amber-50 to-light-blue shadow font-cormorant"
   >
     <div
-      class="container mx-auto flex flex-col md:flex-row justify-between items-center p-6 md:p-8"
+      class="container mx-auto flex flex-col md:flex-row justify-between items-center p-2"
     >
-      <button @click="home" class="hidden md:block">
+      <button @click="home" class="">
         <img
           src="../assets/img/logo.png"
           alt="logo"
-          class="h-28 w-full object-cover"
+          class="h-24 md:h-44 w-full object-cover"
         />
       </button>
       <h1 class="text-4xl md:text-6xl font-bold text-center">
-        <span class="text-gray-200">B.A.N.G.L.A.</span>
+        <span class="text-midnight-sapphire text-gradient text-shadow"
+          >B.A.N.G.L.A.</span
+        >
       </h1>
       <nav class="flex space-x-4 md:space-x-6 mt-4 md:mt-0">
-        <button>
+        <button class="">
           <img
             src="../assets/svg/facebook.svg"
             alt="facebook"
-            class="w-6 md:w-7 h-6 md:h-7 fill-white"
+            class="w-8 h-8 fill-white"
           />
         </button>
-        <button>
-          <img
-            src="../assets/svg/twitter.svg"
-            alt="twitter"
-            class="w-6 md:w-7 h-6 md:h-7 fill-white"
-          />
-        </button>
-        <button>
+        <button class="">
           <img
             src="../assets/svg/instagram.svg"
             alt="instagram"
-            class="w-6 md:w-7 h-6 md:h-7 fill-white"
+            class="w-8 h-8 fill-white"
           />
         </button>
-        <button>
+        <button class="">
           <img
             src="../assets/svg/youtube.svg"
             alt="youtube"
-            class="w-6 md:w-7 h-6 md:h-7 fill-white"
+            class="w-8 h-8 fill-white"
+          />
+        </button>
+        <button class="">
+          <img
+            src="../assets/svg/twitter.svg"
+            alt="twitter"
+            class="w-8 h-8 fill-midnight-sapphire"
           />
         </button>
       </nav>
@@ -63,3 +65,18 @@ export default {
   },
 };
 </script>
+<style scoped>
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    #280b8b,
+    rgb(100, 100, 230)
+  ); /* Gradient with red, blue, and green */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text itself transparent to show the gradient */
+}
+.text-shadow {
+  color: rgb(37, 44, 95);
+  text-shadow: 2px 2px 4px rgba(46, 33, 191, 0.3);
+}
+</style>

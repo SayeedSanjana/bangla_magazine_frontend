@@ -6,7 +6,7 @@
       <div class="space-y-6">
         <div class="bg-gray-50 rounded-lg shadow-md p-4 md:p-8 ">
           <h1 class="text-3xl font-bold mb-4 font-cormorant text-midnight-sapphire">Cookie Management Policy</h1>
-          <p class="text-gray-600 mb-6"><strong>Effective Date:</strong> [Insert Date]</p>
+          <p class="text-gray-600 mb-6"><strong>Effective Date:</strong> 9/27/2024</p>
           <h2 class="text-2xl font-semibold mb-4 text-midnight-sapphire font-cormorant">1. Introduction</h2>
           <p class="mb-4">
             This Cookie Management Policy outlines the use of cookies on our
@@ -92,7 +92,7 @@
             If you have any questions or concerns about this Cookie Management
             Policy, please contact us at:
           </p>
-          <p class="text-gray-600">[Insert Contact Information]</p>
+          <a  href="mailmailto:baanglaarmulh@gmail.com" class="text-gray-600 hover:underline italic font-semibold">baanglaarmukh@gmail.com </a>
         </div>
       </div>
     </div>

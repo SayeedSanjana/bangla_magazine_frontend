@@ -11,10 +11,14 @@
             @click="home"
             class="flex justify-center lg:justify-start hover:underline"
           >
-            <img src="../assets/img/logo.png" alt="logo" class="h-24 m-2" />
+            <img
+              src="../assets/img/logo.png"
+              alt="logo"
+              class="h-24 lg:h-44 w-44 mt-0 m-2 mr-0"
+            />
             <div>
               <p
-                class="font-cormorant text-lg sm:text-2xl text-midnight-sapphire p-2 pt-2 font-bold"
+                class="font-cormorant text-lg sm:text-2xl text-midnight-sapphire p-2 pl-0 pt-2 font-bold"
               >
                 Bangali Abhibasi Network: a Glocal Linguo-cultural Association
               </p>
@@ -108,30 +112,30 @@
           class="flex mt-4 space-x-4 sm:justify-center md:justify-end lg:mt-0 md:py-6 pb-0 mx-8"
         >
           <button
-            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-14 h-14 rounded-full bg-gray-100 flex justify-center border-4 border-midnight-sapphire border-opacity-35 items-center hover:bg-gray-300"
           >
             <img
               src="../assets/svg/facebook.svg"
               alt="facebook"
-              class="w-5 h-5 fill-white"
+              class="w-7 h-7 fill-white"
             />
           </button>
           <button
-            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-14 h-14 border-4 border-midnight-sapphire border-opacity-35 rounded-full bg-gray-100 flex justify-center items-center hover:bg-gray-300"
           >
             <img
               src="../assets/svg/instagram.svg"
               alt="instagram"
-              class="w-5 h-5 fill-white"
+              class="w-7 h-7 fill-white"
             />
           </button>
           <button
-            class="w-10 h-10 rounded-full bg-midnight-sapphire flex justify-center items-center hover:bg-gray-600"
+            class="w-14 h-14 border-4 border-midnight-sapphire border-opacity-35 rounded-full bg-gray-100 flex justify-center items-center hover:bg-gray-300"
           >
             <img
               src="../assets/svg/youtube.svg"
               alt="youtube"
-              class="w-5 h-5 fill-white"
+              class="w-7 h-7 fill-white"
             />
           </button>
         </div>

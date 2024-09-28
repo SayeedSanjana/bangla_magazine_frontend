@@ -12,12 +12,12 @@
         site, you agree to our use of cookies.
       </p>
       <div class="flex justify-between items-center text-base">
-        <button
+        <!-- <button
           @click="cookie"
           class="text-honey-gold hover:underline text-base"
         >
           Cookie Management
-        </button>
+        </button> -->
         <button
           @click="acceptCookies"
           class="py-2 px-4 bg-gradient-to-l from-amber-400 to-honey-gold text-white font-semibold rounded-lg shadow-md hover:bg-gradient-to-l hover:from-amber-500 hover:to-honey-gold focus:outline-none focus:ring-2 focus:ring-amber-500 transition duration-300"

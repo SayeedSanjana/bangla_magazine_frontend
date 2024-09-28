@@ -61,13 +61,27 @@
       >
         <div class="py-8 px-2 mx-auto max-w-screen-xl">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            <!-- Left 1/3 with Image -->
-            <div class="md:col-span-1 hidden md:block">
+            <!-- Left 1/3 with Image and Tooltip -->
+            <div class="md:col-span-1 hidden md:block relative group">
               <img
                 src="../assets/img/about1-img.png"
                 alt="Image representing Bangla culture"
-                class="w-full h-auto object-cover rounded shadow\sm"
+                class="w-full h-auto object-cover rounded shadow-sm"
               />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/1055599907087001/"
+                  >https://ca.pinterest.com/pin/1055599907087001/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
             </div>
 
             <!-- Right 2/3 with Content -->
@@ -189,12 +203,27 @@
             </div>
 
             <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center">
+            <!-- SVG with Tooltip on Right -->
+            <div class="w-full lg:w-1/2 flex justify-center relative group">
               <img
                 src="../assets/img/Vector1.png"
                 alt="SVG Image 1"
                 class="w-96 h-auto"
               />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/14988611253363489/"
+                  >https://ca.pinterest.com/pin/14988611253363489/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
             </div>
           </div>
 
@@ -227,12 +256,26 @@
             </div>
 
             <!-- SVG on Left -->
-            <div class="w-full lg:w-1/2 flex justify-center">
+            <div class="w-full lg:w-1/2 flex justify-center relative group">
               <img
                 src="../assets/img/Vector2.png"
                 alt="SVG Image 2"
                 class="w-96 h-auto"
               />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/105412447521750832/"
+                  >https://ca.pinterest.com/pin/105412447521750832/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
             </div>
           </div>
 
@@ -264,12 +307,26 @@
             </div>
 
             <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center">
+            <div class="w-full lg:w-1/2 flex justify-center relative group">
               <img
                 src="../assets/img/Vector3.png"
-                alt="SVG Image 1"
+                alt="SVG Image 3"
                 class="w-96 h-auto"
               />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/311663236730020802/"
+                  >https://ca.pinterest.com/pin/311663236730020802/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
             </div>
           </div>
 
@@ -301,12 +358,26 @@
             </div>
 
             <!-- SVG on Left -->
-            <div class="w-full lg:w-1/2 flex justify-center">
+            <div class="w-full lg:w-1/2 flex justify-center relative group">
               <img
                 src="../assets/img/Vector4.png"
-                alt="SVG Image 2"
+                alt="SVG Image 4"
                 class="w-96 h-auto"
               />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/605945324893094181/"
+                  >https://ca.pinterest.com/pin/605945324893094181/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -329,12 +400,12 @@
             </p>
           </div>
           <div>
-            <!-- Section 1: Founders -->
+            <!-- Section 1: Founding Board of Directors -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
+                class="text-5xl text-center text-gray-800 font-cormorant mb-12"
               >
-                Founders
+                Founding Board of Directors
               </h2>
               <div
                 class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
@@ -347,7 +418,7 @@
                   class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
                 >
                   <div
-                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                    class="relative w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"
@@ -379,7 +450,10 @@
                       </h3>
                       <div v-else class="flex flex-col justify-center h-full">
                         <h3 class="text-lg font-bold">{{ member.name }}</h3>
-                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                        <p class="text-sm mt-2 font-bold text-honey-gold">
+                          {{ member.location }}
+                        </p>
+                        <p class="text-xs mt-2">{{ member.bio }}</p>
                       </div>
                     </div>
                   </div>
@@ -390,24 +464,22 @@
             <!-- Section 2: Content Sculptors -->
             <div class="mt-12 p-8">
               <h2
-                class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
+                class="text-5xl text-center text-gray-800 font-cormorant mb-12"
               >
-                Content Sculptors
+                Founding Members
               </h2>
               <div
                 class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
               >
                 <div
-                  v-for="(member, index) in filteredTeamMembers(
-                    'Content Sculptor'
-                  )"
+                  v-for="(member, index) in filteredTeamMembers('Member')"
                   :key="'contentSculptors' + index"
                   @mouseover="handleMouseOver(index, 'Content Sculptor')"
                   @mouseleave="handleMouseLeave"
                   class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-10"
                 >
                   <div
-                    class="relative w-64 h-64 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300"
+                    class="relative w-64 h-96 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
                   >
                     <img
                       :src="member.image"
@@ -433,15 +505,19 @@
                           hoveredIndex.section !== 'Content Sculptor' ||
                           hoveredIndex.index !== index
                         "
-                        class="text-lg font-bold"
+                        class="text-base font-bold"
                       >
                         {{ member.name }}
                       </h3>
+
                       <div v-else class="flex flex-col justify-center h-full">
                         <h3 class="text-base font-semibold">
                           {{ member.name }}
                         </h3>
-                        <p class="text-sm mt-2">{{ member.bio }}</p>
+                        <p class="text-xs font-bold mt-2 text-honey-gold">
+                          {{ member.location }}
+                        </p>
+                        <p class="text-xs mt-2">{{ member.bio }}</p>
                       </div>
                     </div>
                   </div>
@@ -450,7 +526,7 @@
             </div>
 
             <!-- Section 3: Creative Visionaries -->
-            <div class="mt-12 p-8">
+            <!-- <div class="mt-12 p-8">
               <h2
                 class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
@@ -509,10 +585,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- Section 4: Tech Wizards -->
-            <div class="mt-12 p-8">
+            <!-- <div class="mt-12 p-8">
               <h2
                 class="text-4xl font-semibold text-center text-midnight-sapphire font-cormorant mb-12"
               >
@@ -567,7 +643,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -641,6 +717,22 @@
 </template>
 
 <script>
+import image1 from "@/assets/members/AnweshaBhattacharjee.jpeg";
+import image2 from "@/assets/members/ArchismanChaudhuri.jpg";
+import image3 from "@/assets/members/SoubhikSamanta.jpg";
+import image4 from "@/assets/members/urmibhakta.jpg";
+import image5 from "@/assets/members/Saikat.jpg";
+import image6 from "@/assets/members/TrishaGhosh.jpeg";
+import image7 from "@/assets/members/MoinakBanerjee.jpg";
+import image8 from "@/assets/members/IktisadRashid.jpeg";
+import image9 from "@/assets/members/SanjanaSayeed.jpg";
+import image10 from "@/assets/members/SomduttaMajumder.jpg";
+import image11 from "@/assets/members/AzfarAdib.jpeg";
+import image12 from "@/assets/members/AvikChakraborty.jpg";
+import image13 from "@/assets/members/Saptara.jpg";
+import image14 from "@/assets/members/AjnaIslam.jpg";
+import image15 from "@/assets/members/SamiparnaChakraborty.jpg";
+import image16 from "@/assets/members/images.jpg";
 export default {
   name: "AboutView",
   components: {},
@@ -649,94 +741,165 @@ export default {
       hoveredIndex: { section: null, index: null },
       teamMembers: [
         {
-          name: "Antonio Roberto",
+          name: "Ajna Islam",
           position: "Founder",
-          image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Founder Bio",
+          image: image14,
+          bio: "My name is Ajna Islam. I am from  Bangladesh. I competed my  Masters(Thesis) from Mcgill University. My research was about women freedomfighters of the liberation war of Bangladesh. Professionally, I am experienced with feature report writing in Bengali newspapers and moderating contents. I have been living in Montreal since 2016.",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Patricia Angely",
-          position: "Tech Wizard",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Tech Wizard Bio",
-        },
-        {
-          name: "Jerom Bell",
+          name: "Urmibhushan Bhakta",
           position: "Founder",
-          image: "https://pagedone.io/asset/uploads/1696238411.png",
-          bio: "Founder Bio",
+          image: image4,
+          bio: "Scientist by profession, love literature, deeply interested in politics.",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Antonio Roberto",
+          name: "Shoubhik Samanta",
           position: "Founder",
-          image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Founder Bio",
+          image: image3,
+          bio: "An engineer by education, but a passionate admirer of the Bengali language, I find joy in exploring its rich literary heritage and cultural nuances. With a deep appreciation for the beauty and depth of Bengali, I strive to promote and preserve this vibrant language in every aspect of my life. My journey is fueled by a love for words and a commitment to celebrating the essence of Bengal.",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Patricia Angely",
-          position: "Founder",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Founder Bio",
+          name: "Archisman Chaudhuri",
+          position: "Member",
+          image: image2,
+          bio: "An historian by training, a language enthusiast, and an academic nomad. Favourite hobby is reading. At present I continually flit between working on my academic research, honing my language skills, and volunteering for BANGLA and Porijaan.",
+          location: "Highland Park, New Jersey, USA",
         },
         {
-          name: "Yasmine Tano",
-          position: "Tech Wizard",
-          image: "https://pagedone.io/asset/uploads/1696238425.png",
-          bio: "Tech Wizard Bio",
+          name: "Ananyo Kazi ",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Zürich, Zürich, Switzerland",
         },
         {
-          name: "John Doe",
-          position: "Content Sculptor",
-          image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Content Sculptor Bio",
+          name: "Anwesha Bhattacharya ",
+          position: "Member",
+          image: image1,
+          bio: "Journalism and content production have been Anwesha's passion for almost 20 years now, from her school years well into collegiate journalism. She hopes to contribute with her experiences both as a member of the diaspora and as a content producer toward B.A.N.G.L.A.'s mission",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Jane Smith",
-          position: "Creative Visionary",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Creative Visionary Bio",
+          name: "Avik Chakraborty",
+          position: "Member",
+          image: image12,
+          bio: "Currently Postdoc at UNAB, Santiago, Chile. PhD in Theoretical High Energy Physics from USC, Los Angeles, USA. JU (B.Sc.) & IIT-B (M.Sc.) alumni. Hometown Kolkata, India. . Photography and travel enthusiast. Love to read and listen to music.",
+          location: "Santiago, Santiago, Chile",
         },
         {
-          name: "Patricia Angely",
-          position: "Creative Visionary",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Creative Visionary Bio",
+          name: "Abhijeet Dutta",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Patricia Angely",
-          position: "Creative Visionary",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "TCreative Visionary Bio",
+          name: "Azfar Adib ",
+          position: "Member",
+          image: image11,
+          bio: "A public scholar and PhD candidate at Concordia University.",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Yasmine Tano",
-          position: "Creative Visionary Bio",
-          image: "https://pagedone.io/asset/uploads/1696238425.png",
-          bio: "Creative Visionary Bio",
+          name: "Ali Hossain",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "John Doe",
-          position: "Creative Visionary",
-          image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Creative Visionary Bio",
+          name: "Iktisad Rashid ",
+          position: "Member",
+          image: image8,
+          bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Jane Smith",
-          position: "Content Sculptor",
-          image: "https://pagedone.io/asset/uploads/1696238396.png",
-          bio: "Content Sculptor Bio",
+          name: "Yusuf Saadi",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Yasmine Tano",
-          position: "Creative Visionary Bio",
-          image: "https://pagedone.io/asset/uploads/1696238425.png",
-          bio: "Content Sculptor Bio",
+          name: "Trisha Ghosh",
+          position: "Member",
+          image: image6,
+          bio: "Scientist by day and artist by night. Graduate student in Synthetic Biology, at Concordia University, Montreal. ",
+          location: "Montreal, Quebec, Canada",
         },
         {
-          name: "John Doe",
-          position: "Content Sculptor",
-          image: "https://pagedone.io/asset/uploads/1696238374.png",
-          bio: "Content Sculptor Bio",
+          name: "Debapriya Mondal",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Moinak Banerjee",
+          position: "Member",
+          image: image7,
+          bio: "A student of liberal arts and humanities interested in reading, writing and debating ideas.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Louis-Felix Blanchet-Cohen",
+          position: "Member",
+          image: image16,
+          bio: "Lived 20 years in bangladesh where i socialized actively with bengalis every day . Of quebecois origin i define myself as bengali as i got to know bangladesh well and lived there a long time ",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Sanjana Sayeed ",
+          position: "Member",
+          image: image9,
+          bio: "Currently pursuing Masters in Software Engineering from Concordia University. A Software Engineer by profession with a passion for sketching and painting. Deeply interested in Bangla culture, exploring its rich traditions, language, and heritage.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Saptara Gupta",
+          position: "Member",
+          image: image13,
+          bio: "-",
+          location: "Palm Beach Gardens, Florida, USA",
+        },
+        {
+          name: "Samiparna Chakraborty",
+          position: "Member",
+          image: image15,
+          bio: "Somiparna Chakraborty, a software engineer based in Toronto and living in Waterloo, Ontario, is originally from Barrackpore, Kolkata. Having completed a master’s at Concordia University in Montreal, she’s been in Canada since 2017 and is now a Canadian citizen. Passionate about films, music, literature, and exploring her culture, she loves food, travel, and meaningful conversations. Her connection to Bengali culture has only grown stronger while living abroad, and she warmly welcomes this initiative.",
+          location: "Waterloo, Ontario, Canada",
+        },
+        {
+          name: "Susmita Bose ",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Saikat ",
+          position: "Member",
+          image: image5,
+          bio: "Civil/Structural engineer by professional training - Loves Art and Literature",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Somdutta Majumder ",
+          position: "Member",
+          image: image10,
+          bio: "Bengali is not just a language for me. It is my identity that I wear with pride. I am a geologist by profession, currently residing in the US, but that does not stop me from staying informed on the socio-political situation and culture of West Bengal and India.",
+          location: "Jefferson City, Missouri, USA",
+        },
+        {
+          name: "Soumik Ghosh",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
         },
       ],
     };

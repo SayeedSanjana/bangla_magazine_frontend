@@ -178,7 +178,7 @@
                 <!-- Button aligned at the bottom -->
                 <div class="mt-4">
                   <button
-                    href="#"
+                    @click="submissionForm"
                     class="inline-flex font-medium text-sm items-center text-midnight-sapphire hover:underline"
                   >
                     See our guideline
@@ -424,18 +424,18 @@
           <!--  Main Section-->
           <div class="flex justify-center items-center md:pt-12">
             <div class="overflow-hidden relative w-full">
-              <!-- Slider wrapper -->
-              <div class="flex transition-transform duration-300 ease-out">
+              <!-- Grid wrapper -->
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+              >
                 <!-- Cards -->
                 <div
                   v-for="(card, index) in luminaries"
                   :key="index"
-                  class="flex justify-center items-center px-4"
-                  :style="{ minWidth: calcMinWidth }"
+                  class="px-4"
                 >
                   <div
-                    class="bg-white p-6 shadow-lg rounded-lg text-center"
-                    style="width: 380px; height: 460px"
+                    class="bg-white p-6 shadow-lg rounded-lg text-center mb-4 w-full h-full"
                   >
                     <img
                       :src="card.img"
@@ -456,6 +456,7 @@
                   </div>
                 </div>
               </div>
+              <!-- End of Grid wrapper -->
             </div>
           </div>
         </div>
@@ -464,9 +465,27 @@
       <!-- Submission Form Section -->
 
       <div
-        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center relative h-96"
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group"
       >
+        <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
+
+        <!-- Tooltip for Image Credit -->
+        <div
+          class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Background Image by:
+          <a
+            class="hover:underline"
+            href="https://ca.pinterest.com/pin/2251868554953302/"
+            >https://ca.pinterest.com/pin/2251868554953302/</a
+          >
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
+          ></div>
+        </div>
+
+        <!-- Content Overlay -->
         <div
           class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10"
         >
@@ -480,7 +499,8 @@
           </p>
           <button
             @click="submissionForm"
-            class="text-base px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
+            aria-label="Contribute to the community"
+            class="text-base px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold transition duration-300 ease-in-out"
           >
             Contribute Now..
           </button>
