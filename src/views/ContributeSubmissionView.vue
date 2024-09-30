@@ -442,42 +442,105 @@ export default {
         {
           title: "Stylesheet",
           content:
-            "Submissions in English can follow any of the variants (British, American, Canadian, Australian) in terms of spellings. All we request is that authors be consistent with whichever form they choose...",
+            "Submissions in English can follow any of the variants (British, American, Canadian, Australian) in terms of spellings. All we request is that authors be consistent with whichever form they choose. For Bangla, submissions could follow variant spellings adopted by Bangla Academies in Dhaka and Kolkata. We understand that authors follow different spellings, for example, for instance,‘characterise’ and ‘characterize’ or ‘করব’/‘করবো’, ‘বলব’/’বলবো’. Authors are kindly requested to be consistent in their usage and not mix up the two versions.",
         },
         {
           title: "Plagiarism",
           content:
-            "We are soliciting original unpublished articles. Contributors are expected to provide due references, for example, weblinks for copyrighted materials...",
+            "We are soliciting original unpublished articles. Contributors are expected to provide due references, for example, weblinks for copyrighted materials.",
         },
         {
           title: "Regarding Generative AI",
           content:
-            "For this magazine, the use of artificial intelligence (e.g., ChatGPT) is discouraged and will be treated as plagiarism...",
+            "For this magazine, the use of artificial intelligence (e.g., ChatGPT) is discouraged and will be treated as plagiarism in the editorial process.",
         },
         {
           title: "References",
-          content:
-            "We encourage contributors to include a list of in-text citations and references at the end of reflective, semi-academic, expository, and public writings...",
+          content: `
+      <p class="text-gray-700  mb-4">
+        We encourage contributors to include a list of in-text citations and references at the end of reflective, semi-academic, expository, and public writings on the annual theme, other independent nonfiction entries, and submissions to be featured in the Annual Celebration. Since this is a public magazine, we are not asking for citations and references compulsorily. However, articles may be subject to fact-check and questions may be asked about sources of information to the contributors during the peer review process. Here are some examples of citations that we are looking for:
+      </p>
+
+      <h3 class="text-lg font-semibold text-gray-800  mb-2">In-text citations</h3>
+      <p class="text-gray-700  mb-4">
+        “Landscape, W. J. T. Mitchell tells us, is not an "object to but ... a process by which social and subjective identities are formed.( [2], p.1)..." 
+      </p>
+
+      <h3 class="text-lg font-semibold text-gray-800  mb-2">End Text References</h3>
+      <ol class="list-decimal list-inside mb-4 text-gray-700">
+        <li class="mb-2">
+          Mamud, H. “Issue of Dalit Identity and the Partition of Bengal.” <i>The Creative Launcher</i>, Vol. 6 Issue 5, 2021, 53–62. 
+          <a href="http://dx.doi.org/10.53032/tcl.2021.6.5.07" target="_blank" class="text-blue-600 hover:underline">http://dx.doi.org/10.53032/tcl.2021.6.5.07</a>
+        </li>
+        <li class="mb-2">
+          Mitchell, WJT. “Introduction.” <i>Landscape and Power</i>. University of Chicago Press, 1994, 1-4.
+        </li>
+        <li>
+          Murshid TM. “Bengali Identity, Secularism and the Language Movement." <i>The Emergence of Bangladesh</i>. Ed. Khondker, H., Muurlink, O., Bin Ali, A. Palgrave Macmillan Singapore, 2022. 
+          <a href="https://doi.org/10.1007/978-981-16-5521-0_6" target="_blank" class="text-blue-600 hover:underline">https://doi.org/10.1007/978-981-16-5521-0_6</a>
+        </li>
+      </ol>
+    `,
         },
         {
           title: "Formatting Logic",
-          content:
-            "For articles, author name (Last name, First name - Initials only), 'Article name.' Journal name, Volume, Issue, Year of publication...",
+          content: `
+          <h4 class="text-md font-semibold text-gray-800  mb-2">For articles</h4>
+      <p class="text-gray-700  mb-4">
+        Author name (Last name, First name - Initials only), “Article name.” Journal name, Volume, Issue, Year of publication, page numbers (in the journal issue in which the article appears)
+      </p>
+      <h4 class="text-md font-semibold text-gray-800  mb-2">For books</h4>
+      <p class="text-gray-700 ">
+        Author name (Last name, First name initials), “Chapter name,” Book name, Press name, Year of publication, page numbers (of the relevant chapter)
+      </p>`,
         },
         {
           title: "Page Limit for Individual Submissions",
-          content:
-            "Standard for Double-Spaced Times New Roman 12 in English as well as French and Vrinda 12 for Bangla...",
+          content: `
+      <p class="text-gray-700 mb-4">
+        Standard for Double-Spaced Times New Roman 12 in English as well as French and Vrinda 12 for Bangla.
+      </p>
+
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Submission Types & Limits</h3>
+
+      <ul class="list-disc list-inside mb-4 text-gray-700">
+        <li class="mb-2">Poetry: 1-10 pages</li>
+        <li class="mb-2">Short Fiction: 1-10 pages</li>
+        <li class="mb-2">Long Fiction: 10-20 pages</li>
+        <li class="mb-2">Reflective Essays: 3-5 pages</li>
+        <li class="mb-2">Non-fiction Articles: 5-10 pages</li>
+        <li class="mb-2">Life Writings: 5-10 pages</li>
+        <li class="mb-2">Transcripted Interviews: 5-10 pages</li>
+        <li class="mb-2">Script: 1-20 pages</li>
+        <li class="mb-2">Science and Technology: 1-10 pages</li>
+        <li class="mb-2">Health: 1-10 pages</li>
+        <li class="mb-2">Sports: 1-10 pages</li>
+        <li class="mb-2">Travel: 1-10 pages</li>
+        <li class="mb-2">Cartoons and Caricature: 1-2 pages</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Paintings</h3>
+      <ul class="list-disc list-inside mb-4 text-gray-700">
+        <li class="mb-2">2 paintings as a series with a common theme</li>
+        <li class="mb-2">3-5 paintings as a single feature with a common theme</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold text-gray-800  mb-2">Photography</h3>
+      <ul class="list-disc list-inside text-gray-700 ">
+        <li class="mb-2">2 photographs as a series with a common theme</li>
+        <li class="mb-2">3-5 photographs as a single feature with a common theme</li>
+      </ul>
+    `,
         },
         {
           title: "Contributor’s bio",
           content:
-            "Contributors must include a brief bio in about 100 words and a photograph for publication along with their pieces...",
+            "Contributors must include a brief bio in about 100 words and a photograph for publication along with their pieces (only if they are comfortable with sharing their own photographs). Pseudonyms are welcome, however, contributors must furnish their contact details for correspondence with the editorial team.",
         },
         {
           title: "Contact info",
           content:
-            "Contributors must provide their email ids. Other contact details including phone, address, and social media profile (optional)...",
+            "Contributors must provide their email ids. Other contact details including phone, address and social media profile (optional) will be required upon acceptance.",
         },
       ],
     };
