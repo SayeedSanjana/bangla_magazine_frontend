@@ -10,7 +10,7 @@
         <img
           src="../assets/img/logo.png"
           alt="logo"
-          class="h-16 w-16 md:h-44 lg:w-full object-cover"
+          class="h-16 w-16 lg:h-44 lg:w-full object-cover"
         />
       </button>
       <h1 class="text-4xl md:text-6xl font-bold text-center">
