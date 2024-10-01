@@ -2,9 +2,9 @@
   <!-- Footer -->
   <footer class="w-full bg-gradient-to-r from-gray-200 to-amber-50 shadow-md">
     <div class="mx-auto md:container p-4 md:p-6">
-      <!--Grid-->
+      <!-- Grid for Main Content -->
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-8 py-10"
       >
         <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
           <button
@@ -14,7 +14,7 @@
             <img
               src="../assets/img/logo.png"
               alt="logo"
-              class="h-24 lg:h-44 w-44 mt-0 m-2 mr-0"
+              class="h-auto w-44 mt-0 m-2 mr-0"
             />
             <div>
               <p
@@ -25,8 +25,8 @@
             </div>
           </button>
         </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left text-sm sm:text-base mx-8">
+
+        <div class="text-center text-xs sm:text-sm mx-8">
           <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
@@ -46,8 +46,8 @@
             </li>
           </ul>
         </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left text-sm sm:text-base mx-8">
+
+        <div class="text-center text-xs sm:text-sm mx-8">
           <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
@@ -67,9 +67,8 @@
             </li>
           </ul>
         </div>
-        <!--End Col-->
-        <!--End Col-->
-        <div class="lg:mx-auto text-left text-sm sm:text-base mx-8">
+
+        <div class="text-center text-xs sm:text-sm mx-8 hidden lg:block">
           <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
@@ -80,37 +79,31 @@
             </li>
           </ul>
         </div>
-        <!--End Col-->
       </div>
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8"
-      >
-        <div class="lg:mx-8">
-          <div class="py-4 lg:px-16 pb-0">
-            <p class="text-lg text-gray-800 lg:max-w-xs lg:text-left">
-              Address:
-            </p>
+      <!-- Address and Contact Info -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 py-10">
+        <div class="lg:mx-8 text-center md:text-left">
+          <div class="py-4">
+            <p class="text-base text-gray-800">Address:</p>
             <p class="text-gray-600 text-base">
               4003 Bd Décarie Apt-102 Montréal QC H4A 3J8
             </p>
           </div>
-          <div class="pt-4 lg:px-16 pb-0">
-            <p class="text-base text-gray-800 lg:max-w-xs lg:text-left">
-              Email Us:
-            </p>
+          <div class="pt-4 text-center md:text-left">
+            <!-- Centered on small screens -->
+            <p class="text-base text-gray-800">Email Us:</p>
             <a
-              href="mailmailto:baanglaarmulh@gmail.com"
-              class="block w-fit text-lg text-midnight-sapphire transition-all duration-500 lg:mx-0 font-semibold tracking-wide hover:text-gray-500 hover:underline"
+              href="mailto:baanglaarmukh@gmail.com"
+              class="text-base flex justify-center md:justify-start text-midnight-sapphire transition-all duration-500 font-semibold tracking-wide hover:text-gray-500 hover:underline"
             >
               baanglaarmukh@gmail.com
             </a>
           </div>
         </div>
 
-        <div
-          class="flex mt-4 space-x-4 sm:justify-center md:justify-end lg:mt-0 md:py-6 pb-0 mx-8"
-        >
+        <!-- Social Media Links -->
+        <div class="flex mt-4 space-x-4 justify-center md:justify-end">
           <button
             class="w-14 h-14 rounded-full bg-gray-100 flex justify-center border-4 border-midnight-sapphire border-opacity-35 items-center hover:bg-gray-300"
           >
@@ -140,7 +133,8 @@
           </button>
         </div>
       </div>
-      <!--Grid-->
+
+      <!-- Footer Bottom Section -->
       <div class="py-7 border-t border-gray-300">
         <div class="text-center lg:flex-row py-2">
           <p class="text-sm sm:text-base text-gray-500">
@@ -155,9 +149,6 @@
         </div>
       </div>
     </div>
-    <!-- <div
-      class="lg:h-24 bg-gradient-to-r from-midnight-sapphire to-gray-600"
-    ></div> -->
   </footer>
 </template>
 
@@ -181,4 +172,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* Additional custom styles can go here */
+</style>
