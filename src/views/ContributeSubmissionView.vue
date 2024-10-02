@@ -7,7 +7,7 @@
           class="bg-gradient-to-r from-slate-50 to-amber-50 rounded-xl shadow-md flex flex-col md:flex-row"
         >
           <!-- Left Section with Scroll -->
-          <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12">
+          <div class="w-full md:w-1/2 p-6 sm:p-8 md:p-12 scrollable">
             <div
               name="cta_section"
               class="border-b-2 border-gray-100 pb-4 mb-4"

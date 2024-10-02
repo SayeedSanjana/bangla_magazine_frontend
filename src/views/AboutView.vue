@@ -23,7 +23,7 @@
 
           <div class="md:pb-14 pb-8">
             <p
-              class="text-base max-w-7xl text-gray-300 font-semibold fade-in mt-4 text-right"
+              class="text-xl max-w-7xl text-gray-300 font-semibold fade-in mt-4 text-right font-marck"
             >
               - Protul Mukhopadhyay (Ami Banglay Gaan Gaai)
             </p>
@@ -63,9 +63,7 @@
             <!-- Right 2/3 with Content -->
             <div class="md:col-span-2 mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2">
               <div class="text-center md:text-left mb-16">
-                <h2
-                  class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
-                >
+                <h2 class="text-6xl mb-8 text-gray-800 font-cormorant">
                   Who We Are?
                 </h2>
                 <p class="font-light text-base text-gray-700 text-justify">
@@ -142,9 +140,7 @@
       <div
         class="mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2 mx-auto max-w-screen-xl"
       >
-        <h2
-          class="text-4xl md:text-6xl mb-8 text-gray-800 text-center font-cormorant"
-        >
+        <h2 class="text-6xl mb-8 text-gray-800 text-center font-cormorant">
           What We Aim?
         </h2>
 
@@ -365,7 +361,7 @@
       >
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-8">
           <div class="text-center mb-8">
-            <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
+            <h2 class="text-6xl mb-8 text-gray-800 font-cormorant">
               Meet The Team
             </h2>
             <p class="font-light text-lg text-gray-700">
@@ -379,7 +375,7 @@
             <!-- Section 1: Founding Board of Directors -->
             <div class="mt-12 p-4">
               <h2
-                class="text-5xl text-center text-gray-800 font-cormorant mb-12"
+                class="text-3xl text-center font-semibold text-gray-800 font-cormorant mb-12"
               >
                 Founding Board of Directors
               </h2>
@@ -442,7 +438,7 @@
             <!-- Section 2: Content Sculptors -->
             <div class="mt-12 p-4">
               <h2
-                class="text-5xl text-center text-gray-800 font-cormorant mb-12"
+                class="text-3xl text-center font-semibold text-gray-800 font-cormorant mb-12"
               >
                 Founding Members
               </h2>
