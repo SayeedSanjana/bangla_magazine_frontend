@@ -121,7 +121,9 @@
       <div class="px-2 bg-gradient-to-r from-amber-50 to-blue-50">
         <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <!-- <div class="absolute inset-0 bg-gray-900 opacity-85"></div> -->
-          <h2 class="text-6xl mb-8 text-gray-800 font-cormorant pt-6">
+          <h2
+            class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-6"
+          >
             What We Are Looking For?
           </h2>
           <h2
@@ -213,7 +215,7 @@
       <div class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8">
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <h2
-            class="text-4xl md:text-5xl text-midnight-sapphire font-cormorant mb-8"
+            class="text-3xl md:text-5xl text-midnight-sapphire font-cormorant mb-8"
           >
             2. Annual Theme
           </h2>
@@ -330,7 +332,7 @@
       <div class="pt-8 px-2 bg-gradient-to-r min-h-screen">
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <h2
-            class="text-4xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
+            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
           >
             3. Literary and Cultural Figures
           </h2>
@@ -419,7 +421,7 @@
       >
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <h2
-            class="text-4xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
+            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
           >
             4. Memory of Luminaries
           </h2>
