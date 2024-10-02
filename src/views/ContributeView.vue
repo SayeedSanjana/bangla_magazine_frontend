@@ -225,7 +225,7 @@
             <!-- Left Section: Sticky on Scroll -->
             <div class="w-full lg:w-1/2 md:pr-6 lg:sticky lg:top-0 self-start">
               <p
-                class="text-amber-600 text-3xl font-cormorant text-justify pb-4 font-semibold"
+                class="text-amber-600 text-2xl md:text-3xl font-cormorant text-justify pb-4 font-semibold"
               >
                 Bangla-French-Crossings
               </p>
@@ -337,7 +337,7 @@
             3. Literary and Cultural Figures
           </h2>
           <p
-            class="text-amber-600 text-3xl font-cormorant font-semibold text-justify my-2"
+            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
           >
             Celebrating Icons
           </p>
@@ -426,7 +426,7 @@
             4. Memory of Luminaries
           </h2>
           <p
-            class="text-amber-600 text-3xl font-cormorant font-semibold text-justify my-2"
+            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
           >
             In Memory of Luminaries
           </p>

@@ -142,7 +142,9 @@
       <div
         class="mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2 mx-auto max-w-screen-xl"
       >
-        <h2 class="text-6xl mb-8 text-gray-800 text-center font-cormorant">
+        <h2
+          class="text-4xl md:text-6xl mb-8 text-gray-800 text-center font-cormorant"
+        >
           What We Aim?
         </h2>
 
