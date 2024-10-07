@@ -44,7 +44,7 @@
       <div
         class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-8 mb:pt-16"
       >
-        <div class="py-8 px-4 mx-auto max-w-screen-xl">
+        <div class="md:container md:mx-auto px-4 lg:px-32">
           <div class="mb-8">
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
               The Magazine
@@ -127,7 +127,7 @@
             What We Are Looking For?
           </h2>
           <h2
-            class="text-4xl md:text-5xl mb-2 text-midnight-sapphire font-cormorant pt-6"
+            class="text-3xl md:text-5xl mb-2 text-midnight-sapphire font-cormorant pt-6"
           >
             1. Independent Category
           </h2>
@@ -149,14 +149,14 @@
               class="md:p-6 pt-4 relative z-10"
             >
               <div
-                class="relative border border-gray-200 rounded-xl shadow-lg bg-white md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
+                class="relative border bg-white border-gray-200 rounded-xl shadow-xl md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
               >
                 <!-- Background Image with Opacity -->
-                <img
+                <!-- <img
                   src="../assets/img/culture.jpg"
-                  class="absolute inset-0 w-full h-full object-cover opacity-5 rounded-lg"
+                  class="absolute inset-0 w-full h-full object-cover opacity-5 rounded-lg "
                   alt="Background Image"
-                />
+                /> -->
                 <!-- Positioned and Rounded SVG -->
                 <div
                   class="absolute -top-8 left-16 transform -translate-x-1/2 p-2"
