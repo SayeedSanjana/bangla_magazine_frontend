@@ -13,6 +13,7 @@
     "@vuelidate/validators": "^2.0.4",
     "axios": "^1.7.7",
     "bangla-magazine-clientside": "file:",
+    "remix": "^2.13.1",
     "sweetalert2": "^11.14.1",
     "swiper": "^11.1.14",
     "vue": "^3.4.29",
@@ -23,6 +24,6 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.9",
-    "vite": "^5.3.1"
+    "vite": "^5.4.10"
   }
 }
