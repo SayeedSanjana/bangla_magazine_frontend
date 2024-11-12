@@ -29,11 +29,17 @@ const router = createRouter({
       component: CookieSettingsView,
     },
     {
-      path: "/submission-form",
+      path: "/submission-form/:topicName?",
       name: "submission",
       component: ContributeSubmissionView,
+      props: true,
     },
   ],
+  // When you route to any page it will take you to the top of the page
+  scrollBehavior(to, from, savedPosition) {
+    // Always scroll to the top of the page on navigation
+    return { top: 0, left: 0 };
+  },
 });
 
 export default router;

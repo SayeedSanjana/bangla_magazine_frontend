@@ -76,7 +76,22 @@
             class="w-5 md:w-6 h-5 md:h-6 font-bold"
             alt="Contribute"
           /> -->
-          <span class="ml-2">Contribute Now</span>
+          <span class="ml-2">Our Magazine</span>
+        </router-link>
+        <router-link
+          to="/submission-form"
+          class="text-white flex items-center text-base font-light"
+          :class="{
+            'underline decoration-2 text-amber-700  underline-offset-8':
+              isActiveRoute('/submission-form'),
+          }"
+        >
+          <!-- <img
+            src="../assets/svg/home.svg"
+            class="w-5 md:w-6 h-5 md:h-6 font-bold"
+            alt="Home"
+          /> -->
+          <span class="ml-2">Contribute to the Network</span>
         </router-link>
       </div>
     </div>

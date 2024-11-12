@@ -3,7 +3,7 @@
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
       <div class="relative h-auto shadow-md bg-cover bg-center background-img">
-        <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
+        <div class="absolute inset-0 bg-gray-900 opacity-0"></div>
         <div class="relative z-10 lg:py-8">
           <!-- <h2
             class="text-4xl md:text-6xl font-bold mb-8 text-white fade-in font-cormorant"
@@ -66,7 +66,7 @@
                 <h2
                   class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
                 >
-                  Who We Are?
+                  Our Story
                 </h2>
                 <p class="font-light text-base text-gray-700 text-justify">
                   Bangla continues to be the shared language of expression for a
@@ -145,13 +145,13 @@
         <h2
           class="text-4xl md:text-6xl mb-8 text-gray-800 text-center font-cormorant"
         >
-          What We Aim?
+          Our Plot
         </h2>
 
         <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3">
           <!-- Row 1: Text on Left, SVG on Right -->
           <div
-            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10"
+            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 mt-4"
           >
             <!-- Text on Left -->
             <div class="w-full lg:w-1/2">
@@ -207,7 +207,7 @@
 
           <!-- Row 2: SVG on Left, Text on Right -->
           <div
-            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 lg:space-x-reverse md:p-8"
+            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 lg:space-x-reverse md:p-8 mt-4"
           >
             <!-- Text on Right -->
             <div class="w-full lg:w-1/2">
@@ -259,36 +259,63 @@
             </div>
           </div>
 
-          <!-- Row 3: Text on Left, SVG on Right -->
+          <!-- Row 3: SVG on Left, Text on Right -->
           <div
-            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10"
+            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-16 lg:space-x-reverse mt-4"
           >
+            <!-- SVG on right -->
+            <div class="w-full lg:w-1/2 flex justify-center relative group">
+              <img
+                src="../assets/img/Vector4.png"
+                alt="SVG Image 4"
+                class="w-96 h-auto"
+              />
+              <!-- Tooltip -->
+              <div
+                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                Image Credit:
+                <a
+                  class="hover:underline"
+                  href="https://ca.pinterest.com/pin/605945324893094181/"
+                  >https://ca.pinterest.com/pin/605945324893094181/</a
+                >
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
+                ></div>
+              </div>
+            </div>
             <!-- Text on Left -->
             <div class="w-full lg:w-1/2">
               <h2
                 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-cormorant"
               >
-                Bangla Language Teaching
+                Tracing international and global experiences of Bangalis
               </h2>
               <p
                 class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-honey-gold first-letter:me-3 first-letter:float-start"
               >
-                We believe that without a sense of Bangla, as a language and its
-                literary lineage, it becomes quite difficult for the second and
-                successive generations to negotiate questions of familial as
-                well as linguistic identity. To put it broadly, it leads to a
-                feeling of disconnection. Lack of linguistic knowledge also acts
-                as an obstruction while accessing the historicity of literary or
-                cultural productions in and around Bangla. Therefore, we have
-                resolved to focus on providing a platform for Bangla language
-                teaching. This will act as a platform that will bring first
-                generation immigrants as teachers to engage with successive
-                generations and other language enthusiasts as students in a
-                classroom set-up.
+                One of our primary objectives is to identify the global and
+                glocal existence(s) of Bangalis across the world - and in the
+                geographical region of Bangla - in order to situate ourselves
+                against the varied lived realities of these spaces. We start off
+                as a venture of expats based out of Canada and would like to
+                eventually grow as an international cultural emissary of
+                Bangalis who will encourage and nurture art and culture in
+                relation to their homeland(s). We would like to enter into
+                dialogues with other migrant as well as expat Bangalis around
+                the world to reflect on questions of symbiotic relationships
+                with the different communities that we encounter during our
+                voyage across the world.
               </p>
             </div>
+          </div>
 
-            <!-- SVG on Right -->
+          <!-- Row 4: Text on Left, SVG on Right -->
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between space-y-6 lg:space-y-0 lg:space-x-10 mt-4"
+          >
+            <!-- SVG on Left-->
             <div class="w-full lg:w-1/2 flex justify-center relative group">
               <img
                 src="../assets/img/Vector3.png"
@@ -310,58 +337,29 @@
                 ></div>
               </div>
             </div>
-          </div>
-
-          <!-- Row 4: SVG on Left, Text on Right -->
-          <div
-            class="flex flex-col lg:flex-row-reverse items-center justify-between space-y-6 lg:space-y-0 lg:space-x-16 lg:space-x-reverse"
-          >
-            <!-- Text on Right -->
+            <!-- Text on right -->
             <div class="w-full lg:w-1/2">
               <h2
                 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-cormorant"
               >
-                Tracing international and global experiences of Bangalis
+                Bangla Language Teaching
               </h2>
               <p
                 class="text-gray-700 text-base text-justify first-letter::uppercase first-letter:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-midnight-sapphire first-letter:me-3 first-letter:float-start"
               >
-                One of our primary objectives is to identify the global and
-                glocal existence(s) of Bangalis across the world - and in the
-                geographical region of Bangla - in order to situate ourselves
-                against the varied lived realities of these spaces. We start off
-                as a venture of expats based out of Canada and would like to
-                eventually grow as an international cultural emissary of
-                Bangalis who will encourage and nurture art and culture in
-                relation to their homeland(s). We would like to enter into
-                dialogues with other migrant as well as expat Bangalis around
-                the world to reflect on questions of symbiotic relationships
-                with the different communities that we encounter during our
-                voyage across the world.
+                We believe that without a sense of Bangla, as a language and its
+                literary lineage, it becomes quite difficult for the second and
+                successive generations to negotiate questions of familial as
+                well as linguistic identity. To put it broadly, it leads to a
+                feeling of disconnection. Lack of linguistic knowledge also acts
+                as an obstruction while accessing the historicity of literary or
+                cultural productions in and around Bangla. Therefore, we have
+                resolved to focus on providing a platform for Bangla language
+                teaching. This will act as a platform that will bring first
+                generation immigrants as teachers to engage with successive
+                generations and other language enthusiasts as students in a
+                classroom set-up.
               </p>
-            </div>
-
-            <!-- SVG on Left -->
-            <div class="w-full lg:w-1/2 flex justify-center relative group">
-              <img
-                src="../assets/img/Vector4.png"
-                alt="SVG Image 4"
-                class="w-96 h-auto"
-              />
-              <!-- Tooltip -->
-              <div
-                class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                Image Credit:
-                <a
-                  class="hover:underline"
-                  href="https://ca.pinterest.com/pin/605945324893094181/"
-                  >https://ca.pinterest.com/pin/605945324893094181/</a
-                >
-                <div
-                  class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-black"
-                ></div>
-              </div>
             </div>
           </div>
         </div>
@@ -907,7 +905,7 @@ export default {
 
 <style scoped>
 .background-img {
-  background-image: url("../assets/img/unity_symbol.webp");
+  background-image: url("../assets/img/boat.png");
 }
 .wave-divider {
   position: relative;

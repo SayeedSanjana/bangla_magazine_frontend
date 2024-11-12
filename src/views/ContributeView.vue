@@ -2,7 +2,7 @@
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-gray-50">
+      <div class="h-auto shadow-md bg-cover bg-center bg-white">
         <!-- Heading -->
         <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
           <div
@@ -13,7 +13,8 @@
               <h2
                 class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
-                Want to join our community and become an organizer?
+                Join Our Network – Make Your Mark by Contributing to Our
+                Magazine!
               </h2>
               <p class="text-gray-600 text-lg text-justify mt-4">
                 <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>
@@ -31,9 +32,9 @@
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <img
-                src="../assets/img/contribute.jpeg"
+                src="../assets/img/collage3.png"
                 alt="SVG Image 1"
-                class="lg:w-full lg:h-auto w-60 h-60"
+                class="lg:w-full lg:h-full"
               />
             </div>
           </div>
@@ -51,8 +52,10 @@
             </h2>
             <p class="font-light text-base text-gray-700 mb-4">
               Join us as
-              <span class="text-midnight-sapphire font-bold">Porijaan</span>,
-              BANGLA’s premier digital magazine, embarks on a journey of
+              <span
+                class="text-midnight-sapphire font-bold font-cormorant text-2xl"
+                >"Porijaan"</span
+              >, BANGLA’s premier digital magazine, embarks on a journey of
               creative expression in Bangla, English, and French. Be part of a
               dynamic community of storytellers, artists, and innovators, and
               showcase your work across fiction, non-fiction, art, science, and
@@ -133,7 +136,7 @@
           </h2>
 
           <div
-            class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 pt-8 md:pt-16 p-8"
+            class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-8 md:pt-16 p-8"
           >
             <!-- Background Image with Opacity -->
             <img
@@ -184,7 +187,7 @@
                 <!-- Button aligned at the bottom -->
                 <div class="mt-4">
                   <button
-                    @click="submissionForm"
+                    @click="submissionForm(topic.name)"
                     class="inline-flex font-medium text-sm items-center text-midnight-sapphire hover:underline"
                   >
                     See our guideline
@@ -510,7 +513,7 @@
             Join Now...
           </h2>
           <p class="text-white text-lg text-justify my-2 mb-6">
-            Share your work and become a valued member of our community!
+            Share your work and become a valued member of our network!
           </p>
           <button
             @click="submissionForm"
@@ -535,6 +538,12 @@ import image6 from "@/assets/img/sports.gif";
 import image7 from "@/assets/img/cartoon.png";
 import image8 from "@/assets/img/cinema.gif";
 import image9 from "@/assets/img/write.png";
+import image10 from "@/assets/img/location.gif";
+import image11 from "@/assets/img/palette.png";
+import image12 from "@/assets/img/mic.gif";
+import image13 from "@/assets/img/write.gif";
+import image14 from "@/assets/img/essay.png";
+import image15 from "@/assets/img/pencil.gif";
 
 import author1 from "@/assets/authorImage/rassundaridevi.webp";
 import author2 from "@/assets/authorImage/aushutoshmukharjee.jpg";
@@ -774,10 +783,16 @@ export default {
 
       topics: [
         {
-          name: "Fiction",
+          name: "Short Fiction",
+          image: image15,
+          description:
+            "We welcome imaginative short stories that capture powerful moments and unique perspectives, delivering a punch in a concise form.",
+        },
+        {
+          name: "Long Fiction",
           image: image1,
           description:
-            "We welcome imaginative stories, including short fiction, novellas, and experimental writing that push the boundaries of storytelling.",
+            "Bring your narrative journey to life! We seek novellas and longer works that dive deep into character, plot, and world-building, offering readers an immersive storytelling experience.",
         },
         {
           name: "Non-Fiction",
@@ -792,10 +807,36 @@ export default {
             "Share insights, discoveries, or public articles on the latest advancements and challenges in science, tech, health, and innovation.",
         },
         {
-          name: "Art And Photography",
-          image: image4,
+          name: "Sports",
+          image: image6,
+          description:
+            "Write about current events, profiles, or personal experiences in the world of sports, whether professional or grassroots.",
+        },
+
+        {
+          name: "Painting",
+          image: image11,
           description:
             "Bring your vision to life through powerful images or themed artwork. We seek creative works that captivate and inspire, offering fresh perspectives and emotional depth.",
+        },
+
+        {
+          name: "Transcripted Interviews",
+          image: image12,
+          description:
+            "Bring forward voices of wisdom. Share interviews that highlight inspiring journeys, unique perspectives, and impactful stories.",
+        },
+        {
+          name: "Reflected Essays",
+          image: image14,
+          description:
+            "Share personal insights that resonate. We seek essays that explore deep reflections, connecting on a human level and inspiring thought.",
+        },
+        {
+          name: "Life Writings",
+          image: image13,
+          description:
+            "Capture life’s essence. We welcome autobiographical pieces that reveal the joys, challenges, and lessons of everyday moments.",
         },
         {
           name: "Health",
@@ -803,17 +844,18 @@ export default {
           description:
             "Contribute articles or reports addressing health-related topics, from medical breakthroughs to wellness trends.",
         },
-        {
-          name: "Sports",
-          image: image6,
-          description:
-            "Write about current events, profiles, or personal experiences in the world of sports, whether professional or grassroots.",
-        },
+
         {
           name: "Cartoons & Caricature",
           image: image7,
           description:
             "Contribute original, witty, or insightful cartoons and caricatures that comment on culture, society, or personal experiences.",
+        },
+        {
+          name: "Travel",
+          image: image10,
+          description:
+            "Take readers on a journey. Share travel stories that transport, delight, and intrigue, whether it's through immersive landscapes, cultural insights, or unforgettable encounters with people and places.",
         },
         {
           name: "Scripts (Drama & Short Film)",
@@ -826,6 +868,12 @@ export default {
           image: image9,
           description:
             "Contribute original, insightful poetry that captures life, emotions, and diverse cultural expressions.",
+        },
+        {
+          name: "Photography",
+          image: image4,
+          description:
+            "Capture the essence of the world through your lens. We invite you to share photographs that reveal hidden beauty, evoke emotion, or tell untold stories, capturing moments that linger in the mind.",
         },
       ],
       luminaries: [
@@ -862,8 +910,8 @@ export default {
   },
 
   methods: {
-    submissionForm() {
-      this.$router.push("/submission-form");
+    submissionForm(topicName) {
+      this.$router.push({ name: "submission", params: { topicName } });
     },
     nextSlide() {
       // Only increase the currentSlide if we haven't reached the last slide

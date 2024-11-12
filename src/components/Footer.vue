@@ -54,9 +54,22 @@
                 @click="contribute"
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
               >
-                Contribute to Our Organization
+                Our Magazine
               </button>
             </li>
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="submissionForm"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Contribute to Our Network
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center text-xs sm:text-sm mx-8 hidden lg:block">
+          <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
                 @click="cookie"
@@ -65,11 +78,6 @@
                 Cookie Management
               </button>
             </li>
-          </ul>
-        </div>
-
-        <div class="text-center text-xs sm:text-sm mx-8 hidden lg:block">
-          <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
@@ -156,6 +164,9 @@
 export default {
   name: "Footer",
   methods: {
+    submissionForm() {
+      this.$router.push({ name: "submission" });
+    },
     cookie() {
       this.$router.push("/cookie-settings");
     },
