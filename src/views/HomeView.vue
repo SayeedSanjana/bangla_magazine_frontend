@@ -120,17 +120,17 @@
     </div>
 
     <!-- Cookie Consent Popup -->
-    <CookieConsent />
+    <!-- <CookieConsent /> -->
   </section>
 </template>
 
 <script>
-import CookieConsent from "../components/CookieConsent.vue";
+//import CookieConsent from "../components/CookieConsent.vue";
 
 export default {
   name: "HomeView",
   components: {
-    CookieConsent,
+    //CookieConsent,
   },
   data() {
     return {};
