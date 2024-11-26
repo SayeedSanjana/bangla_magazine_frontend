@@ -3,7 +3,7 @@
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
       <div class="relative h-auto shadow-md bg-cover bg-center background-img">
-        <div class="absolute inset-0 bg-gray-900 opacity-0"></div>
+        <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
         <div class="relative z-10 lg:py-8">
           <!-- <h2
             class="text-4xl md:text-6xl font-bold mb-8 text-white fade-in font-cormorant"
@@ -905,7 +905,7 @@ export default {
 
 <style scoped>
 .background-img {
-  background-image: url("../assets/img/boat.png");
+  background-image: url("../assets/img/unity_symbol.webp");
 }
 .wave-divider {
   position: relative;

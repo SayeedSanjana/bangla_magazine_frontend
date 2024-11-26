@@ -76,7 +76,7 @@
             class="w-5 md:w-6 h-5 md:h-6 font-bold"
             alt="Contribute"
           /> -->
-          <span class="ml-2">Our Magazine</span>
+          <span class="ml-2">Magazine</span>
         </router-link>
         <router-link
           to="/submission-form"

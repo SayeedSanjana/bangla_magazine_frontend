@@ -30,9 +30,9 @@
             </div>
 
             <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center">
+            <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
               <img
-                src="../assets/img/collage3.png"
+                src="../assets/img/collage6.png"
                 alt="SVG Image 1"
                 class="lg:w-full lg:h-full"
               />
