@@ -795,13 +795,6 @@ export default {
           location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Iktisad Rashid ",
-          position: "Member",
-          image: image8,
-          bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
           name: "Yusuf Saadi",
           position: "Member",
           image: image16,
