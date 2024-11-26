@@ -29,7 +29,7 @@
                 @click="contribute"
                 class="text-base px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
               >
-                Explore Our Submission Topic
+                Explore Our Submission Topic for the Magazine
               </button>
             </div>
 
@@ -203,35 +203,44 @@
                   </div>
                 </span>
               </div>
-              <div class="px-2 relative flex-grow">
+              <!-- <div class="px-2 relative flex-grow">
                 <label for="submission-type" class="block font-medium"
                   >Submission Type</label
                 >
                 <select
                   @blur="v$.form.submissionType.$touch()"
+                  v-model="this.form.submissionType"
                   id="submission-type"
                   name="submission-type"
                   class="w-full p-2 border border-gray-300 bg-white rounded-lg"
+                  value="this.form.submissionType"
                   required
-                  v-model="form.submissionType"
                 >
-                  <option value="">None</option>
-                  <option value="Annual Theme">Annual Theme</option>
-                  <option value="Open Submissions">Open Submissions</option>
-                  <option value="Travel Writing">Travel Writing</option>
-                  <option value="Memoirs">Memoirs</option>
-                  <option value="1st Person Accounts">
-                    1st Person Accounts
+                  <option disabled value="" selected>
+                    Please select a submission type
                   </option>
-                  <option value="Interviews">Interviews</option>
+                  <option value="Poetry">Poetry</option>
+                  <option value="Short Fiction">Short Fiction</option>
+                  <option value="Long Fiction">Long Fiction</option>
+                  <option value="Reflective Essays">Reflectiv Essays</option>
+                  <option value="Non-fiction Articles">
+                    Non-fition Articles
+                  </option>
+                  <option value="Life Writings">Life Writings</option>
+                  <option value="Transcripted Interviews">
+                    Transcripted Interviews
+                  </option>
+                  <option value="Script">Script</option>
                   <option value="Science and Technology">
-                    Science & Technology
+                    Science and Technology
                   </option>
-                  <option value="Fiction Poetry">Fiction Poetry</option>
-                  <option value="Fiction Short">Fiction Short</option>
-                  <option value="Fiction Long">Fiction Long</option>
-                  <option value="Fiction Scripts">Fiction Scripts</option>
-                  <option value="Artwork">Artwork</option>
+                  <option value="Health">Health</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Cartoons and Caricature">
+                    Cartoons and Caricature
+                  </option>
+                  <option value="Paintings">Paintings</option>
                   <option value="Photography">Photography</option>
                 </select>
                 <span
@@ -245,6 +254,83 @@
                     <small class="form-error-text">
                       {{ error.$message }}
                     </small>
+                  </div>
+                </span>
+              </div> -->
+              <div class="px-2 relative flex-grow">
+                <label for="submission-type" class="block font-medium"
+                  >Submission Type</label
+                >
+
+                <!-- Custom Dropdown -->
+                <div
+                  @click="toggleDropdown"
+                  @blur="v$.form.submissionType.$touch()"
+                  tabindex="0"
+                  class="relative w-full p-2 border border-gray-300 bg-white rounded-lg cursor-pointer flex justify-between items-center"
+                  :class="{ 'border-red-500': v$.form.submissionType.$error }"
+                >
+                  <!-- Display the selected option or placeholder text -->
+                  <span class="text-gray-700">
+                    {{
+                      form.submissionType || "Please select a submission type"
+                    }}
+                  </span>
+
+                  <!-- Arrow Icon -->
+                  <svg
+                    v-if="!isDropdownOpen"
+                    class="w-4 h-4 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <svg
+                    v-else
+                    class="w-4 h-4 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14.77 12.79a.75.75 0 00-1.06-.02L10 15.938l-3.71-3.71a.75.75 0 10-1.06 1.06l4 4a.75.75 0 001.06 0l4-4a.75.75 0 00-.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <!-- Dropdown options -->
+                  <div
+                    v-show="isDropdownOpen"
+                    class="absolute top-full left-0 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-10 max-h-48 overflow-auto"
+                  >
+                    <div
+                      v-for="option in options"
+                      :key="option"
+                      @click="selectOption(option)"
+                      class="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                    >
+                      {{ option }}
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Validation Error Message -->
+                <span
+                  v-if="v$.form.submissionType.$error"
+                  class="mt-2 text-sm text-crimson-bloom"
+                >
+                  <div
+                    v-for="error in v$.form.submissionType.$errors"
+                    :key="error.$uid"
+                  >
+                    <small class="form-error-text">{{ error.$message }}</small>
                   </div>
                 </span>
               </div>
@@ -332,7 +418,7 @@
                 <label for="file" class="block font-medium"
                   >Upload File
                   <span class="text-sm text-gray-500">
-                    (You can upload multiple files , in formats such as .doc,
+                    (You can upload upto 5 files , in formats such as .doc,
                     .pdf, and .docx, images , maximum size limit: 20MB .)</span
                   ></label
                 >
@@ -388,15 +474,59 @@
                   </div>
                 </span>
               </div>
-              <button
+              <!-- <button
                 type="submit"
                 class="text-base w-full text-center px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
               >
                 Submit Form
+              </button> -->
+              <button
+                type="submit"
+                class="text-base w-full text-center px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
+                :disabled="loading"
+              >
+                <span v-if="loading">Submitting...</span>
+                <span v-else>Submit Form</span>
               </button>
             </form>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Loading overlay -->
+    <div
+      v-if="loading"
+      class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-50"
+    >
+      <div
+        class="bg-white p-12 md:p-16 rounded-xl shadow-2xl text-center max-w-xs w-full"
+      >
+        <!-- SVG Loading Spinner Centered -->
+        <div class="flex justify-center mb-4">
+          <svg
+            class="animate-spin h-10 w-10 text-blue-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+            ></path>
+          </svg>
+        </div>
+        <p class="text-gray-700 text-lg font-semibold tracking-wide">
+          Submitting your form, please wait...
+        </p>
       </div>
     </div>
   </section>
@@ -416,20 +546,52 @@ import Swal from "sweetalert2";
 export default {
   name: "ContributeView",
   mounted() {
-    // Initialize the Google API and Token Client when the component is mounted
+    this.form.submissionType = this.topicName || "";
+    console.log("Mounted - submissionType:", this.form.submissionType); // Check that the value is set correctly
+  },
+  watch: {
+    topicName(newVal) {
+      this.form.submissionType = newVal;
+      console.log("Updated topicName:", newVal);
+    },
   },
   setup() {
     return { v$: useVuelidate() };
   },
+  props: {
+    topicName: {
+      type: String,
+      default: "", // Default to an empty string if nothing is passed
+    },
+  },
   data() {
     return {
+      isDropdownOpen: false,
+      options: [
+        "Poetry",
+        "Short Fiction",
+        "Long Fiction",
+        "Reflective Essays",
+        "Non-fiction Articles",
+        "Life Writings",
+        "Transcripted Interviews",
+        "Script",
+        "Science and Technology",
+        "Health",
+        "Sports",
+        "Travel",
+        "Cartoons and Caricature",
+        "Paintings",
+        "Photography",
+      ],
+      loading: false,
       hashtagError: "",
       hashtags: "",
       form: {
         firstname: "",
         lastname: "",
         email: "",
-        submissionType: "",
+        submissionType: this.topicName || " ",
         hashtags: [], // This will hold the processed hashtags as an array
         headshot: null,
         bio: "",
@@ -595,57 +757,47 @@ export default {
     return { v$: useVuelidate() };
   },
   methods: {
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    selectOption(option) {
+      this.form.submissionType = option;
+      this.isDropdownOpen = false;
+      this.v$.form.submissionType.$touch();
+    },
     async submitForm() {
       this.v$.$touch();
-      if (!this.v$.$error && this.hashtagError == "") {
+      if (!this.v$.$error && this.hashtagError === "") {
+        this.loading = true; // Start loading here
         try {
-          // Create FormData object for the request
           const formData = new FormData();
           formData.append("firstname", this.form.firstname);
           formData.append("lastname", this.form.lastname);
           formData.append("email", this.form.email);
           formData.append("submissionType", this.form.submissionType);
-          // Append hashtags as an array
-          this.form.hashtags.forEach((tag) => {
-            formData.append("hashtags[]", tag);
-          });
-          formData.append("hashtags", this.form.hashtags); // Convert array to JSON string
+          this.form.hashtags.forEach((tag) =>
+            formData.append("hashtags[]", tag)
+          );
           formData.append("headshot", this.form.headshot);
           formData.append("bio", this.form.bio);
           formData.append("description", this.form.description);
-
-          // Append files
           for (let i = 0; i < this.form.files.length; i++) {
             formData.append("files", this.form.files[i]);
           }
-          // Send form data to the backend API
+
           const response = await axios.post(
             "http://localhost:3000/api/upload",
             formData,
-            {
-              headers: { "Content-Type": "multipart/form-data" },
-            }
+            { headers: { "Content-Type": "multipart/form-data" } }
           );
+
           if (response.status === 200) {
             Swal.fire({
               icon: "success",
               title: "Form Submitted",
               text: "Your form has been submitted successfully! Please check your email for confirmation.",
             });
-
-            // Reset form
-            this.hashtags = "";
-            this.form = {
-              firstname: "",
-              lastname: "",
-              email: "",
-              submissionType: "",
-              hashtags: [], // This will hold the processed hashtags as an array
-              headshot: null,
-              bio: "",
-              files: [],
-              description: "",
-            };
+            this.resetForm();
           } else {
             Swal.fire({
               icon: "error",
@@ -660,11 +812,96 @@ export default {
             text: "There was an error submitting the form. Please try again.",
           });
           console.error("Error submitting form:", error);
+        } finally {
+          this.loading = false; // Stop loading here
         }
-      } else {
-        return;
       }
     },
+    resetForm() {
+      this.hashtags = "";
+      this.form = {
+        firstname: "",
+        lastname: "",
+        email: "",
+        submissionType: "",
+        hashtags: [],
+        headshot: null,
+        bio: "",
+        files: [],
+        description: "",
+      };
+    },
+    // async submitForm() {
+    //   this.v$.$touch();
+    //   if (!this.v$.$error && this.hashtagError == "") {
+    //     this.loading = true;
+    //     try {
+    //       // Create FormData object for the request
+    //       const formData = new FormData();
+    //       formData.append("firstname", this.form.firstname);
+    //       formData.append("lastname", this.form.lastname);
+    //       formData.append("email", this.form.email);
+    //       formData.append("submissionType", this.form.submissionType);
+    //       // Append hashtags as an array
+    //       this.form.hashtags.forEach((tag) => {
+    //         formData.append("hashtags[]", tag);
+    //       });
+    //       formData.append("hashtags", this.form.hashtags); // Convert array to JSON string
+    //       formData.append("headshot", this.form.headshot);
+    //       formData.append("bio", this.form.bio);
+    //       formData.append("description", this.form.description);
+
+    //       // Append files
+    //       for (let i = 0; i < this.form.files.length; i++) {
+    //         formData.append("files", this.form.files[i]);
+    //       }
+    //       // Send form data to the backend API
+    //       const response = await axios.post(
+    //         "http://localhost:3000/api/upload",
+    //         formData,
+    //         {
+    //           headers: { "Content-Type": "multipart/form-data" },
+    //         }
+    //       );
+    //       if (response.status === 200) {
+    //         Swal.fire({
+    //           icon: "success",
+    //           title: "Form Submitted",
+    //           text: "Your form has been submitted successfully! Please check your email for confirmation.",
+    //         });
+
+    //         // Reset form
+    //         this.hashtags = "";
+    //         this.form = {
+    //           firstname: "",
+    //           lastname: "",
+    //           email: "",
+    //           submissionType: "",
+    //           hashtags: [], // This will hold the processed hashtags as an array
+    //           headshot: null,
+    //           bio: "",
+    //           files: [],
+    //           description: "",
+    //         };
+    //       } else {
+    //         Swal.fire({
+    //           icon: "error",
+    //           title: "Submission Failed",
+    //           text: "There was an error submitting the form. Please try again.",
+    //         });
+    //       }
+    //     } catch (error) {
+    //       Swal.fire({
+    //         icon: "error",
+    //         title: "Submission Failed",
+    //         text: "There was an error submitting the form. Please try again.",
+    //       });
+    //       console.error("Error submitting form:", error);
+    //     }
+    //   } else {
+    //     return;
+    //   }
+    // },
     handleHeadshotUpload(event) {
       const file = event.target.files[0];
       this.form.headshot = file;
@@ -720,5 +957,24 @@ export default {
   max-height: 950px; /* Adjust height based on your design */
   overflow-y: auto; /* Adds vertical scroll */
   position: relative;
+}
+/* Loading Spinner */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3); /* Light border */
+  border-top: 4px solid #4b5563; /* Dark border for the spinning effect */
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

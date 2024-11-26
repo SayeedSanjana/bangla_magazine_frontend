@@ -13,7 +13,7 @@
               <h2
                 class="text-4xl md:text-5xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
-                Welcome to Bangla Abhibashi Network: a Glocal Linguo-cultural
+                Welcome to Bangali Abhibashi Network: a Glocal Linguo-cultural
                 Association ,
                 <span class="italic font-bold text-amber-600"
                   >B.A.N.G.L.A.</span
@@ -56,7 +56,7 @@
                 />
                 <button
                   @click="contribute"
-                  class="group relative mb-8 inline-flex items-center w-full overflow-hidden border-4 border-yellow-600 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl px-6 py-3 font-medium text-gray-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
+                  class="group relative mb-8 inline-flex items-center w-full overflow-hidden border-4 border-yellow-600 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl py-3 font-medium text-gray-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
                 >
                   <span
                     class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-gradient-to-r from-gray-100 to-amber-50 text-gray-600 duration-300 group-hover:translate-x-0"
@@ -77,8 +77,9 @@
                     </svg>
                   </span>
                   <span
-                    class="ease absolute flex h-full w-full transform items-center text-gray-700 font-semibold text-base justify-center transition-all duration-300 group-hover:translate-x-full"
-                    >Click to Begin Your Journey</span
+                    class="ease absolute flex h-full w-full transform items-center text-gray-700 justify-center font-semibold text-normal transition-all duration-300 group-hover:translate-x-full"
+                  >
+                    Get a Glimpse – Explore the Latest in Our Magazine...</span
                   >
                   <span class="invisible relative">Get Started</span>
                 </button>
@@ -119,17 +120,17 @@
     </div>
 
     <!-- Cookie Consent Popup -->
-    <CookieConsent />
+    <!-- <CookieConsent /> -->
   </section>
 </template>
 
 <script>
-import CookieConsent from "../components/CookieConsent.vue";
+//import CookieConsent from "../components/CookieConsent.vue";
 
 export default {
   name: "HomeView",
   components: {
-    CookieConsent,
+    //CookieConsent,
   },
   data() {
     return {};
