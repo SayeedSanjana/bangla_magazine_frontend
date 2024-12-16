@@ -5,14 +5,10 @@
       <div class="h-auto shadow-md bg-cover bg-center bg-white">
         <!-- Heading -->
         <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
-          <div
-            class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8"
-          >
+          <div class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8">
             <!-- Text on Left -->
             <div class="w-full lg:w-1/2">
-              <h2
-                class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
-              >
+              <h2 class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant">
                 Join Our Network – Make Your Mark by Contributing to Our
                 Magazine!
               </h2>
@@ -21,30 +17,24 @@
                 Magazine is open for creative voices across languages and
                 mediums.
               </p>
-              <button
-                @click="submissionForm"
-                class="text-base px-4 py-3 bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg mt-3 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold"
-              >
+              <button @click="submissionForm"
+                class="text-base border-2 border-yellow-400 px-4 py-3 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg mt-3 
+         transition duration-300 ease-in-out 
+         lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold">
                 Submission Portal
               </button>
             </div>
 
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
-              <img
-                src="../assets/img/collage6.png"
-                alt="SVG Image 1"
-                class="lg:w-full lg:h-full"
-              />
+              <img src="../assets/img/collage6minV2.png" alt="SVG Image 1" class="lg:w-full lg:h-full" />
             </div>
           </div>
         </div>
       </div>
 
       <!-- Magazine Section -->
-      <div
-        class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-8 mb:pt-16"
-      >
+      <div class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-8 mb:pt-16">
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <div class="mb-8">
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
@@ -52,10 +42,8 @@
             </h2>
             <p class="font-light text-base text-gray-700 mb-4">
               Join us as
-              <span
-                class="text-midnight-sapphire font-bold font-cormorant text-2xl"
-                >"Porijaan"</span
-              >, BANGLA’s premier digital magazine, embarks on a journey of
+              <span class="text-midnight-sapphire font-bold font-cormorant text-2xl">"Porijaan"</span>, BANGLA’s premier
+              digital magazine, embarks on a journey of
               creative expression in Bangla, English, and French. Be part of a
               dynamic community of storytellers, artists, and innovators, and
               showcase your work across fiction, non-fiction, art, science, and
@@ -67,17 +55,13 @@
               fiction, non-fiction, travel, science, health, sports, art,
               photography, cartoons, interviews, and scripts. One section will
               introduce an
-              <span class="text-midnight-sapphire font-semibold"
-                >Annual Theme</span
-              >
+              <span class="text-midnight-sapphire font-semibold">Annual Theme</span>
               , starting with ‘Bangla-French Crossings,’ exploring interactions
               between Bangla and French languages, cultures, and worldviews. It
               will include public articles on artistic or literary
               interventions, translations, and personal experiences. The second
               section, the
-              <span class="text-midnight-sapphire font-semibold"
-                >Annual Celebration</span
-              >
+              <span class="text-midnight-sapphire font-semibold">Annual Celebration</span>
               , will honor significant Bangla literary and cultural figures on
               their birth or death anniversaries.
             </p>
@@ -89,34 +73,19 @@
       <!-- Wave Svg -->
 
       <div class="wave-divider bg-gradient-to-r from-amber-50 to-blue-50">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <!-- Gradient Definition -->
           <defs>
-            <linearGradient
-              id="gradient-fill"
-              x1="0%"
-              y1="0%"
-              x2="100%"
-              y2="0%"
-            >
+            <linearGradient id="gradient-fill" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" style="stop-color: #e2e9ed; stop-opacity: 1" />
               <!-- Ending color gray-200 #e5e7eb -->
-              <stop
-                offset="100%"
-                style="stop-color: #e5e7eb; stop-opacity: 1"
-              />
+              <stop offset="100%" style="stop-color: #e5e7eb; stop-opacity: 1" />
             </linearGradient>
           </defs>
 
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="url(#gradient-fill)"
-          ></path>
+            fill="url(#gradient-fill)"></path>
         </svg>
       </div>
 
@@ -124,36 +93,22 @@
       <div class="px-2 bg-gradient-to-r from-amber-50 to-blue-50">
         <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <!-- <div class="absolute inset-0 bg-gray-900 opacity-85"></div> -->
-          <h2
-            class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-6"
-          >
+          <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-6">
             What We Are Looking For?
           </h2>
-          <h2
-            class="text-3xl md:text-5xl mb-2 text-midnight-sapphire font-cormorant pt-6"
-          >
+          <h2 class="text-3xl md:text-5xl mb-2 text-midnight-sapphire font-cormorant pt-6">
             1. Independent Category
           </h2>
 
-          <div
-            class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-8 md:pt-16 p-8"
-          >
+          <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-8 md:pt-16 p-8">
             <!-- Background Image with Opacity -->
-            <img
-              src="../assets/img/culture.jpg"
-              class="absolute inset-0 w-full h-full object-cover opacity-5 rounded-lg"
-              alt="Background Image"
-            />
+            <img src="../assets/img/culture.jpg"
+              class="absolute inset-0 w-full h-full object-cover opacity-5 rounded-lg" alt="Background Image" />
 
             <!-- Content on top of the background -->
-            <div
-              v-for="(topic, i) in topics"
-              :key="i"
-              class="md:p-6 pt-4 relative z-10"
-            >
+            <div v-for="(topic, i) in topics" :key="i" class="md:p-6 pt-4 relative z-10">
               <div
-                class="relative border bg-white border-gray-200 rounded-xl shadow-xl md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
-              >
+                class="relative border bg-white border-gray-200 rounded-xl shadow-xl md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between">
                 <!-- Background Image with Opacity -->
                 <!-- <img
                   src="../assets/img/culture.jpg"
@@ -161,9 +116,7 @@
                   alt="Background Image"
                 /> -->
                 <!-- Positioned and Rounded SVG -->
-                <div
-                  class="absolute -top-8 left-16 transform -translate-x-1/2 p-2"
-                >
+                <div class="absolute -top-8 left-16 transform -translate-x-1/2 p-2">
                   <img :src="topic.image" class="w-12 h-12" />
                 </div>
 
@@ -174,9 +127,7 @@
                   </h5>
 
                   <!-- Divider -->
-                  <div
-                    class="border-t-2 border-gray-300 border-opacity-35 my-3"
-                  ></div>
+                  <div class="border-t-2 border-gray-300 border-opacity-35 my-3"></div>
 
                   <!-- Description -->
                   <p class="font-normal text-base text-gray-600">
@@ -186,25 +137,13 @@
 
                 <!-- Button aligned at the bottom -->
                 <div class="mt-4">
-                  <button
-                    @click="submissionForm(topic.name)"
-                    class="inline-flex font-medium text-sm items-center text-midnight-sapphire hover:underline"
-                  >
+                  <button @click="submissionForm(topic.name)"
+                    class="inline-flex font-medium text-sm items-center text-midnight-sapphire hover:underline">
                     See our guideline
-                    <svg
-                      class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 18 18"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                      />
+                    <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
                     </svg>
                   </button>
                 </div>
@@ -217,28 +156,18 @@
       <!-- Annual Theme Section -->
       <div class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8">
         <div class="md:container md:mx-auto px-4 lg:px-32">
-          <h2
-            class="text-3xl md:text-5xl text-midnight-sapphire font-cormorant mb-8"
-          >
+          <h2 class="text-3xl md:text-5xl text-midnight-sapphire font-cormorant mb-8">
             2. Annual Theme
           </h2>
-          <div
-            class="flex flex-col lg:flex-row items-start justify-between lg:space-x-8 pb-8 md:pb-12"
-          >
+          <div class="flex flex-col lg:flex-row items-start justify-between lg:space-x-8 pb-8 md:pb-12">
             <!-- Left Section: Sticky on Scroll -->
             <div class="w-full lg:w-1/2 md:pr-6 lg:sticky lg:top-0 self-start">
-              <p
-                class="text-amber-600 text-2xl md:text-3xl font-cormorant text-justify pb-4 font-semibold"
-              >
+              <p class="text-amber-600 text-2xl md:text-3xl font-cormorant text-justify pb-4 font-semibold">
                 Bangla-French-Crossings
               </p>
 
               <div class="pt-6">
-                <img
-                  src="../assets/svg/combined.svg"
-                  alt="SVG Image 1"
-                  class="lg:h-full lg:w-full h-96"
-                />
+                <img src="../assets/svg/combined.svg" alt="SVG Image 1" class="lg:h-full lg:w-full h-96" />
               </div>
             </div>
 
@@ -261,67 +190,34 @@
                 <div id="accordion-open" class="p-3 w-full">
                   <div v-for="(item, index) in accordionItems" :key="index">
                     <h2 :id="`accordion-open-heading-${index}`">
-                      <button
-                        type="button"
+                      <button type="button"
                         class="flex items-center justify-between w-full p-4 sm:p-5 font-medium text-gray-400 rounded-xl border text-base border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3"
-                        @click="toggleAccordion(index)"
-                        :aria-expanded="isOpen(index)"
-                        :aria-controls="`accordion-open-body-${index}`"
-                      >
+                        @click="toggleAccordion(index)" :aria-expanded="isOpen(index)"
+                        :aria-controls="`accordion-open-body-${index}`">
                         <span class="flex items-center text-gray-700">
-                          <svg
-                            class="w-5 h-5 me-2 shrink-0 text-midnight-sapphire"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
+                          <svg class="w-5 h-5 me-2 shrink-0 text-midnight-sapphire" fill="currentColor"
+                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
                               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                              clip-rule="evenodd"
-                            />
+                              clip-rule="evenodd" />
                           </svg>
                           {{ item.title }}
                         </span>
-                        <svg
-                          v-if="isOpen(index)"
-                          class="w-3 h-3 rotate-180 shrink-0"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 10 6"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M9 5L5 1 1 5"
-                          />
+                        <svg v-if="isOpen(index)" class="w-3 h-3 rotate-180 shrink-0" xmlns="http://www.w3.org/2000/svg"
+                          fill="none" viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5L5 1 1 5" />
                         </svg>
-                        <svg
-                          v-else
-                          class="w-3 h-3 shrink-0"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 10 6"
-                        >
-                          <path
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M1 1l4 4 4-4"
-                          />
+                        <svg v-else class="w-3 h-3 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none"
+                          viewBox="0 0 10 6">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1l4 4 4-4" />
                         </svg>
                       </button>
                     </h2>
-                    <div
-                      v-show="isOpen(index)"
-                      :id="`accordion-open-body-${index}`"
+                    <div v-show="isOpen(index)" :id="`accordion-open-body-${index}`"
                       class="p-5 border border-b-0 border-gray-200 bg-slate-100 text-gray-700 text-sm md:text-base"
-                      :aria-labelledby="`accordion-open-heading-${index}`"
-                      v-html="item.content"
-                    ></div>
+                      :aria-labelledby="`accordion-open-heading-${index}`" v-html="item.content"></div>
                   </div>
                 </div>
               </div>
@@ -334,14 +230,10 @@
 
       <div class="pt-8 px-2 bg-gradient-to-r min-h-screen">
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
-          >
+          <h2 class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6">
             3. Literary and Cultural Figures
           </h2>
-          <p
-            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
-          >
+          <p class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2">
             Celebrating Icons
           </p>
           <p class="text-gray-600 text-base text-justify my-8">
@@ -357,28 +249,14 @@
           <div class="flex justify-center items-center md:pt-12">
             <div class="overflow-hidden relative w-full">
               <!-- Slider wrapper -->
-              <div
-                class="flex transition-transform duration-300 ease-out"
-                :style="`transform: translateX(-${
+              <div class="flex transition-transform duration-300 ease-out" :style="`transform: translateX(-${
                   currentSlide * (100 / figuresPerPage)
-                }%)`"
-              >
+                }%)`">
                 <!-- Cards -->
-                <div
-                  v-for="(card, index) in figures"
-                  :key="index"
-                  class="flex justify-center items-center px-4"
-                  :style="{ minWidth: calcMinWidth }"
-                >
-                  <div
-                    class="bg-white p-6 shadow-lg rounded-lg text-center"
-                    style="width: 380px; height: 460px"
-                  >
-                    <img
-                      :src="card.img"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded-lg mb-4"
-                    />
+                <div v-for="(card, index) in figures" :key="index" class="flex justify-center items-center px-4"
+                  :style="{ minWidth: calcMinWidth }">
+                  <div class="bg-white p-6 shadow-lg rounded-lg text-center" style="width: 380px; height: 460px">
+                    <img :src="card.img" alt="Card Image" class="w-full h-48 object-cover rounded-lg mb-4" />
                     <h3 class="text-xl mb-1 text-gray-800 font-cormorant">
                       <span class="text-2xl">{{ index + 1 }}.</span>
                       {{ card.title }}
@@ -397,20 +275,14 @@
               </div>
 
               <!-- Navigation buttons -->
-              <button
-                @click="prevSlide"
-                :disabled="currentSlide === 0"
+              <button @click="prevSlide" :disabled="currentSlide === 0"
                 class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-midnight-sapphire text-white px-4 py-2 rounded-l-lg text-xs"
-                :class="{ 'opacity-50 cursor-not-allowed': currentSlide === 0 }"
-              >
+                :class="{ 'opacity-50 cursor-not-allowed': currentSlide === 0 }">
                 Prev
               </button>
-              <button
-                @click="nextSlide"
-                :disabled="isNextDisabled"
+              <button @click="nextSlide" :disabled="isNextDisabled"
                 class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-midnight-sapphire text-white px-4 py-2 rounded-r-lg text-xs"
-                :class="{ 'opacity-50 cursor-not-allowed': isNextDisabled }"
-              >
+                :class="{ 'opacity-50 cursor-not-allowed': isNextDisabled }">
                 Next
               </button>
             </div>
@@ -419,18 +291,12 @@
       </div>
 
       <!-- Memory of Luminaries-->
-      <div
-        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-8"
-      >
+      <div class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-8">
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
-          >
+          <h2 class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6">
             4. Memory of Luminaries
           </h2>
-          <p
-            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
-          >
+          <p class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2">
             In Memory of Luminaries
           </p>
           <p class="text-gray-600 text-lg text-justify my-8">
@@ -443,23 +309,11 @@
           <div class="flex justify-center items-center md:pt-12">
             <div class="overflow-hidden relative w-full">
               <!-- Grid wrapper -->
-              <div
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-              >
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Cards -->
-                <div
-                  v-for="(card, index) in luminaries"
-                  :key="index"
-                  class="px-4"
-                >
-                  <div
-                    class="bg-white p-6 shadow-lg rounded-lg text-center mb-4 w-full h-full"
-                  >
-                    <img
-                      :src="card.img"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded-lg mb-4"
-                    />
+                <div v-for="(card, index) in luminaries" :key="index" class="px-4">
+                  <div class="bg-white p-6 shadow-lg rounded-lg text-center mb-4 w-full h-full">
+                    <img :src="card.img" alt="Card Image" class="w-full h-48 object-cover rounded-lg mb-4" />
                     <h3 class="text-xl mb-1 text-gray-800 font-cormorant">
                       <span class="text-2xl">{{ index + 1 }}.</span>
                       {{ card.name }}
@@ -482,44 +336,31 @@
 
       <!-- Submission Form Section -->
 
-      <div
-        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
-      >
+      <div class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8">
         <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
 
         <!-- Tooltip for Image Credit -->
         <div
-          class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
+          class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           Background Image by:
-          <a
-            class="hover:underline"
-            href="https://ca.pinterest.com/pin/2251868554953302/"
-            >https://ca.pinterest.com/pin/2251868554953302/</a
-          >
+          <a class="hover:underline"
+            href="https://ca.pinterest.com/pin/2251868554953302/">https://ca.pinterest.com/pin/2251868554953302/</a>
           <div
-            class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
-          ></div>
+            class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black">
+          </div>
         </div>
 
         <!-- Content Overlay -->
-        <div
-          class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10"
-        >
-          <h2
-            class="text-4xl md:text-5xl font-bold mb-2 text-white font-cormorant pt-6"
-          >
+        <div class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10">
+          <h2 class="text-4xl md:text-5xl font-bold mb-2 text-white font-cormorant pt-6">
             Join Now...
           </h2>
           <p class="text-white text-lg text-justify my-2 mb-6">
             Share your work and become a valued member of our network!
           </p>
-          <button
-            @click="submissionForm"
-            aria-label="Contribute to the community"
-            class="text-base px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold transition duration-300 ease-in-out"
-          >
+          <button @click="submissionForm" aria-label="Contribute to the community"
+            class="text-base px-4 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg hover:bg-gradient-to-r hover:from-gray-50 hover:to-white hover:border-honey-gold hover:border-2 hover:text-honey-gold transition duration-300 ease-in-out">
             Submission Portal
           </button>
         </div>
