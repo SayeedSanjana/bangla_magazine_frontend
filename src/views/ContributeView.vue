@@ -2,7 +2,7 @@
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-white">
+      <div class="h-auto shadow-md bg-cover bg-center bg-slate-50">
         <!-- Heading -->
         <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
           <div
@@ -31,10 +31,15 @@
 
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
-              <img
+              <!-- <img
                 src="../assets/img/collage6.png"
                 alt="SVG Image 1"
                 class="lg:w-full lg:h-full"
+              /> -->
+              <img
+                src="../assets/img/bg-8.gif"
+                alt="SVG Image 1"
+                class="lg:w-auto lg:h-auto"
               />
             </div>
           </div>

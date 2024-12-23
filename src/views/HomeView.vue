@@ -106,10 +106,13 @@
     <div class="bg-regal-blue py-10 sm:py-20 hidden md:block">
       <div class="md:container md:mx-auto">
         <h2
-          class="text-2xl sm:text-3xl font-cormorant text-midnight-sapphire text-center pb-4"
+          class="text-3xl sm:text-2xl font-cormorant text-midnight-sapphire text-center pb-4"
         >
-          "Step in, publish your work and start making an impact with our
-          vibrant community today!"
+          Our network is set to publish an online digital magazine. We sincerely
+          hope that this magazine will begin as a trilingual platform of
+          exchanging literary and cultural forms between Bangla, English, and
+          French but eventually expand into an intersectional space of
+          multilingual and polyvocal exchange.
         </h2>
         <img
           src="../assets/svg/blobs.svg"
