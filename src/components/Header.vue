@@ -1,7 +1,7 @@
 <template>
   <!-- Header -->
   <header
-    class="bg-gradient-to-r from-amber-50 to-light-blue shadow font-cormorant"
+    class="hidden md:block bg-gradient-to-r from-amber-50 to-light-blue shadow font-cormorant"
   >
     <div
       class="container mx-auto flex flex-col md:flex-row justify-between items-center p-2"
@@ -10,15 +10,15 @@
         <img
           src="../assets/img/logo.png"
           alt="logo"
-          class="h-16 w-16 lg:h-44 lg:w-full object-cover"
+          class="h-24 w-24 lg:h-44 lg:w-full lg:object-cover"
         />
       </button>
-      <h1 class="text-4xl md:text-6xl font-bold text-center">
+      <h1 class="text-4xl md:text-4xl lg:text-6xl font-bold text-center">
         <span class="text-midnight-sapphire text-gradient text-shadow"
           >B.A.N.G.L.A.</span
         >
       </h1>
-      <nav class="flex space-x-4 md:space-x-6 mt-4 md:mt-0">
+      <div class="flex space-x-4 md:space-x-6 mt-4 md:mt-0">
         <button class="">
           <img
             src="../assets/svg/facebook.svg"
@@ -47,7 +47,7 @@
             class="w-8 h-8 fill-midnight-sapphire"
           />
         </button>
-      </nav>
+      </div>
     </div>
   </header>
 </template>
