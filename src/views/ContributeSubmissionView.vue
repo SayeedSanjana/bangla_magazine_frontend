@@ -520,7 +520,7 @@ export default {
           }
 
           const response = await axios.post(
-            "http://localhost:3000/api/upload",
+            "https://api.banglaglocal.org/api/upload",
             formData,
             { headers: { "Content-Type": "multipart/form-data" } }
           );

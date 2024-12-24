@@ -14,7 +14,7 @@
           <!-- Home -->
           <router-link
             to="/home"
-            :class="{'border-b-2 border-amber-400 text-amber-200': activeLink === '/home'}"
+            :class="{'underline decoration-amber-500': activeLink === '/home'}"
             @click="setActiveLink('/home')"
             class="text-white hover:text-amber-200 font-medium"
           >
@@ -22,16 +22,17 @@
           </router-link>
 
           <!-- About Us Dropdown -->
-          <div class="relative group">
+          <div class="relative">
             <button
-              
-              :class="{'border-b-2 border-amber-400 text-amber-200': activeDropdown === 'about' || isChildActive('/about') }"
+              @click.stop="toggleDropdown('about')"
+              :class="{'underline decoration-amber-500': activeDropdown === 'about' || isChildActive('/about') }"
               class="text-white hover:text-amber-200 font-medium focus:outline-none"
             >
               About Us
             </button>
             <div
-              class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+              v-if="activeDropdown === 'about'"
+              class="absolute left-0 mt-2 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
             >
               <router-link
                 to="/about/story"
@@ -40,11 +41,17 @@
               >
                 Our Story
               </router-link>
-              
+              <router-link
+                to="/about/plot"
+                @click="setActiveLink('/about/plot')"
+                class="block px-4 py-2 text-white hover:bg-amber-500"
+              >
+                Our Plot
+              </router-link>
               <router-link
                 to="/about/team"
                 @click="setActiveLink('/about/team')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                class="block px-4 py-2 text-white hover:bg-amber-500"
               >
                 Team Members
               </router-link>
@@ -52,20 +59,24 @@
           </div>
 
           <!-- Magazine Dropdown -->
-          <div class="relative group">
+          <div class="relative">
             <button
-              :class="{'border-b-2 border-amber-400 text-amber-200': activeDropdown === 'magazine' || isChildActive('/magazine') }"
+              @click.stop="toggleDropdown('magazine')"
+              :class="{'underline decoration-amber-500': activeDropdown === 'magazine' || isChildActive('/magazine') }"
               class="text-white hover:text-amber-200 font-medium focus:outline-none"
             >
               Magazine
             </button>
-            <div class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50">
+            <div
+              v-if="activeDropdown === 'magazine'"
+              class="absolute left-0 mt-2 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+            >
               <router-link
                 to="/magazine/topics"
                 @click="setActiveLink('/magazine/topics')"
                 class="block px-4 py-2 text-white hover:bg-amber-500"
               >
-                Porijaan-The Magazine
+                Topics We Are Interested In
               </router-link>
               <router-link
                 to="/magazine/theme"
@@ -84,7 +95,7 @@
               <router-link
                 to="/magazine/memory"
                 @click="setActiveLink('/magazine/memory')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                class="block px-4 py-2 text-white hover:bg-amber-500"
               >
                 Memory Of Luminaries
               </router-link>
@@ -92,15 +103,17 @@
           </div>
 
           <!-- Contribute Dropdown -->
-          <div class="relative group">
+          <div class="relative">
             <button
-              :class="{'border-b-2 border-amber-400 text-amber-200': activeDropdown === 'contribute' || isChildActive('/contribute') }"
+              @click.stop="toggleDropdown('contribute')"
+              :class="{'underline decoration-amber-500': activeDropdown === 'contribute' || isChildActive('/contribute') }"
               class="text-white hover:text-amber-200 font-medium focus:outline-none"
             >
               Contribute
             </button>
             <div
-              class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+              v-if="activeDropdown === 'contribute'"
+              class="absolute left-0 mt-2 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
             >
               <router-link
                 to="/contribute/network"
@@ -112,7 +125,7 @@
               <router-link
                 to="/contribute/magazine"
                 @click="setActiveLink('/contribute/magazine')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                class="block px-4 py-2 text-white hover:bg-amber-500"
               >
                 Contribute to the Magazine
               </router-link>
@@ -178,6 +191,7 @@ export default {
     return {
       isMobileMenuExpanded: false,
       activeLink: '/home',
+      activeDropdown: null,
     };
   },
   methods: {
@@ -186,6 +200,12 @@ export default {
     },
     setActiveLink(link) {
       this.activeLink = link;
+      this.activeDropdown = null;
+    },
+    toggleDropdown(menu) {
+      this.activeDropdown = this.activeDropdown === menu ? null : menu;
+    },
+    closeDropdowns() {
       this.activeDropdown = null;
     },
     isChildActive(parent) {
