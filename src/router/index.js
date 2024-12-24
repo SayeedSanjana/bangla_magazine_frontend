@@ -4,6 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import ContributeView from "../views/ContributeView.vue";
 import CookieSettingsView from "../views/CookieSettingsView.vue";
 import ContributeSubmissionView from "../views/ContributeSubmissionView.vue";
+import PlotView from "../views/PlotView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/cookie-settings",
       name: "cookie",
       component: CookieSettingsView,
+    },
+    {
+      path: "/plot",
+      name: "plot",
+      component: PlotView,
     },
     {
       path: "/submission-form/:topicName?",

@@ -78,6 +78,22 @@
           /> -->
           <span class="ml-2">Magazine</span>
         </router-link>
+
+        <router-link
+          to="/plot"
+          class="text-white flex items-center text-base font-light"
+          :class="{
+            'underline decoration-2 text-amber-700 underline-offset-8':
+              isActiveRoute('/contribute'),
+          }"
+        >
+          <!-- <img
+            src="../assets/svg/contribute.svg"
+            class="w-5 md:w-6 h-5 md:h-6 font-bold"
+            alt="Contribute"
+          /> -->
+          <span class="ml-2">Our Plot</span>
+        </router-link>
         <router-link
           to="/submission-form"
           class="text-white flex items-center text-base font-light"
