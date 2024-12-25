@@ -20,7 +20,7 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: "/contribute",
+      path: "/magazine/topics",
       name: "contribute",
       component: ContributeView,
     },
