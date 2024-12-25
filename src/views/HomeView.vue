@@ -1,8 +1,8 @@
 <template>
-  <section class="bg-slate-50">
+  <section class="bg-white">
     <!-- Main Content -->
-    <div class="md:container md:mx-auto p-4 md:p-6 flex-grow bg-slate-50">
-      <div class="h-auto bg-cover bg-center bg-slate-50 rounded-xl">
+    <div class="md:container md:mx-auto p-4 md:p-6 flex-grow bg-white">
+      <div class="h-auto bg-cover bg-center bg-white rounded-xl">
         <!-- Heading -->
         <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
           <div
@@ -49,12 +49,17 @@
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center">
               <div>
-                <img
+                <!-- <img
                   src="../assets/img/bg-8.gif"
                   alt="SVG Image 1"
                   class="w-full h-auto"
+                /> -->
+                <img
+                  src="../assets/img/collage6.png"
+                  alt="SVG Image 1"
+                  class="lg:w-auto lg:h-auto"
                 />
-                <button
+                <!-- <button
                   @click="contribute"
                   class="group relative mb-8 inline-flex items-center w-full overflow-hidden border-4 border-yellow-600 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl py-3 font-medium text-gray-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
                 >
@@ -82,7 +87,7 @@
                     Get a Glimpse – Explore the Latest in Our Magazine...</span
                   >
                   <span class="invisible relative">Get Started</span>
-                </button>
+                </button> -->
               </div>
             </div>
           </div>
@@ -99,7 +104,7 @@
       >
         <path
           d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="fill-slate-50"
+          class="fill-white"
         ></path>
       </svg>
     </div>

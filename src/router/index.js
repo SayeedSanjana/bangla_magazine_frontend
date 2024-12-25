@@ -4,7 +4,7 @@ import AboutView from "../views/AboutView.vue";
 import ContributeView from "../views/ContributeView.vue";
 import CookieSettingsView from "../views/CookieSettingsView.vue";
 import ContributeSubmissionView from "../views/ContributeSubmissionView.vue";
-import PlotView from "../views/PlotView.vue";
+import TeamMemberView from "../views/TeamMemberView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,7 +15,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/about-us",
+      path: "/about/story",
       name: "about",
       component: AboutView,
     },
@@ -30,9 +30,9 @@ const router = createRouter({
       component: CookieSettingsView,
     },
     {
-      path: "/plot",
-      name: "plot",
-      component: PlotView,
+      path: "/about/team",
+      name: "team-members",
+      component: TeamMemberView,
     },
     {
       path: "/submission-form/:topicName?",
