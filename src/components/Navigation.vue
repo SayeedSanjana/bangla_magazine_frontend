@@ -74,11 +74,18 @@
               class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
             >
               <router-link
+                to="/magazine"
+                @click="setActiveLink('/magazine')"
+                class="block px-4 py-2 text-white hover:bg-amber-500"
+              >
+                Porijaan-The Magazine
+              </router-link>
+              <router-link
                 to="/magazine/topics"
                 @click="setActiveLink('/magazine/topics')"
                 class="block px-4 py-2 text-white hover:bg-amber-500"
               >
-                Porijaan-The Magazine
+                Independent Category
               </router-link>
               <router-link
                 to="/magazine/theme"
@@ -175,11 +182,11 @@
         <ul class="px-4 py-2 space-y-3">
           <li>
             <router-link
-              to="/home"
+              to="/"
               class="block font-semibold tracking-wide"
               :class="{
-                'font-bold text-amber-300': activeLink === '/home',
-                'font-semibold tracking-wide': activeLink !== '/home',
+                'font-bold text-amber-300': activeLink === '/',
+                'font-semibold tracking-wide': activeLink !== '/',
               }"
               >Home</router-link
             >
@@ -198,15 +205,6 @@
                 >Our Story</router-link
               >
               <router-link
-                to="/about/plot"
-                class="block px-4 font-normal"
-                :class="{
-                  'font-bold text-amber-300': activeLink === '/about/plot',
-                  'font-normal': activeLink !== '/about/plot',
-                }"
-                >Our Plot</router-link
-              >
-              <router-link
                 to="/about/team"
                 class="block px-4 font-normal"
                 :class="{
@@ -219,10 +217,17 @@
           </li>
           <li>
             <hr class="border mb-1" />
-            <p class="font-semibold mb-1 tracking-wide">
-              Porijaan - The Magazine
-            </p>
+            <p class="font-semibold mb-1 tracking-wide">Magazine</p>
             <span class="space-y-2">
+              <router-link
+                to="/magazine"
+                class="block px-4 font-normal"
+                :class="{
+                  'font-bold text-amber-300': activeLink === '/magazine',
+                  'font-normal': activeLink !== '/magazine',
+                }"
+                >Porijaan-The Magazine</router-link
+              >
               <router-link
                 to="/magazine/topics"
                 class="block px-4 font-normal"
@@ -230,7 +235,7 @@
                   'font-bold text-amber-300': activeLink === '/magazine/topics',
                   'font-normal': activeLink !== '/magazine/topics',
                 }"
-                >Topics We Are Interested In</router-link
+                >Independent Category</router-link
               >
               <router-link
                 to="/magazine/theme"

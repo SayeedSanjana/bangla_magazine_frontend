@@ -5,6 +5,9 @@ import ContributeView from "../views/ContributeView.vue";
 import CookieSettingsView from "../views/CookieSettingsView.vue";
 import ContributeSubmissionView from "../views/ContributeSubmissionView.vue";
 import TeamMemberView from "../views/TeamMemberView.vue";
+import IndependentCategoryView from "../views/IndependentCategoryView.vue";
+import AnnaulThemeView from "@/views/AnnaulThemeView.vue";
+import CelebratingIconsView from "@/views/CelebratingIconsView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,10 +23,26 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: "/magazine/topics",
+      path: "/magazine",
       name: "contribute",
       component: ContributeView,
     },
+    {
+      path: "/magazine/topics",
+      name: "independentCategory",
+      component: IndependentCategoryView,
+    },
+    {
+      path: "/magazine/theme",
+      name: "annualTheme",
+      component: AnnaulThemeView,
+    },
+    {
+      path: "/magazine/celebration",
+      name: "annualCelebration",
+      component: CelebratingIconsView,
+    },
+
     {
       path: "/cookie-settings",
       name: "cookie",

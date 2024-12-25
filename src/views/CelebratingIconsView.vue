@@ -1,90 +1,28 @@
 <template>
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
-      <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-slate-50">
-        <!-- Heading -->
-        <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
-          <div
-            class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8"
-          >
-            <!-- Text on Left -->
-            <div class="w-full lg:w-1/2">
-              <h2
-                class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
-              >
-                Join Our Network – Make Your Mark by Contributing to Our
-                Magazine!
-              </h2>
-              <p class="text-gray-600 text-lg text-justify mt-4">
-                <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>
-                Magazine is open for creative voices across languages and
-                mediums.
-              </p>
-              <button
-                @click="submissionForm"
-                class="text-base border-2 border-yellow-400 px-4 py-3 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg mt-3 transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
-              >
-                Contribute to the Magazine
-              </button>
-            </div>
-
-            <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
-              <!-- <img
-                src="../assets/img/collage6.png"
-                alt="SVG Image 1"
-                class="lg:w-full lg:h-full"
-              /> -->
-              <img
-                src="../assets/img/bg-8.gif"
-                alt="SVG Image 1"
-                class="lg:w-auto lg:h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Magazine Section -->
+      <!-- Celebrating Icons Section -->
       <div
-        class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-8 mb:pt-16"
+        class="bg-gradient-to-r from-regal-blue to-gray-200 px-2 rounded-lg shadow pt-16 mb:pt-16 py-4"
       >
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <div class="mb-8">
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
-              The Magazine
+              Literary and Cultural Figures
             </h2>
-            <p class="font-light text-base text-gray-700 mb-4">
-              Join us as
-              <span
-                class="text-midnight-sapphire font-bold font-cormorant text-2xl"
-                >"Porijaan"</span
-              >, BANGLA’s premier digital magazine, embarks on a journey of
-              creative expression in Bangla, English, and French. Be part of a
-              dynamic community of storytellers, artists, and innovators, and
-              showcase your work across fiction, non-fiction, art, science, and
-              more. Submit today and let your voice resonate in a global,
-              multicultural dialogue.
+            <p
+              class="text-2xl md:text-4xl mb-2 text-amber-600 font-cormorant font-semibold"
+            >
+              Celebrating Icons
             </p>
-            <p class="font-light text-base text-gray-700">
-              The magazine features two main sections with sub-sections covering
-              fiction, non-fiction, travel, science, health, sports, art,
-              photography, cartoons, interviews, and scripts. One section will
-              introduce an
-              <span class="text-midnight-sapphire font-semibold"
-                >Annual Theme</span
-              >
-              , starting with ‘Bangla-French Crossings,’ exploring interactions
-              between Bangla and French languages, cultures, and worldviews. It
-              will include public articles on artistic or literary
-              interventions, translations, and personal experiences. The second
-              section, the
-              <span class="text-midnight-sapphire font-semibold"
-                >Annual Celebration</span
-              >
-              , will honor significant Bangla literary and cultural figures on
-              their birth or death anniversaries.
+
+            <p class="text-gray-600 text-base text-justify pt-4">
+              This section honors literary and cultural icons whose works have
+              left an indelible mark on Bangla and world culture. For the
+              inaugural issue, we commemorate the anniversaries of figures who
+              have shaped literature, art, and thought across generations. We
+              invite submissions that reflect on their contributions, engage
+              with their works, or offer fresh perspectives on their legacy.
             </p>
           </div>
           <div></div>
@@ -125,162 +63,12 @@
         </svg>
       </div>
 
-      <!-- What We are Looking for -->
-      <div class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen">
-        <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-6"
-          >
-            What We Are Looking For?
-          </h2>
-          <!-- Card Container -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
-            <!-- Card 1 -->
-            <div
-              class="bg-white flex flex-col lg:flex-row shadow-lg rounded-lg relative overflow-visible mt-4 md:mt-16 lg:mt-24"
-            >
-              <!-- Image Section -->
-              <div class="relative lg:w-1/3 sm:w-full hidden md:block">
-                <div
-                  class="absolute inset-x-0 -top-8 h-72 bg-cover bg-center transform scale-110 rounded-lg lg:rounded-l-lg z-10 bg1"
-                ></div>
-              </div>
-              <!-- Card Content -->
-              <div class="py-6 px-6 flex flex-col justify-between lg:w-2/3">
-                <h2 class="text-2xl font-normal text-gray-800 mb-4">
-                  Independant Category
-                </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Learn how women around the world are taking the lead in
-                  driving sustainable practices and shaping our future.
-                </p>
-                <div class="mt-6">
-                  <button
-                    @click="submissionForm"
-                    class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
-                  >
-                    Find Out
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-              class="bg-white flex flex-col lg:flex-row shadow-lg rounded-lg relative overflow-visible mt-4 md:mt-16 lg:mt-24"
-            >
-              <!-- Image Section -->
-              <div class="relative lg:w-1/3 sm:w-full hidden md:block">
-                <div
-                  class="absolute inset-x-0 -top-8 h-72 bg-cover bg-center transform scale-110 rounded-lg lg:rounded-l-lg z-10 bg2"
-                ></div>
-              </div>
-              <!-- Card Content -->
-              <div class="py-6 px-6 flex flex-col justify-between lg:w-2/3">
-                <h2 class="text-2xl font-normal text-gray-800 mb-4">
-                  Annual Theme
-                </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Discover how innovative technologies are shaping the way we
-                  live, work, and interact with the world.
-                </p>
-                <div class="mt-6">
-                  <button
-                    @click="submissionForm"
-                    class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
-                  >
-                    Find Out
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-              class="bg-white flex flex-col lg:flex-row shadow-lg rounded-lg relative overflow-visible mt-4 md:mt-16 lg:mt-24"
-            >
-              <!-- Image Section -->
-              <div class="relative lg:w-1/3 sm:w-full hidden md:block">
-                <div
-                  class="absolute inset-x-0 -top-8 h-72 bg-cover bg-center transform scale-110 rounded-lg lg:rounded-l-lg z-10 bg3"
-                ></div>
-              </div>
-              <!-- Card Content -->
-              <div class="py-6 px-6 flex flex-col justify-between lg:w-2/3">
-                <h2 class="text-2xl font-normal text-gray-800">
-                  Literary and Cultural Figures
-                </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Dive into best practices for maintaining a healthy lifestyle
-                  and well-being in today's fast-paced world.
-                </p>
-                <div class="mt-6">
-                  <button
-                    @click="submissionForm"
-                    class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
-                  >
-                    Find Out
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-              class="bg-white flex flex-col lg:flex-row shadow-lg rounded-lg relative overflow-visible mt-4 md:mt-16 lg:mt-24"
-            >
-              <!-- Image Section -->
-              <div class="relative lg:w-1/3 sm:w-full hidden md:block">
-                <div
-                  class="absolute inset-x-0 -top-8 h-72 bg-cover bg-center transform scale-110 rounded-lg lg:rounded-l-lg z-10 bg4"
-                ></div>
-              </div>
-              <!-- Card Content -->
-              <div class="py-6 px-6 flex flex-col justify-between lg:w-2/3">
-                <h2 class="text-2xl font-normal text-gray-800">
-                  Memory of Luminaries
-                </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Learn how education initiatives are empowering individuals and
-                  communities worldwide.
-                </p>
-                <div class="mt-6">
-                  <button
-                    @click="submissionForm"
-                    class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
-                  >
-                    Find Out
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!--  Literary and Cultural Figures-->
 
-      <div class="pt-8 px-2 bg-gradient-to-r min-h-screen">
+      <div
+        class="pt-8 px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pb-8"
+      >
         <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
-          >
-            3. Literary and Cultural Figures
-          </h2>
-          <p
-            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
-          >
-            Celebrating Icons
-          </p>
-          <p class="text-gray-600 text-base text-justify my-8">
-            This section honors literary and cultural icons whose works have
-            left an indelible mark on Bangla and world culture. For the
-            inaugural issue, we commemorate the anniversaries of figures who
-            have shaped literature, art, and thought across generations. We
-            invite submissions that reflect on their contributions, engage with
-            their works, or offer fresh perspectives on their legacy.
-          </p>
-
           <!--  Carousel-->
           <div class="flex justify-center items-center md:pt-12">
             <div class="overflow-hidden relative w-full">
@@ -341,68 +129,6 @@
               >
                 Next
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Memory of Luminaries-->
-      <div
-        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-8"
-      >
-        <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-3xl md:text-5xl mb-8 text-midnight-sapphire font-cormorant pt-6"
-          >
-            4. Memory of Luminaries
-          </h2>
-          <p
-            class="text-amber-600 text-2xl md:text-3xl font-cormorant font-semibold text-justify my-2"
-          >
-            In Memory of Luminaries
-          </p>
-          <p class="text-gray-600 text-lg text-justify my-8">
-            Besides, this year we will feature obituaries of a few luminaries
-            who recently passed away - and pursued multifaceted creative
-            interests.
-          </p>
-
-          <!--  Main Section-->
-          <div class="flex justify-center items-center md:pt-12">
-            <div class="overflow-hidden relative w-full">
-              <!-- Grid wrapper -->
-              <div
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-              >
-                <!-- Cards -->
-                <div
-                  v-for="(card, index) in luminaries"
-                  :key="index"
-                  class="px-4"
-                >
-                  <div
-                    class="bg-white p-6 shadow-lg rounded-lg text-center mb-4 w-full h-full"
-                  >
-                    <img
-                      :src="card.img"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded-lg mb-4"
-                    />
-                    <h3 class="text-xl mb-1 text-gray-800 font-cormorant">
-                      <span class="text-2xl">{{ index + 1 }}.</span>
-                      {{ card.name }}
-                    </h3>
-                    <p class="text-amber-600 mb-1">
-                      {{ card.birthdate }}
-                    </p>
-
-                    <p class="text-gray-500 mb-4 text-sm">
-                      {{ card.description }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Grid wrapper -->
             </div>
           </div>
         </div>
@@ -835,6 +561,6 @@ img {
   cursor: not-allowed;
 }
 .bg-img {
-  background-image: url("../assets/img/alphabets.jpg");
+  background-image: url("../assets/img/bg-contribute.png");
 }
 </style>
