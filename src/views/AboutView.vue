@@ -15,7 +15,7 @@
           >
             <p>" In Bangla I love</p>
             <p>Bangla is my love</p>
-            <p>Holding my hands, Bangla brings me to people in distant lands</p>
+            <p>Bangla holds my hands & brings me to people in distant lands</p>
             <p>With humility I regard all there is to revere</p>
             <p>As seven seas and thirteen rivers</p>
             <p>In Ganga and Padma appear… "</p>
