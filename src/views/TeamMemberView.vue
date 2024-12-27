@@ -330,21 +330,21 @@
 
 <script>
 import image1 from "@/assets/members/AnweshaBhattacharjee.jpeg";
-import image2 from "@/assets/members/ArchismanChaudhuri.jpg";
-import image3 from "@/assets/members/SoubhikSamanta.jpg";
-import image4 from "@/assets/members/urmibhakta.jpg";
-import image5 from "@/assets/members/Saikat.jpg";
-import image6 from "@/assets/members/TrishaGhosh.jpeg";
-import image7 from "@/assets/members/MoinakBanerjee.jpg";
-import image8 from "@/assets/members/IktisadRashid.jpeg";
-import image9 from "@/assets/members/SanjanaSayeed.jpg";
-import image10 from "@/assets/members/SomduttaMajumder.jpg";
+import image2 from "@/assets/members/ArchismanChaudhuri.JPG";
+import image3 from "@/assets/members/SoubhikSamanta.JPG";
+import image4 from "@/assets/members/urmibhakta.JPG";
+import image5 from "@/assets/members/Saikat.JPG";
+import image6 from "@/assets/members/TrishaGhosh.JPG";
+import image7 from "@/assets/members/MoinakBanerjee.JPG";
+import image8 from "@/assets/members/IktisadRashid.JPG";
+import image9 from "@/assets/members/SanjanaSayeed.JPG";
+import image10 from "@/assets/members/SomduttaMajumder.JPG";
 import image11 from "@/assets/members/AzfarAdib.jpeg";
-import image12 from "@/assets/members/AvikChakraborty.jpg";
-import image13 from "@/assets/members/Saptara.jpg";
-import image14 from "@/assets/members/AjnaIslam.jpg";
-import image15 from "@/assets/members/SamiparnaChakraborty.jpg";
-import image16 from "@/assets/members/images.jpg";
+import image12 from "@/assets/members/AvikChakraborty.JPG";
+import image13 from "@/assets/members/Saptara.JPG";
+import image14 from "@/assets/members/AjnaIslam.JPG";
+import image15 from "@/assets/members/SamiparnaChakraborty.JPG";
+import image16 from "@/assets/members/images.JPG";
 export default {
   name: "AboutView",
   components: {},

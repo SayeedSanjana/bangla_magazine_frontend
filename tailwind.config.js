@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         cormorant: ["Cormorant", "serif"],
         marck: ['"Marck Script"', "cursive"],
+        playfair: ['Playfair Display', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       colors: {
         "light-red": "#ff8b7d",
