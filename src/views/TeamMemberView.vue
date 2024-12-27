@@ -330,7 +330,7 @@
 
 <script>
 import image1 from "@/assets/members/AnweshaBhattacharjee.jpeg";
-import image2 from "@/assets/members/ArchismanChaudhuri.JPG";
+import image2 from "@/assets/members/ArchismanChaudhuri.jpg";
 import image3 from "@/assets/members/SoubhikSamanta.JPG";
 import image4 from "@/assets/members/urmibhakta.JPG";
 import image5 from "@/assets/members/Saikat.JPG";
