@@ -148,13 +148,14 @@
               <!-- Card Content -->
               <div class="py-6 px-6 flex flex-col justify-between lg:w-2/3">
                 <h2 class="text-2xl font-normal text-gray-800 mb-4">
-                  Independant Category
+                  Independent Category
                 </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Learn how women around the world are taking the lead in
-                  driving sustainable practices and shaping our future.
+                <p class="mt-2 text-gray-600 text-sm">
+                  Porijaan invites submissions on topics like fiction, art,
+                  poetry, essays, and photography, exploring Bangla-French
+                  cultural intersections.
                 </p>
-                <div class="mt-6">
+                <div class="mt-6 flex justify-end">
                   <button
                     @click="submissionForm"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
@@ -180,11 +181,12 @@
                 <h2 class="text-2xl font-normal text-gray-800 mb-4">
                   Annual Theme
                 </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Discover how innovative technologies are shaping the way we
-                  live, work, and interact with the world.
+                <p class="mt-2 text-gray-600 text-sm">
+                  Our inaugural issue explores the vibrant intersections of
+                  Bangla and French languages, cultures, and histories through
+                  literature, art, and lived experiences.
                 </p>
-                <div class="mt-6">
+                <div class="mt-6 flex justify-end">
                   <button
                     @click="submissionForm"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
@@ -210,11 +212,12 @@
                 <h2 class="text-2xl font-normal text-gray-800">
                   Literary and Cultural Figures
                 </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Dive into best practices for maintaining a healthy lifestyle
-                  and well-being in today's fast-paced world.
+                <p class="mt-2 text-gray-600 text-sm">
+                  This section celebrates iconic figures whose works shaped
+                  Bangla and global culture, inviting reflections on their
+                  legacy and contributions.
                 </p>
-                <div class="mt-6">
+                <div class="mt-6 flex justify-end">
                   <button
                     @click="submissionForm"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
@@ -240,11 +243,11 @@
                 <h2 class="text-2xl font-normal text-gray-800">
                   Memory of Luminaries
                 </h2>
-                <p class="mt-4 text-gray-600 text-sm">
-                  Learn how education initiatives are empowering individuals and
-                  communities worldwide.
+                <p class="mt-2 text-gray-600 text-sm">
+                  This section will feature obituaries of recent luminaries who
+                  pursued diverse creative interests.
                 </p>
-                <div class="mt-6">
+                <div class="mt-6 flex justify-end">
                   <button
                     @click="submissionForm"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
@@ -362,9 +365,8 @@
             In Memory of Luminaries
           </p>
           <p class="text-gray-600 text-lg text-justify my-8">
-            Besides, this year we will feature obituaries of a few luminaries
-            who recently passed away - and pursued multifaceted creative
-            interests.
+            This year we will feature obituaries of a few luminaries who
+            recently passed away - and pursued multifaceted creative interests.
           </p>
 
           <!--  Main Section-->
