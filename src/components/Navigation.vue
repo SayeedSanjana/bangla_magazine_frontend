@@ -19,10 +19,10 @@
           <router-link
             to="/"
             :class="{
-              'border-b-2 border-amber-400 text-amber-300': activeLink === '/',
+              'border-b-2 border-amber-400 text-amber-200': isActiveRoute('/'),
+              'text-white hover:text-amber-200': !isActiveRoute('/'),
             }"
-            @click="setActiveLink('/')"
-            class="text-white hover:text-amber-300 font-medium"
+            class="font-medium"
           >
             Home
           </router-link>
@@ -31,10 +31,12 @@
           <div class="relative group">
             <button
               :class="{
-                'border-b-2 border-amber-400 text-amber-300':
-                  activeDropdown === 'about' || isChildActive('/about'),
+                'border-b-2 border-amber-400 text-amber-200':
+                  isParentRouteActive('/about'),
+                'text-white hover:text-amber-200':
+                  !isParentRouteActive('/about'),
               }"
-              class="text-white hover:text-amber-300 font-medium focus:outline-none"
+              class="font-medium focus:outline-none"
             >
               About Us
             </button>
@@ -43,16 +45,24 @@
             >
               <router-link
                 to="/about/story"
-                @click="setActiveLink('/about/story')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/about/story'),
+                  'text-white hover:bg-amber-500':
+                    !isActiveRoute('/about/story'),
+                }"
+                class="block px-4 py-2"
               >
                 Our Story
               </router-link>
 
               <router-link
                 to="/about/team"
-                @click="setActiveLink('/about/team')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/about/team'),
+                  'text-white hover:bg-amber-500 hover:rounded-b-md':
+                    !isActiveRoute('/about/team'),
+                }"
+                class="block px-4 py-2"
               >
                 Team Members
               </router-link>
@@ -63,10 +73,12 @@
           <div class="relative group">
             <button
               :class="{
-                'border-b-2 border-amber-400 text-amber-300':
-                  activeDropdown === 'magazine' || isChildActive('/magazine'),
+                'border-b-2 border-amber-400 text-amber-200':
+                  isParentRouteActive('/magazine'),
+                'text-white hover:text-amber-200':
+                  !isParentRouteActive('/magazine'),
               }"
-              class="text-white hover:text-amber-300 font-medium focus:outline-none"
+              class="font-medium focus:outline-none"
             >
               Magazine
             </button>
@@ -74,37 +86,49 @@
               class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
             >
               <router-link
-                to="/magazine"
-                @click="setActiveLink('/magazine')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
-              >
-                Porijaan-The Magazine
-              </router-link>
-              <router-link
                 to="/magazine/topics"
-                @click="setActiveLink('/magazine/topics')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/topics'),
+                  'text-white hover:bg-amber-500':
+                    !isActiveRoute('/magazine/topics'),
+                }"
+                class="block px-4 py-2"
               >
-                Independent Category
+                Topics
               </router-link>
               <router-link
                 to="/magazine/theme"
-                @click="setActiveLink('/magazine/theme')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/theme'),
+                  'text-white hover:bg-amber-500':
+                    !isActiveRoute('/magazine/theme'),
+                }"
+                class="block px-4 py-2"
               >
                 Annual Theme
               </router-link>
               <router-link
                 to="/magazine/celebration"
-                @click="setActiveLink('/magazine/celebration')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/magazine/celebration'
+                  ),
+                  'text-white hover:bg-amber-500': !isActiveRoute(
+                    '/magazine/celebration'
+                  ),
+                }"
+                class="block px-4 py-2"
               >
                 Annual Celebration
               </router-link>
               <router-link
                 to="/magazine/memory"
-                @click="setActiveLink('/magazine/memory')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
+                  'text-white hover:bg-amber-500 hover:rounded-b-md':
+                    !isActiveRoute('/magazine/memory'),
+                }"
+                class="block px-4 py-2"
               >
                 Memory Of Luminaries
               </router-link>
@@ -115,11 +139,12 @@
           <div class="relative group">
             <button
               :class="{
-                'border-b-2 border-amber-400 text-amber-300':
-                  activeDropdown === 'contribute' ||
-                  isChildActive('/contribute'),
+                'border-b-2 border-amber-400 text-amber-200':
+                  isParentRouteActive('/contribute'),
+                'text-white hover:text-amber-200':
+                  !isParentRouteActive('/contribute'),
               }"
-              class="text-white hover:text-amber-300 font-medium focus:outline-none tracking-wide"
+              class="font-medium focus:outline-none"
             >
               Contribute
             </button>
@@ -128,15 +153,28 @@
             >
               <router-link
                 to="/contribute/network"
-                @click="setActiveLink('/contribute/network')"
-                class="block px-4 py-2 text-white hover:bg-amber-500"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/network'
+                  ),
+                  'text-white hover:bg-amber-500': !isActiveRoute(
+                    '/contribute/network'
+                  ),
+                }"
+                class="block px-4 py-2"
               >
                 Contribute to the Network
               </router-link>
               <router-link
                 to="/contribute/magazine"
-                @click="setActiveLink('/contribute/magazine')"
-                class="block px-4 py-2 text-white hover:bg-amber-500 hover:rounded-b-md"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/magazine'
+                  ),
+                  'text-white hover:bg-amber-500 hover:rounded-b-md':
+                    !isActiveRoute('/contribute/magazine'),
+                }"
+                class="block px-4 py-2"
               >
                 Contribute to the Magazine
               </router-link>
@@ -176,92 +214,108 @@
           'max-h-0 opacity-0': !isMobileMenuExpanded,
           'max-h-[500px] opacity-100': isMobileMenuExpanded,
         }"
-        id="mobile-menu"
-        class="md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out dropdown-bg text-white"
+        class="md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out dropdown-bg text-white tracking-wide"
       >
         <ul class="px-4 py-2 space-y-3">
           <li>
             <router-link
               to="/"
-              class="block font-semibold tracking-wide"
               :class="{
-                'font-bold text-amber-300': activeLink === '/',
-                'font-semibold tracking-wide': activeLink !== '/',
+                'text-amber-200 font-bold': isActiveRoute('/'),
+                'text-white': !isActiveRoute('/'),
               }"
-              >Home</router-link
+              class="block font-semibold"
+              @click="toggleMobileMenu"
             >
+              Home
+            </router-link>
           </li>
           <li>
             <hr class="border mb-1" />
-            <p class="font-semibold mb-1 tracking-wide">About Us</p>
+            <p class="font-semibold mb-1">About Us</p>
             <span class="space-y-2">
               <router-link
                 to="/about/story"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/about/story',
-                  'font-normal': activeLink !== '/about/story',
+                  'text-amber-200 font-bold': isActiveRoute('/about/story'),
+                  'text-white': !isActiveRoute('/about/story'),
                 }"
-                >Our Story</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Our Story
+              </router-link>
+
               <router-link
                 to="/about/team"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/about/team',
-                  'font-normal': activeLink !== '/about/team',
+                  'text-amber-200 font-bold': isActiveRoute('/about/team'),
+                  'text-white': !isActiveRoute('/about/team'),
                 }"
-                >Team Members</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Team Members
+              </router-link>
             </span>
           </li>
           <li>
             <hr class="border mb-1" />
-            <p class="font-semibold mb-1 tracking-wide">Magazine</p>
+            <p class="font-semibold mb-1">The Magazine</p>
             <span class="space-y-2">
               <router-link
                 to="/magazine"
-                class="block px-4 font-normal"
+                class="block px-4"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/magazine',
-                  'font-normal': activeLink !== '/magazine',
+                  'text-amber-200 font-bold': isActiveRoute('/magazine'),
+                  'text-white': !isActiveRoute('/magazine'),
                 }"
-                >Porijaan-The Magazine</router-link
+                @click="toggleMobileMenu"
               >
+                Porijaan-The Magazine
+              </router-link>
+
               <router-link
                 to="/magazine/topics"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/magazine/topics',
-                  'font-normal': activeLink !== '/magazine/topics',
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/topics'),
+                  'text-white': !isActiveRoute('/magazine/topics'),
                 }"
-                >Independent Category</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Independent Category
+              </router-link>
               <router-link
                 to="/magazine/theme"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/magazine/theme',
-                  'font-normal': activeLink !== '/magazine/theme',
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/theme'),
+                  'text-white': !isActiveRoute('/magazine/theme'),
                 }"
-                >Annual Theme</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Annual Theme
+              </router-link>
               <router-link
                 to="/magazine/celebration"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300':
-                    activeLink === '/magazine/celebration',
-                  'font-normal': activeLink !== '/magazine/celebration',
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/magazine/celebration'
+                  ),
+                  'text-white': !isActiveRoute('/magazine/celebration'),
                 }"
-                >Annual Celebration</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Annual Celebration
+              </router-link>
               <router-link
                 to="/magazine/memory"
-                class="block px-4 font-normal"
+                class="block px-4"
                 :class="{
-                  'font-bold text-amber-300': activeLink === '/magazine/memory',
-                  'font-normal': activeLink !== '/magazine/memory',
+                  'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
+                  'text-white': !isActiveRoute('/magazine/memory'),
                 }"
                 >Memory Of Luminaries</router-link
               >
@@ -269,28 +323,32 @@
           </li>
           <li>
             <hr class="border mb-1" />
-            <p class="font-semibold mb-1 tracking-wide">Contribute</p>
+            <p class="font-semibold mb-1">Contribute</p>
             <span class="space-y-2">
               <router-link
                 to="/contribute/network"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300':
-                    activeLink === '/contribute/network',
-                  'font-normal': activeLink !== '/contribute/network',
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/network'
+                  ),
+                  'text-white': !isActiveRoute('/contribute/network'),
                 }"
-                >Contribute to the Network</router-link
+                class="block px-4"
               >
+                Contribute to the Network
+              </router-link>
               <router-link
                 to="/contribute/magazine"
-                class="block px-4 font-normal"
                 :class="{
-                  'font-bold text-amber-300':
-                    activeLink === '/contribute/magazine',
-                  'font-normal': activeLink !== '/contribute/magazine',
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/magazine'
+                  ),
+                  'text-white': !isActiveRoute('/contribute/magazine'),
                 }"
-                >Contribute to the Magazine</router-link
+                class="block px-4"
               >
+                Contribute to the Magazine
+              </router-link>
             </span>
           </li>
         </ul>
@@ -304,24 +362,17 @@ export default {
   data() {
     return {
       isMobileMenuExpanded: false,
-      activeLink: "/home",
     };
   },
   methods: {
     toggleMobileMenu() {
       this.isMobileMenuExpanded = !this.isMobileMenuExpanded;
     },
-    setActiveLink(link) {
-      this.activeLink = link;
-      this.activeDropdown = null;
+    isActiveRoute(route) {
+      return this.$route.path === route;
     },
-    isChildActive(parent) {
-      return this.activeLink && this.activeLink.startsWith(parent);
-    },
-  },
-  watch: {
-    $route(to) {
-      this.activeLink = to.path;
+    isParentRouteActive(parentRoute) {
+      return this.$route.path.startsWith(parentRoute);
     },
   },
 };
