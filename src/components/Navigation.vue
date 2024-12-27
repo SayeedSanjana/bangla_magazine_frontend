@@ -86,6 +86,16 @@
               class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
             >
               <router-link
+                to="/magazine"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute('/magazine'),
+                  'text-white hover:bg-amber-500': !isActiveRoute('/magazine'),
+                }"
+                class="block px-4 py-2"
+              >
+                Porijaan - The Magazine
+              </router-link>
+              <router-link
                 to="/magazine/topics"
                 :class="{
                   'text-amber-200 font-bold': isActiveRoute('/magazine/topics'),
