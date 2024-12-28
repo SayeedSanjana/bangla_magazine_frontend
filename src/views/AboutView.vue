@@ -19,7 +19,7 @@
             Bangla holds my hands<br />
             And brings me to people in distant lands.<br />
             With humility I regard all there is to revere,<br />
-            As seven seas and thirteen rivers<br />
+            Seven seas and thirteen rivers<br />
             In Ganga and Padma appear..."
           </p>
         </div>

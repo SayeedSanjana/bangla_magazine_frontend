@@ -60,26 +60,24 @@
               <span
                 class="text-midnight-sapphire font-bold font-cormorant text-2xl"
                 >"Porijaan"</span
-              >, BANGLA’s premier digital magazine, embarks on a journey of
+              >, BANGLA’s flagship digital magazine, embarks on a journey of
               creative expression in Bangla, English, and French. Be part of a
-              dynamic community of storytellers, artists, and innovators, and
-              showcase your work across fiction, non-fiction, art, science, and
-              more. Submit today and let your voice resonate in a global,
-              multicultural dialogue.
+              dynamic community of storytellers, artists, and innovators.
+              Showcase your expertise or interest. Submit your work today and
+              let your voice resonate in a global, multicultural dialogue.
             </p>
             <p class="font-light text-base text-gray-700">
-              The magazine features two main sections with sub-sections covering
-              fiction, non-fiction, travel, science, health, sports, art,
-              photography, cartoons, interviews, and scripts. One section will
-              introduce an
+              Our magazine will feature poetry, fiction, non-fiction, travel,
+              science, health, sports, art, photography, cartoons, interviews,
+              and unpublished scripts. It will also have two major sub-sections.
+              One sub-section will introduce an
               <span class="text-midnight-sapphire font-semibold"
                 >Annual Theme</span
-              >
-              , starting with ‘Bangla-French Crossings,’ exploring interactions
+              >, starting with ‘Bangla-French Crossings,’ exploring interactions
               between Bangla and French languages, cultures, and worldviews. It
               will include public articles on artistic or literary
               interventions, translations, and personal experiences. The second
-              section, the
+              sub-section, the
               <span class="text-midnight-sapphire font-semibold"
                 >Annual Celebration</span
               >

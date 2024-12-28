@@ -104,7 +104,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Topics
+                Independent Category
               </router-link>
               <router-link
                 to="/magazine/theme"
@@ -129,7 +129,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Annual Celebration
+                Annual Remembrance
               </router-link>
               <router-link
                 to="/magazine/memory"
@@ -173,7 +173,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Contribute to the Network
+                Join Our Network
               </router-link>
               <router-link
                 to="/contribute/magazine"
@@ -282,7 +282,7 @@
                 }"
                 @click="toggleMobileMenu"
               >
-                Porijaan-The Magazine
+                Porijaan - The Magazine
               </router-link>
 
               <router-link
@@ -318,7 +318,7 @@
                 class="block px-4"
                 @click="toggleMobileMenu"
               >
-                Annual Celebration
+                Annual Remembrance
               </router-link>
               <router-link
                 to="/magazine/memory"
@@ -345,7 +345,7 @@
                 }"
                 class="block px-4"
               >
-                Contribute to the Network
+                Join Our Network
               </router-link>
               <router-link
                 to="/contribute/magazine"

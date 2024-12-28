@@ -34,9 +34,8 @@
                 <p
                   class="text-sm md:text-lg pl-1 sm:pl-2 mb-2 sm:mb-4 text-gray-500"
                 >
-                  We are a Montreal-based Bangali diaspora committed to
-                  connecting Bengalis worldwide and promoting our rich cultural
-                  heritage.
+                  We are a Canada-based Bengali diaspora committed to connecting
+                  Bengalis worldwide and promoting our rich cultural heritage.
                 </p>
                 <p
                   class="text-lg md:text-3xl font-bold text-amber-600 font-cormorant"
