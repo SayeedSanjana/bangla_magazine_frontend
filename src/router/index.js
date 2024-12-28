@@ -8,6 +8,7 @@ import TeamMemberView from "../views/TeamMemberView.vue";
 import IndependentCategoryView from "../views/IndependentCategoryView.vue";
 import AnnaulThemeView from "@/views/AnnaulThemeView.vue";
 import CelebratingIconsView from "@/views/CelebratingIconsView.vue";
+import MemoryLuminariesView from "@/views/MemoryLuminariesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,11 @@ const router = createRouter({
       path: "/magazine/celebration",
       name: "annualCelebration",
       component: CelebratingIconsView,
+    },
+    {
+      path: "/magazine/memory",
+      name: "obituary",
+      component: MemoryLuminariesView,
     },
 
     {

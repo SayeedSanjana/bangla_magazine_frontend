@@ -72,24 +72,24 @@
         class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-16 mb:pt-16 py-4"
       >
         <div class="container mx-auto px-4 space-y-3 lg:px-32">
-          <!-- <p
+          <p
             class="text-2xl md:text-4xl mb-2 text-amber-600 font-cormorant font-semibold"
           >
             Celebrating Icons
-          </p> -->
+          </p>
 
-          <!-- <p class="text-gray-600 text-base text-justify pt-4 pb-8">
+          <p class="text-gray-600 text-base text-justify pt-4 pb-8 lg:pb-16">
             Honoring literary and cultural icons, our inaugural issue
             commemorates the anniversaries of luminaries who shaped Bangla and
             global culture, inviting reflections on their legacy and influence.
-          </p> -->
+          </p>
           <div class="relative">
             <!-- Timeline -->
             <div
               class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-300 z-0"
             ></div>
 
-            <div class="space-y-16 mt-8">
+            <div class="space-y-16 mt-8 timeline-md hidden md:mb-16">
               <!-- Timeline Items -->
               <div
                 v-for="(item, index) in figures"
@@ -118,9 +118,7 @@
                         >
                           {{ item.title }}
                         </h1>
-                        <p
-                          class="text-amber-600 text-base text-center font-semibold"
-                        >
+                        <p class="text-amber-600 text-base text-center">
                           {{ item.birthdate }}
                         </p>
                         <p
@@ -242,13 +240,45 @@
               </div>
             </div>
           </div>
+
+          <!-- Stacked Cards for Small Screens -->
+          <div class="cards-md hidden">
+            <div
+              v-for="(item, index) in figures"
+              :key="index"
+              class="mb-6 bg-white rounded-lg shadow-lg p-6"
+            >
+              <div class="flex justify-center mb-4">
+                <img
+                  :src="item.img"
+                  class="rounded-full h-24 w-24 object-cover shadow-md"
+                />
+              </div>
+              <h1
+                class="font-bold font-cormorant text-xl text-center mb-2 text-gray-800"
+              >
+                {{ item.title }}
+              </h1>
+              <p
+                class="text-amber-600 text-base text-center font-semibold mb-1"
+              >
+                {{ item.birthdate }}
+              </p>
+              <p class="text-rose-500 text-sm font-semibold text-center mb-2">
+                {{ item.anniversary }}
+              </p>
+              <p class="text-gray-600 text-base text-justify">
+                {{ item.content }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Submission Form Section -->
 
       <div
-        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-16"
       >
         <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
@@ -314,11 +344,11 @@ import author17 from "@/assets/authorImage/nazrul.jpg";
 import author18 from "@/assets/authorImage/mujtaba.jpg";
 import author19 from "@/assets/authorImage/begum.jpg";
 import author20 from "@/assets/authorImage/nirendranath.jpg";
-import author21 from "@/assets/authorImage/murshid.jpg";
-import author22 from "@/assets/authorImage/buddhadeb.jpg";
-import author23 from "@/assets/authorImage/utpalendu.jpg";
-import author24 from "@/assets/authorImage/shafinahmed.jpg";
-
+import author21 from "@/assets/authorImage/behari.jpg";
+import author22 from "@/assets/authorImage/balai.jpg";
+import author23 from "@/assets/authorImage/buddha.jpg";
+import author24 from "@/assets/authorImage/talat.jpg";
+import author25 from "@/assets/authorImage/tapan.jpg";
 export default {
   name: "AboutView",
   components: {},
@@ -361,7 +391,7 @@ export default {
           date: "1824",
           content: " - ",
           anniversary: " - ",
-          img: author8,
+          img: author21,
         },
         {
           title: "Sarat Chandra Das",
@@ -451,7 +481,7 @@ export default {
           content:
             "Bengali short-story writer, playwright, poet, novelist, and physician who wrote under the penname 'Banaphul.'",
           anniversary: " - ",
-          img: author17,
+          img: author22,
         },
         {
           title: "Syed Mujtaba Ali",
@@ -469,7 +499,7 @@ export default {
           content:
             "Bengali author and poet, influential in setting up the Department of Comparative Literature at Jadavpur University, Kolkata.",
           anniversary: " - ",
-          img: author18,
+          img: author23,
         },
         {
           title: "Begum Sufia Kama",
@@ -513,7 +543,7 @@ export default {
           date: "1924",
           content: " - ",
           anniversary: " - ",
-          img: author7,
+          img: author24,
         },
         {
           title: "Kanika Bandyopadhyay ",
@@ -531,7 +561,7 @@ export default {
           content:
             "Bengali filmmaker, renowned for his on-screen adaptations of Bangla literary works.",
           anniversary: " - ",
-          img: author13,
+          img: author25,
         },
         {
           title: "Suchitra Mitra",
@@ -561,37 +591,6 @@ export default {
             "Modern Bengali poet and writer, acclaimed for his profound and accessible poetry.",
           anniversary: "100th death anniversary",
           img: author20,
-        },
-      ],
-
-      luminaries: [
-        {
-          name: "Ghulam Murshid",
-          birthdate: "1940-2024",
-          description:
-            "A pioneering figure in Bangladeshi literary circles, Ghulam Murshid was an author, researcher, and cultural historian. His work significantly shaped the understanding of Bengali identity and language.",
-          img: author21,
-        },
-        {
-          name: "Buddhadeb Bhattacharjee",
-          birthdate: "1944-2024",
-          description:
-            "Former Chief Minister of West Bengal and a key figure in Indian politics, Bhattacharjee was also known for his literary contributions and commitment to social justice.",
-          img: author22,
-        },
-        {
-          name: "Utpalendu Chakraborty",
-          birthdate: "1948-2024",
-          description:
-            "A renowned filmmaker and playwright, Chakraborty’s films brought socially conscious themes to the forefront of Indian cinema, focusing on the lives of marginalized communities.",
-          img: author23,
-        },
-        {
-          name: "Shafin Ahmed",
-          birthdate: "1961-2024",
-          description:
-            "A legendary Bangladeshi musician, Shafin Ahmed was the lead vocalist of the iconic band Miles. His contributions to rock and pop music in Bangladesh have left an enduring legacy.",
-          img: author24,
         },
       ],
     };
@@ -647,23 +646,20 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 640px) {
-  .grid-cols-1 {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  .timeline-md {
+    display: block !important;
   }
-  .hidden {
-    display: none;
-  }
-}
-
-@media (max-width: 1258px) {
-  .hidden {
+  .cards-md {
     display: none !important;
   }
 }
 
-@media (min-width: 1259px) {
-  .hidden {
+@media (max-width: 767px) {
+  .timeline-md {
+    display: none !important;
+  }
+  .cards-md {
     display: block !important;
   }
 }
