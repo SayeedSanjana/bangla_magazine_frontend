@@ -104,7 +104,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Topics
+                Independent Category
               </router-link>
               <router-link
                 to="/magazine/theme"
@@ -129,7 +129,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Annual Celebration
+                Annual Remembrance
               </router-link>
               <router-link
                 to="/magazine/memory"
@@ -140,7 +140,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Memory Of Luminaries
+                Obituary
               </router-link>
             </div>
           </div>
@@ -173,16 +173,14 @@
                 }"
                 class="block px-4 py-2"
               >
-                Contribute to the Network
+                Join Our Network
               </router-link>
               <router-link
-                to="/contribute/magazine"
+                to="/submission-form"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/magazine'
-                  ),
+                  'text-amber-200 font-bold': isActiveRoute('/submission-form'),
                   'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/contribute/magazine'),
+                    !isActiveRoute('/submission-form'),
                 }"
                 class="block px-4 py-2"
               >
@@ -282,7 +280,7 @@
                 }"
                 @click="toggleMobileMenu"
               >
-                Porijaan-The Magazine
+                Porijaan - The Magazine
               </router-link>
 
               <router-link
@@ -318,7 +316,7 @@
                 class="block px-4"
                 @click="toggleMobileMenu"
               >
-                Annual Celebration
+                Annual Remembrance
               </router-link>
               <router-link
                 to="/magazine/memory"
@@ -327,7 +325,7 @@
                   'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
                   'text-white': !isActiveRoute('/magazine/memory'),
                 }"
-                >Memory Of Luminaries</router-link
+                >Obituary</router-link
               >
             </span>
           </li>
@@ -345,15 +343,13 @@
                 }"
                 class="block px-4"
               >
-                Contribute to the Network
+                Join Our Network
               </router-link>
               <router-link
-                to="/contribute/magazine"
+                to="/submission-form"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/magazine'
-                  ),
-                  'text-white': !isActiveRoute('/contribute/magazine'),
+                  'text-amber-200 font-bold': isActiveRoute('/submission-form'),
+                  'text-white': !isActiveRoute('/submission-form'),
                 }"
                 class="block px-4"
               >

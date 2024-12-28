@@ -78,7 +78,7 @@
             Celebrating Icons
           </p>
 
-          <p class="text-gray-600 text-base text-justify pt-4 pb-8">
+          <p class="text-gray-600 text-base text-justify pt-4 pb-8 lg:pb-16">
             Honoring literary and cultural icons, our inaugural issue
             commemorates the anniversaries of luminaries who shaped Bangla and
             global culture, inviting reflections on their legacy and influence.
@@ -89,7 +89,7 @@
               class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-300 z-0"
             ></div>
 
-            <div class="space-y-16 mt-8">
+            <div class="space-y-16 mt-8 timeline-md hidden md:mb-16">
               <!-- Timeline Items -->
               <div
                 v-for="(item, index) in figures"
@@ -118,9 +118,7 @@
                         >
                           {{ item.title }}
                         </h1>
-                        <p
-                          class="text-amber-600 text-base text-center font-semibold"
-                        >
+                        <p class="text-amber-600 text-base text-center">
                           {{ item.birthdate }}
                         </p>
                         <p
@@ -143,9 +141,23 @@
                   v-else
                   class="w-1/2 pr-8 flex items-center justify-end relative"
                 >
-                  <div
-                    class="border-t-2 border-dashed border-yellow-500 w-2/3"
-                  ></div>
+                  <div class="relative w-2/3 flex items-center">
+                    <!-- Dotted Line -->
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6 text-gray-300 mr-2 border-4 border-midnight-sapphire border-opacity-40 rounded-full"
+                    >
+                      <circle cx="12" cy="12" r="12" />
+                    </svg>
+
+                    <div
+                      class="border-t-2 border-dashed border-gray-400 flex-grow"
+                    ></div>
+                    <!-- SVG Circle -->
+                  </div>
                 </div>
 
                 <!-- Center Circle with Gapped Line -->
@@ -209,11 +221,55 @@
                   v-else
                   class="w-1/2 pl-8 flex items-center justify-start relative"
                 >
-                  <div
-                    class="border-t-2 border-dashed border-yellow-500 w-2/3"
-                  ></div>
+                  <div class="relative w-2/3 flex items-center">
+                    <!-- Dotted Line -->
+                    <div
+                      class="border-t-2 border-dashed border-gray-400 flex-grow"
+                    ></div>
+                    <!-- SVG Circle -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6 text-gray-300 ml-2 rounded-full border-4 border-midnight-sapphire border-opacity-40"
+                    >
+                      <circle cx="12" cy="12" r="12" />
+                    </svg>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Stacked Cards for Small Screens -->
+          <div class="cards-md hidden">
+            <div
+              v-for="(item, index) in figures"
+              :key="index"
+              class="mb-6 bg-white rounded-lg shadow-lg p-6"
+            >
+              <div class="flex justify-center mb-4">
+                <img
+                  :src="item.img"
+                  class="rounded-full h-24 w-24 object-cover shadow-md"
+                />
+              </div>
+              <h1
+                class="font-bold font-cormorant text-xl text-center mb-2 text-gray-800"
+              >
+                {{ item.title }}
+              </h1>
+              <p
+                class="text-amber-600 text-base text-center font-semibold mb-1"
+              >
+                {{ item.birthdate }}
+              </p>
+              <p class="text-rose-500 text-sm font-semibold text-center mb-2">
+                {{ item.anniversary }}
+              </p>
+              <p class="text-gray-600 text-base text-justify">
+                {{ item.content }}
+              </p>
             </div>
           </div>
         </div>
@@ -222,7 +278,7 @@
       <!-- Submission Form Section -->
 
       <div
-        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-16"
       >
         <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
@@ -288,11 +344,11 @@ import author17 from "@/assets/authorImage/nazrul.jpg";
 import author18 from "@/assets/authorImage/mujtaba.jpg";
 import author19 from "@/assets/authorImage/begum.jpg";
 import author20 from "@/assets/authorImage/nirendranath.jpg";
-import author21 from "@/assets/authorImage/murshid.jpg";
-import author22 from "@/assets/authorImage/buddhadeb.jpg";
-import author23 from "@/assets/authorImage/utpalendu.jpg";
-import author24 from "@/assets/authorImage/shafinahmed.jpg";
-
+import author21 from "@/assets/authorImage/behari.jpg";
+import author22 from "@/assets/authorImage/balai.jpg";
+import author23 from "@/assets/authorImage/buddha.jpg";
+import author24 from "@/assets/authorImage/talat.jpg";
+import author25 from "@/assets/authorImage/tapan.jpg";
 export default {
   name: "AboutView",
   components: {},
@@ -321,60 +377,6 @@ export default {
           img: author1,
         },
         {
-          title: "Ashutosh Mukherjee",
-          birthdate: "1864-1924",
-          date: "1864",
-          content:
-            "Academic and education reformer who championed modern education in Bengal.",
-          anniversary: "100th death anniversary",
-          img: author2,
-        },
-        {
-          title: "Leonard Knight Elmhirst",
-          birthdate: "1893-1974",
-          date: "1893",
-          content:
-            "British philanthropist who co-founded rural development institutes in India.",
-          anniversary: "50th death anniversary",
-          img: author3,
-        },
-        {
-          title: "Jibanananda Das",
-          birthdate: "1899-1954",
-          date: "1899",
-          content:
-            "Iconic modern Bengali poet known for his meditative and nature-centric poetry.",
-          anniversary: "125th birth anniversary",
-          img: author4,
-        },
-        {
-          title: "Begum Sufia Kama",
-          birthdate: "1911-1999",
-          date: "1911",
-          content:
-            "A leading figure in Bangladeshi literature, social activism, and women’s rights.",
-          anniversary: "25th death anniversary",
-          img: author5,
-        },
-        {
-          title: "Suchitra Mitra",
-          birthdate: "1924-2011",
-          date: "1924",
-          content:
-            "Eminent exponent of Rabindra Sangeet, bringing Tagore’s music to a wider audience.",
-          anniversary: "100th death anniversary",
-          img: author6,
-        },
-        {
-          title: "Samaresh Basu ",
-          birthdate: "1924-1988",
-          date: "1924",
-          content:
-            "Bengali novelist known for his socially conscious works and unique narrative style.",
-          anniversary: "100th birth anniversary",
-          img: author7,
-        },
-        {
           title: "Michael Madhusudan Dutta",
           birthdate: "1824-1873",
           date: "1824",
@@ -384,67 +386,39 @@ export default {
           img: author8,
         },
         {
-          title: "Paul Antoine Richard",
-          birthdate: "1874-1967",
-          date: "1874",
-          content:
-            "French politician, writer, and spiritual thinker with links to both Bengal and France.",
-          anniversary: "150th birth anniversary",
-          img: author9,
+          title: "Reverend Lal Behari Day",
+          birthdate: "1824-1894",
+          date: "1824",
+          content: " - ",
+          anniversary: " - ",
+          img: author21,
         },
         {
-          title: "Satyendra Nath Bose",
-          birthdate: "1894-1974",
-          date: "1894",
-          content:
-            "Physicist best known for his work on quantum mechanics and Bose-Einstein statistics.",
-          anniversary: "50th death anniversary",
-          img: author10,
-        },
-        {
-          title: "Sharadindu Bandyopadhyay",
-          birthdate: "1899-1970",
-          date: "1899",
-          content:
-            "Creator of the famous detective Byomkesh Bakshi, and a renowned historical novelist.",
-          anniversary: "125th birth anniversary",
-          img: author11,
-        },
-        {
-          title: "Kamal Dasgupta",
-          birthdate: "1912-1974",
-          date: "1912",
-          content:
-            "Bengali music composer, credited with blending traditional and modern musical forms.",
-          anniversary: "50th death anniversary",
-          img: author12,
-        },
-        {
-          title: "Kanika Bandyopadhyay ",
-          birthdate: "1924-2000",
-          date: "1924",
-          content:
-            "Another celebrated Rabindra Sangeet singer, noted for her soulful interpretations of Tagore's songs.",
-          anniversary: "100th birth anniversary",
-          img: author13,
-        },
-        {
-          title: "Father Paul Detienne",
-          birthdate: "1924-2016",
-          date: "1924",
-          content:
-            "French Jesuit priest and cultural ambassador who contributed to Bengali literature.",
-          anniversary: "100th birth anniversary",
-          img: author14,
-        },
-        {
-          title: "Babu Sarat Chandra Das",
+          title: "Sarat Chandra Das",
           birthdate: "1849-1917",
           date: "1849",
           content:
             "Renowned scholar, explorer, and writer who played a key role in documenting Tibetan culture.",
           anniversary: "175th birth anniversary",
           img: author15,
+        },
+        {
+          title: "Ashutosh Mukherjee",
+          birthdate: "1864-1924",
+          date: "1864",
+          content:
+            "Academic and education reformer who championed modern education in Bengal.",
+          anniversary: "100th death anniversary",
+          img: author2,
+        },
+        {
+          title: "Paul Antoine Richard",
+          birthdate: "1874-1967",
+          date: "1874",
+          content:
+            "French politician, writer, and spiritual thinker connecting  Bengal and France.",
+          anniversary: "150th birth anniversary",
+          img: author9,
         },
         {
           title: "Sarojini Naidu ",
@@ -456,13 +430,58 @@ export default {
           img: author16,
         },
         {
+          title: "Leonard Knight Elmhirst",
+          birthdate: "1893-1974",
+          date: "1893",
+          content:
+            "British philanthropist who co-founded rural development institutes in India.",
+          anniversary: "50th death anniversary",
+          img: author3,
+        },
+        {
+          title: "Satyendranath Bose",
+          birthdate: "1894-1974",
+          date: "1894",
+          content:
+            "Physicist best known for his work on quantum mechanics and Bose-Einstein statistics.",
+          anniversary: "50th death anniversary",
+          img: author10,
+        },
+        {
+          title: "Jibanananda Das",
+          birthdate: "1899-1954",
+          date: "1899",
+          content:
+            "Bengali poet, writer, novelist, and essayist, associated with modernism in Bangla literature.",
+          anniversary: "125th birth anniversary",
+          img: author4,
+        },
+        {
+          title: "Sharadindu Bandyopadhyay",
+          birthdate: "1899-1970",
+          date: "1899",
+          content:
+            "Creator of the famous detective Byomkesh Bakshi, and author of historical fiction.",
+          anniversary: "125th birth anniversary",
+          img: author11,
+        },
+        {
           title: "Kazi Nazrul Islam",
           birthdate: "1899-1976",
           date: "1899",
           content:
-            "The 'Rebel Poet,' whose works championed political and social justice.",
+            "The rebel poet and lyricist whose works championed political and social issues.",
           anniversary: "125th death anniversary",
           img: author17,
+        },
+        {
+          title: "Balai Chand Mukhopadhyay",
+          birthdate: "1899-1979",
+          date: "1899",
+          content:
+            "Bengali short-story writer, playwright, poet, novelist, and physician who wrote under the penname 'Banaphul.'",
+          anniversary: " - ",
+          img: author22,
         },
         {
           title: "Syed Mujtaba Ali",
@@ -474,6 +493,33 @@ export default {
           img: author18,
         },
         {
+          title: "Buddhadeva Bose",
+          birthdate: "1908-1974",
+          date: "1908",
+          content:
+            "Bengali author and poet, influential in setting up the Department of Comparative Literature at Jadavpur University, Kolkata.",
+          anniversary: " - ",
+          img: author23,
+        },
+        {
+          title: "Begum Sufia Kama",
+          birthdate: "1911-1999",
+          date: "1911",
+          content:
+            "A leading figure in Bangladeshi literature, social activism, and women’s rights.",
+          anniversary: "25th death anniversary",
+          img: author5,
+        },
+        {
+          title: "Kamal Dasgupta",
+          birthdate: "1912-1974",
+          date: "1912",
+          content:
+            "Bengali music composer, credited with blending traditional and modern musical forms.",
+          anniversary: "50th death anniversary",
+          img: author12,
+        },
+        {
           title: "Begum Akhtar",
           birthdate: "1914-1974",
           date: "1914",
@@ -483,6 +529,61 @@ export default {
           img: author19,
         },
         {
+          title: "Samaresh Basu ",
+          birthdate: "1924-1988",
+          date: "1924",
+          content:
+            "Bengali novelist known for his socially conscious works and unique narrative style.",
+          anniversary: "100th birth anniversary",
+          img: author7,
+        },
+        {
+          title: "Talat Mahmood",
+          birthdate: "1924-1998",
+          date: "1924",
+          content: " - ",
+          anniversary: " - ",
+          img: author24,
+        },
+        {
+          title: "Kanika Bandyopadhyay ",
+          birthdate: "1924-2000",
+          date: "1924",
+          content:
+            "Another celebrated Rabindra Sangeet singer, noted for her soulful interpretations of Tagore's songs.",
+          anniversary: "100th birth anniversary",
+          img: author13,
+        },
+        {
+          title: "Tapan Sinha",
+          birthdate: "1924-2009",
+          date: "1924",
+          content:
+            "Bengali filmmaker, renowned for his on-screen adaptations of Bangla literary works.",
+          anniversary: " - ",
+          img: author25,
+        },
+        {
+          title: "Suchitra Mitra",
+          birthdate: "1924-2011",
+          date: "1924",
+          content:
+            "Eminent exponent of Rabindra Sangeet, bringing Tagore’s music to a wider audience.",
+          anniversary: "100th death anniversary",
+          img: author6,
+        },
+
+        {
+          title: "Father Paul Detienne",
+          birthdate: "1924-2016",
+          date: "1924",
+          content:
+            "French Jesuit priest and cultural ambassador who contributed to Bengali literature.",
+          anniversary: "100th birth anniversary",
+          img: author14,
+        },
+
+        {
           title: "Nirendranath Chakravarty",
           birthdate: "1924-2018",
           date: "1924",
@@ -490,37 +591,6 @@ export default {
             "Modern Bengali poet and writer, acclaimed for his profound and accessible poetry.",
           anniversary: "100th death anniversary",
           img: author20,
-        },
-      ],
-
-      luminaries: [
-        {
-          name: "Ghulam Murshid",
-          birthdate: "1940-2024",
-          description:
-            "A pioneering figure in Bangladeshi literary circles, Ghulam Murshid was an author, researcher, and cultural historian. His work significantly shaped the understanding of Bengali identity and language.",
-          img: author21,
-        },
-        {
-          name: "Buddhadeb Bhattacharjee",
-          birthdate: "1944-2024",
-          description:
-            "Former Chief Minister of West Bengal and a key figure in Indian politics, Bhattacharjee was also known for his literary contributions and commitment to social justice.",
-          img: author22,
-        },
-        {
-          name: "Utpalendu Chakraborty",
-          birthdate: "1948-2024",
-          description:
-            "A renowned filmmaker and playwright, Chakraborty’s films brought socially conscious themes to the forefront of Indian cinema, focusing on the lives of marginalized communities.",
-          img: author23,
-        },
-        {
-          name: "Shafin Ahmed",
-          birthdate: "1961-2024",
-          description:
-            "A legendary Bangladeshi musician, Shafin Ahmed was the lead vocalist of the iconic band Miles. His contributions to rock and pop music in Bangladesh have left an enduring legacy.",
-          img: author24,
         },
       ],
     };
@@ -576,23 +646,20 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 640px) {
-  .grid-cols-1 {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  .timeline-md {
+    display: block !important;
   }
-  .hidden {
-    display: none;
-  }
-}
-
-@media (max-width: 1258px) {
-  .hidden {
+  .cards-md {
     display: none !important;
   }
 }
 
-@media (min-width: 1259px) {
-  .hidden {
+@media (max-width: 767px) {
+  .timeline-md {
+    display: none !important;
+  }
+  .cards-md {
     display: block !important;
   }
 }

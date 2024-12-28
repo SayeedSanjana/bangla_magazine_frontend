@@ -19,7 +19,7 @@
             Bangla holds my hands<br />
             And brings me to people in distant lands.<br />
             With humility I regard all there is to revere,<br />
-            As seven seas and thirteen rivers<br />
+            Seven seas and thirteen rivers<br />
             In Ganga and Padma appear..."
           </p>
         </div>
@@ -37,11 +37,21 @@
 
     <!-- Who We Are -->
     <div
-      class="bg-gradient-to-r from-amber-100 to-regal-blue border border-gray-200 rounded-lg shadow pt-8 mb:pt-16 mb-8 md:mb-16"
+      class="bg-gradient-to-r from-amber-100 to-regal-blue border border-gray-200 rounded-lg shadow pt-8 md:pt-16 mb-8 md:mb-16 relative overflow-hidden"
     >
-      <div class="py-8 px-2 mx-auto max-w-screen-xl">
+      <!-- Image for Mobile (Positioned Behind Text) -->
+      <div class="block md:hidden absolute inset-0 z-0">
+        <img
+          src="../assets/img/about1-img.png"
+          alt="Image representing Bangla culture"
+          class="w-full h-full object-cover opacity-20"
+        />
+      </div>
+
+      <!-- Content Section -->
+      <div class="py-8 px-4 mx-auto max-w-screen-xl relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <!-- Left 1/3 with Image and Tooltip -->
+          <!-- Image for Large and Medium Screens -->
           <div class="md:col-span-1 hidden md:block relative group">
             <img
               src="../assets/img/about1-img.png"
@@ -64,15 +74,17 @@
             </div>
           </div>
 
-          <!-- Right 2/3 with Content -->
-          <div class="md:col-span-2 mb-8 md:mb-16 pt-8 mb:pt-16 py-8 px-2">
-            <div class="text-center md:text-left mb-16">
+          <!-- Content for All Screens -->
+          <div class="md:col-span-2 py-8 px-2">
+            <div class="text-center md:text-left">
               <h2
                 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
               >
                 Récit: Our Story
               </h2>
-              <p class="font-light text-base text-gray-700 text-justify">
+              <p
+                class="text-base text-black md:text-gray-700 text-justify font-normal md:font-light"
+              >
                 Bangla continues to be the shared language of expression for a
                 considerable part of the global population (approximately, 250
                 million native speakers and 41 million second language speakers)
@@ -103,7 +115,9 @@
                 or use Bangla as their native language, but also those who have
                 adopted it through their mediated or lived experiences.
               </p>
-              <p class="font-light text-base text-gray-700 text-justify pt-6">
+              <p
+                class="text-base text-black md:text-gray-700 text-justify pt-6 font-normal md:font-light"
+              >
                 The recognition of
                 <span class="text-midnight-sapphire">February 21</span> as the
                 <span class="text-midnight-sapphire">International Mother</span>
@@ -124,7 +138,9 @@
                 Bangalis of different perspectives and across different
                 countries.
               </p>
-              <p class="font-light text-base text-gray-700 text-justify pt-6">
+              <p
+                class="font-light text-base text- text-black md:text-gray-700 text-justify pt-6 font-normal md:font-light"
+              >
                 Building on such observations, we have ideated our network,
                 <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>, an
                 acronym for Bangali Abhibasi Network: a Glocal Linguo-cultural

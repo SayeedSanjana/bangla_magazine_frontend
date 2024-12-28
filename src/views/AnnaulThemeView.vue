@@ -188,7 +188,7 @@
       <!-- Submission Form Section -->
 
       <div
-        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-16"
       >
         <!-- Overlay for Background Image -->
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>

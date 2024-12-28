@@ -75,14 +75,14 @@
       <div
         class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pb-8"
       >
-        <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
+        <div class="container mx-auto md py-10 space-y-3 lg:px-32">
           <h2
             class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant font-semibold"
           >
             Topics We Are Interested In:
           </h2>
           <div
-            class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pt-8 md:pt-16 p-8"
+            class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-8 md:pt-16 p-16"
           >
             <!-- Background Image with Opacity -->
             <img
@@ -95,7 +95,7 @@
             <div
               v-for="(topic, i) in topics"
               :key="i"
-              class="md:p-6 pt-4 relative z-10"
+              class="p-4 pt-4 relative z-10"
             >
               <div
                 class="relative border bg-white border-gray-200 rounded-xl shadow-xl md:p-6 p-4 w-full h-full transform transition duration-300 ease-in-out hover:scale-105 flex flex-col justify-between"
