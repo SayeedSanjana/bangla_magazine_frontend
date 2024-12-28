@@ -180,7 +180,7 @@
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
-              src="../assets/img/Vector1.png"
+              src="../assets/img/tagore.png"
               alt="SVG Image 1"
               class="w-96 h-auto"
             />
@@ -330,7 +330,7 @@
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
-              src="../assets/img/Vector4.png"
+              src="../assets/img/language_and_learning.png"
               alt="SVG Image 4"
               class="w-96 h-auto"
             />
