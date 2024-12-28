@@ -71,7 +71,7 @@
       <div
         class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-16 mb:pt-16 py-4"
       >
-        <div class="container mx-auto py-10 px-4 space-y-3 lg:px-32">
+        <div class="container mx-auto px-4 space-y-3 lg:px-32">
           <p
             class="text-2xl md:text-4xl mb-2 text-amber-600 font-cormorant font-semibold"
           >
@@ -100,11 +100,11 @@
                 <div v-if="index % 2 === 0" class="w-1/2 pr-8">
                   <div class="relative mt-6 mb-6 max-w-sm mx-auto">
                     <div
-                      class="rounded overflow-hidden shadow-lg bg-white py-4"
+                      class="rounded-lg overflow-hidden shadow-lg bg-white py-6"
                     >
                       <div class="absolute -mt-20 w-full flex justify-center">
                         <div
-                          class="h-40 w-40 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
+                          class="h-36 w-36 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
                         >
                           <img
                             :src="item.img"
@@ -138,7 +138,15 @@
                   </div>
                 </div>
 
-                <div v-else class="w-1/2"></div>
+                <!-- Horizontal Dotted Line for missing card -->
+                <div
+                  v-else
+                  class="w-1/2 pr-8 flex items-center justify-end relative"
+                >
+                  <div
+                    class="border-t-2 border-dashed border-yellow-500 w-2/3"
+                  ></div>
+                </div>
 
                 <!-- Center Circle with Gapped Line -->
                 <div class="relative mx-auto z-10 flex flex-col items-center">
@@ -161,11 +169,11 @@
                 <div v-if="index % 2 !== 0" class="w-1/2 pl-8">
                   <div class="relative mt-6 mb-6 max-w-sm mx-auto">
                     <div
-                      class="rounded overflow-hidden shadow-lg bg-white py-4"
+                      class="rounded-lg overflow-hidden shadow-lg bg-white py-6"
                     >
                       <div class="absolute -mt-20 w-full flex justify-center">
                         <div
-                          class="h-40 w-40 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
+                          class="h-36 w-36 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
                         >
                           <img
                             :src="item.img"
@@ -196,12 +204,21 @@
                     </div>
                   </div>
                 </div>
-                <div v-else class="w-1/2"></div>
+                <!-- Horizontal Dotted Line for missing card -->
+                <div
+                  v-else
+                  class="w-1/2 pl-8 flex items-center justify-start relative"
+                >
+                  <div
+                    class="border-t-2 border-dashed border-yellow-500 w-2/3"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- Submission Form Section -->
 
       <div
