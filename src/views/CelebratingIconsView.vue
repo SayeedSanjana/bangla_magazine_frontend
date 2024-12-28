@@ -10,19 +10,23 @@
             <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
               Literary and Cultural Figures
             </h2>
-            <p
+            <!-- <p
               class="text-2xl md:text-4xl mb-2 text-amber-600 font-cormorant font-semibold"
             >
               Celebrating Icons
-            </p>
+            </p>-->
 
             <p class="text-gray-600 text-base text-justify pt-4">
-              This section honors literary and cultural icons whose works have
-              left an indelible mark on Bangla and world culture. For the
-              inaugural issue, we commemorate the anniversaries of figures who
-              have shaped literature, art, and thought across generations. We
-              invite submissions that reflect on their contributions, engage
-              with their works, or offer fresh perspectives on their legacy.
+              This section pays tribute to literary and cultural icons whose
+              contributions have profoundly influenced Bangla and global
+              culture. In our inaugural issue, we celebrate the anniversaries of
+              luminaries who have left an enduring legacy in literature, art,
+              and intellectual thought across generations. We invite submissions
+              that delve into their impactful works, reflect on their
+              significance, or offer new interpretations and perspectives on
+              their lasting influence. Through this, we aim to honor their
+              remarkable achievements and inspire a deeper connection to their
+              enduring contributions.
             </p>
           </div>
           <div></div>
@@ -64,76 +68,140 @@
       </div>
 
       <!--  Literary and Cultural Figures-->
-
       <div
-        class="pt-8 px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pb-8"
+        class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-16 mb:pt-16 py-4"
       >
-        <div class="container md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <!--  Carousel-->
-          <div class="flex justify-center items-center md:pt-12">
-            <div class="overflow-hidden relative w-full">
-              <!-- Slider wrapper -->
+        <div class="container mx-auto py-10 px-4 space-y-3 lg:px-32">
+          <p
+            class="text-2xl md:text-4xl mb-2 text-amber-600 font-cormorant font-semibold"
+          >
+            Celebrating Icons
+          </p>
+
+          <p class="text-gray-600 text-base text-justify pt-4 pb-8">
+            Honoring literary and cultural icons, our inaugural issue
+            commemorates the anniversaries of luminaries who shaped Bangla and
+            global culture, inviting reflections on their legacy and influence.
+          </p>
+          <div class="relative">
+            <!-- Timeline -->
+            <div
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-300 z-0"
+            ></div>
+
+            <div class="space-y-16 mt-8">
+              <!-- Timeline Items -->
               <div
-                class="flex transition-transform duration-300 ease-out"
-                :style="`transform: translateX(-${
-                  currentSlide * (100 / figuresPerPage)
-                }%)`"
+                v-for="(item, index) in figures"
+                :key="index"
+                class="relative flex items-center"
               >
-                <!-- Cards -->
-                <div
-                  v-for="(card, index) in figures"
-                  :key="index"
-                  class="flex justify-center items-center px-4"
-                  :style="{ minWidth: calcMinWidth }"
-                >
-                  <div
-                    class="bg-white p-6 shadow-lg rounded-lg text-center"
-                    style="width: 380px; height: 460px"
-                  >
-                    <img
-                      :src="card.img"
-                      alt="Card Image"
-                      class="w-full h-48 object-cover rounded-lg mb-4"
-                    />
-                    <h3 class="text-xl mb-1 text-gray-800 font-cormorant">
-                      <span class="text-2xl">{{ index + 1 }}.</span>
-                      {{ card.title }}
-                    </h3>
-                    <p class="text-amber-600 mb-1">
-                      {{ card.birthdate }}
-                    </p>
-                    <p class="text-red-500 mb-4">
-                      {{ card.anniversary }}
-                    </p>
-                    <p class="text-gray-500 mb-4 text-sm">
-                      {{ card.content }}
-                    </p>
+                <!-- Left Content for odd index -->
+                <div v-if="index % 2 === 0" class="w-1/2 pr-8">
+                  <div class="relative mt-6 mb-6 max-w-sm mx-auto">
+                    <div
+                      class="rounded overflow-hidden shadow-lg bg-white py-4"
+                    >
+                      <div class="absolute -mt-20 w-full flex justify-center">
+                        <div
+                          class="h-40 w-40 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
+                        >
+                          <img
+                            :src="item.img"
+                            class="rounded-full object-cover h-full w-full shadow-md"
+                          />
+                        </div>
+                      </div>
+                      <div class="px-6 mt-24">
+                        <h1
+                          class="font-bold font-cormorant text-2xl text-center mb-1"
+                        >
+                          {{ item.title }}
+                        </h1>
+                        <p
+                          class="text-amber-600 text-base text-center font-semibold"
+                        >
+                          {{ item.birthdate }}
+                        </p>
+                        <p
+                          class="text-rose-500 text-sm font-semibold text-center"
+                        >
+                          {{ item.anniversary }}
+                        </p>
+                        <p
+                          class="text-center text-gray-600 text-base pt-3 font-normal mt-2"
+                        >
+                          {{ item.content }}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Navigation buttons -->
-              <button
-                @click="prevSlide"
-                :disabled="currentSlide === 0"
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-midnight-sapphire text-white px-4 py-2 rounded-l-lg text-xs"
-                :class="{ 'opacity-50 cursor-not-allowed': currentSlide === 0 }"
-              >
-                Prev
-              </button>
-              <button
-                @click="nextSlide"
-                :disabled="isNextDisabled"
-                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-midnight-sapphire text-white px-4 py-2 rounded-r-lg text-xs"
-                :class="{ 'opacity-50 cursor-not-allowed': isNextDisabled }"
-              >
-                Next
-              </button>
+                <div v-else class="w-1/2"></div>
+
+                <!-- Center Circle with Gapped Line -->
+                <div class="relative mx-auto z-10 flex flex-col items-center">
+                  <!-- Upper Line -->
+                  <div class="h-1/2 w-1 bg-yellow-300"></div>
+                  <!-- Circle -->
+                  <div
+                    class="w-24 h-24 bg-white border-2 border-yellow-300 rounded-full flex items-center justify-center text-center"
+                  >
+                    <span
+                      class="text-3xl font-cormorant text-midnight-sapphire font-bold"
+                      >{{ item.date }}</span
+                    >
+                  </div>
+                  <!-- Lower Line -->
+                  <div class="h-1/2 w-1 bg-yellow-300"></div>
+                </div>
+
+                <!-- Right Content for even index -->
+                <div v-if="index % 2 !== 0" class="w-1/2 pl-8">
+                  <div class="relative mt-6 mb-6 max-w-sm mx-auto">
+                    <div
+                      class="rounded overflow-hidden shadow-lg bg-white py-4"
+                    >
+                      <div class="absolute -mt-20 w-full flex justify-center">
+                        <div
+                          class="h-40 w-40 border-4 border-midnight-sapphire border-opacity-30 rounded-full"
+                        >
+                          <img
+                            :src="item.img"
+                            class="rounded-full object-cover h-full w-full shadow-md"
+                          />
+                        </div>
+                      </div>
+                      <div class="px-6 mt-24">
+                        <h1
+                          class="font-bold font-cormorant text-2xl text-center mb-1"
+                        >
+                          {{ item.title }}
+                        </h1>
+                        <p class="text-amber-600 text-base text-center">
+                          {{ item.birthdate }}
+                        </p>
+                        <p
+                          class="text-rose-500 text-sm text-center font-semibold"
+                        >
+                          {{ item.anniversary }}
+                        </p>
+                        <p
+                          class="text-center text-gray-600 text-base pt-3 font-normal mt-2"
+                        >
+                          {{ item.content }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div v-else class="w-1/2"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <!-- Submission Form Section -->
 
       <div
@@ -229,6 +297,7 @@ export default {
         {
           title: "Rassundari Devi",
           birthdate: "1810-1899",
+          date: "1810",
           content:
             "Pioneer in autobiographical writing, the first Indian woman to write an autobiography.",
           anniversary: "125th death anniversary",
@@ -237,6 +306,7 @@ export default {
         {
           title: "Ashutosh Mukherjee",
           birthdate: "1864-1924",
+          date: "1864",
           content:
             "Academic and education reformer who championed modern education in Bengal.",
           anniversary: "100th death anniversary",
@@ -245,6 +315,7 @@ export default {
         {
           title: "Leonard Knight Elmhirst",
           birthdate: "1893-1974",
+          date: "1893",
           content:
             "British philanthropist who co-founded rural development institutes in India.",
           anniversary: "50th death anniversary",
@@ -253,6 +324,7 @@ export default {
         {
           title: "Jibanananda Das",
           birthdate: "1899-1954",
+          date: "1899",
           content:
             "Iconic modern Bengali poet known for his meditative and nature-centric poetry.",
           anniversary: "125th birth anniversary",
@@ -261,6 +333,7 @@ export default {
         {
           title: "Begum Sufia Kama",
           birthdate: "1911-1999",
+          date: "1911",
           content:
             "A leading figure in Bangladeshi literature, social activism, and women’s rights.",
           anniversary: "25th death anniversary",
@@ -269,6 +342,7 @@ export default {
         {
           title: "Suchitra Mitra",
           birthdate: "1924-2011",
+          date: "1924",
           content:
             "Eminent exponent of Rabindra Sangeet, bringing Tagore’s music to a wider audience.",
           anniversary: "100th death anniversary",
@@ -277,6 +351,7 @@ export default {
         {
           title: "Samaresh Basu ",
           birthdate: "1924-1988",
+          date: "1924",
           content:
             "Bengali novelist known for his socially conscious works and unique narrative style.",
           anniversary: "100th birth anniversary",
@@ -285,6 +360,7 @@ export default {
         {
           title: "Michael Madhusudan Dutta",
           birthdate: "1824-1873",
+          date: "1824",
           content:
             "A major poet and dramatist, credited with introducing blank verse in Bengali literature.",
           anniversary: "200th birth anniversary",
@@ -293,6 +369,7 @@ export default {
         {
           title: "Paul Antoine Richard",
           birthdate: "1874-1967",
+          date: "1874",
           content:
             "French politician, writer, and spiritual thinker with links to both Bengal and France.",
           anniversary: "150th birth anniversary",
@@ -301,6 +378,7 @@ export default {
         {
           title: "Satyendra Nath Bose",
           birthdate: "1894-1974",
+          date: "1894",
           content:
             "Physicist best known for his work on quantum mechanics and Bose-Einstein statistics.",
           anniversary: "50th death anniversary",
@@ -309,6 +387,7 @@ export default {
         {
           title: "Sharadindu Bandyopadhyay",
           birthdate: "1899-1970",
+          date: "1899",
           content:
             "Creator of the famous detective Byomkesh Bakshi, and a renowned historical novelist.",
           anniversary: "125th birth anniversary",
@@ -317,6 +396,7 @@ export default {
         {
           title: "Kamal Dasgupta",
           birthdate: "1912-1974",
+          date: "1912",
           content:
             "Bengali music composer, credited with blending traditional and modern musical forms.",
           anniversary: "50th death anniversary",
@@ -325,6 +405,7 @@ export default {
         {
           title: "Kanika Bandyopadhyay ",
           birthdate: "1924-2000",
+          date: "1924",
           content:
             "Another celebrated Rabindra Sangeet singer, noted for her soulful interpretations of Tagore's songs.",
           anniversary: "100th birth anniversary",
@@ -333,6 +414,7 @@ export default {
         {
           title: "Father Paul Detienne",
           birthdate: "1924-2016",
+          date: "1924",
           content:
             "French Jesuit priest and cultural ambassador who contributed to Bengali literature.",
           anniversary: "100th birth anniversary",
@@ -341,6 +423,7 @@ export default {
         {
           title: "Babu Sarat Chandra Das",
           birthdate: "1849-1917",
+          date: "1849",
           content:
             "Renowned scholar, explorer, and writer who played a key role in documenting Tibetan culture.",
           anniversary: "175th birth anniversary",
@@ -349,6 +432,7 @@ export default {
         {
           title: "Sarojini Naidu ",
           birthdate: "1879-1949",
+          date: "1879",
           content:
             "A prominent Indian independence activist and poet known as the 'Nightingale of India.'",
           anniversary: "75th death anniversary",
@@ -357,6 +441,7 @@ export default {
         {
           title: "Kazi Nazrul Islam",
           birthdate: "1899-1976",
+          date: "1899",
           content:
             "The 'Rebel Poet,' whose works championed political and social justice.",
           anniversary: "125th death anniversary",
@@ -365,6 +450,7 @@ export default {
         {
           title: "Syed Mujtaba Ali",
           birthdate: "1904-1974",
+          date: "1904",
           content:
             "Bangladeshi author, known for his travel writings and satirical works.",
           anniversary: "50th death anniversary",
@@ -373,6 +459,7 @@ export default {
         {
           title: "Begum Akhtar",
           birthdate: "1914-1974",
+          date: "1914",
           content:
             "Indian singer renowned for her performances of ghazals, dadra, and thumri.",
           anniversary: "50th death anniversary",
@@ -381,6 +468,7 @@ export default {
         {
           title: "Nirendranath Chakravarty",
           birthdate: "1924-2018",
+          date: "1924",
           content:
             "Modern Bengali poet and writer, acclaimed for his profound and accessible poetry.",
           anniversary: "100th death anniversary",

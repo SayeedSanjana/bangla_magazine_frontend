@@ -77,7 +77,7 @@
       >
         <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
           <h2
-            class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant"
+            class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant font-semibold"
           >
             Topics We Are Interested In:
           </h2>
