@@ -37,29 +37,28 @@
 
     <!-- Who We Are -->
     <div
-      class="bg-gradient-to-r from-amber-100 to-regal-blue border border-gray-200 rounded-lg shadow pt-8 md:pt-16 mb-8 md:mb-16 relative overflow-hidden"
+      class="bg-gradient-to-r from-amber-100 to-regal-blue border border-gray-200 rounded-lg shadow"
     >
-      <!-- Image for Mobile (Positioned Behind Text) -->
-      <div class="block md:hidden absolute inset-0 z-0">
-        <img
-          src="../assets/img/about1-img.png"
-          alt="Image representing Bangla culture"
-          class="w-full h-full object-cover opacity-20"
-        />
-      </div>
-
-      <!-- Content Section -->
-      <div class="py-8 px-4 mx-auto max-w-screen-xl relative z-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <!-- Image for Large and Medium Screens -->
-          <div class="md:col-span-1 hidden md:block relative group">
-            <img
-              src="../assets/img/about1-img.png"
-              alt="Image representing Bangla culture"
-              class="w-full h-auto object-cover rounded shadow-sm"
-            />
+      <div
+        class="mb-8 md:mb-16 pt-8 md:pt-16 py-8 px-2 mx-auto max-w-screen-xl"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+          <!-- Left 1/3 with Image and Tooltip -->
+          <div class="lg:col-span-1 hidden lg:block relative group">
+            <div class="relative">
+              <!-- Background Gradient Layer -->
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-amber-100 to-regal-blue rounded mix-blend-multiply opacity-70 z-0"
+              ></div>
+              <!-- Image Layer -->
+              <img
+                src="../assets/img/story.png"
+                alt="Image representing Bangla culture"
+                class="w-full h-auto object-cover rounded shadow-sm mix-blend-multiply z-10 relative opacity-95 filter brightness-90"
+              />
+            </div>
             <!-- Tooltip -->
-            <div
+            <!-- <div
               class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               Image Credit:
@@ -71,20 +70,18 @@
               <div
                 class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
               ></div>
-            </div>
+            </div> -->
           </div>
 
-          <!-- Content for All Screens -->
-          <div class="md:col-span-2 py-8 px-2">
-            <div class="text-center md:text-left">
+          <!-- Right 2/3 with Content -->
+          <div class="lg:col-span-2 mb-8 md:mb-16 pt-8 md:pt-16 py-8 px-2">
+            <div class="text-center md:text-left mb-16">
               <h2
                 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant"
               >
                 Récit: Our Story
               </h2>
-              <p
-                class="text-base text-black md:text-gray-700 text-justify font-normal md:font-light"
-              >
+              <p class="font-light text-base text-gray-700 text-justify">
                 Bangla continues to be the shared language of expression for a
                 considerable part of the global population (approximately, 250
                 million native speakers and 41 million second language speakers)
@@ -115,9 +112,15 @@
                 or use Bangla as their native language, but also those who have
                 adopted it through their mediated or lived experiences.
               </p>
-              <p
-                class="text-base text-black md:text-gray-700 text-justify pt-6 font-normal md:font-light"
-              >
+              <!-- Add Image Here for Small Screens -->
+              <div class="block lg:hidden my-6 flex justify-center">
+                <img
+                  src="../assets/img/story.png"
+                  alt="Image representing Bangla culture"
+                  class="w-72 h-92 object-cover rounded shadow-sm opacity-95 filter brightness-90"
+                />
+              </div>
+              <p class="font-light text-base text-gray-700 text-justify pt-6">
                 The recognition of
                 <span class="text-midnight-sapphire">February 21</span> as the
                 <span class="text-midnight-sapphire">International Mother</span>
@@ -138,9 +141,8 @@
                 Bangalis of different perspectives and across different
                 countries.
               </p>
-              <p
-                class="font-light text-base text- text-black md:text-gray-700 text-justify pt-6 font-normal md:font-light"
-              >
+
+              <p class="font-light text-base text-gray-700 text-justify pt-6">
                 Building on such observations, we have ideated our network,
                 <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>, an
                 acronym for Bangali Abhibasi Network: a Glocal Linguo-cultural
@@ -196,7 +198,7 @@
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
-              src="../assets/img/Vector1.png"
+              src="../assets/img/tagore.png"
               alt="SVG Image 1"
               class="w-96 h-auto"
             />
@@ -296,7 +298,7 @@
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
-              src="../assets/img/Vector3.png"
+              src="../assets/img/tracing.png"
               alt="SVG Image 3"
               class="w-96 h-auto"
             />
@@ -346,7 +348,7 @@
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
             <img
-              src="../assets/img/Vector4.png"
+              src="../assets/img/language_and_learning.png"
               alt="SVG Image 4"
               class="w-96 h-auto"
             />

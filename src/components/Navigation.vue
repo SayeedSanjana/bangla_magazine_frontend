@@ -41,7 +41,7 @@
               About Us
             </button>
             <div
-              class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
             >
               <router-link
                 to="/about/story"
@@ -83,7 +83,7 @@
               Magazine
             </button>
             <div
-              class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
             >
               <router-link
                 to="/magazine"
@@ -159,7 +159,7 @@
               Contribute
             </button>
             <div
-              class="absolute hidden group-hover:block left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50"
+              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
             >
               <router-link
                 to="/join"
