@@ -64,7 +64,7 @@
       </div>
       <!-- Annual Theme Section -->
       <div
-        class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 min-h-screen pb-8"
+        class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 min-h-screen py-8 pb-16"
       >
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <!-- <h2
@@ -73,7 +73,7 @@
             2. Annual Theme
           </h2> -->
           <div
-            class="flex flex-col lg:flex-row items-start justify-between lg:space-x-8 pb-8 md:pb-12"
+            class="flex flex-col lg:flex-row items-start justify-between lg:space-x-8"
           >
             <!-- Left Section: Sticky on Scroll -->
             <div class="w-full lg:w-1/2 md:pr-6 lg:sticky lg:top-0 self-start">
@@ -194,7 +194,7 @@
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
 
         <!-- Tooltip for Image Credit -->
-        <div
+        <!-- <div
           class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           Background Image by:
@@ -206,7 +206,7 @@
           <div
             class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
           ></div>
-        </div>
+        </div> -->
 
         <!-- Content Overlay -->
         <div

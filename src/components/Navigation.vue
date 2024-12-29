@@ -162,14 +162,10 @@
               class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
             >
               <router-link
-                to="/contribute/network"
+                to="/join"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/network'
-                  ),
-                  'text-white hover:bg-amber-500': !isActiveRoute(
-                    '/contribute/network'
-                  ),
+                  'text-amber-200 font-bold': isActiveRoute('/join'),
+                  'text-white hover:bg-amber-500': !isActiveRoute('/join'),
                 }"
                 class="block px-4 py-2"
               >
@@ -334,12 +330,10 @@
             <p class="font-semibold mb-1">Contribute</p>
             <span class="space-y-2">
               <router-link
-                to="/contribute/network"
+                to="/join"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/network'
-                  ),
-                  'text-white': !isActiveRoute('/contribute/network'),
+                  'text-amber-200 font-bold': isActiveRoute('/join'),
+                  'text-white': !isActiveRoute('/join'),
                 }"
                 class="block px-4"
               >

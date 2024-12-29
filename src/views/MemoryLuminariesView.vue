@@ -62,7 +62,7 @@
 
       <!--  Memory Luminaries-->
       <div
-        class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-16 mb:pt-16 py-4"
+        class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen py-8 pb-16"
       >
         <div class="container mx-auto px-4 space-y-3 lg:px-32">
           <p
@@ -76,7 +76,7 @@
             v-for="item in figures"
             :key="item"
           >
-            <li class="ms-8 lg:ms-12">
+            <li class="ms-8 lg:ms-12 p-0">
               <span
                 class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 mr-8"
               >
@@ -97,18 +97,31 @@
                 </div>
               </span>
               <div class="ml-10 pb-6">
-                <h3
-                  class="flex items-center mb-1 text-2xl font-cormorant font-semibold text-midnight-sapphire"
-                >
-                  {{ item.name }}
-                </h3>
-                <time
-                  class="block mb-2 text-base leading-none text-amber-600 font-bold"
-                  >{{ item.birthdate }}</time
-                >
-                <p class="mb-4 text-base font-normal text-gray-500">
-                  {{ item.content }}
-                </p>
+                <div class="md:flex items-center">
+                  <div class="ml-4 md:ml-0">
+                    <img
+                      class="w-16 h-16 lg:w-24 lg:h-24 border-4 border-midnight-sapphire border-opacity-30 rounded-lg object-cover bg-cover"
+                      :src="item.img"
+                      alt="author image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <h3
+                      class="flex items-center mb-1 text-2xl font-cormorant font-semibold text-midnight-sapphire"
+                    >
+                      {{ item.name }}
+                    </h3>
+                    <time
+                      class="block mb-2 text-base leading-none text-amber-600 font-normal"
+                      >{{ item.birthdate }}</time
+                    >
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p class="mb-4 text-base font-normal text-gray-500">
+                      {{ item.content }}
+                    </p>
+                  </div>
+                </div>
               </div>
             </li>
           </ol>
@@ -164,10 +177,23 @@
 </template>
 
 <script>
-import author1 from "@/assets/authorImage/murshid.jpg";
+import author1 from "@/assets/authorImage/Murshid1.jpg";
 import author2 from "@/assets/authorImage/buddhadeb.jpg";
 import author3 from "@/assets/authorImage/utpalendu.jpg";
 import author4 from "@/assets/authorImage/shafinahmed.jpg";
+import author5 from "@/assets/authorImage/suniti.jpg";
+import author6 from "@/assets/authorImage/manoj.webp";
+import author7 from "@/assets/authorImage/aashish.webp";
+import author8 from "@/assets/authorImage/Uma-Dasgupta.jpg";
+import author9 from "@/assets/authorImage/chanda.jpg";
+import author10 from "@/assets/authorImage/Raja.jpg";
+import author11 from "@/assets/authorImage/helal.jpg";
+import author12 from "@/assets/authorImage/debraj.jpg";
+import author13 from "@/assets/authorImage/Partha.jpg";
+import author14 from "@/assets/authorImage/sreela.jpg";
+import author15 from "@/assets/authorImage/rashid.webp";
+import author16 from "@/assets/members/noimage.jpg";
+
 export default {
   name: "AboutView",
   components: {},
@@ -192,7 +218,7 @@ export default {
           date: "1924",
           content:
             "Renowned scholar in Buddhist and Tibetan Studies, Research Professor at the Asiatic Society, Kolkata, former Reader in Indo-Tibetan Studies Department, Visva-Bharati University.",
-          img: author1,
+          img: author5,
         },
         {
           name: "Nikhilesh Purakait",
@@ -200,14 +226,14 @@ export default {
           date: "1936",
           content:
             "Former professor of Department of Bengali, Gauhati University, he wrote on history of Bangla literature, focusing on - and identifying - the interrelationship between the different dialects of the language.",
-          img: author1,
+          img: author16,
         },
         {
           name: "Manoj Mitra",
           birthdate: "1938-2024",
           date: "1938",
           content: "Theater and Film acting.",
-          img: author2,
+          img: author6,
         },
         {
           name: "Aashish Khan ",
@@ -215,7 +241,7 @@ export default {
           date: "1939",
           content:
             "Sarod maestro and musician, torchbearer of the famed Senia Maihar gharana of Acharya Alauddin Khan and Ustad Ali Akbar Khan.",
-          img: author2,
+          img: author7,
         },
         {
           name: "Ghulam Murshid",
@@ -230,7 +256,7 @@ export default {
           birthdate: "1940-2024",
           date: "1940",
           content: "Acting.",
-          img: author2,
+          img: author8,
         },
         {
           name: "Buddhadeb Bhattacharjee",
@@ -246,15 +272,15 @@ export default {
           date: "1946",
           content:
             "News Anchoring (Doordarshan) , Known for her own iconic style of Disinterested (!) News Presentation.",
-          img: author2,
+          img: author9,
         },
         {
-          name: "Raja Mitra ",
+          name: "Raja Mitra",
           birthdate: "1947-2024",
           date: "1947",
           content:
             "Bengali filmmaker and music director, best known for his documentary films on social and cultural issues.",
-          img: author2,
+          img: author10,
         },
         {
           name: "Helal Hafiz",
@@ -262,7 +288,7 @@ export default {
           date: "1948",
           content:
             "Bengali poet, known for evocative and soul-stirring poetry.",
-          img: author2,
+          img: author11,
         },
         {
           name: "Utpalendu Chakraborty",
@@ -277,21 +303,21 @@ export default {
           birthdate: "1954-2024",
           date: "1954",
           content: "Acting.",
-          img: author2,
+          img: author12,
         },
         {
           name: "Parthasarathi Deb",
           birthdate: "1956-2024",
           date: "1956",
           content: "Acting.",
-          img: author2,
+          img: author13,
         },
         {
           name: "Sreela (/Shrila) Majumdar",
           birthdate: "1958/1959 – 2024",
           date: "1958/59",
           content: "Acting.",
-          img: author2,
+          img: author14,
         },
         {
           name: "Shafin Ahmed",
@@ -306,14 +332,14 @@ export default {
           birthdate: "1968-2024",
           date: "1968",
           content: "Singing - Indian Classical Music.",
-          img: author2,
+          img: author15,
         },
         {
           name: "Dudheswari Roy ",
           birthdate: "????-2024",
           date: "????",
           content: "Noted 'Mecheni' folk artist from North Bengal.",
-          img: author2,
+          img: author16,
         },
       ],
     };
