@@ -138,7 +138,7 @@
         </div>
       </div>
 
-      <!-- Address and Contact Info -->
+      <!-- Address and Contact Info Details -->
       <div class="grid grid-cols-1 sm:grid-cols-2 py-10">
         <div class="lg:mx-8 text-center md:text-left">
           <div class="py-4">
