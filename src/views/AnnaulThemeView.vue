@@ -225,18 +225,23 @@
             aria-label="Contribute to the community"
             class="text-base px-4 py-3 border-2 border-yellow-500 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:border-2 lg:hover:text-honey-gold transition duration-300 ease-in-out"
           >
-            Submission Portal
+            Contribute to the Magazine
           </button>
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 export default {
   name: "AnnualThemeView",
-  components: {},
+  components: {
+    CookieConsent,
+  },
 
   data() {
     return {

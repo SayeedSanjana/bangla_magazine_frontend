@@ -205,10 +205,14 @@
         </div>
       </div>
     </div>
+
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 import image1 from "@/assets/img/science-fiction.png";
 import image2 from "@/assets/img/book.gif";
 import image3 from "@/assets/img/food.png";
@@ -227,7 +231,9 @@ import image15 from "@/assets/img/pencil.gif";
 
 export default {
   name: "IndependentCategoryView",
-  components: {},
+  components: {
+    CookieConsent,
+  },
 
   data() {
     return {

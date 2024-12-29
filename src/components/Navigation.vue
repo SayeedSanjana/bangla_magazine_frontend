@@ -162,21 +162,24 @@
               class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
             >
               <router-link
-                to="/join"
+                to="/contribute/join"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/join'),
-                  'text-white hover:bg-amber-500': !isActiveRoute('/join'),
+                  'text-amber-200 font-bold': isActiveRoute('/contribute/join'),
+                  'text-white hover:bg-amber-500':
+                    !isActiveRoute('/contribute/join'),
                 }"
                 class="block px-4 py-2"
               >
                 Join Our Network
               </router-link>
               <router-link
-                to="/submission-form"
+                to="/contribute/submission-form"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/submission-form'),
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/submission-form'
+                  ),
                   'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/submission-form'),
+                    !isActiveRoute('/contribute/submission-form'),
                 }"
                 class="block px-4 py-2"
               >
@@ -316,13 +319,15 @@
               </router-link>
               <router-link
                 to="/magazine/memory"
-                class="block px-4"
                 :class="{
                   'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
                   'text-white': !isActiveRoute('/magazine/memory'),
                 }"
-                >Obituary</router-link
+                class="block px-4"
+                @click="toggleMobileMenu"
               >
+                Obituary
+              </router-link>
             </span>
           </li>
           <li>
@@ -330,22 +335,26 @@
             <p class="font-semibold mb-1">Contribute</p>
             <span class="space-y-2">
               <router-link
-                to="/join"
+                to="/contribute/join"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/join'),
-                  'text-white': !isActiveRoute('/join'),
+                  'text-amber-200 font-bold': isActiveRoute('/contribute/join'),
+                  'text-white': !isActiveRoute('/contribute/join'),
                 }"
                 class="block px-4"
+                @click="toggleMobileMenu"
               >
                 Join Our Network
               </router-link>
               <router-link
-                to="/submission-form"
+                to="/contribute/submission-form"
                 :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/submission-form'),
-                  'text-white': !isActiveRoute('/submission-form'),
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/submission-form'
+                  ),
+                  'text-white': !isActiveRoute('/contribute/submission-form'),
                 }"
                 class="block px-4"
+                @click="toggleMobileMenu"
               >
                 Contribute to the Magazine
               </router-link>

@@ -101,7 +101,7 @@
           </ul>
         </div>
 
-        <div class="text-center text-xs sm:text-sm mx-8 hidden lg:block">
+        <div class="text-center text-xs sm:text-sm mx-8">
           <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
@@ -214,7 +214,7 @@ export default {
   name: "Footer",
   methods: {
     submissionForm() {
-      this.$router.push("/submission-form");
+      this.$router.push("/contribute/submission-form");
     },
     cookie() {
       this.$router.push("/cookie-settings");
@@ -241,7 +241,7 @@ export default {
       this.$router.push("/");
     },
     join() {
-      this.$router.push("/join");
+      this.$router.push("/contribute/join");
     },
     contribute() {
       this.$router.push("/magazine");

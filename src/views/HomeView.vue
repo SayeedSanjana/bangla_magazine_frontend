@@ -43,6 +43,20 @@
                   "Bridging Distances, Celebrating Culture"
                 </p>
               </blockquote>
+              <div class="flex mt-4">
+                <button
+                  @click="join"
+                  class="mr-2 text-base border-2 border-yellow-400 px-4 py-2 mt-4 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
+                >
+                  Join Our Network
+                </button>
+                <button
+                  @click="join"
+                  class="ml-2 text-base border-2 border-yellow-400 px-4 py-2 mt-4 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
+                >
+                  Contribute to the Magazine
+                </button>
+              </div>
             </div>
 
             <!-- SVG on Right -->
@@ -94,7 +108,7 @@
       </div>
     </div>
 
-    <div class="wave-divider bg-regal-blue hidden md:block">
+    <div class="wave-divider bg-regal-blue">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -107,37 +121,53 @@
         ></path>
       </svg>
     </div>
-    <div class="bg-regal-blue py-10 sm:py-20 hidden md:block">
+    <div class="bg-regal-blue pb-10 md:pb-20">
       <div class="md:container md:mx-auto">
-        <h2
-          class="text-3xl sm:text-2xl font-cormorant text-midnight-sapphire text-center pb-4"
-        >
-          Our network is set to publish an online digital magazine. We sincerely
-          hope that this magazine will begin as a trilingual platform of
-          exchanging literary and cultural forms between Bangla, English, and
-          French but eventually expand into an intersectional space of
-          multilingual and polyvocal exchange.
-        </h2>
-        <img
-          src="../assets/svg/blobs.svg"
-          alt="SVG Image 1"
-          class="w-full h-60 mt-4"
-        />
+        <blockquote class="fade-in p-2">
+          <svg
+            class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-midnight-sapphire mb-2 sm:mb-4"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 18 14"
+          >
+            <path
+              d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+            />
+          </svg>
+          <h2
+            class="md:text-2xl text-xl font-cormorant font-normal text-midnight-sapphire text-center pb-4"
+          >
+            Our network is set to publish an online digital magazine. We
+            sincerely hope that this magazine will begin as a trilingual
+            platform of exchanging literary and cultural forms between Bangla,
+            English, and French but eventually expand into an intersectional
+            space of multilingual and polyvocal exchange.
+          </h2>
+        </blockquote>
+
+        <div class="pt-4">
+          <img
+            src="../assets/svg/blobs.svg"
+            alt="SVG Image 1"
+            class="w-full h-auto md:h-60 mt-4"
+          />
+        </div>
       </div>
     </div>
 
     <!-- Cookie Consent Popup -->
-    <!-- <CookieConsent /> -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
-//import CookieConsent from "../components/CookieConsent.vue";
+import CookieConsent from "../components/CookieConsent.vue";
 
 export default {
   name: "HomeView",
   components: {
-    //CookieConsent,
+    CookieConsent,
   },
   data() {
     return {};

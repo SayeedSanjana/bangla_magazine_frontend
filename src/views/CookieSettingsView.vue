@@ -101,6 +101,7 @@
 <script>
 
 export default {
+  name:"CookieSettingsView",
   components: {},
   data() {
     return {};

@@ -61,12 +61,12 @@ const router = createRouter({
       component: TeamMemberView,
     },
     {
-      path: "/join",
+      path: "/contribute/join",
       name: "join-network",
       component: JoinNetworkView,
     },
     {
-      path: "/submission-form/:topicName?",
+      path: "/contribute/submission-form/:topicName?",
       name: "submission",
       component: ContributeSubmissionView,
       props: true,

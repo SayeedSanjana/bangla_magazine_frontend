@@ -23,7 +23,7 @@
             </p>
 
             <button
-              @click="submissionForm"
+              @click="join"
               class="text-base border-2 border-yellow-400 px-4 py-3 mt-4 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
             >
               Join Our Network
@@ -325,10 +325,13 @@
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 import image1 from "@/assets/members/AnweshaBhattacharjee.jpeg";
 import image2 from "@/assets/members/ArchismanChaudhuri.jpeg";
 import image3 from "@/assets/members/SoubhikSamanta.jpeg";
@@ -346,8 +349,10 @@ import image14 from "@/assets/members/AjnaIslam.jpeg";
 import image15 from "@/assets/members/SamiparnaChakraborty.jpg";
 import image16 from "@/assets/members/images.jpg";
 export default {
-  name: "AboutView",
-  components: {},
+  name: "TeamMemberView",
+  components: {
+    CookieConsent,
+  },
   data() {
     return {
       hoveredIndex: { section: null, index: null },
@@ -517,6 +522,9 @@ export default {
     };
   },
   methods: {
+    join() {
+      this.$router.push("/join");
+    },
     handleMouseOver(index, section) {
       this.hoveredIndex = { section, index }; // Store both section and index
     },

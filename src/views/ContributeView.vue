@@ -60,9 +60,9 @@
               <span
                 class="text-midnight-sapphire font-bold font-cormorant text-2xl"
                 >"Porijaan"</span
-              >, BANGLA’s flagship digital magazine, embarks on a journey of
-              creative expression in Bangla, English, and French. Be part of a
-              dynamic community of storytellers, artists, and innovators.
+              >, B.A.N.G.L.A.’s flagship digital magazine, embarks on a journey
+              of creative expression in Bangla, English, and French. Be part of
+              a dynamic community of storytellers, artists, and innovators.
               Showcase your expertise or interest. Submit your work today and
               let your voice resonate in a global, multicultural dialogue.
             </p>
@@ -155,7 +155,7 @@
                 </p>
                 <div class="mt-6 flex justify-end">
                   <button
-                    @click="submissionForm"
+                    @click="topic"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
                   >
                     Find Out
@@ -186,7 +186,7 @@
                 </p>
                 <div class="mt-6 flex justify-end">
                   <button
-                    @click="submissionForm"
+                    @click="theme"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
                   >
                     Find Out
@@ -217,7 +217,7 @@
                 </p>
                 <div class="mt-6 flex justify-end">
                   <button
-                    @click="submissionForm"
+                    @click="celebration"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
                   >
                     Find Out
@@ -247,7 +247,7 @@
                 </p>
                 <div class="mt-6 flex justify-end">
                   <button
-                    @click="submissionForm"
+                    @click="memory"
                     class="text-base border border-yellow-400 px-3 py-1 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-gray-700 font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
                   >
                     Find Out
@@ -304,13 +304,18 @@
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 export default {
-  name: "AboutView",
-  components: {},
+  name: "ContributeView",
+  components: {
+    CookieConsent,
+  },
 
   mounted() {
     window.addEventListener("resize", this.updateFiguresPerPage);
@@ -328,6 +333,18 @@ export default {
   },
 
   methods: {
+    topic() {
+      this.$router.push("/magazine/topics");
+    },
+    theme() {
+      this.$router.push("/magazine/theme");
+    },
+    celebration() {
+      this.$router.push("/magazine/celebration");
+    },
+    memory() {
+      this.$router.push("/magazine/memory");
+    },
     submissionForm(topicName) {
       this.$router.push({ name: "submission", params: { topicName } });
     },

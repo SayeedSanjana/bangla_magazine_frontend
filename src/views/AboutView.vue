@@ -367,13 +367,18 @@
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </div>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 export default {
   name: "AboutView",
-  components: {},
+  components: {
+    CookieConsent,
+  },
   data() {
     return {
       hoveredIndex: { section: null, index: null },

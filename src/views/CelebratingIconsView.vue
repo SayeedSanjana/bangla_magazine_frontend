@@ -122,7 +122,7 @@
                           {{ item.birthdate }}
                         </p>
                         <p
-                          class="text-rose-500 text-sm font-semibold text-center"
+                          class="text-rose-500 text-sm font-semibold text-center cards-md"
                         >
                           {{ item.anniversary }}
                         </p>
@@ -148,13 +148,21 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      class="h-6 w-6 text-gray-300 mr-2 border-4 border-midnight-sapphire border-opacity-40 rounded-full"
+                      class="h-4 w-4 text-gray-300 mr-2 border-4 border-midnight-sapphire border-opacity-40 rounded-full"
                     >
                       <circle cx="12" cy="12" r="12" />
                     </svg>
 
                     <div
-                      class="border-t-2 border-dashed border-gray-400 flex-grow"
+                      class="border-t-2 border-dashed border-gray-400 flex-grow mr-2"
+                    ></div>
+                    <p
+                      class="text-rose-700 text-2xl font-cormorant font-bold text-center mb-2 timeline-md"
+                    >
+                      {{ item.anniversary }}
+                    </p>
+                    <div
+                      class="border-t-2 border-dashed border-gray-400 flex-grow ml-2 timeline-md"
                     ></div>
                     <!-- SVG Circle -->
                   </div>
@@ -203,7 +211,7 @@
                           {{ item.birthdate }}
                         </p>
                         <p
-                          class="text-rose-500 text-sm text-center font-semibold"
+                          class="text-rose-500 text-sm text-center font-semibold cards-md"
                         >
                           {{ item.anniversary }}
                         </p>
@@ -224,14 +232,22 @@
                   <div class="relative w-2/3 flex items-center">
                     <!-- Dotted Line -->
                     <div
-                      class="border-t-2 border-dashed border-gray-400 flex-grow"
+                      class="border-t-2 border-dashed border-gray-400 flex-grow mr-2"
+                    ></div>
+                    <p
+                      class="text-rose-700 text-2xl font-cormorant font-bold text-center mb-2 timeline-md"
+                    >
+                      {{ item.anniversary }}
+                    </p>
+                    <div
+                      class="border-t-2 border-dashed border-gray-400 flex-grow ml-2 timeline-md"
                     ></div>
                     <!-- SVG Circle -->
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      class="h-6 w-6 text-gray-300 ml-2 rounded-full border-4 border-midnight-sapphire border-opacity-40"
+                      class="h-4 w-4 text-gray-300 ml-2 rounded-full border-4 border-midnight-sapphire border-opacity-40"
                     >
                       <circle cx="12" cy="12" r="12" />
                     </svg>
@@ -320,10 +336,13 @@
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 import author1 from "@/assets/authorImage/rassundaridevi.webp";
 import author2 from "@/assets/authorImage/aushutoshmukharjee.jpg";
 import author3 from "@/assets/authorImage/leonard.jpg";
@@ -350,8 +369,10 @@ import author23 from "@/assets/authorImage/buddha.jpg";
 import author24 from "@/assets/authorImage/talat.jpg";
 import author25 from "@/assets/authorImage/tapan.jpg";
 export default {
-  name: "AboutView",
-  components: {},
+  name: "CelebratingIconsView",
+  components: {
+    CookieConsent,
+  },
 
   mounted() {
     window.addEventListener("resize", this.updateFiguresPerPage);
