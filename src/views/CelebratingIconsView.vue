@@ -69,7 +69,7 @@
 
       <!--  Literary and Cultural Figures-->
       <div
-        class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pt-16 mb:pt-16 py-4"
+        class="bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen py-8 pb-16"
       >
         <div class="container mx-auto px-4 space-y-3 lg:px-32">
           <p

@@ -127,10 +127,8 @@
       <div
         class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen lg:pb-24 pb-10"
       >
-        <div class="container mx-auto md:mx-auto py-10 px-4 space-y-3 lg:px-32">
-          <h2
-            class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-6"
-          >
+        <div class="container mx-auto md:mx-auto py-5 px-4 space-y-3 lg:px-32">
+          <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
             What We Are Looking For?
           </h2>
           <!-- Card Container -->
@@ -270,7 +268,7 @@
         <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
 
         <!-- Tooltip for Image Credit -->
-        <div
+        <!-- <div
           class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           Background Image by:
@@ -282,7 +280,7 @@
           <div
             class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
           ></div>
-        </div>
+        </div> -->
 
         <!-- Content Overlay -->
         <div

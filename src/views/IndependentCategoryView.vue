@@ -73,9 +73,9 @@
       </div>
 
       <div
-        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen pb-8"
+        class="px-2 bg-gradient-to-r from-amber-50 to-blue-50 min-h-screen py-8 pb-16"
       >
-        <div class="container mx-auto md py-10 space-y-3 lg:px-32">
+        <div class="container mx-auto md space-y-3 lg:px-32">
           <h2
             class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant font-semibold"
           >

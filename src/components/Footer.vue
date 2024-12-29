@@ -38,10 +38,26 @@
             </li>
             <li class="mb-4 sm:mb-6">
               <button
-                @click="about"
+                @click="story"
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
               >
-                About Us
+                Our Story
+              </button>
+            </li>
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="team"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Team Members
+              </button>
+            </li>
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="contribute"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Porijaan - The Magazine
               </button>
             </li>
           </ul>
@@ -51,18 +67,35 @@
           <ul class="transition-all duration-500">
             <li class="mb-4 sm:mb-6">
               <button
-                @click="contribute"
+                @click="topic"
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
               >
-                Our Magazine
+                Independent Category
               </button>
             </li>
             <li class="mb-4 sm:mb-6">
               <button
-                @click="submissionForm"
+                @click="celebration"
                 class="text-gray-600 hover:text-midnight-sapphire hover:underline"
               >
-                Contribute to Our Network
+                Annual Remembrance
+              </button>
+            </li>
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="theme"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Annual Theme
+              </button>
+            </li>
+
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="memory"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Obituary
               </button>
             </li>
           </ul>
@@ -70,6 +103,22 @@
 
         <div class="text-center text-xs sm:text-sm mx-8 hidden lg:block">
           <ul class="transition-all duration-500">
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="join"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Join Our Network
+              </button>
+            </li>
+            <li class="mb-4 sm:mb-6">
+              <button
+                @click="submissionForm"
+                class="text-gray-600 hover:text-midnight-sapphire hover:underline"
+              >
+                Contribute to Our Magazine
+              </button>
+            </li>
             <li class="mb-4 sm:mb-6">
               <button
                 @click="cookie"
@@ -165,19 +214,37 @@ export default {
   name: "Footer",
   methods: {
     submissionForm() {
-      this.$router.push({ name: "submission" });
+      this.$router.push("/submission-form");
     },
     cookie() {
       this.$router.push("/cookie-settings");
     },
-    about() {
-      this.$router.push("/about-us");
+    story() {
+      this.$router.push("/about/story");
+    },
+    team() {
+      this.$router.push("/about/team");
+    },
+    topic() {
+      this.$router.push("/magazine/topics");
+    },
+    theme() {
+      this.$router.push("/magazine/theme");
+    },
+    celebration() {
+      this.$router.push("/magazine/celebration");
+    },
+    memory() {
+      this.$router.push("/magazine/memory");
     },
     home() {
       this.$router.push("/");
     },
+    join() {
+      this.$router.push("/join");
+    },
     contribute() {
-      this.$router.push("/contribute");
+      this.$router.push("/magazine");
     },
   },
 };

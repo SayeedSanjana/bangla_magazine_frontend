@@ -9,6 +9,7 @@ import IndependentCategoryView from "../views/IndependentCategoryView.vue";
 import AnnaulThemeView from "@/views/AnnaulThemeView.vue";
 import CelebratingIconsView from "@/views/CelebratingIconsView.vue";
 import MemoryLuminariesView from "@/views/MemoryLuminariesView.vue";
+import JoinNetworkView from "@/views/JoinNetworkView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,6 +59,11 @@ const router = createRouter({
       path: "/about/team",
       name: "team-members",
       component: TeamMemberView,
+    },
+    {
+      path: "/join",
+      name: "join-network",
+      component: JoinNetworkView,
     },
     {
       path: "/submission-form/:topicName?",
