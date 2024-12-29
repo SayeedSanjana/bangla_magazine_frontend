@@ -188,7 +188,7 @@ import author8 from "@/assets/authorImage/Uma-Dasgupta.jpg";
 import author9 from "@/assets/authorImage/chanda.jpg";
 import author10 from "@/assets/authorImage/Raja.jpg";
 import author11 from "@/assets/authorImage/helal.jpg";
-import author12 from "@/assets/authorImage/debraj.jpg";
+import author12 from "@/assets/authorImage/Debraj.jpg";
 import author13 from "@/assets/authorImage/Partha.jpg";
 import author14 from "@/assets/authorImage/sreela.jpg";
 import author15 from "@/assets/authorImage/rashid.webp";
