@@ -51,7 +51,7 @@
                   Join Our Network
                 </button>
                 <button
-                  @click="join"
+                  @click="contribute"
                   class="ml-2 text-base border-2 border-yellow-400 px-4 py-2 mt-4 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
                 >
                   Contribute to the Magazine
@@ -174,7 +174,10 @@ export default {
   },
   methods: {
     contribute() {
-      this.$router.push("/contribute");
+      this.$router.push("/contribute/submission-form");
+    },
+    join() {
+      this.$router.push("/contribute/join");
     },
   },
 };
