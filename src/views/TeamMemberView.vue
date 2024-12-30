@@ -420,13 +420,13 @@ export default {
           bio: "A public scholar and PhD candidate at Concordia University.",
           location: "Montreal, Quebec, Canada",
         },
-        {
-          name: "Iktisad Rashid ",
-          position: "Member",
-          image: image8,
-          bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
-          location: "Montreal, Quebec, Canada",
-        },
+        // {
+        //   name: "Iktisad Rashid ",
+        //   position: "Member",
+        //   image: image8,
+        //   bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
+        //   location: "Montreal, Quebec, Canada",
+        // },
         {
           name: "Ali Hossain",
           position: "Member",
