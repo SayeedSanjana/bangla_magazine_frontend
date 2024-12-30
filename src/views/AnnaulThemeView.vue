@@ -63,9 +63,7 @@
         </svg>
       </div>
       <!-- Annual Theme Section -->
-      <div
-        class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 min-h-screen py-8 pb-16"
-      >
+      <div class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 pb-8 lg:pb-32">
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <!-- <h2
             class="text-3xl md:text-5xl text-midnight-sapphire font-cormorant mb-8"
@@ -83,7 +81,7 @@
                 Bangla-French-Crossings
               </p> -->
 
-              <div class="pt-6">
+              <div class="flex justify-center items-center">
                 <img
                   src="../assets/svg/combined.svg"
                   alt="SVG Image 1"
@@ -93,10 +91,10 @@
             </div>
 
             <!-- Right Section: Accordion -->
-            <div class="lg:w-1/2 w-full lg:overflow-y-auto">
-              <div>
+            <div class="lg:w-1/2 w-full lg:overflow-y-auto my-4">
+              <div class="pt-4">
                 <p
-                  class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant"
+                  class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant text-center"
                 >
                   Become part of the thriving community
                 </p>
@@ -225,18 +223,23 @@
             aria-label="Contribute to the community"
             class="text-base px-4 py-3 border-2 border-yellow-500 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:border-2 lg:hover:text-honey-gold transition duration-300 ease-in-out"
           >
-            Submission Portal
+            Contribute to the Magazine
           </button>
         </div>
       </div>
     </div>
+    <!-- Cookie Consent Popup -->
+    <CookieConsent />
   </section>
 </template>
 
 <script>
+import CookieConsent from "../components/CookieConsent.vue";
 export default {
   name: "AnnualThemeView",
-  components: {},
+  components: {
+    CookieConsent,
+  },
 
   data() {
     return {

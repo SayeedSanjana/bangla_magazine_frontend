@@ -200,17 +200,7 @@
               alt="SVG Image 1"
               class="w-96 h-auto"
             />
-            <div
-              class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Image Credit:
-              <a
-                href="https://ca.pinterest.com/pin/14988611253363489/"
-                class="hover:underline"
-              >
-                https://ca.pinterest.com/pin/14988611253363489/
-              </a>
-            </div>
+            <div></div>
           </div>
         </div>
 
@@ -251,17 +241,6 @@
               alt="SVG Image 2"
               class="w-96 h-auto"
             />
-            <div
-              class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Image Credit:
-              <a
-                href="https://ca.pinterest.com/pin/105412447521750832/"
-                class="hover:underline"
-              >
-                https://ca.pinterest.com/pin/105412447521750832/
-              </a>
-            </div>
           </div>
         </div>
 
@@ -300,17 +279,6 @@
               alt="SVG Image 3"
               class="w-96 h-auto"
             />
-            <div
-              class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Image Credit:
-              <a
-                href="https://ca.pinterest.com/pin/311663236730020802/"
-                class="hover:underline"
-              >
-                https://ca.pinterest.com/pin/311663236730020802/
-              </a>
-            </div>
           </div>
         </div>
 
@@ -350,16 +318,11 @@
               alt="SVG Image 4"
               class="w-96 h-auto"
             />
-            <div
-              class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-sm px-4 py-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            >
-              Image Credit:
-              <a
-                href="https://ca.pinterest.com/pin/605945324893094181/"
-                class="hover:underline"
-              >
-                https://ca.pinterest.com/pin/605945324893094181/
-              </a>
+            <div>
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Rudranil Raha</span>
+              </div>
             </div>
           </div>
         </div>
