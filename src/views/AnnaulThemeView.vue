@@ -63,9 +63,7 @@
         </svg>
       </div>
       <!-- Annual Theme Section -->
-      <div
-        class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 min-h-screen py-8 pb-16"
-      >
+      <div class="bg-gradient-to-r from-amber-50 to-blue-50 pt-8 pb-8 lg:pb-32">
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <!-- <h2
             class="text-3xl md:text-5xl text-midnight-sapphire font-cormorant mb-8"
@@ -83,20 +81,24 @@
                 Bangla-French-Crossings
               </p> -->
 
-              <div class="pt-6">
+              <div class="flex justify-center items-center">
                 <img
-                  src="../assets/svg/combined.svg"
+                  src="../assets/svg/annual.svg"
                   alt="SVG Image 1"
                   class="lg:h-full lg:w-full h-96"
                 />
               </div>
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Rudranil Raha</span>
+              </div>
             </div>
 
             <!-- Right Section: Accordion -->
-            <div class="lg:w-1/2 w-full lg:overflow-y-auto">
-              <div>
+            <div class="lg:w-1/2 w-full lg:overflow-y-auto my-4">
+              <div class="pt-4">
                 <p
-                  class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant"
+                  class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant text-center"
                 >
                   Become part of the thriving community
                 </p>
