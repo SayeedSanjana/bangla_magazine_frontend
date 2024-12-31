@@ -237,11 +237,17 @@
 
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="../assets/img/Vector2.png"
-              alt="SVG Image 2"
-              class="w-96 h-auto"
-            />
+            <div>
+              <img
+                src="../assets/img/Vector2.png"
+                alt="SVG Image 2"
+                class="w-96 h-auto"
+              />
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Meghomita Das</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -275,11 +281,17 @@
 
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="../assets/img/tracing.png"
-              alt="SVG Image 3"
-              class="w-96 h-auto"
-            />
+            <div>
+              <img
+                src="../assets/img/tracing.png"
+                alt="SVG Image 3"
+                class="w-96 h-auto"
+              />
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Meghomita Das</span>
+              </div>
+            </div>
           </div>
         </div>
 

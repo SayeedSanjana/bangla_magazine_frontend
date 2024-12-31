@@ -2,16 +2,18 @@
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-slate-50">
+      <div class="h-auto shadow-md bg-cover bg-center bg-white">
         <!-- Heading -->
-        <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
+        <div
+          class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3 xl:pb-24 pb-12 pt-12 xl:pt-24 lg:pb-16 lg:pt-16"
+        >
           <div
             class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8"
           >
             <!-- Text on Left -->
             <div class="w-full lg:w-1/2">
               <h2
-                class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
+                class="text-4xl xl:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
                 Join Our Network – Make Your Mark by Contributing to Our
                 Magazine!
@@ -30,17 +32,23 @@
             </div>
 
             <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
+            <div class="w-full lg:w-1/2 flex justify-center">
               <!-- <img
                 src="../assets/img/collage6.png"
                 alt="SVG Image 1"
                 class="lg:w-full lg:h-full"
               /> -->
-              <img
-                src="../assets/img/bg-8.gif"
-                alt="SVG Image 1"
-                class="lg:w-auto lg:h-auto"
-              />
+              <div>
+                <img
+                  src="../assets/img/call.gif"
+                  alt="SVG Image 1"
+                  class="w-auto h-auto"
+                />
+                <div class="text-gray-500 text-sm text-center pt-3">
+                  Illustration By:
+                  <span class="font-semibold">Trisha Ghosh</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -129,7 +137,7 @@
       >
         <div class="container mx-auto md:mx-auto py-5 px-4 space-y-3 lg:px-32">
           <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
-            What We Are Looking For?
+            What Are We Looking For?
           </h2>
           <!-- Card Container -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
@@ -413,6 +421,9 @@ export default {
   .hidden {
     display: block !important;
   }
+}
+.height {
+  height: 1000px;
 }
 .bg1 {
   background-image: url("../assets/img/card1.jpg");

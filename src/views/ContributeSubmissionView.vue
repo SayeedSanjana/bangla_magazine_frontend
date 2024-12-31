@@ -738,7 +738,10 @@ export default {
           const response = await axios.post(
             "https://api.banglaglocal.org/api/upload",
             formData,
-            { headers: { "Content-Type": "multipart/form-data" } }
+            {
+              headers: { "Content-Type": "multipart/form-data" },
+              withCredentials: false, // Ensure this matches the server setup
+            }
           );
 
           if (response.status === 200) {

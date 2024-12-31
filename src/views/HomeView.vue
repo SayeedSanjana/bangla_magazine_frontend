@@ -21,6 +21,16 @@
               </h2>
               <blockquote class="fade-in">
                 <svg
+                  class="w-10 h-10 pr-2 text-honey-gold mb-2 sm:mb-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 290 290"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M22.12 145v97.65h97.65V145H70.95c0-26.92 21.9-48.82 48.82-48.82V47.35c-53.93 0-97.65 43.72-97.65 97.65zm245.76-48.82V47.35c-53.93 0-97.65 43.72-97.65 97.65v97.65h97.65V145h-48.82c-.01-26.92 21.89-48.82 48.82-48.82z"
+                  ></path>
+                </svg>
+                <!-- <svg
                   class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-honey-gold mb-2 sm:mb-4"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +40,8 @@
                   <path
                     d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
                   />
-                </svg>
+                </svg> -->
+
                 <p
                   class="text-sm md:text-lg pl-1 sm:pl-2 mb-2 sm:mb-4 text-gray-500"
                 >
@@ -122,36 +133,37 @@
       </svg>
     </div>
     <div class="bg-regal-blue pb-10 md:pb-20">
-      <div class="md:container md:mx-auto">
-        <blockquote class="fade-in p-2">
-          <svg
-            class="w-6 sm:w-8 h-6 sm:h-8 pr-2 text-midnight-sapphire mb-2 sm:mb-4"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 18 14"
-          >
-            <path
-              d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
-            />
-          </svg>
-          <h2
-            class="md:text-2xl text-xl font-cormorant font-normal text-midnight-sapphire text-center pb-4"
-          >
-            Our network is set to publish an online digital magazine. We
-            sincerely hope that this magazine will begin as a trilingual
-            platform of exchanging literary and cultural forms between Bangla,
-            English, and French but eventually expand into an intersectional
-            space of multilingual and polyvocal exchange.
-          </h2>
-        </blockquote>
+      <div class="md:container md:mx-auto px-4 lg:px-32 space-y-3">
+        <div class="space-y-6 lg:space-y-0 lg:space-x-8 ml-4">
+          <blockquote class="fade-in p-2">
+            <svg
+              class="w-8 h-8 text-midnight-sapphire mb-2 sm:mb-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 290 290"
+              fill="currentColor"
+            >
+              <path
+                d="M22.12 145v97.65h97.65V145H70.95c0-26.92 21.9-48.82 48.82-48.82V47.35c-53.93 0-97.65 43.72-97.65 97.65zm245.76-48.82V47.35c-53.93 0-97.65 43.72-97.65 97.65v97.65h97.65V145h-48.82c-.01-26.92 21.89-48.82 48.82-48.82z"
+              ></path>
+            </svg>
+            <h2
+              class="md:text-2xl text-xl font-cormorant font-semibold text-gray-600 text-center pb-4"
+            >
+              Our network is set to publish an online digital magazine. We
+              sincerely hope that this magazine will begin as a trilingual
+              platform of exchanging literary and cultural forms between Bangla,
+              English, and French but eventually expand into an intersectional
+              space of multilingual and polyvocal exchange.
+            </h2>
+          </blockquote>
 
-        <div class="pt-4">
-          <img
-            src="../assets/svg/blobs.svg"
-            alt="SVG Image 1"
-            class="w-full h-auto md:h-60 mt-4"
-          />
+          <div class="pt-4">
+            <img
+              src="../assets/svg/blobs.svg"
+              alt="SVG Image 1"
+              class="w-full h-auto md:h-60 mt-4"
+            />
+          </div>
         </div>
       </div>
     </div>
