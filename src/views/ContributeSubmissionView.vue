@@ -740,7 +740,7 @@ export default {
             formData,
             {
               headers: { "Content-Type": "multipart/form-data" },
-              withCredentials: false, // Ensure this matches the server setup
+              // withCredentials: false, // Ensure this matches the server setup
             }
           );
 
