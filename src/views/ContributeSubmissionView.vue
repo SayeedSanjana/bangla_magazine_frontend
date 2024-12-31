@@ -743,7 +743,6 @@ export default {
               // withCredentials: false, // Ensure this matches the server setup
             }
           );
-
           if (response.status === 200) {
             Swal.fire({
               icon: "success",

@@ -103,13 +103,12 @@
                   </div>
                   <div class="px-2">
                     <label for="first_name" class="block font-medium"
-                      >Preferred Pronoun
-                      <span class="text-red-500">*</span></label
+                      >Phone Number <span class="text-red-500">*</span></label
                     >
                     <input
                       type="text"
-                      id="preferred_pronoun"
-                      name="preferred_pronoun"
+                      id="phone_number"
+                      name="phone_number"
                       class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                       required
                       v-model="form.firstname"
