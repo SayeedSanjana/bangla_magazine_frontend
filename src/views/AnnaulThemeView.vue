@@ -100,7 +100,7 @@
                 <p
                   class="text-2xl md:text-4xl mb-2 text-midnight-sapphire font-cormorant text-center"
                 >
-                  Become part of the thriving community
+                  Become a part of the thriving community
                 </p>
                 <!-- <p class="text-gray-700 text-xl text-justify p-4">
                   Become part of the thriving community

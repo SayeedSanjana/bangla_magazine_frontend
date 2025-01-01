@@ -126,11 +126,15 @@
                         >
                           {{ item.anniversary }}
                         </p>
-                        <p
+                        <div
+                          class="text-gray-600 text-base text-justify"
+                          v-html="item.content"
+                        ></div>
+                        <!-- <p
                           class="text-center text-gray-600 text-base pt-3 font-normal mt-2"
                         >
                           {{ item.content }}
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                   </div>
@@ -215,11 +219,15 @@
                         >
                           {{ item.anniversary }}
                         </p>
-                        <p
+                        <div
+                          class="text-gray-600 text-base text-justify"
+                          v-html="item.content"
+                        ></div>
+                        <!-- <p
                           class="text-center text-gray-600 text-base pt-3 font-normal mt-2"
                         >
                           {{ item.content }}
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                   </div>
@@ -283,9 +291,13 @@
               <p class="text-rose-500 text-sm font-semibold text-center mb-2">
                 {{ item.anniversary }}
               </p>
-              <p class="text-gray-600 text-base text-justify">
+              <div
+                class="text-gray-600 text-base text-justify"
+                v-html="item.content"
+              ></div>
+              <!-- <p class="text-gray-600 text-base text-justify">
                 {{ item.content }}
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -410,8 +422,8 @@ export default {
           title: "Reverend Lal Behari Day",
           birthdate: "1824-1894",
           date: "1824",
-          content: " - ",
-          anniversary: " - ",
+          content: `<div class="text-gray-600 text-base text-justify">Bengali writer and journalist converted to Christianity, and later a Christian missionary. <span class="italic">Author of Bengal Peasant Life (1874)</span> , Chandramukhi, A Tale of Bengali Life (1859), and Govinda Samanta which highlighted the plight of peasants in 19th century Bengal. </div`,
+          anniversary: " 200th birth anniversary ",
           img: author21,
         },
         {
@@ -500,8 +512,8 @@ export default {
           birthdate: "1899-1979",
           date: "1899",
           content:
-            "Bengali short-story writer, playwright, poet, novelist, and physician who wrote under the penname 'Banaphul.'",
-          anniversary: " - ",
+            "Bengali novelist, short-story writer, playwright, and physician who wrote underthe pen name 'Bonophool.'",
+          anniversary: "125th birth anniversary",
           img: author22,
         },
         {
@@ -517,17 +529,16 @@ export default {
           title: "Buddhadeva Bose",
           birthdate: "1908-1974",
           date: "1908",
-          content:
-            "Bengali author and poet, influential in setting up the Department of Comparative Literature at Jadavpur University, Kolkata.",
-          anniversary: " - ",
+          content: `<div class="text-gray-600 text-base text-justify">Bengali novelist, poet, essayist, and educator. He helped set up the Department of Comparative Literature at Jadavpur University, Kolkata. Associated with Bengali poetry magazines, <span class="italic">Kallol</span> and <span class="italic"> Kavita</span> .</div>`,
+          anniversary: "50th death anniversary",
           img: author23,
         },
         {
-          title: "Begum Sufia Kama",
+          title: "Begum Sufia Kamal",
           birthdate: "1911-1999",
           date: "1911",
           content:
-            "A leading figure in Bangladeshi literature, social activism, and women’s rights.",
+            "Leading Bengali writer and social activist, known for her work on women's rights.",
           anniversary: "25th death anniversary",
           img: author5,
         },
@@ -562,8 +573,9 @@ export default {
           title: "Talat Mahmood",
           birthdate: "1924-1998",
           date: "1924",
-          content: " - ",
-          anniversary: " - ",
+          content:
+            "Indian actor and ghazal singer whose early career took shape in Kolkata when he made cameo appearances in films under the screen name Tapan Kumar. Married to a Bengali lady, he acted in and sung playback for Bengali films.",
+          anniversary: " 100th birth anniversary ",
           img: author24,
         },
         {
@@ -580,8 +592,8 @@ export default {
           birthdate: "1924-2009",
           date: "1924",
           content:
-            "Bengali filmmaker, renowned for his on-screen adaptations of Bangla literary works.",
-          anniversary: " - ",
+            "Bengali filmmaker renowned for his on-screen adaptations of Bengali literary works.",
+          anniversary: "100th birth anniversary ",
           img: author25,
         },
         {
@@ -590,7 +602,7 @@ export default {
           date: "1924",
           content:
             "Eminent exponent of Rabindra Sangeet, bringing Tagore’s music to a wider audience.",
-          anniversary: "100th death anniversary",
+          anniversary: "100th birth anniversary",
           img: author6,
         },
 
@@ -610,7 +622,7 @@ export default {
           date: "1924",
           content:
             "Modern Bengali poet and writer, acclaimed for his profound and accessible poetry.",
-          anniversary: "100th death anniversary",
+          anniversary: "100th birth anniversary",
           img: author20,
         },
       ],

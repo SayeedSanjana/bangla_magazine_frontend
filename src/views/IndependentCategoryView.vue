@@ -82,7 +82,7 @@
             Topics We Are Interested In:
           </h2>
           <div
-            class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-8 md:pt-16 p-16"
+            class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-8 md:pt-16 p-16"
           >
             <!-- Background Image with Opacity -->
             <img
