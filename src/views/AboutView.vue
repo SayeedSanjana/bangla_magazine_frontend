@@ -19,7 +19,7 @@
             Bangla holds my hands<br />
             And brings me to people in distant lands.<br />
             With humility I regard all there is to revere,<br />
-            Seven seas and thirteen rivers<br />
+            As seven seas and thirteen rivers<br />
             In Ganga and Padma appear..."
           </p>
         </div>
@@ -103,7 +103,9 @@
                 adopted it through their mediated or lived experiences.
               </p>
               <!-- Add Image Here for Small Screens -->
-              <div class="block lg:hidden my-6 justify-center">
+              <div
+                class="block lg:hidden my-6 flex justify-center items-center flex-col"
+              >
                 <img
                   src="../assets/img/story.png"
                   alt="Image representing Bangla culture"
@@ -237,11 +239,17 @@
 
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="../assets/img/Vector2.png"
-              alt="SVG Image 2"
-              class="w-96 h-auto"
-            />
+            <div>
+              <img
+                src="../assets/img/Vector2.png"
+                alt="SVG Image 2"
+                class="w-96 h-auto"
+              />
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Meghomita Das</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -275,11 +283,17 @@
 
           <!-- Image -->
           <div class="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="../assets/img/tracing.png"
-              alt="SVG Image 3"
-              class="w-96 h-auto"
-            />
+            <div>
+              <img
+                src="../assets/img/tracing.png"
+                alt="SVG Image 3"
+                class="w-96 h-auto"
+              />
+              <div class="text-gray-500 text-sm text-center pt-3">
+                Illustration By:
+                <span class="font-semibold">Meghomita Das</span>
+              </div>
+            </div>
           </div>
         </div>
 

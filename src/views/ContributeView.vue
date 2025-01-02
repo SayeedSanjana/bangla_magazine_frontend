@@ -2,23 +2,23 @@
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-slate-50">
+      <div class="h-auto shadow-md bg-cover bg-center bg-white">
         <!-- Heading -->
-        <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
+        <div
+          class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3 xl:pb-24 pb-12 pt-12 xl:pt-24 lg:pb-16 lg:pt-16"
+        >
           <div
-            class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8"
+            class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8 md:h-92"
           >
             <!-- Text on Left -->
             <div class="w-full lg:w-1/2">
               <h2
-                class="text-4xl md:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
+                class="text-4xl xl:text-6xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
-                Join Our Network – Make Your Mark by Contributing to Our
-                Magazine!
+                Make Your Mark by Contributing to Our Magazine!
               </h2>
               <p class="text-gray-600 text-lg text-justify mt-4">
-                <span class="text-midnight-sapphire">B.A.N.G.L.A.</span>
-                Magazine is open for creative voices across languages and
+                Our magazine is open for creative voices across languages and
                 mediums.
               </p>
               <button
@@ -30,25 +30,56 @@
             </div>
 
             <!-- SVG on Right -->
-            <div class="w-full lg:w-1/2 flex justify-center mt-12 p-4">
+            <div class="w-full lg:w-1/2 flex justify-center">
               <!-- <img
                 src="../assets/img/collage6.png"
                 alt="SVG Image 1"
                 class="lg:w-full lg:h-full"
               /> -->
-              <img
-                src="../assets/img/bg-8.gif"
-                alt="SVG Image 1"
-                class="lg:w-auto lg:h-auto"
-              />
+              <div>
+                <img
+                  src="../assets/img/call.gif"
+                  alt="SVG Image 1"
+                  class="w-auto h-auto"
+                />
+                <div class="text-gray-500 text-sm text-center pt-3">
+                  Illustration By:
+                  <span class="font-semibold">Trisha Ghosh</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
+      <div
+        class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img1 bg-cover bg-center h-24 md:h-40 lg:h-80 group pt-1"
+      >
+        <!-- Overlay for Background Image -->
+        <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+
+        <!-- Content Overlay -->
+        <div class="container md:mx-auto px-4 lg:px-32 relative z-10"></div>
+      </div>
+      <div
+        class="text-gray-500 text-sm text-center bg-gradient-to-l from-regal-blue to-gray-200"
+      >
+        Photography By:
+        <span class="font-semibold"
+          >Arindaam Das, Avik Dey, Moinak Banerjee, Rudranil Raha and Upasana
+          Dasgupta
+        </span>
+      </div>
+      <div
+        class="text-gray-500 text-sm text-center bg-gradient-to-l from-regal-blue to-gray-200"
+      >
+        Collage By:
+        <span class="font-semibold">Ami Saha</span>
+      </div>
+
       <!-- Magazine Section -->
       <div
-        class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-8 mb:pt-16"
+        class="bg-gradient-to-r from-regal-blue to-gray-200 py-8 px-2 rounded-lg shadow pt-12 mb:pt-24"
       >
         <div class="md:container md:mx-auto px-4 lg:px-32">
           <div class="mb-8">
@@ -129,7 +160,7 @@
       >
         <div class="container mx-auto md:mx-auto py-5 px-4 space-y-3 lg:px-32">
           <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
-            What We Are Looking For?
+            What Are We Looking For?
           </h2>
           <!-- Card Container -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
@@ -414,6 +445,9 @@ export default {
     display: block !important;
   }
 }
+.height {
+  height: 1000px;
+}
 .bg1 {
   background-image: url("../assets/img/card1.jpg");
 }
@@ -426,10 +460,10 @@ export default {
 .bg4 {
   background-image: url("../assets/img/card04.jpg");
 }
-
-.background-img {
-  background-image: url("../assets/img/unity_symbol.webp");
+.bg-img {
+  background-image: url("../assets/img/blackwhite.jpg");
 }
+
 .wave-divider {
   position: relative;
   top: 0;
@@ -485,5 +519,11 @@ img {
 }
 .bg-img {
   background-image: url("../assets/img/alphabets.jpg");
+}
+.bg-img1 {
+  background-image: url("../assets/img/blackwhite.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>
