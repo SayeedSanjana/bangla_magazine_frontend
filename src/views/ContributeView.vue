@@ -2,7 +2,7 @@
   <section class="">
     <div class="md:mx-auto flex-grow min-h-screen">
       <!-- Mission and Objectives Banner -->
-      <div class="h-auto shadow-md bg-cover bg-center bg-white">
+      <div class="h-auto shadow-md bg-cover bg-center bg-slate-50">
         <!-- Heading -->
         <div
           class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3 xl:pb-24 pb-12 pt-12 xl:pt-24 lg:pb-16 lg:pt-16"
@@ -31,21 +31,21 @@
 
             <!-- SVG on Right -->
             <div class="w-full lg:w-1/2 flex justify-center">
-              <!-- <img
-                src="../assets/img/collage6.png"
-                alt="SVG Image 1"
-                class="lg:w-full lg:h-full"
-              /> -->
               <div>
                 <img
+                  src="../assets/img/bg-8.gif"
+                  alt="SVG Image 1"
+                  class="lg:w-full lg:h-full"
+                />
+                <!-- <img
                   src="../assets/img/call.gif"
                   alt="SVG Image 1"
                   class="w-auto h-auto"
-                />
-                <div class="text-gray-500 text-sm text-center pt-3">
+                /> -->
+                <!-- <div class="text-gray-500 text-sm text-center pt-3">
                   Illustration By:
                   <span class="font-semibold">Trisha Ghosh</span>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
