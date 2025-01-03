@@ -78,7 +78,7 @@
             <!-- Section 1: Founding Board of Directors -->
             <div class="p-4">
               <h2
-                class="text-3xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12 border-b-2 border-gray-300"
+                class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
                 Founding Board of Directors
               </h2>
@@ -141,7 +141,7 @@
             <!-- Section 2: Content Sculptors -->
             <div class="mt-12 lg:mt-16 p-4">
               <h2
-                class="text-3xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12 border-b-2 border-gray-300"
+                class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
                 Founding Members
               </h2>
@@ -343,7 +343,7 @@ import image8 from "@/assets/members/IktisadRashid_1.png";
 import image9 from "@/assets/members/SanjanaSayeed_1.png";
 import image10 from "@/assets/members/SomduttaMajumder_1.png";
 import image11 from "@/assets/members/AzfarAdib_1.png";
-import image12 from "@/assets/members/Avik.png";
+import image12 from "@/assets/members/Avik_1.png";
 import image13 from "@/assets/members/Saptara_1.png";
 import image14 from "@/assets/members/Ajna.png";
 import image15 from "@/assets/members/SamiparnaChakraborty_1.png";
