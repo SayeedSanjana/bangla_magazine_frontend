@@ -349,6 +349,7 @@ import image14 from "@/assets/members/Ajna.png";
 import image15 from "@/assets/members/SamiparnaChakraborty_1.png";
 import image16 from "@/assets/members/images.png";
 import image17 from "@/assets/members/Ananyo.png";
+import image18 from "@/assets/members/abhijeet.png";
 export default {
   name: "TeamMemberView",
   components: {
@@ -492,6 +493,23 @@ export default {
           bio: "Civil/Structural engineer by professional training - Loves Art and Literature",
           location: "Montreal, Quebec, Canada",
         },
+
+        {
+          name: "Ananyo Kazi ",
+          position: "Member",
+          image: image17,
+          bio: "-",
+          location: "Zürich, Zürich, Switzerland",
+        },
+
+        {
+          name: "Louis-Felix Blanchet-Cohen",
+          position: "Member",
+          image: image16,
+          bio: "Lived 20 years in bangladesh where i socialized actively with bengalis every day . Of quebecois origin i define myself as bengali as i got to know bangladesh well and lived there a long time ",
+          location: "Montreal, Quebec, Canada",
+        },
+
         {
           name: "Somdutta Majumder ",
           position: "Member",
@@ -500,10 +518,10 @@ export default {
           location: "Jefferson City, Missouri, USA",
         },
         {
-          name: "Louis-Felix Blanchet-Cohen",
+          name: "Abhijeet Dutta",
           position: "Member",
-          image: image16,
-          bio: "Lived 20 years in bangladesh where i socialized actively with bengalis every day . Of quebecois origin i define myself as bengali as i got to know bangladesh well and lived there a long time ",
+          image: image18,
+          bio: "-",
           location: "Montreal, Quebec, Canada",
         },
         {
@@ -529,20 +547,6 @@ export default {
         },
         {
           name: "Susmita Bose ",
-          position: "Member",
-          image: image16,
-          bio: "-",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Ananyo Kazi ",
-          position: "Member",
-          image: image16,
-          bio: "-",
-          location: "Zürich, Zürich, Switzerland",
-        },
-        {
-          name: "Abhijeet Dutta",
           position: "Member",
           image: image16,
           bio: "-",
