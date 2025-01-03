@@ -9,7 +9,7 @@
             class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start space-y-6 lg:space-y-0"
           >
             <!-- Text on Left -->
-            <div class="w-full lg:w-1/2 2xl:w-1/3 lg:mr-6">
+            <div class="w-full lg:w-1/3 2xl:w-1/3 lg:mr-6">
               <h2
                 class="text-2xl xl:text-5xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
@@ -69,7 +69,7 @@
             </div>
             <!-- SVG on Right -->
             <div
-              class="w-full lg:w-1/2 2xl:w-2/3 flex justify-center mb-4 lg:ml-6"
+              class="w-full lg:w-2/3 2xl:w-2/3 flex justify-center mb-4 lg:ml-6"
             >
               <div class="parent-container">
                 <!-- <img
