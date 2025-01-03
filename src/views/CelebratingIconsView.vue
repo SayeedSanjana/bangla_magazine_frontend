@@ -422,7 +422,7 @@ export default {
           title: "Reverend Lal Behari Day",
           birthdate: "1824-1894",
           date: "1824",
-          content: `<div class="text-gray-600 text-base text-justify">Bengali writer and journalist converted to Christianity, and later a Christian missionary. <span class="italic">Author of Bengal Peasant Life (1874)</span> , Chandramukhi, A Tale of Bengali Life (1859), and Govinda Samanta which highlighted the plight of peasants in 19th century Bengal. </div`,
+          content: `<div class="text-gray-600 text-base text-justify">Bengali writer and journalist converted to Christianity, and later a Christian missionary. <span class="italic font-serif">Author of Bengal Peasant Life (1874)</span>, Chandramukhi, A Tale of Bengali Life (1859), and Govinda Samanta which highlighted the plight of peasants in 19th century Bengal. </div`,
           anniversary: " 200th birth anniversary ",
           img: author21,
         },
@@ -504,7 +504,7 @@ export default {
           date: "1899",
           content:
             "The rebel poet and lyricist whose works championed political and social issues.",
-          anniversary: "125th death anniversary",
+          anniversary: "125th birth anniversary",
           img: author17,
         },
         {
@@ -521,7 +521,7 @@ export default {
           birthdate: "1904-1974",
           date: "1904",
           content:
-            "Bangladeshi author, known for his travel writings and satirical works.",
+            "Bangali/Bengali author, known for his travel writings and satirical works.",
           anniversary: "50th death anniversary",
           img: author18,
         },
@@ -529,7 +529,7 @@ export default {
           title: "Buddhadeva Bose",
           birthdate: "1908-1974",
           date: "1908",
-          content: `<div class="text-gray-600 text-base text-justify">Bengali novelist, poet, essayist, and educator. He helped set up the Department of Comparative Literature at Jadavpur University, Kolkata. Associated with Bengali poetry magazines, <span class="italic">Kallol</span> and <span class="italic"> Kavita</span> .</div>`,
+          content: `<div class="text-gray-600 text-base text-justify">Bengali novelist, poet, essayist, and educator. He helped set up the Department of Comparative Literature at Jadavpur University, Kolkata. Associated with Bengali poetry magazines, <span class="italic font-serif">Kallol</span> and <span class="italic"> Kavita</span> .</div>`,
           anniversary: "50th death anniversary",
           img: author23,
         },
@@ -611,7 +611,7 @@ export default {
           birthdate: "1924-2016",
           date: "1924",
           content:
-            "French Jesuit priest and cultural ambassador who contributed to Bengali literature.",
+            "Belgium born French-speaking Jesuit priest and cultural ambassador who contributed to Bengali literature.",
           anniversary: "100th birth anniversary",
           img: author14,
         },
