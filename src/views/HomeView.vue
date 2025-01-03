@@ -11,7 +11,7 @@
             <!-- Text on Left -->
             <div class="w-full lg:w-1/3 2xl:w-1/3 lg:mr-6">
               <h2
-                class="text-2xl xl:text-5xl font-bold text-midnight-sapphire mb-6 font-cormorant"
+                class="text-2xl md:text-3xl 2xl:text-5xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
                 Welcome to Bangali Abhibashi Network: a Glocal Linguo-cultural
                 Association,
@@ -42,12 +42,14 @@
                   />
                 </svg> -->
 
-                <p class="text-sm md:text-lg pl-1 sm:pl-2 mb-4 text-gray-500">
+                <p
+                  class="text-sm md:text-base 2xl:text-lg pl-1 sm:pl-2 mb-4 text-gray-500"
+                >
                   We are a Canada-based Bengali diaspora committed to connecting
                   Bengalis worldwide and promoting our rich cultural heritage.
                 </p>
                 <p
-                  class="text-lg md:text-3xl font-bold text-amber-600 font-cormorant"
+                  class="text-lg md:text-2xl 2xl:text-3xl font-bold text-amber-600 font-cormorant"
                 >
                   "Bridging Distances, Celebrating Culture"
                 </p>
