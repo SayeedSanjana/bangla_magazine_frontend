@@ -343,11 +343,11 @@ import image8 from "@/assets/members/IktisadRashid_1.png";
 import image9 from "@/assets/members/SanjanaSayeed_1.png";
 import image10 from "@/assets/members/SomduttaMajumder_1.png";
 import image11 from "@/assets/members/AzfarAdib_1.png";
-import image12 from "@/assets/members/AvikChakraborty.jpg";
+import image12 from "@/assets/members/Avik.png";
 import image13 from "@/assets/members/Saptara_1.png";
 import image14 from "@/assets/members/Ajna.png";
 import image15 from "@/assets/members/SamiparnaChakraborty_1.png";
-import image16 from "@/assets/members/images.jpg";
+import image16 from "@/assets/members/images.png";
 import image17 from "@/assets/members/Ananyo.png";
 export default {
   name: "TeamMemberView",
