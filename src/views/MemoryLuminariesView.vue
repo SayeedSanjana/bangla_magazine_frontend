@@ -199,7 +199,7 @@ import author12 from "@/assets/authorImage/Debraj.jpg";
 import author13 from "@/assets/authorImage/Partha.jpg";
 import author14 from "@/assets/authorImage/sreela.jpg";
 import author15 from "@/assets/authorImage/rashid.webp";
-import author16 from "@/assets/members/noimage.jpg";
+import author16 from "@/assets/members/images.png";
 
 export default {
   name: "MemoryLuminariesView",

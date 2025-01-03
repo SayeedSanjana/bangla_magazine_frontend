@@ -6,66 +6,10 @@
         <!-- Heading -->
         <div class="md:container md:mx-auto py-10 px-4 lg:px-32 space-y-3">
           <div
-            class="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-10"
+            class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start space-y-6 lg:space-y-0"
           >
-            <!-- SVG on Right -->
-            <div class="w-full lg:w-2/3 flex justify-center mb-4">
-              <div class="parent-container">
-                <!-- <img
-                  src="../assets/img/bg-8.gif"
-                  alt="SVG Image 1"
-                  class="w-full h-auto"
-                /> -->
-                <img
-                  src="../assets/img/collageNew.png"
-                  alt="SVG Image 1"
-                  class="h-auto w-auto"
-                />
-                <div class="text-gray-500 text-sm text-center">
-                  Photography By:
-                  <span class="font-semibold"
-                    >Ami Saha, Arindaam Das, Arunabha Dey, Avik Dhar, Moinak
-                    Banerjee, Shafiq Imtiaz, Upasana Dasgupta, Subham Roy
-                  </span>
-                </div>
-                <div class="text-gray-500 text-sm text-center pt-2">
-                  Collage By:
-                  <span class="font-semibold">Sanjana Sayeed </span>
-                </div>
-
-                <!-- <button
-                  @click="contribute"
-                  class="group relative mb-8 inline-flex items-center w-full overflow-hidden border-4 border-yellow-600 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl py-3 font-medium text-gray-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
-                >
-                  <span
-                    class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-gradient-to-r from-gray-100 to-amber-50 text-gray-600 duration-300 group-hover:translate-x-0"
-                  >
-                    <svg
-                      class="h-6 w-6 fill-honey-gold"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      ></path>
-                    </svg>
-                  </span>
-                  <span
-                    class="ease absolute flex h-full w-full transform items-center text-gray-700 justify-center font-semibold text-normal transition-all duration-300 group-hover:translate-x-full"
-                  >
-                    Get a Glimpse – Explore the Latest in Our Magazine...</span
-                  >
-                  <span class="invisible relative">Get Started</span>
-                </button> -->
-              </div>
-            </div>
             <!-- Text on Left -->
-            <div class="w-full lg:w-1/3">
+            <div class="w-full lg:w-1/2 2xl:w-1/3 lg:mr-6">
               <h2
                 class="text-2xl xl:text-5xl font-bold text-midnight-sapphire mb-6 font-cormorant"
               >
@@ -121,6 +65,64 @@
                 >
                   Contribute to the Magazine
                 </button>
+              </div>
+            </div>
+            <!-- SVG on Right -->
+            <div
+              class="w-full lg:w-1/2 2xl:w-2/3 flex justify-center mb-4 lg:ml-6"
+            >
+              <div class="parent-container">
+                <!-- <img
+                  src="../assets/img/bg-8.gif"
+                  alt="SVG Image 1"
+                  class="w-full h-auto"
+                /> -->
+                <img
+                  src="../assets/img/collageNew1.png"
+                  alt="SVG Image 1"
+                  class="h-auto w-auto"
+                />
+                <div class="text-gray-500 text-sm text-center pt-3">
+                  Photography By:
+                  <span class="font-semibold"
+                    >Ami Saha, Arindaam Das, Arunabha Dey, Avik Dhar, Moinak
+                    Banerjee, Shafiq Imtiaz, Upasana Dasgupta, Subham Roy
+                  </span>
+                </div>
+                <div class="text-gray-500 text-sm text-center pt-2">
+                  Collage By:
+                  <span class="font-semibold">Sanjana Sayeed </span>
+                </div>
+
+                <!-- <button
+                  @click="contribute"
+                  class="group relative mb-8 inline-flex items-center w-full overflow-hidden border-4 border-yellow-600 border-opacity-20 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl py-3 font-medium text-gray-600 shadow-md transition duration-300 ease-out hover:border-4 hover:border-double"
+                >
+                  <span
+                    class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-gradient-to-r from-gray-100 to-amber-50 text-gray-600 duration-300 group-hover:translate-x-0"
+                  >
+                    <svg
+                      class="h-6 w-6 fill-honey-gold"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span
+                    class="ease absolute flex h-full w-full transform items-center text-gray-700 justify-center font-semibold text-normal transition-all duration-300 group-hover:translate-x-full"
+                  >
+                    Get a Glimpse – Explore the Latest in Our Magazine...</span
+                  >
+                  <span class="invisible relative">Get Started</span>
+                </button> -->
               </div>
             </div>
           </div>

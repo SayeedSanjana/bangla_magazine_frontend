@@ -78,7 +78,7 @@
             <!-- Section 1: Founding Board of Directors -->
             <div class="p-4">
               <h2
-                class="text-3xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12 border-b-2 border-gray-300"
+                class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
                 Founding Board of Directors
               </h2>
@@ -141,12 +141,12 @@
             <!-- Section 2: Content Sculptors -->
             <div class="mt-12 lg:mt-16 p-4">
               <h2
-                class="text-3xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12 border-b-2 border-gray-300"
+                class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
                 Founding Members
               </h2>
               <div
-                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+                class="flex flex-wrap justify-center gap-y-12 max-w-5xl mx-auto lg:max-w-full"
               >
                 <div
                   v-for="(member, index) in filteredTeamMembers('Member')"
@@ -343,12 +343,13 @@ import image8 from "@/assets/members/IktisadRashid_1.png";
 import image9 from "@/assets/members/SanjanaSayeed_1.png";
 import image10 from "@/assets/members/SomduttaMajumder_1.png";
 import image11 from "@/assets/members/AzfarAdib_1.png";
-import image12 from "@/assets/members/AvikChakraborty.jpg";
+import image12 from "@/assets/members/Avik_1.png";
 import image13 from "@/assets/members/Saptara_1.png";
 import image14 from "@/assets/members/Ajna.png";
 import image15 from "@/assets/members/SamiparnaChakraborty_1.png";
-import image16 from "@/assets/members/images.jpg";
+import image16 from "@/assets/members/images.png";
 import image17 from "@/assets/members/Ananyo.png";
+import image18 from "@/assets/members/abhijeet.png";
 export default {
   name: "TeamMemberView",
   components: {
@@ -492,6 +493,23 @@ export default {
           bio: "Civil/Structural engineer by professional training - Loves Art and Literature",
           location: "Montreal, Quebec, Canada",
         },
+
+        {
+          name: "Ananyo Kazi ",
+          position: "Member",
+          image: image17,
+          bio: "-",
+          location: "Zürich, Zürich, Switzerland",
+        },
+
+        {
+          name: "Louis-Felix Blanchet-Cohen",
+          position: "Member",
+          image: image16,
+          bio: "Lived 20 years in bangladesh where i socialized actively with bengalis every day . Of quebecois origin i define myself as bengali as i got to know bangladesh well and lived there a long time ",
+          location: "Montreal, Quebec, Canada",
+        },
+
         {
           name: "Somdutta Majumder ",
           position: "Member",
@@ -500,10 +518,10 @@ export default {
           location: "Jefferson City, Missouri, USA",
         },
         {
-          name: "Louis-Felix Blanchet-Cohen",
+          name: "Abhijeet Dutta",
           position: "Member",
-          image: image16,
-          bio: "Lived 20 years in bangladesh where i socialized actively with bengalis every day . Of quebecois origin i define myself as bengali as i got to know bangladesh well and lived there a long time ",
+          image: image18,
+          bio: "-",
           location: "Montreal, Quebec, Canada",
         },
         {
@@ -529,20 +547,6 @@ export default {
         },
         {
           name: "Susmita Bose ",
-          position: "Member",
-          image: image16,
-          bio: "-",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Ananyo Kazi ",
-          position: "Member",
-          image: image16,
-          bio: "-",
-          location: "Zürich, Zürich, Switzerland",
-        },
-        {
-          name: "Abhijeet Dutta",
           position: "Member",
           image: image16,
           bio: "-",
