@@ -146,7 +146,7 @@
                 Founding Members
               </h2>
               <div
-                class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
+                class="flex flex-wrap justify-center gap-y-12 max-w-5xl mx-auto lg:max-w-full"
               >
                 <div
                   v-for="(member, index) in filteredTeamMembers('Member')"
