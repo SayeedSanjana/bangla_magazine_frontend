@@ -332,22 +332,23 @@
 
 <script>
 import CookieConsent from "../components/CookieConsent.vue";
-import image1 from "@/assets/members/AnweshaBhattacharjee.jpeg";
-import image2 from "@/assets/members/ArchismanChaudhuri.jpeg";
-import image3 from "@/assets/members/SoubhikSamanta.jpeg";
-import image4 from "@/assets/members/urmibhakta.jpeg";
-import image5 from "@/assets/members/Saikat.jpg";
-import image6 from "@/assets/members/TrishaGhosh.jpg";
-import image7 from "@/assets/members/MoinakBanerjee.jpeg";
-import image8 from "@/assets/members/IktisadRashid.jpeg";
-import image9 from "@/assets/members/SanjanaSayeed.jpeg";
-import image10 from "@/assets/members/SomduttaMajumder.jpeg";
-import image11 from "@/assets/members/AzfarAdib.jpeg";
+import image1 from "@/assets/members/AnweshaBhattacharjee_1.png";
+import image2 from "@/assets/members/ArchismanChaudhuri.png";
+import image3 from "@/assets/members/SoubhikSamanta_1.png";
+import image4 from "@/assets/members/umibhakta_1.png";
+import image5 from "@/assets/members/Saikat_1.png";
+import image6 from "@/assets/members/TrishaGhosh_2.png";
+import image7 from "@/assets/members/MoinakBanerjee_1.png";
+import image8 from "@/assets/members/IktisadRashid_1.png";
+import image9 from "@/assets/members/SanjanaSayeed_1.png";
+import image10 from "@/assets/members/SomduttaMajumder_1.png";
+import image11 from "@/assets/members/AzfarAdib_1.png";
 import image12 from "@/assets/members/AvikChakraborty.jpg";
-import image13 from "@/assets/members/Saptara.jpeg";
+import image13 from "@/assets/members/Saptara_1.png";
 import image14 from "@/assets/members/AjnaIslam.jpeg";
-import image15 from "@/assets/members/SamiparnaChakraborty.jpg";
+import image15 from "@/assets/members/SamiparnaChakraborty_1.png";
 import image16 from "@/assets/members/images.jpg";
+import image17 from "@/assets/members/Ananyo.png";
 export default {
   name: "TeamMemberView",
   components: {
@@ -393,24 +394,10 @@ export default {
           location: "Zürich, Zürich, Switzerland",
         },
         {
-          name: "Anwesha Bhattacharya ",
+          name: "Anwesha Bhattacharjee ",
           position: "Member",
           image: image1,
           bio: "Journalism and content production have been Anwesha's passion for almost 20 years now, from her school years well into collegiate journalism. She hopes to contribute with her experiences both as a member of the diaspora and as a content producer toward B.A.N.G.L.A.'s mission",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Avik Chakraborty",
-          position: "Member",
-          image: image12,
-          bio: "Currently Postdoc at UNAB, Santiago, Chile. PhD in Theoretical High Energy Physics from USC, Los Angeles, USA. JU (B.Sc.) & IIT-B (M.Sc.) alumni. Hometown Kolkata, India. . Photography and travel enthusiast. Love to read and listen to music.",
-          location: "Santiago, Santiago, Chile",
-        },
-        {
-          name: "Abhijeet Dutta",
-          position: "Member",
-          image: image16,
-          bio: "-",
           location: "Montreal, Quebec, Canada",
         },
         {
@@ -419,6 +406,21 @@ export default {
           image: image11,
           bio: "A public scholar and PhD candidate at Concordia University.",
           location: "Montreal, Quebec, Canada",
+        },
+
+        {
+          name: "Abhijeet Dutta",
+          position: "Member",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Avik Chakraborty",
+          position: "Member",
+          image: image12,
+          bio: "Currently Postdoc at UNAB, Santiago, Chile. PhD in Theoretical High Energy Physics from USC, Los Angeles, USA. JU (B.Sc.) & IIT-B (M.Sc.) alumni. Hometown Kolkata, India. . Photography and travel enthusiast. Love to read and listen to music.",
+          location: "Santiago, Santiago, Chile",
         },
         {
           name: "Iktisad Rashid ",
