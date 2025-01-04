@@ -410,15 +410,14 @@ export default {
 @media (min-width: 768px) {
   .nav-bg {
     background: linear-gradient(
-      180deg,
+      270deg,
       /* rgba(247, 181, 56, 0.8) 5%,
       rgba(247, 181, 56, 0.6) 15%,
       rgba(40, 11, 139, 0.7) 50%,
       #280b8b 100% */
-        90deg,
-      rgba(247, 181, 56, 0.8) 5%,
+        rgba(247, 181, 56, 0.8) 5%,
       rgba(247, 181, 56, 0.6) 15%,
-      rgba(40, 11, 139, 0.7) 50%,
+      rgba(40, 11, 139, 0.7) 35%,
       #280b8b 100%
     );
   }
