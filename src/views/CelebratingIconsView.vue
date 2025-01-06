@@ -419,10 +419,11 @@ export default {
           img: author8,
         },
         {
-          title: "Reverend Lal Behari Day",
+          title: "Reverend Lal Behari Dey",
           birthdate: "1824-1894",
           date: "1824",
-          content: `<div class="text-gray-600 text-base text-justify">Bengali writer and journalist converted to Christianity, and later a Christian missionary. <span class="italic font-serif">Author of Bengal Peasant Life (1874)</span>, Chandramukhi, A Tale of Bengali Life (1859), and Govinda Samanta which highlighted the plight of peasants in 19th century Bengal. </div`,
+          content: `<div class="text-gray-600 text-base text-justify">Bengali writer and journalist converted to Christianity, and 
+            later a Christian missionary. Author of <span class="italic font-serif">Bengal Peasant Life (1874), Chandramukhi, A Tale of Bengali Life (1859)</span> and <span class="italic font-serif">Govinda Samanta</span> which highlighted the plight of peasants in 19th century Bengal.</div`,
           anniversary: " 200th birth anniversary ",
           img: author21,
         },
@@ -512,7 +513,7 @@ export default {
           birthdate: "1899-1979",
           date: "1899",
           content:
-            "Bengali novelist, short-story writer, playwright, and physician who wrote underthe pen name 'Bonophool.'",
+            "Bengali novelist, short-story writer, playwright, and physician who wrote under the pen name 'Bonophool.'",
           anniversary: "125th birth anniversary",
           img: author22,
         },
@@ -521,7 +522,7 @@ export default {
           birthdate: "1904-1974",
           date: "1904",
           content:
-            "Bangali/Bengali author, known for his travel writings and satirical works.",
+            " Bengali author, polyglot, and scholar, known for his travel writings, raconteur-style narration, and satirical works.",
           anniversary: "50th death anniversary",
           img: author18,
         },

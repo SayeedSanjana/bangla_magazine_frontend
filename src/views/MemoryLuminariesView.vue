@@ -241,7 +241,8 @@ export default {
           name: "Manoj Mitra",
           birthdate: "1938-2024",
           date: "1938",
-          content: "Theater and Film acting.",
+          content:
+            "Actor, thespian, and playwright, known for his plays on myriad socio-cultural and political themes.",
           img: author6,
         },
         {
@@ -264,7 +265,8 @@ export default {
           name: "Uma Dasgupta",
           birthdate: "1940-2024",
           date: "1940",
-          content: "Acting.",
+          content:
+            "Actor; a child artist, famous for her role of Durga in Satyajit Ray's movie 'Pather Panchali'.",
           img: author8,
         },
         {
@@ -318,21 +320,24 @@ export default {
           name: "Debraj Roy",
           birthdate: "1954-2024",
           date: "1954",
-          content: "Acting.",
+          content:
+            "Actor and news presenter, admired for his deep-textured voice.",
           img: author12,
         },
         {
           name: "Parthasarathi Deb",
           birthdate: "1956-2024",
           date: "1956",
-          content: "Acting.",
+          content:
+            "Film and television actor, who worked in Bengali, Hindi, and Telugu movies.",
           img: author13,
         },
         {
           name: "Sreela (/Shrila) Majumdar",
           birthdate: "1958/1959 – 2024",
           date: "1958/59",
-          content: "Acting.",
+          content:
+            "Bengali actor, with a wide repertoire of collaborations with filmmakers like Mrinal Sen and Shyam Benegal.",
           img: author14,
         },
         {
@@ -347,7 +352,8 @@ export default {
           name: "Rashid Khan",
           birthdate: "1968-2024",
           date: "1968",
-          content: "Singing - Indian Classical Music.",
+          content:
+            "Hindustani classical vocalist of the Rampur-Sahaswan gharana who made Kolkata his home; renowned for his honey-dipped voice.",
           img: author15,
         },
       ],
