@@ -530,7 +530,7 @@ export default {
           title: "Buddhadeva Bose",
           birthdate: "1908-1974",
           date: "1908",
-          content: `<div class="text-gray-600 text-base text-justify">Bengali novelist, poet, essayist, and educator. He helped set up the Department of Comparative Literature at Jadavpur University, Kolkata. Associated with Bengali poetry magazines, <span class="italic font-serif">Kallol</span> and <span class="italic"> Kavita</span> .</div>`,
+          content: `<div class="text-gray-600 text-base text-justify">Bengali novelist, poet, essayist, and educator. He helped set up the Department of Comparative Literature at Jadavpur University, Kolkata. Associated with Bengali poetry magazines, <span class="italic font-serif">Kallol</span> and <span class="italic font-serif"> Kavita</span> .</div>`,
           anniversary: "50th death anniversary",
           img: author23,
         },

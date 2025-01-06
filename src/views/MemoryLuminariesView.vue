@@ -273,7 +273,7 @@ export default {
           name: "Budheshwari Roy ",
           birthdate: "1944(approx.) - 2024",
           date: "~1944",
-          content: `<div class="mb-4 text-base font-normal text-gray-600">(Folk singer, Jalpaiguri) - Exponent of  <span class="italic font-serif">Mecheni Gaan </span> - traditionally sung by inhabitants residing by the banks of the River Teesta in northern Bengal; it was her family tradition - and craft; she was awarded the Thakur Panchanan Barma Puraskar in 2023 for her indefatigable efforts in promoting and disseminating <span class="italic">Mecheni Gaan</span>. An octogenarian, she passed away in 2024.</div>`,
+          content: `<div class="mb-4 text-base font-normal text-gray-600">(Folk singer, Jalpaiguri) - Exponent of  <span class="italic font-serif">Mecheni Gaan </span> - traditionally sung by inhabitants residing by the banks of the River Teesta in northern Bengal; it was her family tradition - and craft; she was awarded the Thakur Panchanan Barma Puraskar in 2023 for her indefatigable efforts in promoting and disseminating <span class="italic font-serif ">Mecheni Gaan</span>. An octogenarian, she passed away in 2024.</div>`,
           img: author16,
         },
         {
