@@ -20,7 +20,7 @@
               <p
                 class="font-cormorant text-lg sm:text-2xl text-midnight-sapphire p-2 pl-0 pt-2 font-bold"
               >
-                Bangali Abhibasi Network: a Glocal Linguo-cultural Association
+                Bangali Abhibashi Network: a Glocal Linguo-cultural Association
               </p>
             </div>
           </button>
