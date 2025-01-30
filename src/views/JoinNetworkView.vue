@@ -156,13 +156,19 @@
                   </div>
                   <div class="px-2">
                     <label for="phone" class="block font-medium"
-                      >Phone Number <span class="text-red-500">*</span></label
+                      >Phone Number
+                      <span class="text-gray-500 text-sm"
+                        >(Optional)</span
+                      ></label
                     >
                     <div class="flex">
                       <select
                         v-model="form.phoneCode"
                         class="p-2 border border-gray-200 bg-gray-100 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
                       >
+                        <option value="" disabled class="text-gray-600">
+                          Choose Country Code
+                        </option>
                         <option
                           v-for="option in countryOptions"
                           :key="option.code"
@@ -177,7 +183,6 @@
                         id="phone"
                         name="phone"
                         class="w-full p-2 border-t border-b border-r border-gray-300 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
-                        required
                         v-model="form.phone"
                       />
                     </div>
@@ -242,7 +247,7 @@ export default {
         lastname: "",
         email: "",
         location: "",
-        phoneCode: "+1",
+        phoneCode: "",
         phone: "",
       },
     };
@@ -255,8 +260,13 @@ export default {
         email: { required, email },
         location: { required },
         phone: {
-          required,
-          matches: helpers.regex("matches", /^\d{7,14}$/),
+          matches: helpers.withMessage(
+            "Phone number must contain 7 to 14 digits",
+            (value) => {
+              if (!value) return true; // Allow empty phone number
+              return /^\d{7,14}$/.test(value); // Validate only if provided
+            }
+          ),
         },
       },
     };
@@ -264,12 +274,16 @@ export default {
   methods: {
     async submitForm() {
       this.loading = true;
+      const phone = this.form.phone
+        ? `${this.form.phoneCode}${this.form.phone}` // Concatenate if phone is provided
+        : ""; // Empty string if phone is not provided
       const payload = {
         firstname: this.form.firstname,
         lastname: this.form.lastname,
         email: this.form.email,
         location: this.form.location,
-        phone: `${this.form.phoneCode}${this.form.phone}`,
+        // phone: `${this.form.phoneCode}${this.form.phone}`,
+        phone,
       };
 
       try {
@@ -285,7 +299,7 @@ export default {
           const message =
             error.response.data?.message ||
             "You are already registered in the system.";
-          Swal.fire("Error", message, "warning");
+          Swal.fire("Alert", message, "warning");
         } else {
           // Handle other errors
           Swal.fire(

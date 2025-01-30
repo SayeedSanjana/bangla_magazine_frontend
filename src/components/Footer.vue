@@ -151,10 +151,10 @@
           <div class="pt-4 text-center md:text-left">
             <p class="text-base text-gray-800">Email Us:</p>
             <a
-              href="mailto:baanglaarmukh@gmail.com"
+              href="mailto:info@banglaglocal.org"
               class="text-base flex justify-center md:justify-start text-midnight-sapphire transition-all duration-500 font-semibold tracking-wide hover:text-gray-500 hover:underline"
             >
-              baanglaarmukh@gmail.com
+              info@banglaglocal.org
             </a>
           </div>
         </div>

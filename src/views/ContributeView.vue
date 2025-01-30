@@ -38,7 +38,7 @@
               /> -->
               <div>
                 <img
-                  src="../assets/img/call.gif"
+                  src="../assets/img/submission.gif"
                   alt="SVG Image 1"
                   class="w-auto h-auto"
                 />
