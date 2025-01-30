@@ -200,6 +200,7 @@ import author13 from "@/assets/authorImage/Partha.jpg";
 import author14 from "@/assets/authorImage/sreela.jpg";
 import author15 from "@/assets/authorImage/rashid.webp";
 import author16 from "@/assets/members/images.png";
+import author17 from "@/assets/authorImage/radice.jpg";
 
 export default {
   name: "MemoryLuminariesView",
@@ -315,6 +316,14 @@ export default {
           content:
             "A renowned filmmaker and playwright, Chakraborty’s films brought socially conscious themes to the forefront of Indian cinema, focusing on the lives of marginalized communities.",
           img: author3,
+        },
+        {
+          name: "William Radice",
+          birthdate: "1951-2024",
+          date: "1951",
+          content:
+            "English poet, writer, educator, scholar of Bengali and translator. Famous for his translations of Michael Madhsudan Dutta's Meghnadbadh kabya and Rabindranath Tagore's Ghare Baire and Gitanjali.",
+          img: author17,
         },
         {
           name: "Debraj Roy",
