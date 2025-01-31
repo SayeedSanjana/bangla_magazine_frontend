@@ -274,16 +274,17 @@ export default {
   methods: {
     async submitForm() {
       this.loading = true;
-      const phone = this.form.phone
-        ? `${this.form.phoneCode}${this.form.phone}` // Concatenate if phone is provided
-        : ""; // Empty string if phone is not provided
+      const phone =
+        this.form.phone && !isNaN(this.form.phone)
+          ? `${this.form.phoneCode}${this.form.phone}` // Concatenate if phone is a number
+          : null; // Null or undefined to omit from payload
+
       const payload = {
         firstname: this.form.firstname,
         lastname: this.form.lastname,
         email: this.form.email,
         location: this.form.location,
-        // phone: `${this.form.phoneCode}${this.form.phone}`,
-        phone,
+        ...(phone ? { phone } : {}), // Only include phone if it's a valid number
       };
 
       try {
@@ -295,13 +296,11 @@ export default {
         this.resetForm();
       } catch (error) {
         if (error.response && error.response.status === 409) {
-          // Handle 409 Conflict
           const message =
             error.response.data?.message ||
             "You are already registered in the system.";
           Swal.fire("Alert", message, "warning");
         } else {
-          // Handle other errors
           Swal.fire(
             "Error",
             "Something went wrong. Please try again.",
@@ -318,10 +317,18 @@ export default {
         firstname: "",
         lastname: "",
         email: "",
-        location: "",
-        phoneCode: "+1",
-        phone: "",
+        location: "", // Ensure dropdowns are reset
+        phoneCode: "", // Reset country code selection
+        phone: "", // Reset phone input
       };
+
+      // If you are using Vue refs for dropdowns, reset them explicitly
+      this.$nextTick(() => {
+        const dropdowns = document.querySelectorAll("select");
+        dropdowns.forEach((dropdown) => {
+          dropdown.selectedIndex = 0;
+        });
+      });
     },
   },
 };
