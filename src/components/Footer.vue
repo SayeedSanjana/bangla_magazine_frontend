@@ -161,12 +161,9 @@
 
         <!-- Social Media Links -->
         <div class="flex mt-4 space-x-4 justify-center md:justify-end relative">
-          <div
-            class="relative group"
-            @mouseover="showTooltip('Facebook')"
-            @mouseleave="hideTooltip"
-          >
-            <button
+          <div class="relative group">
+            <a
+              href="https://www.facebook.com/share/19QKxGBpQ5/"
               class="w-14 h-14 rounded-full bg-gray-100 flex justify-center border-4 border-midnight-sapphire border-opacity-35 items-center hover:bg-gray-300"
             >
               <img
@@ -174,21 +171,18 @@
                 alt="facebook"
                 class="w-7 h-7 fill-white"
               />
-            </button>
-            <div
+            </a>
+            <!-- <div
               v-if="tooltip === 'Facebook'"
               class="absolute bottom-full text-center mb-2 px-2 py-1 text-sm bg-gray-600 text-white rounded"
             >
               Coming Soon
-            </div>
+            </div> -->
           </div>
 
-          <div
-            class="relative group"
-            @mouseover="showTooltip('Instagram')"
-            @mouseleave="hideTooltip"
-          >
-            <button
+          <div class="relative group">
+            <a
+              href="https://www.instagram.com/bangla_glocal?igsh=MzExbG90cmFvbzJy"
               class="w-14 h-14 border-4 border-midnight-sapphire border-opacity-35 rounded-full bg-gray-100 flex justify-center items-center hover:bg-gray-300"
             >
               <img
@@ -196,13 +190,13 @@
                 alt="instagram"
                 class="w-7 h-7 fill-white"
               />
-            </button>
-            <div
+            </a>
+            <!-- <div
               v-if="tooltip === 'Instagram'"
               class="absolute text-center bottom-full mb-2 px-2 py-1 text-sm bg-gray-600 text-white rounded"
             >
               Coming Soon
-            </div>
+            </div> -->
           </div>
 
           <div
@@ -210,7 +204,8 @@
             @mouseover="showTooltip('YouTube')"
             @mouseleave="hideTooltip"
           >
-            <button
+            <a
+              href=""
               class="w-14 h-14 border-4 border-midnight-sapphire border-opacity-35 rounded-full bg-gray-100 flex justify-center items-center hover:bg-gray-300"
             >
               <img
@@ -218,7 +213,7 @@
                 alt="youtube"
                 class="w-7 h-7 fill-white"
               />
-            </button>
+            </a>
             <div
               v-if="tooltip === 'YouTube'"
               class="absolute bottom-full text-center mb-2 px-2 py-1 text-sm bg-gray-600 text-white rounded"
@@ -233,7 +228,7 @@
       <div class="py-7 border-t border-gray-300">
         <div class="text-center lg:flex-row py-2">
           <p class="text-sm sm:text-base text-gray-500">
-            © 2024 B.A.N.G.L.A • All rights reserved.
+            © 2025 B.A.N.G.L.A • All rights reserved.
           </p>
           <p class="text-sm sm:text-base text-gray-500">
             Quebec Non-Profit Registration Number: 1180053424

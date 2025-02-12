@@ -58,7 +58,7 @@
               />
               <div class="text-gray-500 text-sm text-center pt-3">
                 Illustration By:
-                <span class="font-semibold">Arindaam Das</span>
+                <span class="font-semibold">Arindam Das</span>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
                 />
                 <div class="text-gray-500 text-sm text-center pt-3">
                   Illustration By:
-                  <span class="font-semibold">Arindaam Das</span>
+                  <span class="font-semibold">Arindam Das</span>
                 </div>
               </div>
               <p class="font-light text-base text-gray-700 text-justify pt-6">
@@ -201,7 +201,7 @@
               />
               <div class="text-gray-500 text-sm text-center pt-3">
                 Illustration By:
-                <span class="font-semibold">Arindaam Das</span>
+                <span class="font-semibold">Arindam Das</span>
               </div>
             </div>
           </div>

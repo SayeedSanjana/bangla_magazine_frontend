@@ -19,41 +19,39 @@
         >
       </h1>
       <div class="flex space-x-4 md:space-x-6 mt-4 md:mt-0 relative">
-        <button
+        <a
+          href="https://www.facebook.com/share/19QKxGBpQ5/"
           class="relative group"
-          @mouseover="showTooltip('facebook')"
-          @mouseleave="hideTooltip"
         >
           <img
             src="../assets/svg/facebook.svg"
             alt="facebook"
             class="w-8 h-8"
           />
-          <div
+          <!-- <div
             v-if="tooltip === 'facebook'"
             class="absolute bottom-full mb-2 px-2 py-1 text-sm bg-gray-800 text-white rounded"
           >
             Coming Soon
-          </div>
-        </button>
+          </div> -->
+        </a>
 
-        <button
+        <a
+          href="https://www.instagram.com/bangla_glocal?igsh=MzExbG90cmFvbzJy"
           class="relative group"
-          @mouseover="showTooltip('instagram')"
-          @mouseleave="hideTooltip"
         >
           <img
             src="../assets/svg/instagram.svg"
             alt="instagram"
             class="w-8 h-8"
           />
-          <div
+          <!-- <div
             v-if="tooltip === 'instagram'"
             class="absolute bottom-full mb-2 px-2 py-1 text-sm bg-gray-800 text-white rounded"
           >
             Coming Soon
-          </div>
-        </button>
+          </div> -->
+        </a>
 
         <button
           class="relative group"
@@ -69,7 +67,7 @@
           </div>
         </button>
 
-        <button
+        <!-- <button
           class="relative group"
           @mouseover="showTooltip('twitter')"
           @mouseleave="hideTooltip"
@@ -81,7 +79,7 @@
           >
             Coming Soon
           </div>
-        </button>
+        </button> -->
       </div>
     </div>
   </header>
