@@ -158,13 +158,13 @@
 
           <!-- Facebook Button (Moved Below Countdown Timer) -->
           <div class="flex justify-center w-full mt-8">
-            <button
-              @click="openFacebookEvent"
+            <a
+              href="https://www.facebook.com/events/s/25th-international-mother-lang/1328395418181985/"
               aria-label="Join the Event on Facebook"
               class="text-base px-6 py-3 border bg-gradient-to-r border-red-900 from-deep-red-wine to-red-700 text-white font-semibold rounded-lg hover:bg-amber-700 transition duration-300 ease-in-out w-full md:w-auto"
             >
               Join Our Event on Facebook
-            </button>
+            </a>
           </div>
         </div>
       </div>
