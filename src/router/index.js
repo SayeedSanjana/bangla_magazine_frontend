@@ -10,6 +10,8 @@ import AnnaulThemeView from "@/views/AnnaulThemeView.vue";
 import CelebratingIconsView from "@/views/CelebratingIconsView.vue";
 import MemoryLuminariesView from "@/views/MemoryLuminariesView.vue";
 import JoinNetworkView from "@/views/JoinNetworkView.vue";
+import InternationalMotherLanguageDayView from "../views/InternationalMotherLanguageDayView.vue";
+import DynamicMotherLanguageArticleView from "../views/DynamicMotherLanguageArticleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -69,6 +71,17 @@ const router = createRouter({
       path: "/contribute/submission-form/:topicName?",
       name: "submission",
       component: ContributeSubmissionView,
+      props: true,
+    },
+    {
+      path: "/events/21stFebruary-International-Mother-Language-Day",
+      name: "international-mother-language-day",
+      component: InternationalMotherLanguageDayView,
+    },
+    {
+      path: "/events/:slug",
+      name: "article-view",
+      component: DynamicMotherLanguageArticleView,
       props: true,
     },
   ],

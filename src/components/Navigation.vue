@@ -187,6 +187,52 @@
               </router-link>
             </div>
           </div>
+
+          <!-- Events Dropdown -->
+          <div class="relative group">
+            <button
+              :class="{
+                'border-b-2 border-amber-400 text-amber-200':
+                  isParentRouteActive('/events'),
+                'text-white hover:text-amber-200':
+                  !isParentRouteActive('/events'),
+              }"
+              class="font-medium focus:outline-none"
+            >
+              Events
+            </button>
+            <div
+              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
+            >
+              <router-link
+                to="/events/21stFebruary-International-Mother-Language-Day"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/21stFebruary-International-Mother-Language-Day'
+                  ),
+                  'text-white hover:bg-amber-500': !isActiveRoute(
+                    '/events/21stFebruary-International-Mother-Language-Day'
+                  ),
+                }"
+                class="block px-4 py-2"
+              >
+                21st February - International Mother Language Day
+              </router-link>
+              <!-- <router-link
+                to="/contribute/submission-form"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/submission-form'
+                  ),
+                  'text-white hover:bg-amber-500 hover:rounded-b-md':
+                    !isActiveRoute('/contribute/submission-form'),
+                }"
+                class="block px-4 py-2"
+              >
+                Contribute to the Magazine
+              </router-link> -->
+            </div>
+          </div>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -358,6 +404,40 @@
               >
                 Contribute to the Magazine
               </router-link>
+            </span>
+          </li>
+          <li>
+            <hr class="border mb-1" />
+            <p class="font-semibold mb-1">Events</p>
+            <span class="space-y-2">
+              <router-link
+                to="/events/21stFebruary-International-Mother-Language-Day"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/21stFebruary-International-Mother-Language-Day'
+                  ),
+                  'text-white': !isActiveRoute(
+                    '/events/21stFebruary-International-Mother-Language-Day'
+                  ),
+                }"
+                class="block px-4"
+                @click="toggleMobileMenu"
+              >
+                21st February - International Mother Language Day
+              </router-link>
+              <!-- <router-link
+                to="/contribute/submission-form"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/contribute/submission-form'
+                  ),
+                  'text-white': !isActiveRoute('/contribute/submission-form'),
+                }"
+                class="block px-4"
+                @click="toggleMobileMenu"
+              >
+                Contribute to the Magazine
+              </router-link> -->
             </span>
           </li>
         </ul>

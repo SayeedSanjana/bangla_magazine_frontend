@@ -92,7 +92,7 @@
             If you have any questions or concerns about this Cookie Management
             Policy, please contact us at:
           </p>
-          <a  href="mailmailto:baanglaarmulh@gmail.com" class="text-amber-600 hover:underline italic font-semibold">baanglaarmukh@gmail.com </a>
+          <a  href="mailmailto:info@banglaglocal.org " class="text-amber-600 hover:underline italic font-semibold">info@banglaglocal.org</a>
         </div>
       </div>
     </div>
