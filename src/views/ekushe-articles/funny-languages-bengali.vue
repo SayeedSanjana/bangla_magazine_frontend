@@ -66,7 +66,7 @@
               <div>
                 <p class="text-lg font-semibold">Archisman Chaudhuri</p>
                 <p class="text-sm text-gray-600">
-                  Vice President - International Networking, B.A.N.G.L.A
+                  Vice President - International Networking, B.A.N.G.L.A.
                 </p>
               </div>
             </div>

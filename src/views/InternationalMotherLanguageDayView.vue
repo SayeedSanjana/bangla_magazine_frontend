@@ -191,11 +191,11 @@
             speak their mother tongue. International Mother Language Day stands
             as a powerful reminder of the resilience, identity, and cultural
             richness embedded in every language. This section features heartfelt
-            writings, reflections, and tributes from the members of
+            writings, reflections, and tributes from members of
             <strong>B.A.N.G.L.A</strong>, a community deeply connected to the
-            essence of linguistic heritage. Through essays, personal narratives,
-            we celebrate the beauty of the Bangla language and reaffirm our
-            commitment to linguistic diversity and freedom. Join us in
+            essence of linguistic heritage. Through essays and personal
+            reflections, we celebrate the beauty of Bangla language and reaffirm
+            our commitment to linguistic diversity and freedom. Join us in
             remembering, celebrating, and preserving the voices that fought for
             the right to express themselves in their mother tongue.
           </p>
@@ -210,9 +210,9 @@
             <!-- Image (Stacked on Mobile, Aligned Right on Desktop) -->
             <div class="mt-4 md:mt-6">
               <img
-                src="../assets/img/21st.png"
+                src="../assets/img/21collage1.png"
                 alt="Main article"
-                class="rounded-lg w-full md:w-[80%] object-cover shadow-md"
+                class="rounded-lg w-full md:w-[80%] object-cover shadow-md opcaity-70"
               />
             </div>
           </div>
@@ -347,17 +347,17 @@ export default {
       },
       facebookEventUrl: "https://www.facebook.com/events/your-event-id",
       articles: [
-        {
-          title:
-            "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
-          author: "Ajna Islam",
-          description:
-            "ফেব্রুয়ারির ২১ তারিখ একি সাথে মর্মান্তিক এবং গৌরবোজ্জল স্মৃতিবিজড়িত একটি দিন। ১৯৫২...",
-          date: "21 February, 2025",
-          image: image1,
-          authorImage: image2,
-          slug: "amar-vaiyer-rakte-rangano-ekushe-february",
-        },
+        // {
+        //   title:
+        //     "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
+        //   author: "Ajna Islam",
+        //   description:
+        //     "ফেব্রুয়ারির ২১ তারিখ একি সাথে মর্মান্তিক এবং গৌরবোজ্জল স্মৃতিবিজড়িত একটি দিন। ১৯৫২...",
+        //   date: "21 February, 2025",
+        //   image: image1,
+        //   authorImage: image2,
+        //   slug: "amar-vaiyer-rakte-rangano-ekushe-february",
+        // },
         {
           title:
             "Funny languages: Bengali via South Asia, Central Asia, and the Indian Ocean",

@@ -65,7 +65,7 @@
               <div>
                 <p class="text-lg font-semibold">Azfar Adib</p>
                 <p class="text-sm text-gray-600">
-                  Vice President - Communication and Publicity, B.A.N.G.L.A
+                  Vice President - Communication and Publicity, B.A.N.G.L.A.
                 </p>
               </div>
             </div>

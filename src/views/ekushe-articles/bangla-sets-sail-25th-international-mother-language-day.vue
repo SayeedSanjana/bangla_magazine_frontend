@@ -65,7 +65,7 @@
               <div>
                 <p class="text-lg font-semibold">Moinak Banarjee</p>
                 <p class="text-sm text-gray-600">
-                  Vice President - Organizational Development, B.A.N.G.L.A
+                  Vice President - Organizational Development, B.A.N.G.L.A.
                 </p>
               </div>
             </div>
