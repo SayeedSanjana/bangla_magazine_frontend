@@ -105,12 +105,12 @@
                 <h3
                   class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
                 >
-                  {{ countdown.hours }}
+                  0
                 </h3>
                 <p
                   class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
                 >
-                  0
+                  Hours
                 </p>
               </div>
             </div>
