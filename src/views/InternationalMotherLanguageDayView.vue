@@ -85,7 +85,7 @@
                 <h3
                   class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
                 >
-                  {{ countdown.days }}
+                  0
                 </h3>
                 <p
                   class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
@@ -110,7 +110,7 @@
                 <p
                   class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
                 >
-                  Hours
+                  0
                 </p>
               </div>
             </div>
@@ -125,7 +125,7 @@
                 <h3
                   class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
                 >
-                  {{ countdown.minutes }}
+                  0
                 </h3>
                 <p
                   class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
@@ -145,7 +145,7 @@
                 <h3
                   class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
                 >
-                  {{ countdown.seconds }}
+                  0
                 </h3>
                 <p
                   class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
