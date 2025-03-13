@@ -593,8 +593,8 @@ export default {
         return "w-full h-auto rounded-2xl"; // Mobile: Full width, auto height
       }
       return index === 1
-        ? "w-[500px] h-[350px] rounded-2xl shadow-lg border-4 border-amber-500 " // Desktop: Middle image larger
-        : "w-[400px] h-[300px] rounded-lg border-2 border-honey-gold"; // Desktop: Side images smaller
+        ? "w-[500px] h-[350px] rounded-2xl shadow-lg " // Desktop: Middle image larger
+        : "w-[400px] h-[300px] rounded-lg "; // Desktop: Side images smaller
     },
     swapVideo(index) {
       console.log("Clicked Video Index:", index);
