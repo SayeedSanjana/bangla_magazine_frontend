@@ -593,7 +593,7 @@ export default {
         return "w-full h-auto rounded-2xl"; // Mobile: Full width, auto height
       }
       return index === 1
-        ? "w-[500px] h-[380px] rounded-2xl shadow-lg " // Desktop: Middle image larger
+        ? "w-[500px] h-[400px] rounded-lg " // Desktop: Middle image larger
         : "w-[400px] h-[300px] rounded-lg "; // Desktop: Side images smaller
     },
     swapVideo(index) {
