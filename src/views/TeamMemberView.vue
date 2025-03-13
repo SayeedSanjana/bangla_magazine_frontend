@@ -80,7 +80,7 @@
               <h2
                 class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
-                Founding Board of Directors
+                Board of Directors 2025
               </h2>
               <div
                 class="flex flex-wrap justify-center gap-y-12 max-w-3xl mx-auto lg:max-w-full"
@@ -127,6 +127,9 @@
                         <h3 class="text-sm md:text-xs lg:text-sm font-bold">
                           {{ member.name }}
                         </h3>
+                        <p class="text-sm mt-1 text-red-300">
+                          {{ member.role }}
+                        </p>
                         <p class="text-xs mt-2 font-bold text-honey-gold">
                           {{ member.location }}
                         </p>
@@ -138,12 +141,79 @@
               </div>
             </div>
 
-            <!-- Section 2: Content Sculptors -->
+            <!-- Section 2: Chairs -->
             <div class="mt-12 lg:mt-16 p-4">
               <h2
                 class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
               >
-                Founding Members
+                Appointed Chairs
+              </h2>
+              <div
+                class="flex flex-wrap justify-center gap-y-12 max-w-5xl mx-auto lg:max-w-full"
+              >
+                <div
+                  v-for="(member, index) in filteredTeamMembers('Chair')"
+                  :key="'chair' + index"
+                  @mouseover="handleMouseOver(index, 'Chair')"
+                  @mouseleave="handleMouseLeave"
+                  class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full mr-5 xl:mr-10"
+                >
+                  <div
+                    class="relative w-full h-72 bg-honey-gold overflow-hidden rounded-2xl transform transition-transform duration-300 border-2 border-indigo-300 border-opacity-80"
+                  >
+                    <img
+                      :src="member.image"
+                      alt="Profile Image"
+                      class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                      :class="{
+                        'opacity-55':
+                          hoveredIndex.section === 'Member' &&
+                          hoveredIndex.index === index,
+                      }"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-8 bg-indigo-900 bg-opacity-70 text-gray-100 p-2 rounded-tr-xl rounded-br-xl transition-all duration-300 border-b-4 border-honey-gold border-opacity-80"
+                      :class="
+                        hoveredIndex.section === 'Chair' &&
+                        hoveredIndex.index === index
+                          ? 'h-full '
+                          : 'h-10'
+                      "
+                    >
+                      <h3
+                        v-if="
+                          hoveredIndex.section !== 'Chair' ||
+                          hoveredIndex.index !== index
+                        "
+                        class="text-sm md:text-xs lg:text-sm font-bold"
+                      >
+                        {{ member.name }}
+                      </h3>
+
+                      <div v-else class="flex flex-col justify-center h-full">
+                        <h3 class="text-sm md:text-xs lg:text-sm font-semibold">
+                          {{ member.name }}
+                        </h3>
+                        <p class="text-sm mt-1 text-red-300">
+                          {{ member.role }}
+                        </p>
+                        <p class="text-xs font-bold mt-2 text-honey-gold">
+                          {{ member.location }}
+                        </p>
+                        <p class="text-xs mt-2">{{ member.bio }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: members -->
+            <div class="mt-12 lg:mt-16 p-4">
+              <h2
+                class="text-3xl lg:text-4xl text-center font-semibold text-midnight-sapphire font-cormorant mb-12"
+              >
+                Other Members
               </h2>
               <div
                 class="flex flex-wrap justify-center gap-y-12 max-w-5xl mx-auto lg:max-w-full"
@@ -360,62 +430,126 @@ export default {
       hoveredIndex: { section: null, index: null },
       teamMembers: [
         {
-          name: "Ajna Islam",
+          name: "Saikat ",
           position: "Founder",
-          image: image14,
-          bio: "My name is Ajna Islam. I am from  Bangladesh. I competed my  Masters(Thesis) from Mcgill University. My research was about women freedomfighters of the liberation war of Bangladesh. Professionally, I am experienced with feature report writing in Bengali newspapers and moderating contents. I have been living in Montreal since 2016.",
+          role: "President",
+          image: image5,
+          bio: "Civil/Structural engineer by professional training - Loves Art and Literature",
           location: "Montreal, Quebec, Canada",
         },
-        {
-          name: "Urmibhushan Bhakta",
-          position: "Founder",
-          image: image4,
-          bio: "Scientist by profession, love literature, deeply interested in politics.",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Shoubhik Samanta",
-          position: "Founder",
-          image: image3,
-          bio: "An engineer by education, but a passionate admirer of the Bengali language, I find joy in exploring its rich literary heritage and cultural nuances. With a deep appreciation for the beauty and depth of Bengali, I strive to promote and preserve this vibrant language in every aspect of my life. My journey is fueled by a love for words and a commitment to celebrating the essence of Bengal.",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Archisman Chaudhuri",
-          position: "Member",
-          image: image2,
-          bio: "An historian by training, a language enthusiast, and an academic nomad. Favourite hobby is reading. At present I continually flit between working on my academic research, honing my language skills, and volunteering for BANGLA and Porijaan.",
-          location: "Highland Park, New Jersey, USA",
-        },
-        // {
-        //   name: "Ananyo Kazi ",
-        //   position: "Member",
-        //   image: image16,
-        //   bio: "-",
-        //   location: "Zürich, Zürich, Switzerland",
-        // },
         {
           name: "Anwesha Bhattacharjee ",
-          position: "Member",
+          position: "Founder",
+          role: "General Manager",
           image: image1,
           bio: "Journalism and content production have been Anwesha's passion for almost 20 years now, from her school years well into collegiate journalism. She hopes to contribute with her experiences both as a member of the diaspora and as a content producer toward B.A.N.G.L.A.'s mission",
           location: "Montreal, Quebec, Canada",
         },
         {
+          name: "Moinak Banerjee",
+          position: "Founder",
+          role: "VP - Organization",
+          image: image7,
+          bio: "A student of liberal arts and humanities interested in reading, writing and debating ideas.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Ajna Islam",
+          position: "Founder",
+          role: "VP - Artistic Engagement",
+          image: image14,
+          bio: "My name is Ajna Islam. I am from  Bangladesh. I competed my  Masters(Thesis) from Mcgill University. My research was about women freedomfighters of the liberation war of Bangladesh. Professionally, I am experienced with feature report writing in Bengali newspapers and moderating contents. I have been living in Montreal since 2016.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
           name: "Azfar Adib ",
-          position: "Member",
+          position: "Founder",
+          role: "VP - Communication And Publicity",
           image: image11,
           bio: "A public scholar and PhD candidate at Concordia University.",
           location: "Montreal, Quebec, Canada",
         },
+        {
+          name: "Archisman Chaudhuri",
+          position: "Founder",
+          role: "VP - International Networking",
+          image: image2,
+          bio: "An historian by training, a language enthusiast, and an academic nomad. Favourite hobby is reading. At present I continually flit between working on my academic research, honing my language skills, and volunteering for BANGLA and Porijaan.",
+          location: "Highland Park, New Jersey, USA",
+        },
+        {
+          name: "Shoubhik Samanta",
+          position: "Founder",
+          role: "Executive Director - Organization",
+          image: image3,
+          bio: "An engineer by education, but a passionate admirer of the Bengali language, I find joy in exploring its rich literary heritage and cultural nuances. With a deep appreciation for the beauty and depth of Bengali, I strive to promote and preserve this vibrant language in every aspect of my life. My journey is fueled by a love for words and a commitment to celebrating the essence of Bengal.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Sanjana Sayeed ",
+          position: "Founder",
+          role: "Executive Director - Artistic Engagement",
+          image: image9,
+          bio: "Currently pursuing Masters in Software Engineering from Concordia University. A Software Engineer by profession with a passion for sketching and painting. Deeply interested in Bangla culture, exploring its rich traditions, language, and heritage.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Trisha Ghosh",
+          position: "Founder",
+          role: "Executive Director - Communication And Publicity",
+          image: image6,
+          bio: "Scientist by day and artist by night. Graduate student in Synthetic Biology, at Concordia University, Montreal. ",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Ananyo Kazi ",
+          position: "Founder",
+          role: "Executive Director - International Networking",
+          image: image17,
+          bio: "Born and brought up in Kolkata in a 'musical' family, I have always been curious about the construction of cultural hegemonies. Now working as an early career researcher in mathematics, I spend my precious little free time following discourse on internet culture, and the rising tide of absurdist modes of expression through contemporary forms like reels and memes.",
+          location: "Zürich, Zürich, Switzerland",
+        },
+        {
+          name: "Urmibhushan Bhakta",
+          position: "Founder",
+          role: "Treasurer",
+          image: image4,
+          bio: "Scientist by profession, love literature, deeply interested in politics.",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Iktisad Rashid ",
+          position: "Chair",
+          role: "Standing Committee for IT Infrastructure",
+          image: image8,
+          bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Upasana Dasgupta ",
+          position: "Chair",
+          role: "Standing Committee for Constitution ",
+          image: image16,
+          bio: "-",
+          location: "Montreal, Quebec, Canada",
+        },
+        {
+          name: "Samiparna Chakraborty",
+          position: "Chair",
+          role: "Standing Committee for Reading Group ",
+          image: image15,
+          bio: "Somiparna Chakraborty, a software engineer based in Toronto and living in Waterloo, Ontario, hails from Barrackpore, Kolkata. A Concordia University graduate, she’s been in Canada since 2017 and is now a Canadian citizen. Passionate about films, music, literature, and Bengali culture, she enjoys food, travel, and meaningful conversations.",
+          location: "Waterloo, Ontario, Canada",
+        },
+        {
+          name: "Arindam Das",
+          position: "Chair",
+          role: "Standing Committee for Social Media",
+          image: image16,
+          bio: "Rooted in the vibrant spirit of Kolkata, I carry the essence of Bengal wherever I go. By profession, I navigate the structured world of IT, but my heart belongs to art—especially painting. My canvas reflects the colors of my heritage, infused with a global perspective, life’s rhythm, and raw emotion. I find inspiration in the harmony of order and chaos, much like the city itself.",
+          location: "Toronto, Ontario",
+        },
 
-        // {
-        //   name: "Abhijeet Dutta",
-        //   position: "Member",
-        //   image: image16,
-        //   bio: "-",
-        //   location: "Montreal, Quebec, Canada",
-        // },
         {
           name: "Avik Chakraborty",
           position: "Member",
@@ -423,55 +557,7 @@ export default {
           bio: "Currently Postdoc at UNAB, Santiago, Chile. PhD in Theoretical High Energy Physics from USC, Los Angeles, USA. JU (B.Sc.) & IIT-B (M.Sc.) alumni. Hometown Kolkata, India. . Photography and travel enthusiast. Love to read and listen to music.",
           location: "Santiago, Santiago, Chile",
         },
-        {
-          name: "Iktisad Rashid ",
-          position: "Member",
-          image: image8,
-          bio: "Current Grad Student at Concordia pursing MEng in Quality Systems Engineering.A problem solver at heart and Software engineer by profession.An Enthusiast in exploring cultures and cuisine",
-          location: "Montreal, Quebec, Canada",
-        },
-        // {
-        //   name: "Ali Hossain",
-        //   position: "Member",
-        //   image: image16,
-        //   bio: "-",
-        //   location: "Montreal, Quebec, Canada",
-        // },
-        // {
-        //   name: "Yusuf Saadi",
-        //   position: "Member",
-        //   image: image16,
-        //   bio: "-",
-        //   location: "Montreal, Quebec, Canada",
-        // },
-        {
-          name: "Trisha Ghosh",
-          position: "Member",
-          image: image6,
-          bio: "Scientist by day and artist by night. Graduate student in Synthetic Biology, at Concordia University, Montreal. ",
-          location: "Montreal, Quebec, Canada",
-        },
-        // {
-        //   name: "Debapriya Mondal",
-        //   position: "Member",
-        //   image: image16,
-        //   bio: "-",
-        //   location: "Montreal, Quebec, Canada",
-        // },
-        {
-          name: "Moinak Banerjee",
-          position: "Member",
-          image: image7,
-          bio: "A student of liberal arts and humanities interested in reading, writing and debating ideas.",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
-          name: "Sanjana Sayeed ",
-          position: "Member",
-          image: image9,
-          bio: "Currently pursuing Masters in Software Engineering from Concordia University. A Software Engineer by profession with a passion for sketching and painting. Deeply interested in Bangla culture, exploring its rich traditions, language, and heritage.",
-          location: "Montreal, Quebec, Canada",
-        },
+
         {
           name: "Saptara Gupta",
           position: "Member",
@@ -480,26 +566,19 @@ export default {
           location: "Palm Beach Gardens, Florida, USA",
         },
         {
-          name: "Samiparna Chakraborty",
+          name: "Somdutta Majumder ",
           position: "Member",
-          image: image15,
-          bio: "Somiparna Chakraborty, a software engineer based in Toronto and living in Waterloo, Ontario, hails from Barrackpore, Kolkata. A Concordia University graduate, she’s been in Canada since 2017 and is now a Canadian citizen. Passionate about films, music, literature, and Bengali culture, she enjoys food, travel, and meaningful conversations.",
-          location: "Waterloo, Ontario, Canada",
-        },
-        {
-          name: "Saikat ",
-          position: "Member",
-          image: image5,
-          bio: "Civil/Structural engineer by professional training - Loves Art and Literature",
-          location: "Montreal, Quebec, Canada",
+          image: image10,
+          bio: "Bengali is not just a language for me. It is my identity that I wear with pride. I am a geologist by profession, currently residing in the US, but that does not stop me from staying informed on the socio-political situation and culture of West Bengal and India.",
+          location: "Jefferson City, Missouri, USA",
         },
 
         {
-          name: "Ananyo Kazi ",
+          name: "Abhijeet Dutta",
           position: "Member",
-          image: image17,
+          image: image18,
           bio: "-",
-          location: "Zürich, Zürich, Switzerland",
+          location: "Montreal, Quebec, Canada",
         },
 
         {
@@ -511,20 +590,6 @@ export default {
         },
 
         {
-          name: "Somdutta Majumder ",
-          position: "Member",
-          image: image10,
-          bio: "Bengali is not just a language for me. It is my identity that I wear with pride. I am a geologist by profession, currently residing in the US, but that does not stop me from staying informed on the socio-political situation and culture of West Bengal and India.",
-          location: "Jefferson City, Missouri, USA",
-        },
-        {
-          name: "Abhijeet Dutta",
-          position: "Member",
-          image: image18,
-          bio: "-",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
           name: "Ali Hossain",
           position: "Member",
           image: image16,
@@ -535,7 +600,7 @@ export default {
           name: "Yusuf Saadi",
           position: "Member",
           image: image16,
-          bio: "-",
+          bio: "Yusuf is a PhD student at McGill University and a poet currently living in Montréal.",
           location: "Montreal, Quebec, Canada",
         },
         {

@@ -219,7 +219,7 @@
       <!-- event video -->
       <div class="w-full max-w-5xl mx-auto px-6 py-12">
         <h2
-          class="text-center text-2xl md:text-3xl font-normal mb-6 mt-6 font-cormorant text-amber-600"
+          class="text-center text-3xl md:text-4xl font-normal mb-6 mt-6 font-cormorant text-red-700"
         >
           Explore Some Of the Highlights of Our Event
         </h2>
@@ -585,16 +585,16 @@ export default {
     },
     getSlideClass(index) {
       return index === 1
-        ? "scale-110 transition-transform duration-500" // Middle image appears larger
-        : "opacity-80 transition-opacity duration-500"; // Side images slightly faded
+        ? "scale-110 transition-transform duration-500 " // Middle image appears larger
+        : "opacity-80 transition-opacity duration-500 "; // Side images slightly faded
     },
     getImageSize(index) {
       if (window.innerWidth < 768) {
         return "w-full h-auto rounded-2xl"; // Mobile: Full width, auto height
       }
       return index === 1
-        ? "w-[500px] h-[350px] rounded-2xl shadow-lg" // Desktop: Middle image larger
-        : "w-[400px] h-[300px] rounded-lg"; // Desktop: Side images smaller
+        ? "w-[500px] h-[350px] rounded-2xl shadow-lg border-4 border-amber-500 " // Desktop: Middle image larger
+        : "w-[400px] h-[300px] rounded-lg border-2 border-honey-gold"; // Desktop: Side images smaller
     },
     swapVideo(index) {
       console.log("Clicked Video Index:", index);
