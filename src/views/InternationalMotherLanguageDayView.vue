@@ -1,7 +1,8 @@
 <template>
-  <div class="items-center justify-center min-h-screen">
+  <div class="items-center justify-center min-h-screen bg-white">
     <!-- Banner -->
-    <div class="relative h-auto shadow-md bg-cover bg-center background-img">
+    <!-- 🔹 First Section (Background Image with Quote) -->
+    <div class="relative h-[60vh] bg-cover bg-center background-img">
       <!-- Background Overlay -->
       <div class="absolute inset-0 bg-gray-900 opacity-80"></div>
 
@@ -24,147 +25,235 @@
         </div>
 
         <!-- Writer's Name -->
-        <!-- <div class="mt-4 flex justify-end"> -->
-        <!-- Writer's Name (Slightly to the Right) -->
         <p
-          class="text-md md:text-lg lg:text-xl text-gray-300 font-semibold font-marck pl-10 md:pl-16"
+          class="text-md md:text-lg lg:text-xl text-gray-300 font-semibold font-marck"
         >
           - আবদুল গাফফার চৌধুরী
         </p>
       </div>
     </div>
 
-    <!-- Upcoming Event Section -->
+    <!-- 🔹 Overlapping Section (Event Details) -->
     <div
-      class="flex flex-col md:flex-row my-8 py-8 px-2 mx-auto max-w-screen-xl"
+      class="relative bg-gradient-to-r from-yellow-50 to-gray-200 z-10 -mt-[20vh] max-w-4xl mx-auto p-6 rounded-lg"
     >
-      <!-- Left Section (Image) -->
-      <div class="flex flex-col items-center w-full md:w-1/3">
-        <div
-          class="relative shadow-md bg-cover bg-center md:w-full w-96 h-96 img"
-        ></div>
-      </div>
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Left Side: Image -->
+        <div class="w-full md:w-2/5">
+          <img
+            src="@/assets/img/21feb.jpeg"
+            alt="Event Image"
+            class="rounded-lg shadow-md object-cover w-full h-96"
+          />
+        </div>
 
-      <!-- Right Section (Countdown Timer + Facebook Button) -->
-      <div
-        class="relative shadow-lg rounded-lg p-6 w-full md:w-2/3 text-center mt-6 md:mt-0 h-auto overflow-hidden flex flex-col items-center pl-0 ml-0"
-      >
-        <!-- Lightened Background Image -->
-        <!-- <img
+        <!-- Right Side: Text -->
+        <div
+          class="w-full md:w-3/5 px-6 text-center md:text-left md:block hidden"
+        >
+          <h2 class="text-2xl font-bold text-red-700">
+            International Mother Language Day
+          </h2>
+          <p class="text-gray-700 mt-2 text-sm">
+            26th February, Wednesday <br />
+            6 PM - 9 PM
+          </p>
+          <p class="text-gray-600 text-sm mt-2">
+            Concordia University, SGW Campus, Hall Building, H625, <br />
+            1455 BLVD. DE MAISONNEUVE OUEST, MONTREAL, H3G 1M8
+          </p>
+
+          <div
+            class="relative shadow-lg rounded-lg w-full px-4 pr-4 p-4 m-4 text-center h-auto overflow-hidden flex flex-col items-center mx-2"
+          >
+            <!-- Lightened Background Image -->
+            <!-- <img
           src="../assets/img/culture.jpg"
           alt="Event Background"
           class="absolute inset-0 w-full h-full object-cover rounded-lg opacity-15"
         /> -->
 
-        <!-- Overlay for Readability -->
-        <div class="absolute inset-0 bg-black bg-opacity-15 rounded-lg"></div>
+            <!-- Overlay for Readability -->
+            <div
+              class="absolute inset-0 bg-black bg-opacity-5 rounded-lg"
+            ></div>
 
-        <!-- Content on Top of Image -->
-        <div class="relative z-10 w-full">
-          <h2 class="text-2xl font-bold font-serif text-gray-900">
-            UPCOMING EVENT
-          </h2>
-
-          <p
-            class="text-gray-900 text-2xl mb-6 mt-6 font-cormorant font-semibold"
-          >
-            Join us for an exciting event on
-            <strong
-              ><span class="text-deep-red-wine font-bold"
-                >February 26, 2025</span
-              ></strong
-            >
-          </p>
-
-          <!-- Countdown Timer -->
-          <div class="flex items-center justify-center w-full gap-1.5 mt-6">
-            <div class="timer">
-              <div
-                class="rounded-xl bg-gradient-to-b border-2 border-white border-opacity-20 from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
-              >
-                <h3
-                  class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
-                >
-                  0
+            <!-- Content on Top of Image -->
+            <div class="relative z-10 w-full">
+              <!-- Countdown Timer -->
+              <div class="flex items-center justify-center w-full gap-1.5 mt-1">
+                <div class="timer">
+                  <div
+                    class="rounded-xl bg-gradient-to-b border-2 border-white border-opacity-20 from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
+                  >
+                    <h3
+                      class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
+                    >
+                      0
+                    </h3>
+                    <p
+                      class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
+                    >
+                      Days
+                    </p>
+                  </div>
+                </div>
+                <h3 class="font-cormorant font-semibold text-4xl text-gray-900">
+                  :
                 </h3>
-                <p
-                  class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
-                >
-                  Days
-                </p>
-              </div>
-            </div>
-            <h3 class="font-cormorant font-semibold text-4xl text-gray-900">
-              :
-            </h3>
 
-            <div class="timer">
-              <div
-                class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
-              >
-                <h3
-                  class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
-                >
-                  0
+                <div class="timer">
+                  <div
+                    class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
+                  >
+                    <h3
+                      class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
+                    >
+                      0
+                    </h3>
+                    <p
+                      class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
+                    >
+                      Hours
+                    </p>
+                  </div>
+                </div>
+                <h3 class="font-cormorant font-semibold text-4xl text-gray-900">
+                  :
                 </h3>
-                <p
-                  class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
-                >
-                  Hours
-                </p>
-              </div>
-            </div>
-            <h3 class="font-cormorant font-semibold text-4xl text-gray-900">
-              :
-            </h3>
 
-            <div class="timer">
-              <div
-                class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
-              >
-                <h3
-                  class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
-                >
-                  0
+                <div class="timer">
+                  <div
+                    class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[80px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
+                  >
+                    <h3
+                      class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
+                    >
+                      0
+                    </h3>
+                    <p
+                      class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
+                    >
+                      Minutes
+                    </p>
+                  </div>
+                </div>
+                <h3 class="font-cormorant font-semibold text-4xl text-gary-900">
+                  :
                 </h3>
-                <p
-                  class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
-                >
-                  Minutes
-                </p>
-              </div>
-            </div>
-            <h3 class="font-cormorant font-semibold text-4xl text-gary-900">
-              :
-            </h3>
 
-            <div class="timer">
-              <div
-                class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[72px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
-              >
-                <h3
-                  class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
-                >
-                  0
-                </h3>
-                <p
-                  class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
-                >
-                  Seconds
-                </p>
+                <div class="timer">
+                  <div
+                    class="rounded-xl border-2 border-white border-opacity-20 bg-gradient-to-b from-gray-200 to-light-blue py-3 min-w-[72px] md:min-w-[96px] flex items-center justify-center flex-col gap-1 aspect-square px-3"
+                  >
+                    <h3
+                      class="countdown-element font-cormorant font-semibold text-5xl text-deep-red-wine text-center"
+                    >
+                      0
+                    </h3>
+                    <p
+                      class="text-lg font-cormorant font-semibold text-rich-mahagony mt-1 text-center w-full"
+                    >
+                      Seconds
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <!-- Facebook Button (Moved Below Countdown Timer) -->
-          <div class="flex justify-center w-full mt-8">
-            <a
-              href="https://www.facebook.com/events/s/25th-international-mother-lang/1328395418181985/"
-              aria-label="Join the Event on Facebook"
-              class="text-base px-6 py-3 border bg-gradient-to-r border-red-900 from-deep-red-wine to-red-700 text-white font-semibold rounded-lg hover:bg-amber-700 transition duration-300 ease-in-out w-full md:w-auto"
+    <!--Event Picture -->
+    <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
+      <div class="relative w-full max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
+          An Evening of Music, Poem & Language
+        </h2>
+        <p class="text-center text-gray-500 mb-6 mt-6">
+          21st February is not just about remembrance—it’s also about
+          celebrating the languages that make us who we are. Through music,
+          dance, and poetry, we embraced the beauty of our diverse cultures.
+          Enjoy the highlights from our special evening on 26th February, 2025
+        </p>
+
+        <div class="relative flex items-center justify-center pt-6 pb-6">
+          <!-- Left Arrow (Outside Images) -->
+          <button
+            @click="prevSlide"
+            class="absolute z-10 bg-yellow-100 border border-yellow-200 p-2 rounded-full shadow-md hover:bg-gray-100"
+            :class="buttonPosition"
+          >
+            ◀
+          </button>
+
+          <div
+            class="flex gap-6 overflow-hidden relative w-full justify-center"
+          >
+            <div
+              v-for="(image, index) in visibleImages"
+              :key="index"
+              class="transition-transform duration-500 ease-in-out flex justify-center items-center"
+              :class="getSlideClass(index)"
             >
-              Join Our Event on Facebook
-            </a>
+              <img
+                :src="image"
+                class="object-cover"
+                :class="getImageSize(index)"
+              />
+            </div>
+          </div>
+
+          <!-- Right Arrow -->
+          <button
+            @click="nextSlide"
+            class="absolute z-10 bg-yellow-100 border border-yellow-200 p-2 rounded-full shadow-md hover:bg-gray-100"
+            :class="buttonPositionRight"
+          >
+            ▶
+          </button>
+        </div>
+      </div>
+
+      <!-- event video -->
+      <div class="w-full max-w-5xl mx-auto px-6 py-12">
+        <h2
+          class="text-center text-2xl md:text-3xl font-normal mb-6 mt-6 font-cormorant text-amber-600"
+        >
+          Explore Some Of the Highlights of Our Event
+        </h2>
+
+        <div class="flex flex-col md:flex-row items-center gap-6">
+          <!-- Main Large Video -->
+          <div class="w-full md:w-4/5">
+            <video
+              :src="selectedVideo"
+              controls
+              class="w-full h-[400px] md:h-[500px] rounded-lg shadow-md object-cover"
+            ></video>
+          </div>
+
+          <!-- Right-side Column with Clickable Thumbnails -->
+          <div class="flex md:flex-col gap-4">
+            <div
+              v-for="(video, index) in videos"
+              :key="index"
+              class="relative cursor-pointer hover:opacity-80 transition-all duration-300"
+              @click="swapVideo(index)"
+            >
+              <video
+                class="w-32 h-24 md:w-28 md:h-28 rounded-lg shadow-md object-cover border-2"
+                :class="
+                  video === selectedVideo
+                    ? 'border-blue-500'
+                    : 'border-transparent'
+                "
+              >
+                <source :src="video" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +268,7 @@
       >
         <div class="py-8">
           <h2
-            class="text-2xl md:text-4xl font-bold font-cormorant text-midnight-sapphire"
+            class="text-3xl md:text-5xl font-cormorant text-midnight-sapphire mb-6"
           >
             Preserving Language, Honoring Sacrifice: Celebrating International
             Mother Language Day
@@ -277,21 +366,6 @@
       <!-- Overlay for Background Image -->
       <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
 
-      <!-- Tooltip for Image Credit -->
-      <div
-        class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      >
-        Background Image by:
-        <a
-          class="hover:underline"
-          href="https://ca.pinterest.com/pin/2251868554953302/"
-          >https://ca.pinterest.com/pin/2251868554953302/</a
-        >
-        <div
-          class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
-        ></div>
-      </div>
-
       <!-- Content Overlay -->
       <div
         class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10"
@@ -318,6 +392,7 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import CookieConsent from "../components/CookieConsent.vue";
 import image1 from "@/assets/img/writing1.png";
 import image6 from "@/assets/img/writing2.png";
@@ -327,6 +402,31 @@ import image2 from "@/assets/members/Ajna.png";
 import image3 from "@/assets/members/ArchismanChaudhuri_1.png";
 import image4 from "@/assets/members/MoinakBanerjee_1.png";
 import image5 from "@/assets/members/AzfarAdib_1.png";
+import image11 from "@/assets/21stFebEventImage/img1.jpg";
+import image12 from "@/assets/21stFebEventImage/img2.jpg";
+import image13 from "@/assets/21stFebEventImage/img3.jpg";
+import image14 from "@/assets/21stFebEventImage/img4.jpg";
+import image15 from "@/assets/21stFebEventImage/img5.jpg";
+import image16 from "@/assets/21stFebEventImage/img6.jpg";
+import image17 from "@/assets/21stFebEventImage/img7.jpg";
+import image18 from "@/assets/21stFebEventImage/img8.jpg";
+import image19 from "@/assets/21stFebEventImage/img9.jpg";
+import image20 from "@/assets/21stFebEventImage/img10.jpg";
+import image21 from "@/assets/21stFebEventImage/img12.jpg";
+import image22 from "@/assets/21stFebEventImage/img13.jpg";
+import image23 from "@/assets/21stFebEventImage/img14.jpg";
+import image24 from "@/assets/21stFebEventImage/img15.jpg";
+import image25 from "@/assets/21stFebEventImage/img16.jpg";
+import image26 from "@/assets/21stFebEventImage/img17.jpg";
+import image27 from "@/assets/21stFebEventImage/img18.jpg";
+import image28 from "@/assets/21stFebEventImage/img19.jpg";
+import image29 from "@/assets/21stFebEventImage/img20.jpg";
+import image30 from "@/assets/21stFebEventImage/img21.jpg";
+import image31 from "@/assets/21stFebEventImage/img25.jpg";
+import image32 from "@/assets/21stFebEventImage/img26.jpg";
+import image33 from "@/assets/21stFebEventImage/img27.jpg";
+import image34 from "@/assets/21stFebEventImage/img28.jpg";
+
 export default {
   name: "InternationalMotherLanguageDayView",
   components: {
@@ -334,10 +434,56 @@ export default {
   },
   mounted() {
     this.updateCountdown();
+    this.startAutoSlide();
     setInterval(this.updateCountdown, 1000);
   },
+  beforeUnmount() {
+    this.stopAutoSlide();
+  },
+  computed: {
+    buttonPosition() {
+      if (window.innerWidth < 768) {
+        return "left-2 top-1/2 transform -translate-y-1/2 z-20"; // 📌 Mobile: Half inside, half outside
+      } else if (window.innerWidth < 1200) {
+        return "left-[-20px] top-1/2 transform -translate-y-1/2 z-10"; // 📌 Medium screens: Slightly outside
+      } else {
+        return "left-[-50px] top-1/2 transform -translate-y-1/2 z-10"; // 📌 Large screens: Fully outside
+      }
+    },
+    buttonPositionRight() {
+      if (window.innerWidth < 768) {
+        return "right-2 top-1/2 transform -translate-y-1/2 z-20"; // 📌 Mobile: Half inside, half outside
+      } else if (window.innerWidth < 1200) {
+        return "right-[-20px] top-1/2 transform -translate-y-1/2 z-10"; // 📌 Medium screens: Slightly outside
+      } else {
+        return "right-[-50px] top-1/2 transform -translate-y-1/2 z-10"; // 📌 Large screens: Fully outside
+      }
+    },
+    visibleImages() {
+      let total = this.images.length;
+      let prev = (this.currentIndex - 1 + total) % total;
+      let next = (this.currentIndex + 1) % total;
+
+      // 📌 Show only 1 image on small screens
+      return window.innerWidth < 768
+        ? [this.images[this.currentIndex]] // Mobile: Show only current image
+        : [
+            this.images[prev],
+            this.images[this.currentIndex],
+            this.images[next],
+          ]; // Desktop: Show three images
+    },
+  },
+
   data() {
     return {
+      selectedVideo: "/videos/v1.mp4", // Directly a string, not a ref
+      videos: [
+        "/videos/v2.mp4",
+        "/videos/v3.mp4",
+        "/videos/v4.mp4",
+        "/videos/v5.mp4",
+      ],
       eventDate: new Date("2025-02-26T00:00:00").getTime(),
       countdown: {
         days: 0,
@@ -345,11 +491,39 @@ export default {
         minutes: 0,
         seconds: 0,
       },
+      currentIndex: 1, // Middle image index
+      autoSlideInterval: null,
       facebookEventUrl: "https://www.facebook.com/events/your-event-id",
+      images: [
+        image11,
+        image12,
+        image13,
+        image14,
+        image15,
+        image16,
+        image17,
+        image18,
+        image19,
+        image20,
+        image21,
+        image22,
+        image23,
+        image24,
+        image25,
+        image26,
+        image27,
+        image28,
+        image29,
+        image30,
+        image31,
+        image32,
+        image33,
+        image34,
+      ],
       articles: [
         // {
         //   title:
-        //     "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
+        //     "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
         //   author: "Ajna Islam",
         //   description:
         //     "ফেব্রুয়ারির ২১ তারিখ একি সাথে মর্মান্তিক এবং গৌরবোজ্জল স্মৃতিবিজড়িত একটি দিন। ১৯৫২...",
@@ -394,6 +568,45 @@ export default {
     };
   },
   methods: {
+    nextSlide() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    },
+    prevSlide() {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.images.length) % this.images.length;
+    },
+    startAutoSlide() {
+      this.autoSlideInterval = setInterval(() => {
+        this.nextSlide();
+      }, 3000); // Change slide every 3 seconds
+    },
+    stopAutoSlide() {
+      clearInterval(this.autoSlideInterval);
+    },
+    getSlideClass(index) {
+      return index === 1
+        ? "scale-110 transition-transform duration-500" // Middle image appears larger
+        : "opacity-80 transition-opacity duration-500"; // Side images slightly faded
+    },
+    getImageSize(index) {
+      if (window.innerWidth < 768) {
+        return "w-full h-auto rounded-2xl"; // Mobile: Full width, auto height
+      }
+      return index === 1
+        ? "w-[500px] h-[350px] rounded-2xl shadow-lg" // Desktop: Middle image larger
+        : "w-[400px] h-[300px] rounded-lg"; // Desktop: Side images smaller
+    },
+    swapVideo(index) {
+      console.log("Clicked Video Index:", index);
+
+      // Store the clicked video from the right-side column
+      const clickedVideo = this.videos[index];
+
+      // Swap the clicked video with the main large video
+      this.videos[index] = this.selectedVideo;
+      this.selectedVideo = clickedVideo;
+    },
+
     updateCountdown() {
       const now = new Date().getTime();
       const timeLeft = this.eventDate - now;
@@ -410,6 +623,7 @@ export default {
     join() {
       this.$router.push("/join");
     },
+
     goToArticle(slug) {
       if (!slug) {
         console.error("Article slug is missing!");
@@ -422,6 +636,12 @@ export default {
 </script>
 
 <style scoped>
+button {
+  transition: all 0.3s ease-in-out;
+}
+video {
+  transition: transform 0.3s ease-in-out;
+}
 .img {
   background-image: url("@/assets/img/21feb.jpeg");
   background-size: cover;
@@ -430,10 +650,13 @@ export default {
 .background-img {
   background-image: url("../assets/img/211.jpg");
 }
+.background-img1 {
+  background-image: url("../assets/img/21feb.jpeg");
+}
 .fade-in {
   animation: fadeIn 2s ease-in-out;
 }
 .bg-img {
-  background-image: url("../assets/img/bg-contribute.png");
+  background-image: url("../assets/img/alphabets.jpg");
 }
 </style>
