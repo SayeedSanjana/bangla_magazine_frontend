@@ -194,12 +194,12 @@
             <div
               v-for="(image, index) in visibleImages"
               :key="index"
-              class="transition-transform duration-500 ease-in-out flex justify-center items-center"
+              class="transition-transform duration-500 ease-in-out flex justify-center items-center p-3 px-0"
               :class="getSlideClass(index)"
             >
               <img
                 :src="image"
-                class="object-cover"
+                class="object-cover rounded-lg"
                 :class="getImageSize(index)"
               />
             </div>
@@ -590,11 +590,11 @@ export default {
     },
     getImageSize(index) {
       if (window.innerWidth < 768) {
-        return "w-full h-auto rounded-2xl"; // Mobile: Full width, auto height
+        return "w-full h-auto rounded-xl object-cover "; // Mobile: Full width, auto height
       }
       return index === 1
-        ? "w-[500px] h-[400px] rounded-lg " // Desktop: Middle image larger
-        : "w-[400px] h-[300px] rounded-lg "; // Desktop: Side images smaller
+        ? "w-[500px] h-[350px] rounded-2xl object-cover " // Desktop: Middle image larger
+        : "w-[400px] h-[300px] rounded-lg object-cover"; // Desktop: Side images smaller
     },
     swapVideo(index) {
       console.log("Clicked Video Index:", index);
@@ -658,5 +658,11 @@ video {
 }
 .bg-img {
   background-image: url("../assets/img/alphabets.jpg");
+}
+.container-class {
+  overflow: visible !important; /* Ensure the image isn't clipped */
+}
+.rounded-2xl {
+  border-radius: 20px !important; /* Ensures proper rounding */
 }
 </style>
