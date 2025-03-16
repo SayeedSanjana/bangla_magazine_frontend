@@ -47,8 +47,11 @@
                 <form @submit.prevent="submitForm" class="space-y-4 text-base">
                   <div class="px-2">
                     <label for="first_name" class="block font-medium"
-                      >First Name <span class="text-red-500">*</span></label
-                    >
+                      >First Name <span class="text-red-500">*</span>
+                      <span class="text-sm text-gray-500">
+                        (Only alphabets allowed)</span
+                      >
+                    </label>
                     <input
                       @blur="v$.form.firstname.$touch()"
                       type="text"
@@ -74,7 +77,10 @@
                   </div>
                   <div class="px-2">
                     <label for="last_name" class="block font-medium"
-                      >Last Name <span class="text-red-500">*</span></label
+                      >Last Name <span class="text-red-500">*</span
+                      ><span class="text-sm text-gray-500">
+                        (Only alphabets allowed)</span
+                      ></label
                     >
                     <input
                       @blur="v$.form.lastname.$touch()"
@@ -129,8 +135,13 @@
                   <div class="px-2">
                     <label for="location" class="block font-medium"
                       >Location (City/Area)
-                      <span class="text-red-500">*</span></label
+                      <span class="text-red-500">*</span>
+                      <span class="text-sm text-gray-500">
+                        (Only Alphabets, spaces and comma allowed - no other
+                        special characters allowed)</span
+                      ></label
                     >
+
                     <input
                       @blur="v$.form.location.$touch()"
                       type="text"
@@ -257,7 +268,13 @@ export default {
         firstname: { required },
         lastname: { required },
         email: { required, email },
-        location: { required },
+        location: {
+          required,
+          matches: helpers.withMessage(
+            "Location can only contain alphabets, spaces, and commas",
+            (value) => /^[A-Za-z\s,]+$/.test(value) // Ensures proper validation
+          ),
+        },
         phone: {
           matches: helpers.withMessage(
             "Phone number must contain 7 to 14 digits",

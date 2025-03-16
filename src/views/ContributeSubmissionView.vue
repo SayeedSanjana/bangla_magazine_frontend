@@ -316,6 +316,7 @@
                   >
                 </label>
                 <input
+                  ref="headshotInput"
                   @blur="v$.form.headshot.$touch()"
                   type="file"
                   @change="handleHeadshotUpload($event)"
@@ -367,31 +368,54 @@
                 </span>
               </div>
               <div class="px-2">
-                <label for="file" class="block font-medium"
-                  >Upload File<span class="text-red-500">*</span>
+                <label for="file" class="block font-medium">
+                  Upload File<span class="text-red-500">*</span>
                   <span class="text-sm text-gray-500">
-                    (You can upload upto 5 files , in formats such as .doc,
-                    .pdf, and .docx, images , maximum size limit: 20MB .)</span
-                  ></label
-                >
+                    (You can upload up to 5 files in formats such as .doc, .pdf,
+                    .docx, images. Maximum size limit: 20MB.)
+                  </span>
+                </label>
+
+                <!-- File Input -->
                 <input
-                  @blur="v$.form.files.$touch()"
-                  @change="handleFileUpload($event)"
-                  multiple
                   type="file"
                   id="file"
                   name="file"
-                  class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
-                  required
+                  multiple
+                  class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400"
+                  @change="handleFileUpload"
+                  accept=".doc,.pdf,.docx,image/*"
                 />
+
+                <!-- Display selected files -->
+                <ul v-if="form.files.length" class="mt-2">
+                  <li
+                    v-for="(file, index) in form.files"
+                    :key="index"
+                    class="flex items-center justify-between text-gray-700 border p-2 rounded-lg mt-2"
+                  >
+                    <span
+                      >{{ file.name }} ({{
+                        (file.size / 1024).toFixed(2)
+                      }}
+                      KB)</span
+                    >
+                    <button
+                      @click="removeFile(index)"
+                      class="text-red-500 font-semibold text-sm hover:underline"
+                    >
+                      Remove
+                    </button>
+                  </li>
+                </ul>
+
+                <!-- Validation Error -->
                 <span
                   v-show="v$.form.files.$error"
                   class="mt-2 text-sm text-crimson-bloom"
                 >
                   <div v-for="error of v$.form.files.$errors" :key="error.$uid">
-                    <small class="form-error-text">
-                      {{ error.$message }}
-                    </small>
+                    <small class="form-error-text">{{ error.$message }}</small>
                   </div>
                 </span>
               </div>
@@ -731,9 +755,7 @@ export default {
           formData.append("headshot", this.form.headshot);
           formData.append("bio", this.form.bio);
           formData.append("description", this.form.description);
-          for (let i = 0; i < this.form.files.length; i++) {
-            formData.append("files", this.form.files[i]);
-          }
+          this.form.files.forEach((file) => formData.append("files", file));
 
           const response = await axios.post(
             "https://api.banglaglocal.org/api/upload",
@@ -772,6 +794,9 @@ export default {
     },
     resetForm() {
       this.hashtags = "";
+      if (this.$refs.headshotInput) {
+        this.$refs.headshotInput.value = "";
+      }
       this.form = {
         firstname: "",
         lastname: "",
@@ -860,7 +885,18 @@ export default {
       this.form.headshot = file;
     },
     handleFileUpload(event) {
-      this.form.files = event.target.files;
+      // Convert FileList to an array and append to existing files
+      const newFiles = Array.from(event.target.files);
+
+      // Append new files while keeping the existing ones
+      this.form.files = [...this.form.files, ...newFiles];
+
+      // Clear the file input field to allow selecting the same file again
+      event.target.value = "";
+    },
+
+    removeFile(index) {
+      this.form.files.splice(index, 1);
     },
     contribute() {
       this.$router.push("/magazine/topics");
