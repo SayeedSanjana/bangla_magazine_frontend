@@ -235,8 +235,7 @@ export default {
     return {
       loading: false,
       countryOptions: [
-        { name: "United States", code: "+1" },
-        { name: "Canada", code: "+1" },
+        { name: "United States/Canada", code: "+1" },
         { name: "India", code: "+91" },
         { name: "Bangladesh", code: "+880" },
         { name: "United Kingdom", code: "+44" },
