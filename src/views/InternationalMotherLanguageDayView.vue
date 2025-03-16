@@ -521,17 +521,6 @@ export default {
         image34,
       ],
       articles: [
-        // {
-        //   title:
-        //     "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
-        //   author: "Ajna Islam",
-        //   description:
-        //     "ফেব্রুয়ারির ২১ তারিখ একি সাথে মর্মান্তিক এবং গৌরবোজ্জল স্মৃতিবিজড়িত একটি দিন। ১৯৫২...",
-        //   date: "21 February, 2025",
-        //   image: image1,
-        //   authorImage: image2,
-        //   slug: "amar-vaiyer-rakte-rangano-ekushe-february",
-        // },
         {
           title:
             "Funny languages: Bengali via South Asia, Central Asia, and the Indian Ocean",
@@ -563,6 +552,17 @@ export default {
           image: image7,
           authorImage: image4,
           slug: "bangla-sets-sail-25th-international-mother-language-day",
+        },
+        {
+          title:
+            "আমার ভাইয়ের রক্তে রাঙ্গানো একুশে ফেব্রুয়ারি,  আমি কি ভুলিতে পারি?",
+          author: "Ajna Islam",
+          description:
+            "ফেব্রুয়ারির ২১ তারিখ একি সাথে মর্মান্তিক এবং গৌরবোজ্জল স্মৃতিবিজড়িত একটি দিন। ১৯৫২...",
+          date: "21 February, 2025",
+          image: image1,
+          authorImage: image2,
+          slug: "amar-vaiyer-rokte-rangano-ekushe-february",
         },
       ],
     };
