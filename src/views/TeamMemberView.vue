@@ -478,7 +478,7 @@ export default {
           location: "Highland Park, New Jersey, USA",
         },
         {
-          name: "Shoubhik Samanta",
+          name: "Soubhik Samanta",
           position: "Founder",
           role: "Executive Director - Organization",
           image: image3,
