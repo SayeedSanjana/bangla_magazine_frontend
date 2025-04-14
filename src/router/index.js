@@ -12,6 +12,8 @@ import MemoryLuminariesView from "@/views/MemoryLuminariesView.vue";
 import JoinNetworkView from "@/views/JoinNetworkView.vue";
 import InternationalMotherLanguageDayView from "../views/InternationalMotherLanguageDayView.vue";
 import DynamicMotherLanguageArticleView from "../views/DynamicMotherLanguageArticleView.vue";
+import PohelaBaishakhView from "@/views/PohelaBaishakh.vue";
+import DynamicPohelaBaishakhArtivleView from "../views/DynamicPohelaBaishakhArticle.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -79,9 +81,21 @@ const router = createRouter({
       component: InternationalMotherLanguageDayView,
     },
     {
+      path: "/events/pohela-baishakh",
+      name: "Pohela-Baishakh",
+      component: PohelaBaishakhView,
+    },
+
+    {
       path: "/events/:slug",
       name: "article-view",
       component: DynamicMotherLanguageArticleView,
+      props: true,
+    },
+    {
+      path: "/events/pohela-baishakh/:slug",
+      name: "article-pohela-baishakh-view",
+      component: DynamicPohelaBaishakhArtivleView,
       props: true,
     },
   ],

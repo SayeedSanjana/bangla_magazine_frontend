@@ -181,6 +181,46 @@
       </div>
     </div>
 
+    <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
+      <div class="relative w-full max-w-6xl mx-auto px-6">
+        <h2
+          class="text-xl md:text-4xl lg:text-5xl mb-8 text-crimson-bloom font-cormorant text-center"
+        >
+          নব আনন্দে রাঙানো শুভ নববর্ষ ১৪৩২
+        </h2>
+        <div class="flex flex-col md:flex-row items-center justify-center p-4">
+          <!-- Image Section -->
+          <div class="w-full md:w-1/2 p-4">
+            <img
+              src="@/assets/PohelaBaishakh/2.png"
+              alt="Pohela Boishakh Celebration"
+              class="rounded-2xl shadow-lg object-cover w-full h-full bg-opacity-50"
+            />
+          </div>
+
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 p-4">
+            <p class="text-gray-700 text-base">
+              <span class="text-midnight-sapphire font-semibold"
+                >B.A.N.G.L.A (Bangali Abhibasi Network: a Glocal Linguo-cultural
+                Association)</span
+              >
+              – এর তরফ থেকে আপনাদের জানাই নতুন বছরের অনেক শুভেচ্ছা। সুস্থ থাকুন,
+              আনন্দে থাকুন। শুভ নববর্ষ ১৪৩২! <br />
+              Nous vous souhaitons bonne année du calendrier Bengali 1432 !
+              <br />We wish you a Happy Bengali New Year 1432 !
+            </p>
+            <button
+              @click="event"
+              class="mr-2 text-base border-2 border-yellow-400 px-4 py-2 mt-4 shadow-md bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-semibold rounded-lg transition duration-300 ease-in-out lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:text-honey-gold"
+            >
+              Step into Boishakh
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Cookie Consent Popup -->
     <CookieConsent />
   </section>
@@ -203,6 +243,9 @@ export default {
     },
     join() {
       this.$router.push("/contribute/join");
+    },
+    event() {
+      this.$router.push("/events/pohela-baishakh");
     },
   },
 };
@@ -259,6 +302,9 @@ body::-webkit-scrollbar {
   height: 0;
   background: transparent;
   /* Hides the scrollbar in Webkit browsers */
+}
+.bg-img4 {
+  background-image: url("../assets/PohelaBaishakh/img2.png");
 }
 
 /* Hide scrollbar for Edge and Internet Explorer */

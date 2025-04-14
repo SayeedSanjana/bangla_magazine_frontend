@@ -218,6 +218,21 @@
               >
                 21st February - International Mother Language Day
               </router-link>
+              <router-link
+                to="/events/pohela-baishakh"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/pohela-baishakh'
+                  ),
+                  'text-white hover:bg-amber-500': !isActiveRoute(
+                    '/events/pohela-baishakh'
+                  ),
+                }"
+                class="block px-4 py-2"
+              >
+                Pohela Baishakh
+              </router-link>
+
               <!-- <router-link
                 to="/contribute/submission-form"
                 :class="{
@@ -424,6 +439,19 @@
                 @click="toggleMobileMenu"
               >
                 21st February - International Mother Language Day
+              </router-link>
+              <router-link
+                to="/events/pohela-baishakh"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/pohela-baishakh'
+                  ),
+                  'text-white': !isActiveRoute('/events/pohela-baishakh'),
+                }"
+                class="block px-4"
+                @click="toggleMobileMenu"
+              >
+                Pohela Baishakh
               </router-link>
               <!-- <router-link
                 to="/contribute/submission-form"
