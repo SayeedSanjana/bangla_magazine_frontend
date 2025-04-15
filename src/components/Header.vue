@@ -52,20 +52,19 @@
             Coming Soon
           </div> -->
         </a>
-
-        <button
-          class="relative group"
-          @mouseover="showTooltip('youtube')"
-          @mouseleave="hideTooltip"
-        >
-          <img src="../assets/svg/youtube.svg" alt="youtube" class="w-8 h-8" />
-          <div
-            v-if="tooltip === 'youtube'"
+        <a href="https://www.youtube.com/@bangla_glocal" class="relative group">
+          <img
+            src="../assets/svg/youtube.svg"
+            alt="instagram"
+            class="w-8 h-8"
+          />
+          <!-- <div
+            v-if="tooltip === 'instagram'"
             class="absolute bottom-full mb-2 px-2 py-1 text-sm bg-gray-800 text-white rounded"
           >
             Coming Soon
-          </div>
-        </button>
+          </div> -->
+        </a>
 
         <!-- <button
           class="relative group"

@@ -199,27 +199,17 @@
             </div> -->
           </div>
 
-          <div
-            class="relative group"
-            @mouseover="showTooltip('YouTube')"
-            @mouseleave="hideTooltip"
-          >
+          <div class="relative group">
             <a
-              href=""
+              href="https://www.youtube.com/@bangla_glocal"
               class="w-14 h-14 border-4 border-midnight-sapphire border-opacity-35 rounded-full bg-gray-100 flex justify-center items-center hover:bg-gray-300"
             >
               <img
                 src="../assets/svg/youtube.svg"
-                alt="youtube"
+                alt="instagram"
                 class="w-7 h-7 fill-white"
               />
             </a>
-            <div
-              v-if="tooltip === 'YouTube'"
-              class="absolute bottom-full text-center mb-2 px-2 py-1 text-sm bg-gray-600 text-white rounded"
-            >
-              Coming Soon
-            </div>
           </div>
         </div>
       </div>

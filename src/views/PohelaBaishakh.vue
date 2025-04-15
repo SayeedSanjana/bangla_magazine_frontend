@@ -213,7 +213,7 @@ export default {
         },
         {
           title: "ধূসর বসন্তের দেশে সাদা শাড়ি লাল পাড়ের খোঁজে",
-          author: "Tazrin Jahan Bari",
+          author: "Tazreen Jahan Bari",
           description:
             "এপ্রিলের নিস্তব্ধ মধ্যদুপুরে বারান্দার গ্রিল গলে ঘরের দেওয়াল বেয়ে গড়াতে থাকা সূর্যের রশ্মি ..",
           date: "14th April, 2025",

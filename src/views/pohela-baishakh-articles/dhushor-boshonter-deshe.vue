@@ -72,7 +72,7 @@
               />
 
               <p class="text-sm mt-1 text-center">
-                <span class="font-semibold">Photo credit: </span> Tazrin Jahan
+                <span class="font-semibold">Photo credit: </span> Tazreen Jahan
                 Bari
               </p>
             </div>
