@@ -13,14 +13,14 @@
         <!-- Quote -->
         <div class="fade-in">
           <p
-            class="text-4xl md:text-7xl text-red-900 font-marck italic tracking-wide mb-4 text-center pt-24"
+            class="text-4xl md:text-7xl text-midnight-sapphire font-marck italic tracking-wide mb-4 text-center pt-24"
           >
-            এসো হে বৈশাখ, এসো এসো ...
+            Women's History Month
           </p>
           <p
-            class="text-4xl md:text-7xl text-red-900 font-marck italic tracking-wide mb-4 text-right py-1"
+            class="text-4xl md:text-7xl text-midnight-sapphire font-marck italic tracking-wide mb-4 text-right py-1"
           >
-            - ১৪৩২
+            - 2025
           </p>
         </div>
       </div>
@@ -31,16 +31,39 @@
     <!--Event Picture -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
       <div class="relative w-full max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
-          Esho He Boishakh: A Celebration of New Beginnings
+        <h2 class="text-4xl md:text-6xl mb-8 text-rich-mahagony font-cormorant">
+          Celebrating Women's History Month: Honoring the Voices of Women
         </h2>
         <div
           class="flex flex-col md:flex-row items-center justify-center p-4 bg-white"
         >
           <!-- Image Section -->
+
+          <!-- Text Section -->
+          <div class="w-full md:w-1/2 p-4">
+            <p class="text-gray-700 text-base">
+              Women's History Month is an annual celebration that recognizes the
+              invaluable contributions and achievements of women throughout
+              history. Observed each March, it serves as a time to honor women
+              who have made an impact across various fields—whether in politics,
+              science, the arts, business, or social movements. From historical
+              figures to contemporary pioneers, Women's History Month invites us
+              to reflect on the stories of women who have shaped our world and
+              continue to inspire future generations.
+            </p>
+            <p class="mt-4">
+              Join us in celebrating the strength, resilience, and influence of
+              women from all walks of life. This month is dedicated to
+              acknowledging both trailblazing leaders and everyday heroes whose
+              work often goes unrecognized. Explore their stories, learn about
+              the milestones they’ve achieved, and be inspired to contribute to
+              building a more inclusive and equal world where everyone can
+              thrive.
+            </p>
+          </div>
           <div class="w-full md:w-1/2 p-4">
             <img
-              src="@/assets/PohelaBaishakh/img1.gif"
+              src="@/assets/WomenHistoryMonth/women1.png"
               alt="Pohela Boishakh Celebration"
               class="rounded-2xl shadow-lg object-cover w-full h-full"
             />
@@ -48,27 +71,6 @@
               Illustration By:
               <span class="font-semibold">Sanjana Sayeed</span>
             </div>
-          </div>
-
-          <!-- Text Section -->
-          <div class="w-full md:w-1/2 p-4">
-            <p class="text-gray-700 text-base">
-              <span class="text-amber-600">Pohela Boishakh </span>, the Bengali
-              New Year, is a vibrant celebration of culture, tradition, and
-              hope. It marks a time when people come together to welcome new
-              beginnings with colorful festivities, traditional music, and
-              heartfelt gatherings. Streets come alive with fairs, parades, and
-              the aroma of delicious Bengali food.
-            </p>
-            <p class="mt-4">
-              Dressed in white and red, people sing
-              <span class="text-amber-600">"Esho he Boishakh, esho esho"</span>
-              — calling the new year with open arms and joyful hearts. It's a
-              time to sweep away the sorrows of the past and step into a future
-              filled with new dreams, unity, and renewal. Pohela Boishakh is
-              more than just a date on the calendar — it’s a deep, soulful
-              reminder of identity, heritage, and the timeless spirit of Bangla.
-            </p>
           </div>
         </div>
       </div>
@@ -86,17 +88,20 @@
         <!-- Full width for Articles now -->
         <div class="w-full space-y-8">
           <!-- Section Title -->
-          <div class="text-center mb-10">
+          <div class="mb-10">
             <h2
               class="text-4xl md:text-5xl text-midnight-sapphire font-cormorant mb-4"
             >
-              Echoes of Boishakh: Words that Celebrate a New Dawn
+              Inspiring Stories & Articles About Women
             </h2>
-            <p class="text-gray-700 max-w-2xl mx-auto text-base">
-              Pohela Boishakh inspires countless hearts to weave stories, poems,
-              and reflections. Here, we present beautiful writings that capture
-              the soul of new beginnings, cherished traditions, and the timeless
-              spirit of Bangla.
+            <p class="text-gray-700 mx-auto text-base">
+              Dive into a collection of thought-provoking articles that
+              highlight the achievements, challenges, and journeys of women from
+              all walks of life. From historical narratives to modern-day
+              triumphs, these stories explore the diverse experiences of women
+              who continue to inspire, lead, and make an impact in every corner
+              of the world. Explore their stories, gain new perspectives, and be
+              empowered by the voices of women everywhere.
             </p>
           </div>
 
@@ -107,32 +112,42 @@
             :key="index"
           >
             <div class="w-full sm:w-3/4">
-              <!-- Clickable Title -->
-              <button
-                @click="goToArticle(article.slug)"
-                class="text-2xl text-left font-semibold text-midnight-sapphire transition-all duration-300 hover:text-amber-600 font-cormorant cursor-pointer"
-              >
-                {{ article.title }}
-              </button>
-
-              <!-- Author Info -->
-              <div class="flex items-center space-x-3 mt-3">
+              <!-- Clickable Title and Author Info Side by Side -->
+              <div class="flex items-center space-x-4">
+                <!-- Author Image -->
                 <img
                   :src="article.authorImage"
                   alt="Author image"
                   class="w-16 h-16 md:w-24 md:h-24 rounded-full object-cover border border-gray-300 shadow-sm"
                 />
-                <p class="text-xl font-semibold text-gray-800 font-cormorant">
-                  {{ article.author }}
-                </p>
-              </div>
 
-              <p class="text-gray-600 mt-2 text-base">
-                {{ article.description }}
-              </p>
-              <p class="text-burnt-amber text-sm mt-1">
-                {{ article.date }}
-              </p>
+                <!-- Title and Author Info -->
+                <div class="flex flex-col">
+                  <!-- Clickable Title -->
+                  <button
+                    @click="goToArticle(article.slug)"
+                    class="text-2xl text-left font-semibold text-midnight-sapphire transition-all duration-300 hover:text-amber-600 font-cormorant cursor-pointer"
+                  >
+                    {{ article.title }}
+                  </button>
+
+                  <!-- Author Info -->
+                  <p
+                    class="text-xl font-semibold text-gray-800 font-cormorant mt-1"
+                  >
+                    {{ article.author }}
+                  </p>
+                  <!-- Description -->
+                  <p class="text-gray-600 mt-4 text-base">
+                    {{ article.description }}
+                  </p>
+
+                  <!-- Date -->
+                  <p class="text-burnt-amber text-sm mt-1">
+                    {{ article.date }}
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- Article Image (Clickable) -->
@@ -184,13 +199,11 @@
 <script>
 import { ref } from "vue";
 import CookieConsent from "../components/CookieConsent.vue";
-import image6 from "../assets/PohelaBaishakh/img4.png";
-import image5 from "../assets/PohelaBaishakh/image.png";
-import image3 from "@/assets/members/ArchismanChaudhuri_1.png";
-import image4 from "@/assets/members/tazrin-bari.jpeg";
+import image6 from "../assets/WomenHistoryMonth/image.png";
+import image3 from "@/assets/members/Madhulagna Halder.jpg";
 
 export default {
-  name: "PohelaBaishakhView",
+  name: "WomenHistoryMonthView",
   components: {
     CookieConsent,
   },
@@ -202,24 +215,15 @@ export default {
 
       articles: [
         {
-          title: "শুভ নববর্ষ ১৪৩২ । Bonne année.",
-          author: "Archisman Chaudhuri",
+          title:
+            "Double Work of Care: Choice, Labour, and Women’s Struggle on the 48 th International Women’s Day",
+          author: "Madhulagna Halder",
           description:
-            "জাপানী ভাষার প্রখ্যাত হাইকু কবি মাৎসুও বাশোর এই হাইকুটি একটি সহজ সত্যের সম্মুখীন করায়..",
-          date: "14th April, 2025",
+            "For the social media revolutionized generation, experiencing the world today..",
+          date: "15th April, 2025",
           image: image6,
           authorImage: image3,
-          slug: "japani-bhashai-prokheto",
-        },
-        {
-          title: "ধূসর বসন্তের দেশে সাদা শাড়ি লাল পাড়ের খোঁজে",
-          author: "Tazrin Jahan Bari",
-          description:
-            "এপ্রিলের নিস্তব্ধ মধ্যদুপুরে বারান্দার গ্রিল গলে ঘরের দেওয়াল বেয়ে গড়াতে থাকা সূর্যের রশ্মি ..",
-          date: "14th April, 2025",
-          image: image5,
-          authorImage: image4,
-          slug: "dhushor-boshonter-deshe",
+          slug: "for-social-media",
         },
       ],
     };
@@ -234,7 +238,7 @@ export default {
         console.error("Article slug is missing!");
         return;
       }
-      this.$router.push(`/events/pohela-baishakh/${slug}`);
+      this.$router.push(`/events/women-month-articles/${slug}`);
     },
   },
 };
@@ -249,7 +253,7 @@ video {
 }
 
 .background-img {
-  background-image: url("../assets/PohelaBaishakh/img5.png");
+  background-image: url("../assets/WomenHistoryMonth/women2.png");
 }
 
 .fade-in {

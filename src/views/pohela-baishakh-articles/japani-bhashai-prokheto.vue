@@ -1,14 +1,28 @@
 <template>
   <div class="items-center justify-center min-h-screen bg-white">
     <!-- Banner -->
-    <div class="relative h-[50vh] bg-cover bg-center background-img">
+    <div class="relative h-[50vh] bg-cover bg-center background-img opacity-70">
       <!-- Background Overlay -->
-      <div class="absolute inset-0 bg-gray-900 opacity-40"></div>
+      <div class="absolute inset-0 bg-gray-900 opacity-20"></div>
 
       <!-- Content Wrapper -->
       <div
         class="relative z-10 flex flex-col justify-center items-center text-center lg:py-16 py-12 px-4"
-      ></div>
+      >
+        <!-- Quote -->
+        <div class="fade-in">
+          <p
+            class="text-4xl md:text-7xl text-red-900 font-marck italic tracking-wide mb-4 text-center pt-24"
+          >
+            এসো হে বৈশাখ, এসো এসো ...
+          </p>
+          <p
+            class="text-4xl md:text-7xl text-red-900 font-marck italic tracking-wide mb-4 text-right py-1"
+          >
+            - ১৪৩২
+          </p>
+        </div>
+      </div>
     </div>
     <div class="my-8 py-8 mb-0 mx-auto max-w-screen-xl">
       <div class="bg-white text-gray-900 font-sans">
@@ -36,7 +50,7 @@
             <div class="flex items-center">
               <img
                 src="@/assets/members/ArchismanChaudhuri_1.png"
-                class="rounded-full h-24 w-24 mr-3"
+                class="rounded-full h-28 w-28 mr-3"
                 alt="Author 2"
               />
               <div>
@@ -283,7 +297,7 @@ export default {
   background-position: center;
 }
 .background-img {
-  background-image: url("@/assets/PohelaBaishakh/img3.png");
+  background-image: url("@/assets/PohelaBaishakh/img5.png");
 }
 .fade-in {
   animation: fadeIn 2s ease-in-out;

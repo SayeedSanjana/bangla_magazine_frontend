@@ -14,6 +14,8 @@ import InternationalMotherLanguageDayView from "../views/InternationalMotherLang
 import DynamicMotherLanguageArticleView from "../views/DynamicMotherLanguageArticleView.vue";
 import PohelaBaishakhView from "@/views/PohelaBaishakh.vue";
 import DynamicPohelaBaishakhArtivleView from "../views/DynamicPohelaBaishakhArticle.vue";
+import WomenHistoryMonthView from "../views/WomenHistoryMonthView.vue";
+import DynamicWomenMonthArticlesView from "../views/DynamicWomenMonthArticles.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -85,6 +87,11 @@ const router = createRouter({
       name: "Pohela-Baishakh",
       component: PohelaBaishakhView,
     },
+    {
+      path: "/events/women-history-month",
+      name: "Women-History-Month",
+      component: WomenHistoryMonthView,
+    },
 
     {
       path: "/events/:slug",
@@ -96,6 +103,12 @@ const router = createRouter({
       path: "/events/pohela-baishakh/:slug",
       name: "article-pohela-baishakh-view",
       component: DynamicPohelaBaishakhArtivleView,
+      props: true,
+    },
+    {
+      path: "/events/women-month-articles/:slug",
+      name: "article-women-month-view",
+      component: DynamicWomenMonthArticlesView,
       props: true,
     },
   ],

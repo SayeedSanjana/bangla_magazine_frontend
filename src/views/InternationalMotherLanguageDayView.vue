@@ -327,7 +327,7 @@
                   <img
                     :src="article.authorImage"
                     alt="Author image"
-                    class="w-12 h-12 rounded-full object-cover border border-gray-300 shadow-sm"
+                    class="w-16 h-16 rounded-full object-cover border border-gray-300 shadow-sm"
                   />
                   <p
                     class="text-xl font-semibold text-midnight-sapphire font-cormorant"

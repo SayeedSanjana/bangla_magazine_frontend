@@ -131,7 +131,10 @@
               <div class="flex flex-col sm:flex-row">
                 <div class="w-full md:w-1/2 px-2 mb-4 sm:mb-0">
                   <label for="first_name" class="block font-medium"
-                    >First Name <span class="text-red-500">*</span></label
+                    >First Name <span class="text-red-500">*</span
+                    ><span class="text-sm text-gray-500">
+                      (Only alphabets allowed)</span
+                    ></label
                   >
                   <input
                     @blur="v$.form.firstname.$touch()"
@@ -158,7 +161,10 @@
                 </div>
                 <div class="w-full md:w-1/2 px-2">
                   <label for="last_name" class="block font-medium"
-                    >Last Name <span class="text-red-500">*</span></label
+                    >Last Name <span class="text-red-500">*</span
+                    ><span class="text-sm text-gray-500">
+                      (Only alphabets allowed)</span
+                    ></label
                   >
                   <input
                     @blur="v$.form.lastname.$touch()"

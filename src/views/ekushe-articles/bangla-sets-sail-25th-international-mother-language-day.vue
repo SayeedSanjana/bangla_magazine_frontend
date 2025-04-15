@@ -59,7 +59,7 @@
             <div class="flex items-center">
               <img
                 src="@/assets/members/MoinakBanerjee_1.png"
-                class="rounded-full h-24 w-24 mr-3"
+                class="rounded-full h-28 w-28 mr-3"
                 alt="Author 1"
               />
               <div>

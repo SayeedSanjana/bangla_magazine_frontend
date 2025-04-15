@@ -219,6 +219,20 @@
                 21st February - International Mother Language Day
               </router-link>
               <router-link
+                to="/events/women-history-month"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/women-history-month'
+                  ),
+                  'text-white hover:bg-amber-500': !isActiveRoute(
+                    '/events/women-history-month'
+                  ),
+                }"
+                class="block px-4 py-2"
+              >
+                Women's History Month
+              </router-link>
+              <router-link
                 to="/events/pohela-baishakh"
                 :class="{
                   'text-amber-200 font-bold': isActiveRoute(
@@ -280,7 +294,7 @@
       <div
         :class="{
           'max-h-0 opacity-0': !isMobileMenuExpanded,
-          'max-h-[500px] opacity-100': isMobileMenuExpanded,
+          'max-h-[1000px] opacity-100': isMobileMenuExpanded,
         }"
         class="md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out dropdown-bg text-white tracking-wide"
       >
@@ -441,6 +455,19 @@
                 21st February - International Mother Language Day
               </router-link>
               <router-link
+                to="/events/women-history-month"
+                :class="{
+                  'text-amber-200 font-bold': isActiveRoute(
+                    '/events/women-history-month'
+                  ),
+                  'text-white': !isActiveRoute('/events/women-history-month'),
+                }"
+                class="block px-4"
+                @click="toggleMobileMenu"
+              >
+                Women's History Month
+              </router-link>
+              <router-link
                 to="/events/pohela-baishakh"
                 :class="{
                   'text-amber-200 font-bold': isActiveRoute(
@@ -453,6 +480,7 @@
               >
                 Pohela Baishakh
               </router-link>
+
               <!-- <router-link
                 to="/contribute/submission-form"
                 :class="{
