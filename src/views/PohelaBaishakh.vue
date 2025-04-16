@@ -87,7 +87,7 @@
                   পটচিত্র - পয়লা বৈশাখ - প্রস্তুতি
                 </h1>
                 <p
-                  class="text-base md:text-xl text-gray-500 italic font-coromont mt-1"
+                  class="text-base md:text-lg text-gray-500 italic font-coromont mt-1"
                 >
                   চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয়
                 </p>
