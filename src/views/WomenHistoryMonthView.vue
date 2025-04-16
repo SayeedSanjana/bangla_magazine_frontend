@@ -31,7 +31,9 @@
     <!--Event Picture -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
       <div class="relative w-full max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-8 text-rich-mahagony font-cormorant">
+        <h2
+          class="text-4xl md:text-6xl mb-8 text-rich-mahagony font-cormorant pt-24"
+        >
           Celebrating Women's History Month: Honoring the Voices of Women
         </h2>
         <div
@@ -77,7 +79,7 @@
     </div>
 
     <!-- writing -->
-    <div class="relative bg-cover bg-center bg-no-repeat py-16 bg-img">
+    <div class="relative bg-cover bg-center bg-no-repeat py-28 bg-img">
       <!-- Overlay (optional for making text readable) -->
       <div class="absolute inset-0 bg-white bg-opacity-40"></div>
 

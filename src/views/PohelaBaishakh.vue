@@ -30,8 +30,10 @@
 
     <!--Event Picture -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
-      <div class="relative w-full max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
+      <div class="relative w-full max-w-7xl mx-auto px-6">
+        <h2
+          class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant pt-24"
+        >
           Esho He Boishakh: A Celebration of New Beginnings
         </h2>
         <div
@@ -71,11 +73,143 @@
             </p>
           </div>
         </div>
+
+        <!-- Image -->
+        <div class="relative overflow-hidden bg-white p-4">
+          <div class="pt-16 pb-20 sm:pt-24 xl:pt-24 xl:pb-24">
+            <!-- FLEX CONTAINER -->
+            <div
+              class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col xl:flex-row xl:items-start xl:gap-16"
+            >
+              <!-- TEXT SECTION -->
+              <div class="w-full xl:w-1/2 sm:max-w-2xl mx-auto xl:mx-0">
+                <h1 class="text-3xl font-bold text-deep-red-wine">
+                  পটচিত্র - পয়লা বৈশাখ - প্রস্তুতি
+                </h1>
+
+                <!-- Description -->
+                <div class="mt-8">
+                  <h3
+                    class="text-xl font-bold text-midnight-sapphire font-cormorant"
+                  >
+                    Behind the Lens
+                  </h3>
+                  <p class="mt-2 text-base text-gray-700 leading-relaxed">
+                    This vibrant photo series was captured by
+                    <strong>Ajna Islam</strong>, during the 1432 (Bengali year)
+                    <span class="text-amber-600">Pohela Boishakh</span>
+                    celebrations at the
+                    <span class="text-amber-600"
+                      ><em>Faculty of Fine Arts, Dhaka University</em></span
+                    >. Her lens beautifully documents the spirit of tradition,
+                    color, and community.
+                  </p>
+                </div>
+
+                <!-- Photographer Profile & Quote -->
+                <div
+                  class="mt-10 bg-gray-50 p-6 rounded-xl shadow-md max-w-3xl"
+                >
+                  <div class="flex items-center space-x-4">
+                    <img
+                      src="@/assets/members/Ajna.png"
+                      alt="Photographer profile"
+                      class="w-24 h-24 rounded-full object-cover border border-gray-300 shadow-sm"
+                    />
+                    <div>
+                      <h3 class="text-base font-semibold text-gray-900">
+                        Ajna Islam
+                      </h3>
+                      <p class="text-sm text-gray-600">
+                        Vice President - Artistic Engagement, B.A.N.G.L.A.
+                      </p>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-sm text-gray-700 leading-relaxed">
+                    “কানাডার, মন্ট্রীলে আছি নয় বছর। ছাত্র জীবনে সাংবাদিকতার
+                    সাথে জড়িত ছিলাম। ছোট বেলা থেকে সংস্কৃতিক অঙ্গনের সাথে
+                    সম্পর্ক। কন্টেন্ট লেখা, ছবি তোলা এসবই এখন হৃদয়ের টানে করা।
+                    পয়লা বৈশাখ জন্মেছিলাম বলে পৃথিবীর যে প্রান্তেই থাকি না কেন,
+                    দিন টি আমারই উৎসব মনে হয়। ঢাকা বিশ্ববিদ্যালয়ের চারুকলা
+                    অনুষদের পরিচালিত মঙ্গল শোভাযাত্রা এক অনন্য আনন্দ মিছিল।”
+                  </p>
+                </div>
+              </div>
+
+              <!-- IMAGE SECTION -->
+              <div
+                class="mt-16 xl:mt-0 w-full xl:w-1/2 flex flex-col items-center gap-8 md:flex-row md:justify-center md:items-start md:gap-10"
+              >
+                <!-- Column 1 -->
+                <div class="flex flex-col space-y-6 pt-5 md:pt-10 xl:pt-24">
+                  <div class="h-auto w-48 overflow-hidden rounded-lg">
+                    <img
+                      src="@/assets/PohelaBaishakh/art1.jpg"
+                      alt=""
+                      class="h-72 md:h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col space-y-6">
+                  <div class="h-72 md:h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="@/assets/PohelaBaishakh/art2.jpg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-72 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="@/assets/PohelaBaishakh/art3.jpg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div class="h-72 md:h-64 w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="@/assets/PohelaBaishakh/art4.jpg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div
+                  class="flex flex-col space-y-6 md:pt-10 xl:pt-48 items-center"
+                >
+                  <div class="h-72 md:h-auto w-44 overflow-hidden rounded-lg">
+                    <img
+                      src="@/assets/PohelaBaishakh/art5.jpg"
+                      alt=""
+                      class="h-full w-full object-cover object-center"
+                    />
+                  </div>
+
+                  <!-- ✅ Photo Credit Block ONLY under last column -->
+                  <div
+                    class="mt-4 text-center border-t pt-4 border-gray-200 w-full"
+                  >
+                    <p class="text-sm text-gray-700">
+                      Faculty of Fine Arts, Dhaka University
+                    </p>
+                    <p class="text-sm text-gray-700 mt-1">
+                      <span class="font-semibold">Photo credits:</span> Ajna
+                      Islam
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- writing -->
-    <div class="relative bg-cover bg-center bg-no-repeat py-16 bg-img">
+    <div class="relative bg-cover bg-center bg-no-repeat py-28 bg-img">
       <!-- Overlay (optional for making text readable) -->
       <div class="absolute inset-0 bg-white bg-opacity-40"></div>
 

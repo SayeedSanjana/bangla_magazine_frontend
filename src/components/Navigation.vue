@@ -216,7 +216,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                21st February - International Mother Language Day
+                Bhasha Dibosh
               </router-link>
               <router-link
                 to="/events/women-history-month"
@@ -244,7 +244,7 @@
                 }"
                 class="block px-4 py-2"
               >
-                Pohela Baishakh
+                Noboborsho
               </router-link>
 
               <!-- <router-link
@@ -452,7 +452,7 @@
                 class="block px-4"
                 @click="toggleMobileMenu"
               >
-                21st February - International Mother Language Day
+                Bhasha Dibosh
               </router-link>
               <router-link
                 to="/events/women-history-month"
@@ -478,7 +478,7 @@
                 class="block px-4"
                 @click="toggleMobileMenu"
               >
-                Pohela Baishakh
+                Noboborsho
               </router-link>
 
               <!-- <router-link
