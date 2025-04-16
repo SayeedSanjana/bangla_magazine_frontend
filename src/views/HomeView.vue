@@ -196,6 +196,10 @@
               alt="Pohela Boishakh Celebration"
               class="rounded-2xl shadow-lg object-cover w-full h-full bg-opacity-50"
             />
+            <div class="text-gray-500 text-sm text-center pt-3">
+              Illustration By:
+              <span class="font-semibold">Sanjana Sayeed</span>
+            </div>
           </div>
 
           <!-- Text Section -->
