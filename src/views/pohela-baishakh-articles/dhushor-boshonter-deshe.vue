@@ -54,7 +54,7 @@
                 alt="Author 2"
               />
               <div>
-                <p class="text-lg font-semibold">Tazrin Jahan Bari</p>
+                <p class="text-lg font-semibold">Tazreen Jahan Bari</p>
                 <!-- <p class="text-sm text-gray-600">
                   Vice President - International Networking, B.A.N.G.L.A.
                 </p> -->
