@@ -83,9 +83,14 @@
             >
               <!-- TEXT SECTION -->
               <div class="w-full xl:w-1/2 sm:max-w-2xl mx-auto xl:mx-0">
-                <h1 class="text-3xl font-bold text-deep-red-wine">
+                <h1 class="text-xl md:text-3xl font-bold text-deep-red-wine">
                   পটচিত্র - পয়লা বৈশাখ - প্রস্তুতি
                 </h1>
+                <p
+                  class="text-base md:text-xl text-gray-500 italic font-coromont mt-1"
+                >
+                  চারুকলা অনুষদ, ঢাকা বিশ্ববিদ্যালয়
+                </p>
 
                 <!-- Description -->
                 <div class="mt-8">
