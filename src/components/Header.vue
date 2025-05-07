@@ -10,7 +10,9 @@
         <img
           src="../assets/img/logo.png"
           alt="logo"
-          class="h-24 w-24 lg:h-44 lg:w-full lg:object-cover"
+          class="h-20 w-20 lg:h-44 lg:w-44 lg:max-w-full lg:max-h-44 object-contain"
+          loading="lazy"
+          decoding="async"
         />
       </button>
       <h1 class="text-4xl md:text-4xl lg:text-6xl font-bold text-center">
@@ -27,6 +29,8 @@
             src="../assets/svg/facebook.svg"
             alt="facebook"
             class="w-8 h-8"
+            loading="lazy"
+            decoding="async"
           />
           <!-- <div
             v-if="tooltip === 'facebook'"
@@ -44,6 +48,8 @@
             src="../assets/svg/instagram.svg"
             alt="instagram"
             class="w-8 h-8"
+            loading="lazy"
+            decoding="async"
           />
           <!-- <div
             v-if="tooltip === 'instagram'"
@@ -55,8 +61,10 @@
         <a href="https://www.youtube.com/@bangla_glocal" class="relative group">
           <img
             src="../assets/svg/youtube.svg"
-            alt="instagram"
+            alt="youtube"
             class="w-8 h-8"
+            loading="lazy"
+            decoding="async"
           />
           <!-- <div
             v-if="tooltip === 'instagram'"

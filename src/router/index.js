@@ -16,6 +16,7 @@ import PohelaBaishakhView from "@/views/PohelaBaishakh.vue";
 import DynamicPohelaBaishakhArtivleView from "../views/DynamicPohelaBaishakhArticle.vue";
 import WomenHistoryMonthView from "../views/WomenHistoryMonthView.vue";
 import DynamicWomenMonthArticlesView from "../views/DynamicWomenMonthArticles.vue";
+import BirthAnniversary from "../views/birth-aniversary/BirthAnniversary.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -109,6 +110,12 @@ const router = createRouter({
       path: "/events/women-month-articles/:slug",
       name: "article-women-month-view",
       component: DynamicWomenMonthArticlesView,
+      props: true,
+    },
+    {
+      path: "/events/birth-anniversary/",
+      name: "birth-anniversary",
+      component: BirthAnniversary,
       props: true,
     },
   ],

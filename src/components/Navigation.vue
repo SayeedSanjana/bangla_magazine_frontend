@@ -18,250 +18,19 @@
           <!-- Home -->
           <router-link
             to="/"
-            :class="{
-              'border-b-2 border-amber-400 text-amber-200': isActiveRoute('/'),
-              'text-white hover:text-amber-200': !isActiveRoute('/'),
-            }"
+            :class="desktopHomeClass"
             class="font-medium"
           >
             Home
           </router-link>
-
-          <!-- About Us Dropdown -->
-          <div class="relative group">
-            <button
-              :class="{
-                'border-b-2 border-amber-400 text-amber-200':
-                  isParentRouteActive('/about'),
-                'text-white hover:text-amber-200':
-                  !isParentRouteActive('/about'),
-              }"
-              class="font-medium focus:outline-none"
-            >
-              About Us
-            </button>
-            <div
-              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
-            >
-              <router-link
-                to="/about/story"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/about/story'),
-                  'text-white hover:bg-amber-500':
-                    !isActiveRoute('/about/story'),
-                }"
-                class="block px-4 py-2"
-              >
-                Our Story
-              </router-link>
-
-              <router-link
-                to="/about/team"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/about/team'),
-                  'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/about/team'),
-                }"
-                class="block px-4 py-2"
-              >
-                Team Members
-              </router-link>
-            </div>
-          </div>
-
-          <!-- Magazine Dropdown -->
-          <div class="relative group">
-            <button
-              :class="{
-                'border-b-2 border-amber-400 text-amber-200':
-                  isParentRouteActive('/magazine'),
-                'text-white hover:text-amber-200':
-                  !isParentRouteActive('/magazine'),
-              }"
-              class="font-medium focus:outline-none"
-            >
-              Magazine
-            </button>
-            <div
-              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
-            >
-              <router-link
-                to="/magazine"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine'),
-                  'text-white hover:bg-amber-500': !isActiveRoute('/magazine'),
-                }"
-                class="block px-4 py-2"
-              >
-                Porijaan - The Magazine
-              </router-link>
-              <router-link
-                to="/magazine/topics"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/topics'),
-                  'text-white hover:bg-amber-500':
-                    !isActiveRoute('/magazine/topics'),
-                }"
-                class="block px-4 py-2"
-              >
-                Independent Category
-              </router-link>
-              <router-link
-                to="/magazine/theme"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/theme'),
-                  'text-white hover:bg-amber-500':
-                    !isActiveRoute('/magazine/theme'),
-                }"
-                class="block px-4 py-2"
-              >
-                Annual Theme
-              </router-link>
-              <router-link
-                to="/magazine/celebration"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/magazine/celebration'
-                  ),
-                  'text-white hover:bg-amber-500': !isActiveRoute(
-                    '/magazine/celebration'
-                  ),
-                }"
-                class="block px-4 py-2"
-              >
-                Annual Remembrance
-              </router-link>
-              <router-link
-                to="/magazine/memory"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
-                  'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/magazine/memory'),
-                }"
-                class="block px-4 py-2"
-              >
-                Obituary
-              </router-link>
-            </div>
-          </div>
-
-          <!-- Contribute Dropdown -->
-          <div class="relative group">
-            <button
-              :class="{
-                'border-b-2 border-amber-400 text-amber-200':
-                  isParentRouteActive('/contribute'),
-                'text-white hover:text-amber-200':
-                  !isParentRouteActive('/contribute'),
-              }"
-              class="font-medium focus:outline-none"
-            >
-              Contribute
-            </button>
-            <div
-              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
-            >
-              <router-link
-                to="/contribute/join"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/contribute/join'),
-                  'text-white hover:bg-amber-500':
-                    !isActiveRoute('/contribute/join'),
-                }"
-                class="block px-4 py-2"
-              >
-                Join Our Network
-              </router-link>
-              <router-link
-                to="/contribute/submission-form"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/submission-form'
-                  ),
-                  'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/contribute/submission-form'),
-                }"
-                class="block px-4 py-2"
-              >
-                Contribute to the Magazine
-              </router-link>
-            </div>
-          </div>
-
-          <!-- Events Dropdown -->
-          <div class="relative group">
-            <button
-              :class="{
-                'border-b-2 border-amber-400 text-amber-200':
-                  isParentRouteActive('/events'),
-                'text-white hover:text-amber-200':
-                  !isParentRouteActive('/events'),
-              }"
-              class="font-medium focus:outline-none"
-            >
-              Events
-            </button>
-            <div
-              class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
-            >
-              <router-link
-                to="/events/21stFebruary-International-Mother-Language-Day"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/21stFebruary-International-Mother-Language-Day'
-                  ),
-                  'text-white hover:bg-amber-500': !isActiveRoute(
-                    '/events/21stFebruary-International-Mother-Language-Day'
-                  ),
-                }"
-                class="block px-4 py-2"
-              >
-                Bhasha Dibosh
-              </router-link>
-              <router-link
-                to="/events/women-history-month"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/women-history-month'
-                  ),
-                  'text-white hover:bg-amber-500': !isActiveRoute(
-                    '/events/women-history-month'
-                  ),
-                }"
-                class="block px-4 py-2"
-              >
-                Women's History Month
-              </router-link>
-              <router-link
-                to="/events/pohela-baishakh"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/pohela-baishakh'
-                  ),
-                  'text-white hover:bg-amber-500': !isActiveRoute(
-                    '/events/pohela-baishakh'
-                  ),
-                }"
-                class="block px-4 py-2"
-              >
-                Noboborsho
-              </router-link>
-
-              <!-- <router-link
-                to="/contribute/submission-form"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/submission-form'
-                  ),
-                  'text-white hover:bg-amber-500 hover:rounded-b-md':
-                    !isActiveRoute('/contribute/submission-form'),
-                }"
-                class="block px-4 py-2"
-              >
-                Contribute to the Magazine
-              </router-link> -->
-            </div>
-          </div>
+          <!-- Dropdown Menus -->
+          <DropdownMenu
+            v-for="menu in menus"
+            :key="menu.title"
+            :title="menu.title"
+            :basePath="menu.basePath"
+            :links="menu.items"
+          />
         </div>
 
         <!-- Mobile Menu Button -->
@@ -302,200 +71,31 @@
           <li>
             <router-link
               to="/"
-              :class="{
-                'text-amber-200 font-bold': isActiveRoute('/'),
-                'text-white': !isActiveRoute('/'),
-              }"
+              :class="mobileHomeClass"
               class="block font-semibold"
               @click="toggleMobileMenu"
             >
               Home
             </router-link>
           </li>
-          <li>
-            <hr class="border mb-1" />
-            <p class="font-semibold mb-1">About Us</p>
-            <span class="space-y-2">
-              <router-link
-                to="/about/story"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/about/story'),
-                  'text-white': !isActiveRoute('/about/story'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Our Story
-              </router-link>
-
-              <router-link
-                to="/about/team"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/about/team'),
-                  'text-white': !isActiveRoute('/about/team'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Team Members
-              </router-link>
-            </span>
-          </li>
-          <li>
-            <hr class="border mb-1" />
-            <p class="font-semibold mb-1">The Magazine</p>
-            <span class="space-y-2">
-              <router-link
-                to="/magazine"
-                class="block px-4"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine'),
-                  'text-white': !isActiveRoute('/magazine'),
-                }"
-                @click="toggleMobileMenu"
-              >
-                Porijaan - The Magazine
-              </router-link>
-
-              <router-link
-                to="/magazine/topics"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/topics'),
-                  'text-white': !isActiveRoute('/magazine/topics'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Independent Category
-              </router-link>
-              <router-link
-                to="/magazine/theme"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/theme'),
-                  'text-white': !isActiveRoute('/magazine/theme'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Annual Theme
-              </router-link>
-              <router-link
-                to="/magazine/celebration"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/magazine/celebration'
-                  ),
-                  'text-white': !isActiveRoute('/magazine/celebration'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Annual Remembrance
-              </router-link>
-              <router-link
-                to="/magazine/memory"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/magazine/memory'),
-                  'text-white': !isActiveRoute('/magazine/memory'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Obituary
-              </router-link>
-            </span>
-          </li>
-          <li>
-            <hr class="border mb-1" />
-            <p class="font-semibold mb-1">Contribute</p>
-            <span class="space-y-2">
-              <router-link
-                to="/contribute/join"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute('/contribute/join'),
-                  'text-white': !isActiveRoute('/contribute/join'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Join Our Network
-              </router-link>
-              <router-link
-                to="/contribute/submission-form"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/submission-form'
-                  ),
-                  'text-white': !isActiveRoute('/contribute/submission-form'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Contribute to the Magazine
-              </router-link>
-            </span>
-          </li>
-          <li>
-            <hr class="border mb-1" />
-            <p class="font-semibold mb-1">Events</p>
-            <span class="space-y-2">
-              <router-link
-                to="/events/21stFebruary-International-Mother-Language-Day"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/21stFebruary-International-Mother-Language-Day'
-                  ),
-                  'text-white': !isActiveRoute(
-                    '/events/21stFebruary-International-Mother-Language-Day'
-                  ),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Bhasha Dibosh
-              </router-link>
-              <router-link
-                to="/events/women-history-month"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/women-history-month'
-                  ),
-                  'text-white': !isActiveRoute('/events/women-history-month'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Women's History Month
-              </router-link>
-              <router-link
-                to="/events/pohela-baishakh"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/events/pohela-baishakh'
-                  ),
-                  'text-white': !isActiveRoute('/events/pohela-baishakh'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Noboborsho
-              </router-link>
-
-              <!-- <router-link
-                to="/contribute/submission-form"
-                :class="{
-                  'text-amber-200 font-bold': isActiveRoute(
-                    '/contribute/submission-form'
-                  ),
-                  'text-white': !isActiveRoute('/contribute/submission-form'),
-                }"
-                class="block px-4"
-                @click="toggleMobileMenu"
-              >
-                Contribute to the Magazine
-              </router-link> -->
-            </span>
-          </li>
+          <template v-for="menu in menus" :key="menu.title">
+            <li>
+              <hr class="border mb-1" />
+              <p class="font-semibold mb-1">{{ menu.title }}</p>
+              <span class="space-y-2">
+                <router-link
+                  v-for="item in menu.items"
+                  :key="item.path"
+                  :to="item.path"
+                  :class="mobileMenuLinkClass(item.path)"
+                  class="block px-4"
+                  @click="toggleMobileMenu"
+                >
+                  {{ item.label }}
+                </router-link>
+              </span>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
@@ -503,11 +103,69 @@
 </template>
 
 <script>
+import DropdownMenu from './DropdownMenu.vue';
+
 export default {
+  components: {
+    DropdownMenu,
+  },
   data() {
     return {
       isMobileMenuExpanded: false,
+      menus: [
+        {
+          title: "About Us",
+          basePath: "/about",
+          items: [
+            { label: "Our Story", path: "/about/story" },
+            { label: "Team Members", path: "/about/team" },
+          ],
+        },
+        {
+          title: "Magazine",
+          basePath: "/magazine",
+          items: [
+            { label: "Porijaan - The Magazine", path: "/magazine" },
+            { label: "Independent Category", path: "/magazine/topics" },
+            { label: "Annual Theme", path: "/magazine/theme" },
+            { label: "Annual Remembrance", path: "/magazine/celebration" },
+            { label: "Obituary", path: "/magazine/memory" },
+          ],
+        },
+        {
+          title: "Contribute",
+          basePath: "/contribute",
+          items: [
+            { label: "Join Our Network", path: "/contribute/join" },
+            { label: "Contribute to the Magazine", path: "/contribute/submission-form" },
+          ],
+        },
+        {
+          title: "Events",
+          basePath: "/events",
+          items: [
+            { label: "Bhasha Dibosh", path: "/events/21stFebruary-International-Mother-Language-Day" },
+            { label: "Women's History Month", path: "/events/women-history-month" },
+            { label: "Noboborsho", path: "/events/pohela-baishakh" },
+            { label: "Birth Anniversary", path: "/events/birth-anniversary" }
+          ],
+        },
+      ],
     };
+  },
+  computed: {
+    desktopHomeClass() {
+      return {
+        'border-b-2 border-amber-400 text-amber-200': this.isActiveRoute('/'),
+        'text-white hover:text-amber-200': !this.isActiveRoute('/'),
+      };
+    },
+    mobileHomeClass() {
+      return {
+        'text-amber-200 font-bold': this.isActiveRoute('/'),
+        'text-white': !this.isActiveRoute('/'),
+      };
+    },
   },
   methods: {
     toggleMobileMenu() {
@@ -518,6 +176,15 @@ export default {
     },
     isParentRouteActive(parentRoute) {
       return this.$route.path.startsWith(parentRoute);
+    },
+    mobileMenuLinkClass(path) {
+      return {
+        'text-amber-200 font-bold': this.isActiveRoute(path),
+        'text-white': !this.isActiveRoute(path),
+      };
+    },
+    closeDropdowns() {
+      // Placeholder for closing dropdowns if needed in future
     },
   },
 };
@@ -537,8 +204,8 @@ export default {
   background: linear-gradient(
     90deg,
     rgba(247, 181, 56, 0.8) 5%,
-    rgba(247, 181, 56, 0.6) 15%,
-    rgba(40, 11, 139, 0.7) 50%,
+    rgba(247, 181, 56, 0.6) 10%,
+    rgba(40, 11, 139, 0.7) 40%,
     #280b8b 100%
   );
 }
@@ -547,13 +214,9 @@ export default {
   .nav-bg {
     background: linear-gradient(
       270deg,
-      /* rgba(247, 181, 56, 0.8) 5%,
-      rgba(247, 181, 56, 0.6) 15%,
-      rgba(40, 11, 139, 0.7) 50%,
-      #280b8b 100% */
-        rgba(247, 181, 56, 0.8) 5%,
-      rgba(247, 181, 56, 0.6) 15%,
-      rgba(40, 11, 139, 0.7) 50%,
+      rgba(247, 181, 56, 0.8) 5%,
+      rgba(247, 181, 56, 0.6) 10%,
+      rgba(40, 11, 139, 0.7) 40%,
       #280b8b 100%
     );
   }

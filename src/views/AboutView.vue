@@ -104,7 +104,7 @@
               </p>
               <!-- Add Image Here for Small Screens -->
               <div
-                class="block lg:hidden my-6 flex justify-center items-center flex-col"
+                class="lg:hidden my-6 flex justify-center items-center flex-col"
               >
                 <img
                   src="../assets/img/story.png"
