@@ -180,7 +180,8 @@
         </div>
       </div>
     </div>
-
+    
+    <!-- Pahela Baishakh Section -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
       <div class="relative w-full max-w-6xl mx-auto px-6">
         <h2
@@ -196,6 +197,7 @@
               alt="Pohela Boishakh Celebration"
               class="rounded-2xl shadow-lg object-cover w-full h-full bg-opacity-50"
             />
+            
             <div class="text-gray-500 text-sm text-center pt-3">
               Illustration By:
               <span class="font-semibold">Sanjana Sayeed</span>
