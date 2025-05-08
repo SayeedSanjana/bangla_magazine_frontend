@@ -148,8 +148,11 @@
                       allowfullscreen
                     ></iframe>
                   </div>
-                  <p class="text-sm italic text-amber-500 mb-2">
-                    By {{ article.author || "Unknown Author" }}
+                  <h3 class="text-lg font-semibold text-amber-700 mb-2">
+                    {{ article.title || "Unknown Author" }}
+                  </h3>
+                  <p class="text-sm italic font-normal text-amber-500 mb-2">
+                    {{ article.author || "Unknown Author" }}
                   </p>
                   <p class="text-sm text-gray-600">
                     {{ article.short_description }}
@@ -180,7 +183,6 @@ import axios from "axios";
 import tagoreImg from "@/assets/birth-anniversary/tagore.jpg";
 import nazrulImg from "@/assets/authorImage/nazrul.jpg";
 import rayImg from "@/assets/birth-anniversary/ray.jpg";
-import dasImg from "@/assets/birth-anniversary/das.png";
 import heroBackground from "@/assets/birth-anniversary/image.png";
 import ArticleModal from "./ArticleModal.vue";
 
@@ -214,11 +216,6 @@ export default {
           name: "Satyajit Ray",
           title: "Filmmaker",
           img: rayImg,
-        },
-        {
-          name: "Jibanananda Das",
-          title: "Poet & Modernist",
-          img: dasImg,
         },
       ],
       culturalFigures: [
