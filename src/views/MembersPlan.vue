@@ -1,8 +1,10 @@
 <template>
   <div class="bg-white py-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-gray-900">Join our network</h2>
-      <p class="mt-4 text-lg text-gray-600">
+      <h2 class="text-4xl font-cormorant font-bold text-gray-900">
+        Join our network
+      </h2>
+      <p class="mt-4 text-lg font-playfair text-gray-600">
         Join our network to receive our updates, participate in our events,
         contribute to our magazine, and more!
       </p>
@@ -12,9 +14,9 @@
       <div
         v-for="(option, index) in membershipOptions"
         :key="index"
-        class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-lg transition duration-300"
+        class="font-playfair bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-lg transition duration-300"
       >
-        <h3 class="text-2xl font-bold mb-4">
+        <h3 class="text-2xl font-cormorant font-bold mb-4">
           {{ option.title }}
         </h3>
         <ul class="text-gray-800 mb-6 space-y-2">

@@ -74,7 +74,7 @@ const router = createRouter({
       component: JoinNetworkView,
     },
     {
-      path: "/contribute/member",
+      path: "/contribute/membership",
       name: "become-a-member",
       component: MembersPlan,
     },

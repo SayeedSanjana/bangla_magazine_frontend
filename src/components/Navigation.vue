@@ -16,11 +16,7 @@
         <!-- Desktop Menu -->
         <div class="hidden md:flex justify-center space-x-6 w-full">
           <!-- Home -->
-          <router-link
-            to="/"
-            :class="desktopHomeClass"
-            class="font-medium"
-          >
+          <router-link to="/" :class="desktopHomeClass" class="font-medium">
             Home
           </router-link>
           <!-- Dropdown Menus -->
@@ -103,7 +99,7 @@
 </template>
 
 <script>
-import DropdownMenu from './DropdownMenu.vue';
+import DropdownMenu from "./DropdownMenu.vue";
 
 export default {
   components: {
@@ -136,19 +132,28 @@ export default {
           title: "Contribute",
           basePath: "/contribute",
           items: [
-            { label: "Become a Member", path: "/contribute/member" },
+            { label: "Become a Member", path: "/contribute/membership" },
             // { label: "Join Our Network", path: "/contribute/join" },
-            { label: "Contribute to the Magazine", path: "/contribute/submission-form" },
+            {
+              label: "Contribute to the Magazine",
+              path: "/contribute/submission-form",
+            },
           ],
         },
         {
           title: "Events",
           basePath: "/events",
           items: [
-            { label: "Bhasha Dibosh", path: "/events/21stFebruary-International-Mother-Language-Day" },
-            { label: "Women's History Month", path: "/events/women-history-month" },
+            {
+              label: "Bhasha Dibosh",
+              path: "/events/21stFebruary-International-Mother-Language-Day",
+            },
+            {
+              label: "Women's History Month",
+              path: "/events/women-history-month",
+            },
             { label: "Noboborsho", path: "/events/pohela-baishakh" },
-            { label: "Birth Anniversary", path: "/events/birth-anniversary" }
+            { label: "Birth Anniversary", path: "/events/birth-anniversary" },
           ],
         },
       ],
@@ -166,14 +171,14 @@ export default {
   computed: {
     desktopHomeClass() {
       return {
-        'border-b-2 border-amber-400 text-amber-200': this.isActiveRoute('/'),
-        'text-white hover:text-amber-200': !this.isActiveRoute('/'),
+        "border-b-2 border-amber-400 text-amber-200": this.isActiveRoute("/"),
+        "text-white hover:text-amber-200": !this.isActiveRoute("/"),
       };
     },
     mobileHomeClass() {
       return {
-        'text-amber-200 font-bold': this.isActiveRoute('/'),
-        'text-white': !this.isActiveRoute('/'),
+        "text-amber-200 font-bold": this.isActiveRoute("/"),
+        "text-white": !this.isActiveRoute("/"),
       };
     },
   },
@@ -189,8 +194,8 @@ export default {
     },
     mobileMenuLinkClass(path) {
       return {
-        'text-amber-200 font-bold': this.isActiveRoute(path),
-        'text-white': !this.isActiveRoute(path),
+        "text-amber-200 font-bold": this.isActiveRoute(path),
+        "text-white": !this.isActiveRoute(path),
       };
     },
     closeDropdowns() {
