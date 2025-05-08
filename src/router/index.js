@@ -17,6 +17,7 @@ import DynamicPohelaBaishakhArtivleView from "../views/DynamicPohelaBaishakhArti
 import WomenHistoryMonthView from "../views/WomenHistoryMonthView.vue";
 import DynamicWomenMonthArticlesView from "../views/DynamicWomenMonthArticles.vue";
 import BirthAnniversary from "../views/birth-aniversary/BirthAnniversary.vue";
+import MembersPlan from "@/views/MembersPlan.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,6 +72,11 @@ const router = createRouter({
       path: "/contribute/join",
       name: "join-network",
       component: JoinNetworkView,
+    },
+    {
+      path: "/contribute/member",
+      name: "become-a-member",
+      component: MembersPlan,
     },
     {
       path: "/contribute/submission-form/:topicName?",

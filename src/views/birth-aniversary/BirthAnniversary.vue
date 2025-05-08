@@ -228,33 +228,7 @@ export default {
           showArticles: false,
           articles: [],
         },
-        // {
-        //   id: 3,
-        //   name: "Kazi Nazrul Islam",
-        //   label: "kazi_nazrul_islam",
-        //   field: "Poetry and Music",
-        //   years: "1899 - 1976",
-        //   showArticles: false,
-        //   articles: [],
-        // },
-        // {
-        //   id: 4,
-        //   name: "Satyajit Ray",
-        //   label: "satyajit_ray",
-        //   field: "Filmmaking and Writing",
-        //   years: "1921 - 1992",
-        //   showArticles: false,
-        //   articles: [],
-        // },
-        // {
-        //   id: 5,
-        //   name: "Jibanananda Das",
-        //   label: "jibanananda_das",
-        //   field: "Modern Poetry",
-        //   years: "1899 - 1954",
-        //   showArticles: false,
-        //   articles: [],
-        // },
+        
       ],
       selectedFigureId: 2,
       searchQuery: "",
@@ -320,12 +294,9 @@ export default {
 
     try {
       const response = await axios.get(url);
-      console.log("Google Sheet response received!");
       const text = response.data;
       const json = JSON.parse(text.substr(47).slice(0, -2));
       const rows = json.table.rows;
-      //   console.log(rows);
-
       const headers = json.table.cols.map((col) => col.label);
       const allArticles = rows
         .map((row) => {

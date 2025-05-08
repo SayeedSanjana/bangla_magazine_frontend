@@ -136,7 +136,8 @@ export default {
           title: "Contribute",
           basePath: "/contribute",
           items: [
-            { label: "Join Our Network", path: "/contribute/join" },
+            { label: "Become a Member", path: "/contribute/member" },
+            // { label: "Join Our Network", path: "/contribute/join" },
             { label: "Contribute to the Magazine", path: "/contribute/submission-form" },
           ],
         },
@@ -150,6 +151,15 @@ export default {
             { label: "Birth Anniversary", path: "/events/birth-anniversary" }
           ],
         },
+      ],
+      membershipOptions: [
+        {
+          title: "Internal Member",
+          description: "Join as an internal member for exclusive benefits.",
+          link: "https://www.zeffy.com/en-CA/ticketing/bangali-abhibasi-network-a-glocal-linguo-cultural-association-memberships--2025",
+          buttonText: "Join Now",
+        },
+        // other membership options...
       ],
     };
   },
