@@ -149,13 +149,15 @@
                     ></iframe>
                   </div>
                   <h3 class="text-lg font-semibold text-amber-700 mb-2">
-                    {{ article.title || "Unknown Author" }}
+                    {{ article.title || "Title coming soon..." }}
                   </h3>
                   <p class="text-sm italic font-normal text-amber-500 mb-2">
-                    {{ article.author || "Unknown Author" }}
+                    {{ article.author || "Anonymous Author" }}
                   </p>
                   <p class="text-sm text-gray-600">
-                    {{ article.short_description }}
+                    {{
+                      article.short_description || "short into coming soon..."
+                    }}
                   </p>
                 </div>
               </div>
@@ -228,7 +230,6 @@ export default {
           showArticles: false,
           articles: [],
         },
-        
       ],
       selectedFigureId: 2,
       searchQuery: "",
