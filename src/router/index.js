@@ -18,6 +18,7 @@ import WomenHistoryMonthView from "../views/WomenHistoryMonthView.vue";
 import DynamicWomenMonthArticlesView from "../views/DynamicWomenMonthArticles.vue";
 import BirthAnniversary from "../views/birth-aniversary/BirthAnniversary.vue";
 import MembersPlan from "@/views/MembersPlan.vue";
+import DonationView from "@/views/DonationView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -77,6 +78,11 @@ const router = createRouter({
       path: "/contribute/membership",
       name: "become-a-member",
       component: MembersPlan,
+    },
+    {
+      path: "/contribute/donate",
+      name: "donate",
+      component: DonationView,
     },
     {
       path: "/contribute/submission-form/:topicName?",

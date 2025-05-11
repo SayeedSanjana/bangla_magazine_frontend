@@ -87,7 +87,7 @@ const membershipOptions = [
     ],
     renewal: "Lifetime",
     dues: "Free",
-    buttonText: "Join for Free",
+    buttonText: "Join Free",
     link: "/contribute/join",
     note: null,
   },

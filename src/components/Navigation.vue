@@ -132,12 +132,13 @@ export default {
           title: "Contribute",
           basePath: "/contribute",
           items: [
-            { label: "Become a Member", path: "/contribute/membership" },
-            // { label: "Join Our Network", path: "/contribute/join" },
+            { label: "Join Our Network", path: "/contribute/membership" },
+            { label: "Donate", path: "/contribute/donate" },
             {
               label: "Contribute to the Magazine",
               path: "/contribute/submission-form",
             },
+            
           ],
         },
         {
