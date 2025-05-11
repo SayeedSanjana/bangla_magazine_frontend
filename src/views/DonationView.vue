@@ -131,9 +131,9 @@
               Donation Information
             </h4>
             <div class="text-sm text-gray-700 space-y-4">
-              <p>
-                <strong>Tax Receipts:</strong> {{ donationContent.info.tax }}
-              </p>
+              <!-- <p> -->
+                <!-- <strong>Tax Receipts:</strong> {{ donationContent.info.tax }} -->
+              <!-- </p> -->
               <p>
                 <strong>Donation Methods:</strong>
                 {{ donationContent.info.methods }}
@@ -280,17 +280,17 @@ const donationContent = {
     "Connect Bengali communities across Canada and worldwide",
   ],
   info: {
-    tax: "B.A.N.G.L.A. is a registered non-profit organization. Your donations may be eligible for tax benefits according to Canadian regulations.",
+    // tax: "B.A.N.G.L.A. is a registered non-profit organization. Your donations may be eligible for tax benefits according to Canadian regulations.",
     methods:
       "Through Zeffy, you can donate using credit card, PayPal, or other payment methods.",
     contact: "If you have any questions about donating, please contact us at",
   },
   faq: [
-    {
-      question: "Is my donation tax-deductible?",
-      answer:
-        "Yes, B.A.N.G.L.A. is a registered non-profit organization in Canada. Donations are eligible for tax benefits according to Canadian regulations. You will receive a tax receipt for donations of $20 or more.",
-    },
+    // {
+    //   question: "Is my donation tax-deductible?",
+    //   answer:
+    //     "Yes, B.A.N.G.L.A. is a registered non-profit organization in Canada. Donations are eligible for tax benefits according to Canadian regulations. You will receive a tax receipt for donations of $20 or more.",
+    // },
     {
       question: "How will my donation be used?",
       answer:
@@ -304,7 +304,7 @@ const donationContent = {
     {
       question: "Is there a minimum donation amount?",
       answer:
-        "No, we appreciate donations of any amount. Every contribution helps us further our mission of preserving and promoting Bengali culture. Tax receipts are issued for donations of $20 or more.",
+        "No, we appreciate donations of any amount. Every contribution helps us further our mission of preserving and promoting Bengali culture.",
     },
     {
       question: "Why do you use Zeffy for donations?",
