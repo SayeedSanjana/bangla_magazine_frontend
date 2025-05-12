@@ -11,7 +11,7 @@
       {{ title }}
     </button>
     <div
-      class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
+      class="absolute left-0 mt-0.5 w-48 dropdown-bg rounded-b-md shadow-lg transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto"
     >
       <router-link
         v-for="(item, index) in links"
@@ -22,7 +22,9 @@
           isActiveRoute(item.path)
             ? 'text-amber-200 font-bold'
             : 'text-white hover:bg-amber-500',
-          index === links.length - 1 && !isActiveRoute(item.path) ? 'hover:rounded-b-md' : ''
+          index === links.length - 1 && !isActiveRoute(item.path)
+            ? 'hover:rounded-b-md'
+            : '',
         ]"
       >
         {{ item.label }}

@@ -5,10 +5,8 @@
       <Header />
     </header>
 
-    <nav>
-      <!-- Your navigation component -->
-      <Navigation />
-    </nav>
+    <!-- Your navigation component -->
+    <Navigation />
 
     <main class>
       <!-- This is where the router-view will inject the page content -->
