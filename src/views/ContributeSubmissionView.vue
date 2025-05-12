@@ -131,10 +131,10 @@
               <div class="flex flex-col sm:flex-row">
                 <div class="w-full md:w-1/2 px-2 mb-4 sm:mb-0">
                   <label for="first_name" class="block font-medium"
-                    >First Name <span class="text-red-500">*</span
-                    ><span class="text-sm text-gray-500">
-                      (Only alphabets allowed)</span
-                    ></label
+                    >First Name <span class="text-red-500">*</span>
+                    <p class="text-sm text-gray-500">
+                      (Only alphabets allowed)
+                    </p></label
                   >
                   <input
                     @blur="v$.form.firstname.$touch()"
@@ -161,10 +161,10 @@
                 </div>
                 <div class="w-full md:w-1/2 px-2">
                   <label for="last_name" class="block font-medium"
-                    >Last Name <span class="text-red-500">*</span
-                    ><span class="text-sm text-gray-500">
-                      (Only alphabets allowed)</span
-                    ></label
+                    >Last Name <span class="text-red-500">*</span>
+                    <p class="text-sm text-gray-500">
+                      (Only alphabets allowed)
+                    </p></label
                   >
                   <input
                     @blur="v$.form.lastname.$touch()"
@@ -314,13 +314,42 @@
                 >
               </div>
               <div class="px-2">
-                <label for="head_shot" class="block font-medium"
-                  >Upload Headshot<span class="text-red-500">*</span>
-                  <span class="text-sm text-gray-500">
+                <label for="head_shot" class="block font-medium mb-2">
+                  Upload Headshot<span class="text-red-500">*</span>
+                  <p class="text-sm text-gray-500">
                     (Upload an image in JPEG, JPG or PNG format, Maximum size
-                    limit: 10MB.)</span
-                  >
+                    limit: 10MB.)
+                  </p>
                 </label>
+
+                <div
+                  class="w-full flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-lg p-6 text-center bg-white cursor-pointer transition hover:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400"
+                  @click="$refs.headshotInput.click()"
+                  @dragover.prevent
+                  @dragenter.prevent
+                  @drop.prevent="onHeadshotDrop"
+                  tabindex="0"
+                >
+                  <div class="p-2 h-16 w-16">
+                    <DownloadArrow class="text-amber-500 opacity-50" />
+                  </div>
+
+                  <p class="text-sm text-gray-700">
+                    Drag & drop your headshot image here, or click to select.
+                  </p>
+                  <p v-if="form.headshot" class="text-xs text-gray-600 mt-2">
+                    Selected: {{ form.headshot.name }}
+                  </p>
+                  <button
+                    v-if="form.headshot"
+                    type="button"
+                    @click="clearHeadshot"
+                    class="text-red-500 text-xs mt-2 underline hover:text-red-700 transition"
+                  >
+                    Clear
+                  </button>
+                </div>
+
                 <input
                   ref="headshotInput"
                   @blur="v$.form.headshot.$touch()"
@@ -329,20 +358,19 @@
                   accept="image/jpeg, image/png, image/jpg"
                   id="head_shot"
                   name="head_shot"
-                  class="w-full p-2 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
+                  class="hidden"
                   required
                 />
+
                 <span
                   v-show="v$.form.headshot.$error"
-                  class="mt-2 text-sm text-crimson-bloom"
+                  class="mt-2 text-sm text-crimson-bloom block"
                 >
                   <div
                     v-for="error of v$.form.headshot.$errors"
                     :key="error.$uid"
                   >
-                    <small class="form-error-text">
-                      {{ error.$message }}
-                    </small>
+                    <small class="form-error-text">{{ error.$message }}</small>
                   </div>
                 </span>
               </div>
@@ -362,6 +390,9 @@
                   class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-yellow-400 focus:border-opcity-25"
                   required
                 ></textarea>
+                <p class="text-xs text-gray-500 text-right mt-1">
+                  {{ form.bio.length }} / 255 characters
+                </p>
                 <span
                   v-show="v$.form.bio.$error"
                   class="mt-2 text-sm text-crimson-bloom"
@@ -376,10 +407,10 @@
               <div class="px-2">
                 <label for="file" class="block font-medium">
                   Upload File<span class="text-red-500">*</span>
-                  <span class="text-sm text-gray-500">
+                  <p class="text-sm text-gray-500">
                     (You can upload up to 5 files in formats such as .doc, .pdf,
                     .docx, images. Maximum size limit: 20MB.)
-                  </span>
+                  </p>
                 </label>
 
                 <!-- File Input -->
@@ -444,6 +475,9 @@
                   v-model="this.form.description"
                 >
                 </textarea>
+                <p class="text-xs text-gray-500 text-right mt-1">
+                  {{ form.description.length }} / 255 characters
+                </p>
                 <span
                   v-show="v$.form.description.$error"
                   class="mt-2 text-sm text-crimson-bloom"
@@ -525,9 +559,13 @@ import {
   helpers,
 } from "@vuelidate/validators";
 import useVuelidate from "@vuelidate/core";
+import DownloadArrow from "@/components/svg/DownloadArrow.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
 export default {
+  components: {
+    DownloadArrow,
+  },
   name: "ContributeSubmissionView",
   mounted() {
     this.form.submissionType = this.topicName || "";
@@ -887,8 +925,27 @@ export default {
     //   }
     // },
     handleHeadshotUpload(event) {
-      const file = event.target.files[0];
-      this.form.headshot = file;
+      const file = event.target.files && event.target.files[0];
+      if (file) {
+        this.form.headshot = file;
+      }
+    },
+    clearHeadshot() {
+      this.form.headshot = null;
+      if (this.$refs.headshotInput) {
+        this.$refs.headshotInput.value = "";
+      }
+    },
+    onHeadshotDrop(e) {
+      const files = e.dataTransfer.files;
+      if (files && files.length > 0) {
+        this.form.headshot = files[0];
+        // Also update the hidden input for validation
+        if (this.$refs.headshotInput) {
+          this.$refs.headshotInput.files = files;
+        }
+        this.v$.form.headshot.$touch();
+      }
     },
     handleFileUpload(event) {
       // Convert FileList to an array and append to existing files
