@@ -136,9 +136,9 @@
                     <label for="location" class="block font-medium"
                       >Location (City/Area)
                       <span class="text-red-500">*</span>
-                      <span class="text-sm text-gray-500">
-                        (Only alphabets, spaces and comma accepted)</span
-                      ></label
+                      <p class="text-sm text-gray-500">
+                        (Only alphabets, spaces and comma accepted)
+                      </p></label
                     >
 
                     <input
@@ -180,7 +180,7 @@
                           {{
                             selectedCountry
                               ? `${selectedCountry.flag} ${selectedCountry.code}`
-                              : "Country"
+                              : "Country ↓"
                           }}
                         </div>
                         <select
@@ -191,8 +191,8 @@
                             Country
                           </option>
                           <option
-                            v-for="(option, index) in countryOptions"
-                            :key="index"
+                            v-for="option in countryOptions"
+                            :key="option.code"
                             :value="option.code"
                           >
                             {{ option.flag }} {{ option.name }}
@@ -258,8 +258,8 @@ export default {
     return {
       loading: false,
       countryOptions: [
-        { name: "United States", code: "+1", flag: "🇺🇸" },
-        { name: "Canada", code: "+1", flag: "🇨🇦" },
+        { name: "United States", code: "+1-US", flag: "🇺🇸" },
+        { name: "Canada", code: "+1-CA", flag: "🇨🇦" },
         { name: "India", code: "+91", flag: "🇮🇳" },
         { name: "Bangladesh", code: "+880", flag: "🇧🇩" },
         { name: "United Kingdom", code: "+44", flag: "🇬🇧" },
@@ -318,7 +318,7 @@ export default {
       this.loading = true;
       const phone =
         this.form.phone && !isNaN(this.form.phone)
-          ? `${this.form.phoneCode}${this.form.phone}` // Concatenate if phone is a number
+          ? `${this.form.phoneCode.split("-")[0]}${this.form.phone}` // Concatenate only numeric code part
           : null; // Null or undefined to omit from payload
 
       const payload = {
