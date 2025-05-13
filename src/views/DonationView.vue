@@ -132,7 +132,7 @@
             </h4>
             <div class="text-sm text-gray-700 space-y-4">
               <!-- <p> -->
-                <!-- <strong>Tax Receipts:</strong> {{ donationContent.info.tax }} -->
+              <!-- <strong>Tax Receipts:</strong> {{ donationContent.info.tax }} -->
               <!-- </p> -->
               <p>
                 <strong>Donation Methods:</strong>
@@ -312,9 +312,8 @@ const donationContent = {
         "We've partnered with Zeffy because they charge 0% platform fees, ensuring that 100% of your donation goes directly to supporting our mission. Zeffy provides a secure, easy-to-use platform for processing donations while maximizing the impact of your contribution.",
     },
     {
-      question:
-        "Can I donate by check or bank transfer instead of using Zeffy?",
-      answer: `Yes, we accept donations by check or bank transfer. Checks can be made payable to "B.A.N.G.L.A." and mailed to our office at 123 Cultural Avenue, Toronto, ON M1M 1M1. For bank transfer details, please contact our finance team at organization@banglaglocal.org. However, donating through Zeffy is our preferred method as it streamlines our donation processing.`,
+      question: "I am having trouble paying with zeffy, how else can I pay?",
+      answer: `Please contact organization@banglaglocal.org for help and we will get back to you within 48 hours.`,
     },
     {
       question: "Can organizations or businesses make donations?",
