@@ -1,9 +1,7 @@
 <template>
   <body class="text-gray-800 min-h-screen flex flex-col">
-    <header>
-      <!-- Your header component -->
-      <Header />
-    </header>
+    <!-- Your header component -->
+    <Header />
 
     <!-- Your navigation component -->
     <Navigation />

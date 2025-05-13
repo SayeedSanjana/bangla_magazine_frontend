@@ -258,6 +258,7 @@ import { ref } from "vue";
 import CircleCheck from "@/components/svg/CircleCheck.vue";
 import zeffyQR from "@/assets/zeffy/zeffy.png";
 import communityEventImg from "@/assets/donation/community-event.png";
+import communityOutreachImg from "@/assets/donation/community-outreach.png";
 
 const openFaqIndex = ref(null);
 const toggleFaq = (index) => {
@@ -343,7 +344,7 @@ const impactCards = [
     title: "Community Outreach",
     description:
       "We build bridges between Bengali communities worldwide and promote cultural exchange through our magazine and digital platforms.",
-    placeholder: "",
+    placeholder: communityOutreachImg,
     alt: "Community Outreach",
   },
 ];
