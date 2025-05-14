@@ -15,7 +15,6 @@
     "bangla-magazine-clientside": "file:",
     "remix": "^2.13.1",
     "sweetalert2": "^11.14.1",
-    "swiper": "^11.1.14",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",
     "vuetify": "^3.7.0-beta.1"

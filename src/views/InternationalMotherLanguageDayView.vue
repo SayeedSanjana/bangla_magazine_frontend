@@ -168,7 +168,7 @@
     <!--Event Picture -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
       <div class="relative w-full max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant">
+        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant text-center">
           An Evening of Music, Poem & Language
         </h2>
         <p class="text-center text-gray-500 mb-6 mt-6">
@@ -178,41 +178,42 @@
           Enjoy the highlights from our special evening on 26th February, 2025
         </p>
 
-        <div class="relative flex items-center justify-center pt-6 pb-6">
-          <!-- Left Arrow (Outside Images) -->
+        <div
+          class="relative overflow-hidden w-full h-[400px]"
+          @mouseenter="pauseAutoSlide"
+          @mouseleave="startAutoSlide"
+        >
+          <!-- Navigation Arrows -->
           <button
             @click="prevSlide"
-            class="absolute z-10 bg-yellow-100 border border-yellow-200 p-2 rounded-full shadow-md hover:bg-gray-100"
-            :class="buttonPosition"
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
+            aria-label="Previous"
           >
-            ◀
+            ‹
           </button>
-
-          <div
-            class="flex gap-6 overflow-hidden relative w-full justify-center"
-          >
-            <div
-              v-for="(image, index) in visibleImages"
-              :key="index"
-              class="transition-transform duration-500 ease-in-out flex justify-center items-center p-3 px-0"
-              :class="getSlideClass(index)"
-            >
-              <img
-                :src="image"
-                class="object-cover rounded-lg"
-                :class="getImageSize(index)"
-              />
-            </div>
-          </div>
-
-          <!-- Right Arrow -->
           <button
             @click="nextSlide"
-            class="absolute z-10 bg-yellow-100 border border-yellow-200 p-2 rounded-full shadow-md hover:bg-gray-100"
-            :class="buttonPositionRight"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
+            aria-label="Next"
           >
-            ▶
+            ›
           </button>
+
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              v-for="(image, index) in images"
+              :key="index"
+              class="absolute transition-all duration-700 ease-in-out"
+              :class="getCoverflowClass(index)"
+            >
+              <div class="p-2 border-4 border-gray-300 bg-white shadow-md rounded-lg w-[320px] h-[240px] flex items-center justify-center">
+                <img
+                  :src="image"
+                  class="rounded-sm object-contain w-full h-full transition-all duration-500 transform hover:scale-105"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -243,16 +244,12 @@
               @click="swapVideo(index)"
             >
               <video
+                :src="video"
                 class="w-32 h-24 md:w-28 md:h-28 rounded-lg shadow-md object-cover border-2"
-                :class="
-                  video === selectedVideo
-                    ? 'border-blue-500'
-                    : 'border-transparent'
-                "
-              >
-                <source :src="video" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                :class="video === selectedVideo ? 'border-blue-500' : 'border-transparent'"
+                muted
+                playsinline
+              />
             </div>
           </div>
         </div>
@@ -392,7 +389,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import CookieConsent from "../components/CookieConsent.vue";
 import image1 from "@/assets/img/writing1.png";
 import image6 from "@/assets/img/writing2.png";
@@ -460,18 +456,8 @@ export default {
       }
     },
     visibleImages() {
-      let total = this.images.length;
-      let prev = (this.currentIndex - 1 + total) % total;
-      let next = (this.currentIndex + 1) % total;
-
-      // 📌 Show only 1 image on small screens
-      return window.innerWidth < 768
-        ? [this.images[this.currentIndex]] // Mobile: Show only current image
-        : [
-            this.images[prev],
-            this.images[this.currentIndex],
-            this.images[next],
-          ]; // Desktop: Show three images
+      // Always show only the current image, regardless of screen size
+      return [this.images[this.currentIndex]];
     },
   },
 
@@ -520,6 +506,7 @@ export default {
         image33,
         image34,
       ],
+      slideDirection: "slide-left",
       articles: [
         {
           title:
@@ -569,32 +556,38 @@ export default {
   },
   methods: {
     nextSlide() {
+      this.slideDirection = "slide-left";
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
     prevSlide() {
+      this.slideDirection = "slide-right";
       this.currentIndex =
         (this.currentIndex - 1 + this.images.length) % this.images.length;
     },
     startAutoSlide() {
       this.autoSlideInterval = setInterval(() => {
         this.nextSlide();
-      }, 3000); // Change slide every 3 seconds
+      }, 4000);
     },
     stopAutoSlide() {
       clearInterval(this.autoSlideInterval);
     },
-    getSlideClass(index) {
-      return index === 1
-        ? "scale-110 transition-transform duration-500 " // Middle image appears larger
-        : "opacity-80 transition-opacity duration-500 "; // Side images slightly faded
+    pauseAutoSlide() {
+      clearInterval(this.autoSlideInterval);
     },
-    getImageSize(index) {
-      if (window.innerWidth < 768) {
-        return "w-full h-auto rounded-xl object-cover "; // Mobile: Full width, auto height
+    getCoverflowClass(index) {
+      const total = this.images.length;
+      const current = this.currentIndex;
+      const distance = (index - current + total) % total;
+
+      if (index === current) {
+        return "z-30 scale-110 opacity-100";
+      } else if (distance === 1 || distance === total - 1) {
+        // Use custom translate-x for coverflow effect; adjust if Tailwind doesn't support translate-x-60
+        return `z-20 scale-100 opacity-60 ${distance === 1 ? 'translate-x-60' : '-translate-x-60'}`;
+      } else {
+        return "opacity-0 scale-75 z-10";
       }
-      return index === 1
-        ? "w-[500px] h-[350px] rounded-2xl object-cover " // Desktop: Middle image larger
-        : "w-[400px] h-[300px] rounded-lg object-cover"; // Desktop: Side images smaller
     },
     swapVideo(index) {
       console.log("Clicked Video Index:", index);
@@ -635,6 +628,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 button {
   transition: all 0.3s ease-in-out;
@@ -665,4 +659,23 @@ video {
 .rounded-2xl {
   border-radius: 20px !important; /* Ensures proper rounding */
 }
+.slide-left-enter-active,
+.slide-right-enter-active {
+  transition: all 0.6s ease;
+  position: absolute;
+  width: 100%;
+}
+.slide-left-enter-from {
+  transform: translateX(100%);
+}
+.slide-left-leave-to {
+  transform: translateX(-100%);
+}
+.slide-right-enter-from {
+  transform: translateX(-100%);
+}
+.slide-right-leave-to {
+  transform: translateX(100%);
+}
 </style>
+
