@@ -103,7 +103,7 @@ const membershipOptions = [
     dues: "CAD $10 (Pay what you can)",
     buttonText: "Go Premium",
     link: "https://www.zeffy.com/en-CA/ticketing/bangali-abhibasi-network-a-glocal-linguo-cultural-association-memberships--2025",
-    note: "If you are interested in becoming a member and live outside of North America and are having trouble making your payment, please contact organisation@banglaglocal.org.",
+    note: "If you are interested in becoming a member and live outside of North America and are having trouble making your payment, please contact",
   },
 ];
 </script>
