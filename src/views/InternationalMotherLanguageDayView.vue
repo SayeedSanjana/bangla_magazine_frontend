@@ -168,7 +168,9 @@
     <!--Event Picture -->
     <div class="pb-8 md:pb-16 pt-8 md:pt-16 py-8 bg-white">
       <div class="relative w-full max-w-6xl mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant text-center">
+        <h2
+          class="text-4xl md:text-6xl mb-8 text-gray-800 font-cormorant text-center"
+        >
           An Evening of Music, Poem & Language
         </h2>
         <p class="text-center text-gray-500 mb-6 mt-6">
@@ -186,14 +188,14 @@
           <!-- Navigation Arrows -->
           <button
             @click="prevSlide"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-2xl text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Previous"
           >
             ‹
           </button>
           <button
             @click="nextSlide"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-2xl text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Next"
           >
             ›
@@ -206,7 +208,9 @@
               class="absolute transition-all duration-700 ease-in-out"
               :class="getCoverflowClass(index)"
             >
-              <div class="p-2 border-4 border-gray-300 bg-white shadow-md rounded-lg w-[320px] h-[240px] flex items-center justify-center">
+              <div
+                class="p-2 border-4 border-gray-300 bg-white shadow-md rounded-lg w-[320px] h-[240px] flex items-center justify-center"
+              >
                 <img
                   :src="image"
                   class="rounded-sm object-contain w-full h-full transition-all duration-500 transform hover:scale-105"
@@ -246,7 +250,11 @@
               <video
                 :src="video"
                 class="w-32 h-24 md:w-28 md:h-28 rounded-lg shadow-md object-cover border-2"
-                :class="video === selectedVideo ? 'border-blue-500' : 'border-transparent'"
+                :class="
+                  video === selectedVideo
+                    ? 'border-blue-500'
+                    : 'border-transparent'
+                "
                 muted
                 playsinline
               />
@@ -398,30 +406,13 @@ import image2 from "@/assets/members/Ajna.png";
 import image3 from "@/assets/members/ArchismanChaudhuri_1.png";
 import image4 from "@/assets/members/MoinakBanerjee_1.png";
 import image5 from "@/assets/members/AzfarAdib_1.png";
-import image11 from "@/assets/21stFebEventImage/img1.jpg";
-import image12 from "@/assets/21stFebEventImage/img2.jpg";
-import image13 from "@/assets/21stFebEventImage/img3.jpg";
-import image14 from "@/assets/21stFebEventImage/img4.jpg";
-import image15 from "@/assets/21stFebEventImage/img5.jpg";
-import image16 from "@/assets/21stFebEventImage/img6.jpg";
-import image17 from "@/assets/21stFebEventImage/img7.jpg";
-import image18 from "@/assets/21stFebEventImage/img8.jpg";
-import image19 from "@/assets/21stFebEventImage/img9.jpg";
-import image20 from "@/assets/21stFebEventImage/img10.jpg";
-import image21 from "@/assets/21stFebEventImage/img12.jpg";
-import image22 from "@/assets/21stFebEventImage/img13.jpg";
-import image23 from "@/assets/21stFebEventImage/img14.jpg";
-import image24 from "@/assets/21stFebEventImage/img15.jpg";
-import image25 from "@/assets/21stFebEventImage/img16.jpg";
-import image26 from "@/assets/21stFebEventImage/img17.jpg";
-import image27 from "@/assets/21stFebEventImage/img18.jpg";
-import image28 from "@/assets/21stFebEventImage/img19.jpg";
-import image29 from "@/assets/21stFebEventImage/img20.jpg";
-import image30 from "@/assets/21stFebEventImage/img21.jpg";
-import image31 from "@/assets/21stFebEventImage/img25.jpg";
-import image32 from "@/assets/21stFebEventImage/img26.jpg";
-import image33 from "@/assets/21stFebEventImage/img27.jpg";
-import image34 from "@/assets/21stFebEventImage/img28.jpg";
+
+// Dynamically import all images from the event folder (Vite-compatible)
+const imageModules = import.meta.glob(
+  "@/assets/21stFebEventImage/*.{jpg,jpeg,png}",
+  { eager: true }
+);
+const eventImages = Object.values(imageModules).map((mod) => mod.default);
 
 export default {
   name: "InternationalMotherLanguageDayView",
@@ -480,32 +471,7 @@ export default {
       currentIndex: 1, // Middle image index
       autoSlideInterval: null,
       facebookEventUrl: "https://www.facebook.com/events/your-event-id",
-      images: [
-        image11,
-        image12,
-        image13,
-        image14,
-        image15,
-        image16,
-        image17,
-        image18,
-        image19,
-        image20,
-        image21,
-        image22,
-        image23,
-        image24,
-        image25,
-        image26,
-        image27,
-        image28,
-        image29,
-        image30,
-        image31,
-        image32,
-        image33,
-        image34,
-      ],
+      images: eventImages,
       slideDirection: "slide-left",
       articles: [
         {
@@ -584,7 +550,9 @@ export default {
         return "z-30 scale-110 opacity-100";
       } else if (distance === 1 || distance === total - 1) {
         // Use custom translate-x for coverflow effect; adjust if Tailwind doesn't support translate-x-60
-        return `z-20 scale-100 opacity-60 ${distance === 1 ? 'translate-x-60' : '-translate-x-60'}`;
+        return `z-20 scale-100 opacity-60 ${
+          distance === 1 ? "translate-x-60" : "-translate-x-60"
+        }`;
       } else {
         return "opacity-0 scale-75 z-10";
       }
@@ -627,7 +595,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 button {
@@ -678,4 +645,3 @@ video {
   transform: translateX(100%);
 }
 </style>
-
