@@ -191,14 +191,20 @@
             class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-2xl text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Previous"
           >
-            ‹
+            <ArrowLeftRightCircle
+              direction="left"
+              class="text-amber-400 w-8 h-8"
+            />
           </button>
           <button
             @click="nextSlide"
             class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-80 hover:bg-opacity-100 text-2xl text-gray-800 font-bold rounded-full w-10 h-10 flex items-center justify-center shadow-md"
             aria-label="Next"
           >
-            ›
+            <ArrowLeftRightCircle
+              direction="right"
+              class="text-amber-400 w-8 h-8"
+            />
           </button>
 
           <div class="absolute inset-0 flex items-center justify-center">
@@ -406,6 +412,7 @@ import image2 from "@/assets/members/Ajna.png";
 import image3 from "@/assets/members/ArchismanChaudhuri_1.png";
 import image4 from "@/assets/members/MoinakBanerjee_1.png";
 import image5 from "@/assets/members/AzfarAdib_1.png";
+import ArrowLeftRightCircle from "@/components/svg/ArrowLeftRightCircle.vue";
 
 // Dynamically import all images from the event folder (Vite-compatible)
 const imageModules = import.meta.glob(
@@ -418,6 +425,7 @@ export default {
   name: "InternationalMotherLanguageDayView",
   components: {
     CookieConsent,
+    ArrowLeftRightCircle,
   },
   mounted() {
     this.updateCountdown();
