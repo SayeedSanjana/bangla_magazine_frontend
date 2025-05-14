@@ -193,7 +193,7 @@
           >
             <ArrowLeftRightCircle
               direction="left"
-              class="text-amber-400 w-8 h-8"
+              class="text-gray-400 w-8 h-8"
             />
           </button>
           <button
@@ -203,7 +203,7 @@
           >
             <ArrowLeftRightCircle
               direction="right"
-              class="text-amber-400 w-8 h-8"
+              class="text-gray-400 w-8 h-8"
             />
           </button>
 
