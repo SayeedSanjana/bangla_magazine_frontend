@@ -8,19 +8,19 @@
       <div class="absolute inset-0"></div>
 
       <!-- Content -->
-      <div class="relative z-10 px-4 sm:px-6 lg:px-8">
+      <div class="relative z-10 px-4 sm:px-6 lg:px-8 text-midnight-sapphire">
         <h1
-          class="text-4xl sm:text-5xl font-cormorant font-bold mb-4 text-midnight-sapphire"
+          class="text-4xl sm:text-5xl font-cormorant font-bold mb-4 "
         >
           Support Our Cultural Mission
         </h1>
-        <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-purple-800">
+        <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto text-midnight-sapphire/80">
           Your contribution helps us bridge distances and celebrate Bengali
           culture across the globe.
         </p>
         <a
           href="#donate"
-          class="inline-block bg-amber-400 hover:bg-amber-500 text-indigo-800 font-semibold px-6 py-3 rounded-lg transition"
+          class="inline-block bg-amber-400 hover:bg-amber-500 font-semibold px-6 py-3 rounded-lg transition"
         >
           Donate Now
         </a>
@@ -35,7 +35,7 @@
       >
         <div class="pb-4 mb-4">
           <h2
-            class="text-4xl font-cormorant font-bold text-purple-800 mb-3 text-left"
+            class="text-4xl font-cormorant font-bold text-midnight-sapphire mb-3 text-left"
           >
             {{ donationContent.title }}
           </h2>
@@ -115,7 +115,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 class="text-lg font-bold text-purple-700 mb-4">
+              <h4 class="text-lg font-bold text-midnight-sapphire mb-4">
                 Why Donate?
               </h4>
               <ul class="space-y-3 text-gray-700">
@@ -133,7 +133,7 @@
             </div>
 
             <div>
-              <h4 class="text-lg font-bold text-purple-700 mb-4">
+              <h4 class="text-lg font-bold text-midnight-sapphire mb-4">
                 Donation Information
               </h4>
               <div class="text-sm text-gray-700 space-y-4">
@@ -161,7 +161,7 @@
       <!-- Your Impact Section -->
       <div class="bg-white rounded-lg p-6 sm:p-10 max-w-5xl mx-auto mb-16">
         <h2
-          class="text-4xl font-cormorant font-bold text-purple-800 mb-3 text-left"
+          class="text-4xl font-cormorant font-bold text-midnight-sapphire mb-3 text-left"
         >
           Your Impact
         </h2>
@@ -189,7 +189,7 @@
               Image coming soon...
             </div>
             <div class="p-4">
-              <h3 class="text-xl font-semibold text-purple-900 mb-2">
+              <h3 class="text-xl font-semibold text-midnight-sapphire mb-2">
                 {{ card.title }}
               </h3>
               <p class="text-gray-600">{{ card.description }}</p>
@@ -201,11 +201,11 @@
       <!-- FAQ Section -->
       <div class="max-w-5xl rounded-lg p-6 sm:p-10 mx-auto mb-16">
         <h2
-          class="text-4xl font-cormorant font-bold text-purple-800 mb-3 text-left"
+          class="text-4xl font-cormorant font-bold text-midnight-sapphire mb-3 text-left"
         >
           Frequently Asked Questions
         </h2>
-        <p class="text-gray-600 text-lg text-left max-w-3xl mb-10">
+        <p class="text-gray-600 text-xl text-left max-w-3xl mb-10">
           Find answers to common questions about donating to B.A.N.G.L.A.
         </p>
         <div class="space-y-4">
@@ -215,13 +215,13 @@
             class="border-b pb-2"
           >
             <button
-              class="w-full text-left px-1 py-3 font-medium text-purple-800 focus:outline-none flex justify-between items-center"
+              class="w-full text-left px-1 py-3 font-medium text-midnight-sapphire focus:outline-none flex justify-between items-center"
               @click="toggleFaq(index)"
             >
               <span class="text-base sm:text-lg">{{ faq.question }}</span>
               <svg
                 :class="{ 'rotate-180': openFaqIndex === index }"
-                class="w-5 h-5 text-purple-800 transform transition-transform duration-200"
+                class="w-5 h-5 text-midnight-sapphire transform transition-transform duration-200"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -241,7 +241,7 @@
             >
               <div
                 v-if="openFaqIndex === index"
-                class="px-1 pt-1 text-gray-600 text-sm overflow-hidden"
+                class="px-1 pt-1 text-gray-600 text-md overflow-hidden"
               >
                 {{ faq.answer }}
               </div>
