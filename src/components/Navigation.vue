@@ -118,6 +118,7 @@ export default {
           items: [
             { label: "Our Story", path: "/about/story" },
             { label: "Team Members", path: "/about/team" },
+            { label: "DEI", path: "/about/dei" },
           ],
         },
         {
@@ -176,8 +177,7 @@ export default {
     // Computed class for desktop Home link
     desktopHomeClass() {
       return {
-        "border-b-2 border-amber-400 text-amber-200":
-          this.isActiveRoute("/"),
+        "border-b-2 border-amber-400 text-amber-200": this.isActiveRoute("/"),
         "text-white hover:text-amber-200": !this.isActiveRoute("/"),
       };
     },

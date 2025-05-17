@@ -19,6 +19,7 @@ import DynamicWomenMonthArticlesView from "../views/DynamicWomenMonthArticles.vu
 import BirthAnniversary from "../views/birth-aniversary/BirthAnniversary.vue";
 import MembersPlan from "@/views/MembersPlan.vue";
 import DonationView from "@/views/DonationView.vue";
+import DEI from "@/views/DEI.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,16 @@ const router = createRouter({
       path: "/about/story",
       name: "about",
       component: AboutView,
+    },
+    {
+      path: "/about/team",
+      name: "team-members",
+      component: TeamMemberView,
+    },
+    {
+      path: "/about/dei",
+      name: "DEI",
+      component: DEI,
     },
     {
       path: "/magazine",
@@ -65,11 +76,6 @@ const router = createRouter({
       component: CookieSettingsView,
     },
     {
-      path: "/about/team",
-      name: "team-members",
-      component: TeamMemberView,
-    },
-    {
       path: "/contribute/join",
       name: "join-network",
       component: JoinNetworkView,
@@ -95,6 +101,7 @@ const router = createRouter({
       name: "international-mother-language-day",
       component: InternationalMotherLanguageDayView,
     },
+    
     {
       path: "/events/pohela-baishakh",
       name: "Pohela-Baishakh",
