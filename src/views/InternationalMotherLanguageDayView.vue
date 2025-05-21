@@ -590,7 +590,7 @@ export default {
       this.countdown.seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
     },
     join() {
-      this.$router.push("/join");
+      this.$router.push("/contribute/membership");
     },
 
     goToArticle(slug) {

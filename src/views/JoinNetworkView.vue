@@ -376,4 +376,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+html {
+  scroll-behavior: smooth;
+}
+</style>

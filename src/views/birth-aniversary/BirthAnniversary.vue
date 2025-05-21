@@ -178,6 +178,34 @@
       :article="selectedArticle"
       @close="selectedArticle = null"
     />
+    <div
+      class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
+    >
+      <!-- Overlay for Background Image -->
+      <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
+
+      <!-- Content Overlay -->
+      <div
+        class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10"
+      >
+        <h2
+          class="text-4xl md:text-5xl font-bold mb-2 text-white font-cormorant pt-6"
+        >
+          Join Our Network
+        </h2>
+        <p class="text-white text-lg text-justify my-2 mb-6">
+          Join - Bangali Abhibasi Network: a Glocal Linguo-cultural Association
+        </p>
+        <button
+          @click="join"
+          aria-label="Contribute to the community"
+          class="text-base px-4 py-3 border-2 border-yellow-500 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:border-2 lg:hover:text-honey-gold transition duration-300 ease-in-out"
+        >
+          Join Our Network
+        </button>
+      </div>
+    </div>
+    <CookieConsent />
   </div>
 </template>
 <script>
@@ -187,11 +215,13 @@ import nazrulImg from "@/assets/authorImage/nazrul.jpg";
 import rayImg from "@/assets/birth-anniversary/ray.jpg";
 import heroBackground from "@/assets/birth-anniversary/image.png";
 import ArticleModal from "./ArticleModal.vue";
+import CookieConsent from "@/components/CookieConsent.vue";
 
 export default {
   name: "BirthAnniversary",
   components: {
     ArticleModal,
+    CookieConsent,
   },
   data() {
     return {
@@ -263,6 +293,9 @@ export default {
     },
   },
   methods: {
+    join() {
+      this.$router.push("/contribute/membership");
+    },
     extractId(url) {
       const match = url.match(/[-\w]{25,}/);
       return match ? match[0] : null;
@@ -352,6 +385,9 @@ export default {
   100% {
     transform: translateX(-50%);
   }
+}
+.bg-img {
+  background-image: url("../../assets/img/bg-contribute.png");
 }
 
 .marquee-track {

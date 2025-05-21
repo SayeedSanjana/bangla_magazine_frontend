@@ -528,13 +528,16 @@ export default {
   },
   name: "ContributeSubmissionView",
   mounted() {
+    this.scrollToTop();
     this.form.submissionType = this.topicName || "";
+
     // console.log("Mounted - submissionType:", this.form.submissionType); // Check that the value is set correctly
   },
   watch: {
     topicName(newVal) {
       this.form.submissionType = newVal;
       console.log("Updated topicName:", newVal);
+      this.scrollToTop();
     },
   },
   setup() {
@@ -731,6 +734,12 @@ export default {
   //   return { v$: useVuelidate() };
   // },
   methods: {
+    scrollToTop() {
+      // Use nextTick in case DOM isn't ready yet
+      this.$nextTick(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
@@ -965,6 +974,9 @@ export default {
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
 .scrollable {
   max-height: 950px; /* Adjust height based on your design */
   overflow-y: auto; /* Adds vertical scroll */

@@ -76,7 +76,7 @@
               Home
             </router-link>
           </li>
-          <template v-for="menu in menus" :key="menu.title">
+          <div v-for="menu in menus" :key="menu.title">
             <li>
               <hr class="border mb-1" />
               <p class="font-semibold mb-1">{{ menu.title }}</p>
@@ -93,7 +93,7 @@
                 </router-link>
               </span>
             </li>
-          </template>
+          </div>
         </ul>
       </div>
     </div>
@@ -158,6 +158,8 @@ export default {
             },
             { label: "Noboborsho", path: "/events/pohela-baishakh" },
             { label: "Birth Anniversary", path: "/events/birth-anniversary" },
+            { label: "Rabindra-Nazrul Shondha", path: "/events/rabindra-nazrul-shondha" },
+            
           ],
         },
       ],

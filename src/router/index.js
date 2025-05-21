@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+
+// Views
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContributeView from "../views/ContributeView.vue";
@@ -20,35 +22,17 @@ import BirthAnniversary from "../views/birth-aniversary/BirthAnniversary.vue";
 import MembersPlan from "@/views/MembersPlan.vue";
 import DonationView from "@/views/DonationView.vue";
 import DEI from "@/views/DEI.vue";
+import RabindraNazrulShondhaView from "@/views/RabindraNazrulShondhaView.vue";
 
+// Router Setup
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/about/story",
-      name: "about",
-      component: AboutView,
-    },
-    {
-      path: "/about/team",
-      name: "team-members",
-      component: TeamMemberView,
-    },
-    {
-      path: "/about/dei",
-      name: "DEI",
-      component: DEI,
-    },
-    {
-      path: "/magazine",
-      name: "contribute",
-      component: ContributeView,
-    },
+    { path: "/", name: "home", component: HomeView },
+    { path: "/about/story", name: "about", component: AboutView },
+    { path: "/about/team", name: "team-members", component: TeamMemberView },
+    { path: "/about/dei", name: "DEI", component: DEI },
+    { path: "/magazine", name: "contribute", component: ContributeView },
     {
       path: "/magazine/topics",
       name: "independentCategory",
@@ -69,12 +53,7 @@ const router = createRouter({
       name: "obituary",
       component: MemoryLuminariesView,
     },
-
-    {
-      path: "/cookie-settings",
-      name: "cookie",
-      component: CookieSettingsView,
-    },
+    { path: "/cookie-settings", name: "cookie", component: CookieSettingsView },
     {
       path: "/contribute/join",
       name: "join-network",
@@ -85,11 +64,7 @@ const router = createRouter({
       name: "become-a-member",
       component: MembersPlan,
     },
-    {
-      path: "/contribute/donate",
-      name: "donate",
-      component: DonationView,
-    },
+    { path: "/contribute/donate", name: "donate", component: DonationView },
     {
       path: "/contribute/submission-form/:topicName?",
       name: "submission",
@@ -101,7 +76,6 @@ const router = createRouter({
       name: "international-mother-language-day",
       component: InternationalMotherLanguageDayView,
     },
-    
     {
       path: "/events/pohela-baishakh",
       name: "Pohela-Baishakh",
@@ -112,7 +86,6 @@ const router = createRouter({
       name: "Women-History-Month",
       component: WomenHistoryMonthView,
     },
-
     {
       path: "/events/:slug",
       name: "article-view",
@@ -137,11 +110,21 @@ const router = createRouter({
       component: BirthAnniversary,
       props: true,
     },
+    {
+      path: "/events/rabindra-nazrul-shondha/",
+      name: "rabindra-nazrul-shondha",
+      component: RabindraNazrulShondhaView,
+      props: true,
+    },
   ],
-  // When you route to any page it will take you to the top of the page
-  scrollBehavior(to, from, savedPosition) {
-    // Always scroll to the top of the page on navigation
-    return { top: 0, left: 0 };
+
+  // 🔄 Smooth scroll to top on route change
+  scrollBehavior() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ top: 0, left: 0, behavior: "smooth" });
+      }, 100); // Slight delay for smoother transition
+    });
   },
 });
 

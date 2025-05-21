@@ -630,7 +630,7 @@ export default {
   },
   methods: {
     join() {
-      this.$router.push("/join");
+      this.$router.push("/contribute/membership");
     },
     handleMouseOver(index, section) {
       this.hoveredIndex = { section, index }; // Store both section and index
