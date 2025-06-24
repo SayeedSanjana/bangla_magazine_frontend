@@ -515,49 +515,6 @@
             shares insights from her memoir and engages with our community about
             the complexities of cultural identity and belonging.
           </p>
-
-          <!-- Arrows -->
-          <div class="flex justify-between items-center mt-10 max-w-xs mx-auto">
-            <!-- Left Arrow -->
-            <button
-              class="w-10 h-10 flex items-center justify-center border rounded-full text-white border-white hover:bg-white hover:text-gray-800 transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-
-            <!-- Right Arrow -->
-            <button
-              class="w-10 h-10 flex items-center justify-center border rounded-full text-white border-white hover:bg-white hover:text-gray-800 transition"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </div>
