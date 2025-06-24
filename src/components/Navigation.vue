@@ -158,8 +158,14 @@ export default {
             },
             { label: "Noboborsho", path: "/events/pohela-baishakh" },
             { label: "Birth Anniversary", path: "/events/birth-anniversary" },
-            { label: "Rabindra-Nazrul Shondha", path: "/events/rabindra-nazrul-shondha" },
-            
+            {
+              label: "Rabindra-Nazrul Shondha",
+              path: "/events/rabindra-nazrul-shondha",
+            },
+            {
+              label: "Interactive Discussion With Habiba Zaman",
+              path: "/events/interactive-discussion-habiba-zaman",
+            },
           ],
         },
       ],

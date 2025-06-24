@@ -23,6 +23,7 @@ import MembersPlan from "@/views/MembersPlan.vue";
 import DonationView from "@/views/DonationView.vue";
 import DEI from "@/views/DEI.vue";
 import RabindraNazrulShondhaView from "@/views/RabindraNazrulShondhaView.vue";
+import InteractiveDiscussionView from "../views/InteractiveDiscussionView.vue";
 
 // Router Setup
 const router = createRouter({
@@ -114,6 +115,12 @@ const router = createRouter({
       path: "/events/rabindra-nazrul-shondha/",
       name: "rabindra-nazrul-shondha",
       component: RabindraNazrulShondhaView,
+      props: true,
+    },
+    {
+      path: "/events/interactive-discussion-habiba-zaman/",
+      name: "interactive-discussion",
+      component: InteractiveDiscussionView,
       props: true,
     },
   ],
