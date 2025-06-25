@@ -276,7 +276,7 @@
               <ul
                 class="list-disc list-inside text-sm text-gray-300 space-y-1 mt-3 text-left"
               >
-                <li class="mt-0.5">Author reading from selected chapters</li>
+                <li class="mt-0.5">Author sharing her journey firsthand</li>
                 <li class="mt-0.5">
                   Interactive discussion on diaspora experiences
                 </li>
