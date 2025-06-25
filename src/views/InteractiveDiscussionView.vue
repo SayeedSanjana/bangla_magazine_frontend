@@ -218,10 +218,8 @@
                 <li>Networking with community members</li>
               </ul>
 
-              <a
-                href="https://www.google.com/maps?q=SANAAQ+Center,+Montreal,+Canada"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                @click="showRSVPModal = true"
                 class="inline-flex items-center gap-2 bg-amber-600 text-white text-sm px-4 py-2 rounded hover:bg-amber-700 transition mt-3"
               >
                 <!-- Direction SVG -->
@@ -240,7 +238,7 @@
                   />
                 </svg>
                 RSVP Now
-              </a>
+              </button>
 
               <!-- <p class="text-gray-300 text-sm leading-relaxed">
                 Doors open at 5:00 PM
@@ -294,6 +292,40 @@
               ></div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- RSVP Modal -->
+
+    <div
+      v-if="showRSVPModal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+    >
+      <div class="bg-white max-w-2xl w-full rounded-lg shadow-lg p-6 relative">
+        <!-- Close Button -->
+        <button
+          @click="showRSVPModal = false"
+          class="absolute top-2 right-2 text-gray-600 hover:text-black text-xl font-bold"
+        >
+          &times;
+        </button>
+
+        <h3 class="text-xl font-semibold mb-4 text-center">RSVP Form</h3>
+
+        <!-- Embedded Google Form -->
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe
+            :src="googleFormUrl"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            class="w-full"
+            allowfullscreen
+          >
+            Loading…
+          </iframe>
         </div>
       </div>
     </div>
@@ -561,7 +593,11 @@ export default {
     CookieConsent,
   },
   data() {
-    return {};
+    return {
+      showRSVPModal: false,
+      googleFormUrl:
+        "https://docs.google.com/forms/d/e/1FAIpQLSfuLtadTF_zuKT5Lxm49u5rh4rG6KIx8BcxhWsArFCP2_ZNfQ/viewform?embedded=true",
+    };
   },
   mounted() {},
   methods: {
