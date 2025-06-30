@@ -252,7 +252,7 @@ export default {
       ],
       culturalFigures: [
         {
-          id: 2,
+          id: 1,
           name: "Rabindranath Tagore",
           label: "tagore",
           field: "Literature and Music",
@@ -260,8 +260,17 @@ export default {
           showArticles: false,
           articles: [],
         },
+        {
+          id: 2,
+          name: "Kazi Nazrul Islam",
+          label: "nazrul",
+          field: "Literature and Music",
+          years: "1899–1976",
+          showArticles: false,
+          articles: [],
+        },
       ],
-      selectedFigureId: 2,
+      selectedFigureId: 1,
       searchQuery: "",
       sortOrder: "desc", // default to newest first
       dynamicArticles: [],
