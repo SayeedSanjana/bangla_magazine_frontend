@@ -24,6 +24,7 @@ import DonationView from "@/views/DonationView.vue";
 import DEI from "@/views/DEI.vue";
 import RabindraNazrulShondhaView from "@/views/RabindraNazrulShondhaView.vue";
 import InteractiveDiscussionView from "../views/InteractiveDiscussionView.vue";
+import PdfViewer from "@/components/PdfViewer.vue";
 
 // Router Setup
 const router = createRouter({
@@ -121,6 +122,12 @@ const router = createRouter({
       path: "/events/interactive-discussion-habiba-zaman/",
       name: "interactive-discussion",
       component: InteractiveDiscussionView,
+      props: true,
+    },
+    {
+      path: "/view-pdf/:filename",
+      name: "pdf-viewer",
+      component: PdfViewer,
       props: true,
     },
   ],

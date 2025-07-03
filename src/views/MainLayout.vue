@@ -1,21 +1,19 @@
 <template>
-  <body class="text-gray-800 min-h-screen flex flex-col">
-    <!-- Your header component -->
+  <div class="text-gray-800 min-h-screen flex flex-col">
+    <!-- Header -->
     <Header />
 
-    <!-- Your navigation component -->
+    <!-- Navigation -->
     <Navigation />
 
-    <main class>
-      <!-- This is where the router-view will inject the page content -->
+    <!-- Main content -->
+    <main class="flex-grow">
       <RouterView />
     </main>
 
-    <footer>
-      <!-- Your footer component -->
-      <Footer />
-    </footer>
-  </body>
+    <!-- Footer -->
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -34,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-body::before {
+div::before {
   content: "";
   position: fixed;
   top: 0;
@@ -49,7 +47,7 @@ body::before {
     url("../assets/img/alphabets.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.2; /* Adjust the opacity here */
-  z-index: -1; /* Make sure the background stays behind the content */
+  opacity: 0.2;
+  z-index: -1;
 }
 </style>

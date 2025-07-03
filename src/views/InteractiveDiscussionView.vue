@@ -458,8 +458,11 @@
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/pdfs/2025_Summer_Newsletter-Memoir.pdf"
+                  <router-link
+                    :to="{
+                      name: 'pdf-viewer',
+                      params: { filename: '2025_Summer_Newsletter-Memoir.pdf' },
+                    }"
                     target="_blank"
                     class="text-midnight-sapphire hover:text-gray-700 inline-flex items-center gap-2"
                   >
@@ -478,7 +481,7 @@
                       />
                     </svg>
                     SFU Newsletter
-                  </a>
+                  </router-link>
                 </li>
                 <li>
                   <a
