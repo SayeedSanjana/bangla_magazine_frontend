@@ -17,11 +17,9 @@
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex justify-center space-x-6 w-full">
-          <!-- Home Link -->
           <router-link to="/" :class="desktopHomeClass" class="font-medium">
             Home
           </router-link>
-          <!-- Dropdown Menus -->
           <DropdownMenu
             v-for="menu in menus"
             :key="menu.title"
@@ -61,23 +59,23 @@
       <div
         :class="{
           'max-h-0 opacity-0': !isMobileMenuExpanded,
-          'max-h-[900px] opacity-100': isMobileMenuExpanded,
+          'opacity-100': isMobileMenuExpanded,
         }"
-        class="md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out dropdown-bg text-white tracking-wide"
+        class="md:hidden transition-opacity duration-500 ease-in-out dropdown-bg text-white tracking-wide"
       >
-        <ul class="px-4 py-2 space-y-3">
-          <li>
-            <router-link
-              to="/"
-              :class="mobileHomeClass"
-              class="block font-semibold"
-              @click="toggleMobileMenu"
-            >
-              Home
-            </router-link>
-          </li>
-          <div v-for="menu in menus" :key="menu.title">
+        <div class="mobile-menu-container">
+          <ul class="px-4 py-2 space-y-3">
             <li>
+              <router-link
+                to="/"
+                :class="mobileHomeClass"
+                class="block font-semibold"
+                @click="toggleMobileMenu"
+              >
+                Home
+              </router-link>
+            </li>
+            <li v-for="menu in menus" :key="menu.title">
               <hr class="border mb-1" />
               <p class="font-semibold mb-1">{{ menu.title }}</p>
               <span class="space-y-2">
@@ -93,8 +91,8 @@
                 </router-link>
               </span>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -110,7 +108,6 @@ export default {
   data() {
     return {
       isMobileMenuExpanded: false,
-      // Menu data for both desktop and mobile
       menus: [
         {
           title: "About Us",
@@ -169,27 +166,15 @@ export default {
           ],
         },
       ],
-      // Example of other data properties
-      membershipOptions: [
-        {
-          title: "Internal Member",
-          description: "Join as an internal member for exclusive benefits.",
-          link: "https://www.zeffy.com/en-CA/ticketing/bangali-abhibasi-network-a-glocal-linguo-cultural-association-memberships--2025",
-          buttonText: "Join Now",
-        },
-        // other membership options...
-      ],
     };
   },
   computed: {
-    // Computed class for desktop Home link
     desktopHomeClass() {
       return {
         "border-b-2 border-amber-400 text-amber-200": this.isActiveRoute("/"),
         "text-white hover:text-amber-200": !this.isActiveRoute("/"),
       };
     },
-    // Computed class for mobile Home link
     mobileHomeClass() {
       return {
         "text-amber-200 font-bold": this.isActiveRoute("/"),
@@ -198,41 +183,35 @@ export default {
     },
   },
   methods: {
-    // Toggles the mobile menu expanded state
     toggleMobileMenu() {
       this.isMobileMenuExpanded = !this.isMobileMenuExpanded;
-
       if (this.isMobileMenuExpanded) {
         document.body.classList.add("no-scroll");
       } else {
         document.body.classList.remove("no-scroll");
       }
     },
-    // Checks if the current route is the given route
     isActiveRoute(route) {
       return this.$route.path === route;
     },
-    // Checks if the current route starts with the given parent route
     isParentRouteActive(parentRoute) {
       return this.$route.path.startsWith(parentRoute);
     },
-    // Computed class for mobile menu links
     mobileMenuLinkClass(path) {
       return {
         "text-amber-200 font-bold": this.isActiveRoute(path),
         "text-white": !this.isActiveRoute(path),
       };
     },
-    // Placeholder for closing dropdowns if needed in future
     closeDropdowns() {
-      // Logic to close dropdowns
+      // Future logic
     },
   },
 };
 </script>
 
 <style>
-/* Styles for the dropdown background (mobile) */
+/* Background blur and color for dropdown */
 .dropdown-bg {
   background: linear-gradient(
     90deg,
@@ -241,13 +220,22 @@ export default {
   );
   z-index: 50;
 }
+
+/* Lock body scroll when mobile menu open */
 .no-scroll {
   overflow: hidden;
   position: fixed;
   width: 100%;
 }
 
-/* Styles for the main navigation background */
+/* Scrollable container for mobile menu */
+.mobile-menu-container {
+  max-height: calc(100vh - 4rem); /* leave space for nav bar */
+  overflow-y: auto;
+  padding-bottom: 2rem;
+}
+
+/* Navigation background */
 .nav-bg {
   background: linear-gradient(
     90deg,
@@ -258,9 +246,8 @@ export default {
   );
 }
 
-/* Media query for desktop styles */
+/* Desktop-specific styles */
 @media (min-width: 768px) {
-  /* Styles for the main navigation background on desktop */
   .nav-bg {
     background: linear-gradient(
       270deg,
@@ -271,10 +258,9 @@ export default {
     );
   }
 
-  /* Styles for the dropdown background on desktop (frosted glass effect) */
   .dropdown-bg {
-    background: rgba(40, 11, 139, 0.6); /* Adjust opacity for frosted effect */
-    backdrop-filter: blur(8px); /* Frosted glass effect */
+    background: rgba(40, 11, 139, 0.6);
+    backdrop-filter: blur(8px);
     z-index: 50;
   }
 }
