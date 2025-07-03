@@ -201,6 +201,12 @@ export default {
     // Toggles the mobile menu expanded state
     toggleMobileMenu() {
       this.isMobileMenuExpanded = !this.isMobileMenuExpanded;
+
+      if (this.isMobileMenuExpanded) {
+        document.body.classList.add("no-scroll");
+      } else {
+        document.body.classList.remove("no-scroll");
+      }
     },
     // Checks if the current route is the given route
     isActiveRoute(route) {
@@ -234,6 +240,11 @@ export default {
     rgba(40, 11, 139, 0.9)
   );
   z-index: 50;
+}
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
 
 /* Styles for the main navigation background */
