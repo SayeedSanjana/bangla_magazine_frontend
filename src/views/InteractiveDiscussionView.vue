@@ -459,7 +459,7 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.sfu.ca/content/dam/sfu/retirees/Newsletters/2024/2024_Summer_Newsletter.pdf"
+                    href="https://mail.google.com/mail/u/1/#search/adib/FMfcgzQbfxbzKnWxxqbvgbWNjbvDrtlV?projector=1&messagePartId=0.1"
                     target="_blank"
                     class="text-midnight-sapphire hover:text-gray-700 inline-flex items-center gap-2"
                   >
