@@ -59,11 +59,13 @@
 
       <!-- Mobile Menu Content -->
       <div
-        :class="{
-          'max-h-0 opacity-0': !isMobileMenuExpanded,
-          'max-h-[1000px] opacity-100': isMobileMenuExpanded,
-        }"
-        class="md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out dropdown-bg text-white tracking-wide"
+        :class="[
+          isMobileMenuExpanded
+            ? 'opacity-100 overflow-y-auto'
+            : 'max-h-0 opacity-0 overflow-hidden',
+          'transition-opacity duration-300 ease-in-out md:hidden text-white tracking-wide dropdown-bg',
+        ]"
+        style="max-height: calc(100vh - 64px)"
       >
         <ul class="px-4 py-2 space-y-3">
           <li>
