@@ -16,7 +16,7 @@
           <p
             class="text-lg md:text-4xl mt-4 text-white font-cormorant tracking-wide"
           >
-            - Interactive Session with Dr. Zaman
+            - Interactive Session with Dr. Habiba
           </p>
         </div>
       </div>
