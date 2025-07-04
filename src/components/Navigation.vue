@@ -70,7 +70,7 @@
                 to="/"
                 :class="mobileHomeClass"
                 class="block font-semibold"
-                @click="toggleMobileMenu"
+                @click="closeMobileMenu"
               >
                 Home
               </router-link>
@@ -85,7 +85,7 @@
                   :to="item.path"
                   :class="mobileMenuLinkClass(item.path)"
                   class="block px-4"
-                  @click="toggleMobileMenu"
+                  @click="closeMobileMenu"
                 >
                   {{ item.label }}
                 </router-link>
@@ -182,9 +182,25 @@ export default {
       };
     },
   },
+  watch: {
+    $route() {
+      this.isMobileMenuExpanded = false;
+      this.updateBodyScrollLock();
+    },
+  },
   methods: {
     toggleMobileMenu() {
       this.isMobileMenuExpanded = !this.isMobileMenuExpanded;
+      this.updateBodyScrollLock();
+    },
+    closeMobileMenu() {
+      // Small delay to allow route transition to begin before hiding menu
+      setTimeout(() => {
+        this.isMobileMenuExpanded = false;
+        this.updateBodyScrollLock();
+      }, 50);
+    },
+    updateBodyScrollLock() {
       if (this.isMobileMenuExpanded) {
         document.body.classList.add("no-scroll");
       } else {
