@@ -1,6 +1,6 @@
 <template>
   <!-- Navigation Bar -->
-  <nav class="nav-bg shadow sticky top-0 z-50" @click.self="closeDropdowns">
+  <nav class="nav-bg shadow sticky top-0 z-50">
     <div class="absolute inset-0 w-full backdrop-blur-md -z-10"></div>
     <div class="lg:container lg:mx-auto">
       <div class="flex justify-between items-center h-16 px-4">
@@ -55,13 +55,10 @@
         </button>
       </div>
 
-      <!-- Mobile Menu Content -->
+      <!-- Mobile Menu Content (conditionally rendered) -->
       <div
-        :class="{
-          'max-h-0 opacity-0': !isMobileMenuExpanded,
-          'opacity-100': isMobileMenuExpanded,
-        }"
-        class="md:hidden transition-opacity duration-500 ease-in-out dropdown-bg text-white tracking-wide"
+        v-if="isMobileMenuExpanded"
+        class="md:hidden dropdown-bg text-white tracking-wide"
       >
         <div class="mobile-menu-container">
           <ul class="px-4 py-2 space-y-3">
@@ -194,7 +191,6 @@ export default {
       this.updateBodyScrollLock();
     },
     closeMobileMenu() {
-      // Small delay to allow route transition to begin before hiding menu
       setTimeout(() => {
         this.isMobileMenuExpanded = false;
         this.updateBodyScrollLock();
