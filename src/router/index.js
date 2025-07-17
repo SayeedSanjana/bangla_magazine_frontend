@@ -25,6 +25,8 @@ import DEI from "@/views/DEI.vue";
 import RabindraNazrulShondhaView from "@/views/RabindraNazrulShondhaView.vue";
 import InteractiveDiscussionView from "../views/InteractiveDiscussionView.vue";
 import PdfViewer from "@/components/PdfViewer.vue";
+import EventsView from "@/views/EventsView.vue";
+import ShoilpikShondhaView from "@/views/ShoilpikShondhaView.vue";
 
 // Router Setup
 const router = createRouter({
@@ -79,6 +81,11 @@ const router = createRouter({
       component: InternationalMotherLanguageDayView,
     },
     {
+      path: "/events",
+      name: "events-view",
+      component: EventsView,
+    },
+    {
       path: "/events/pohela-baishakh",
       name: "Pohela-Baishakh",
       component: PohelaBaishakhView,
@@ -122,6 +129,12 @@ const router = createRouter({
       path: "/events/interactive-discussion-habiba-zaman/",
       name: "interactive-discussion",
       component: InteractiveDiscussionView,
+      props: true,
+    },
+    {
+      path: "/events/shoilpik-shondha/",
+      name: "shoilpik-shondha",
+      component: ShoilpikShondhaView,
       props: true,
     },
     {

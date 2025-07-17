@@ -27,6 +27,14 @@
             :basePath="menu.basePath"
             :links="menu.items"
           />
+          <!-- Direct Events Link -->
+          <router-link
+            to="/events"
+            class="font-medium text-white hover:text-amber-200"
+            :class="{ 'border-b-2 border-amber-400 text-amber-200': isActiveRoute('/events') }"
+          >
+            Events
+          </router-link>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -55,7 +63,7 @@
         </button>
       </div>
 
-      <!-- Mobile Menu Content (conditionally rendered) -->
+      <!-- Mobile Menu Content -->
       <div
         v-if="isMobileMenuExpanded"
         class="md:hidden dropdown-bg text-white tracking-wide"
@@ -87,6 +95,18 @@
                   {{ item.label }}
                 </router-link>
               </span>
+            </li>
+            <!-- Direct Events Link in Mobile Menu -->
+            <li>
+              <hr class="border mb-1" />
+              <router-link
+                to="/events"
+                class="block font-semibold"
+                :class="mobileMenuLinkClass('/events')"
+                @click="closeMobileMenu"
+              >
+                Events
+              </router-link>
             </li>
           </ul>
         </div>
@@ -138,30 +158,7 @@ export default {
             },
           ],
         },
-        {
-          title: "Events",
-          basePath: "/events",
-          items: [
-            {
-              label: "Bhasha Dibosh",
-              path: "/events/21stFebruary-International-Mother-Language-Day",
-            },
-            {
-              label: "Women's History Month",
-              path: "/events/women-history-month",
-            },
-            { label: "Noboborsho", path: "/events/pohela-baishakh" },
-            { label: "Birth Anniversary", path: "/events/birth-anniversary" },
-            {
-              label: "Rabindra-Nazrul Shondha",
-              path: "/events/rabindra-nazrul-shondha",
-            },
-            {
-              label: "Interactive Discussion With Habiba Zaman",
-              path: "/events/interactive-discussion-habiba-zaman",
-            },
-          ],
-        },
+        // Removed Events dropdown from here
       ],
     };
   },
@@ -206,17 +203,11 @@ export default {
     isActiveRoute(route) {
       return this.$route.path === route;
     },
-    isParentRouteActive(parentRoute) {
-      return this.$route.path.startsWith(parentRoute);
-    },
     mobileMenuLinkClass(path) {
       return {
         "text-amber-200 font-bold": this.isActiveRoute(path),
         "text-white": !this.isActiveRoute(path),
       };
-    },
-    closeDropdowns() {
-      // Future logic
     },
   },
 };
@@ -242,7 +233,7 @@ export default {
 
 /* Scrollable container for mobile menu */
 .mobile-menu-container {
-  max-height: calc(100vh - 4rem); /* leave space for nav bar */
+  max-height: calc(100vh - 4rem);
   overflow-y: auto;
   padding-bottom: 2rem;
 }
