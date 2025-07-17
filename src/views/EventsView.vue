@@ -1,7 +1,9 @@
 <template>
   <div class="items-center justify-center min-h-screen bg-white">
     <!-- Hero Background Section -->
-    <div class="relative h-[55vh] bg-cover bg-center background-img"></div>
+    <div
+      class="relative h-[40vh] md:h-[50vh] xl:h-[55vh] bg-cover bg-center background-img"
+    ></div>
 
     <!-- Section Hosted -->
     <div class="text-center px-4 py-16 max-w-7xl mx-auto">
@@ -15,11 +17,11 @@
     </div>
 
     <!-- Border After Hosted Section -->
-    <div class="border-t border-gray-300 max-w-6xl mx-auto mb-16"></div>
+    <div class="border-t border-gray-300 max-w-6xl mx-auto mb-12"></div>
 
     <!-- Hosted Feature Cards with Pagination -->
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-4 pb-20 md:pb-10"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-12 md:px-4 pb-10"
     >
       <div
         v-for="(feature, index) in paginatedHosted"
@@ -34,7 +36,7 @@
           <img
             :src="feature.image"
             :alt="feature.heading"
-            class="w-full h-80 object-center object-cover"
+            class="w-full h-64 md:h-80 object-center object-cover"
           />
           <div
             class="absolute top-0 right-0 bg-rose-900 px-3 py-2 text-xs text-white mt-3 mr-3 rounded flex items-center gap-1"
@@ -84,7 +86,7 @@
     </div>
 
     <!-- Pagination Controls -->
-    <div class="flex justify-center items-center space-x-4 pb-16">
+    <div class="flex justify-center items-center space-x-4 pb-6">
       <button
         @click="currentPage--"
         :disabled="currentPage === 1"
@@ -116,7 +118,7 @@
       </p>
     </div>
 
-    <div class="border-t border-gray-300 max-w-6xl mx-auto mb-16"></div>
+    <div class="border-t border-gray-300 max-w-6xl mx-auto mb-12"></div>
 
     <!-- Participated Feature Cards -->
     <div
@@ -135,7 +137,7 @@
           <img
             :src="feature.image"
             :alt="feature.heading"
-            class="w-full h-80 object-center object-cover"
+            class="w-full h-64 md:h-80 object-center object-cover"
           />
           <div
             class="absolute top-0 right-0 bg-rose-900 px-3 py-2 text-xs text-white mt-3 mr-3 rounded flex items-center gap-1"
@@ -184,7 +186,7 @@
       </div>
     </div>
 
-    <div class="flex justify-center items-center space-x-4 pb-24">
+    <div class="flex justify-center items-center space-x-4 pb-6">
       <button
         @click="currentPageParticipated--"
         :disabled="currentPageParticipated === 1"
