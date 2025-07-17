@@ -16,7 +16,7 @@
           <p
             class="text-right text-2xl md:text-3xl mt-4 text-white font-cormorant tracking-wide"
           >
-            - জয়ানন্দিনী | Jayanandini
+            - জায়ানন্দিনী | Jayanandini
           </p>
         </div>
       </div>
