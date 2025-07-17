@@ -21,7 +21,7 @@
 
     <!-- Hosted Feature Cards with Pagination -->
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-12 md:px-4 pb-10"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-4 pb-10"
     >
       <div
         v-for="(feature, index) in paginatedHosted"
