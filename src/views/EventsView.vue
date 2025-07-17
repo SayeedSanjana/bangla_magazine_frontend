@@ -258,14 +258,6 @@ export default {
       currentPageParticipated: 1,
       features: [
         {
-          date: "26th Feb 2025",
-          heading: "Bhasha Dibosh",
-          description:
-            "21st February is not just about remembrance—it’s also about celebrating the languages that make us who we are. Join us for an evening of tribute as we honor the martyrs and embrace the beauty of linguistic and cultural identity.",
-          image: img1,
-          route: "/events/21stFebruary-International-Mother-Language-Day",
-        },
-        {
           date: "1st March 2025",
           heading: "Women History Month",
           description:
@@ -307,6 +299,14 @@ export default {
         },
       ],
       featuresParticipated: [
+        {
+          date: "26th Feb 2025",
+          heading: "Bhasha Dibosh",
+          description:
+            "21st February is not just about remembrance—it’s also about celebrating the languages that make us who we are. Join us for an evening of tribute as we honor the martyrs and embrace the beauty of linguistic and cultural identity.",
+          image: img1,
+          route: "/events/21stFebruary-International-Mother-Language-Day",
+        },
         {
           date: "19th July 2025",
           heading: "Shoilpik Shondha",
