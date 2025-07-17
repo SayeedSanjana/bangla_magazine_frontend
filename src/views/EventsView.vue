@@ -309,7 +309,7 @@ export default {
         },
         {
           date: "19th July 2025",
-          heading: "Shoilpik Shondha",
+          heading: "Shoilpik Sondhya",
           description:
             "We’re excited to take part in Shoilpik Sondhya, a vibrant celebration of Bengali culture, music, and theatre, bringing together artists and audiences from across Canada. Join us for an evening filled with rhythm, stories, and shared heritage.",
           image: img7,

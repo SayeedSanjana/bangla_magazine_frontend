@@ -185,7 +185,7 @@
 
         <!-- Image 3 -->
         <div
-          class="relative z-10 w-full max-w-md mx-auto mt-6 md:mt-8 lg:mt-12 lg:ml-12"
+          class="relative z-10 w-full max-w-md mx-auto mt-6 md:mt-8 lg:mt-24 lg:ml-12"
         >
           <img
             src="@/assets/img/shoilpik3.jpeg"
