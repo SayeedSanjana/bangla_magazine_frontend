@@ -334,7 +334,7 @@ export default {
       return this.featuresParticipated.slice(start, start + this.itemsPerPage);
     },
     styledHeading() {
-      const text = "Shoilpik Shondha"; 
+      const text = "Shoilpik Shondha";
       return {
         first: text.charAt(0),
         rest: text.slice(1),
@@ -357,7 +357,7 @@ export default {
 
 <style scoped>
 .background-img {
-  background-image: url("../assets/img/shoilpikShondha.png");
+  background-image: url("../assets/img/event.png");
 }
 .bg-img {
   background-image: url("../assets/img/bg-contribute.png");
