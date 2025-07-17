@@ -109,7 +109,7 @@
     <!-- Section Participated -->
     <div class="text-center px-4 py-16 max-w-7xl mx-auto">
       <h2 class="text-4xl md:text-6xl text-rose-900 font-cormorant">
-        Events We’ve Participated
+        Events We’ve Participated In
       </h2>
       <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
         Explore the inspiring moments we've shared as proud participants,
