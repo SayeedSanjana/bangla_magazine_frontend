@@ -142,15 +142,17 @@
     <div
       class="min-h-screen flex flex-col justify-center items-center bg-white py-16"
     >
-      <h2 class="text-4xl md:text-6xl text-teal-900 font-cormorant text-center">
-        About the Event
-      </h2>
-      <p class="text-gray-600 mt-4 mb-20 md:mb-28 text-center">
-        We’re excited to take part in Shoilpik Sondhya, a vibrant celebration of
-        Bengali culture, music, and theatre, bringing together artists and
-        audiences from across Canada. Join us for an evening filled with rhythm,
-        stories, and shared heritage
-      </p> 
+      <div class="text-center max-w-6xl">
+        <h2 class="text-4xl md:text-6xl text-teal-900 font-cormorant">
+          About the Event
+        </h2>
+        <p class="text-gray-600 mt-4 mb-20 md:mb-28">
+          We’re excited to take part in Shoilpik Sondhya, a vibrant celebration
+          of Bengali culture, music, and theatre, bringing together artists and
+          audiences from across Canada. Join us for an evening filled with
+          rhythm, stories, and shared heritage
+        </p>
+      </div>
 
       <div
         class="relative flex flex-col lg:flex-row gap-10 lg:items-center sm:items-stretch"
