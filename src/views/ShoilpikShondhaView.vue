@@ -146,11 +146,11 @@
         <h2 class="text-4xl md:text-6xl text-teal-900 font-cormorant">
           About the Event
         </h2>
-        <p class="text-gray-600 mt-4 mb-20 md:mb-28">
+        <p class="text-gray-600 mt-4 mb-16 md:mb-24">
           We’re excited to take part in Shoilpik Sondhya, a vibrant celebration
           of Bengali culture, music, and theatre, bringing together artists and
           audiences from across Canada. Join us for an evening filled with
-          rhythm, stories, and shared heritage
+          rhythm, stories, and shared heritage.
         </p>
       </div>
 
@@ -224,14 +224,22 @@
               <strong class="text-teal-800">Time:</strong>
               <span>6:00 PM</span>
             </div>
-            <div class="flex items-center justify-left gap-2">
-              <span class="text-xl">📍</span>
-              <strong class="text-teal-800">Venue:</strong>
-              <span
-                >6767 Chemin de la Côte-des-Neiges, Montreal, Quebec, Canada –
-                H3S 2T6</span
+            <p class="text-sm text-gray-700 mt-2">
+              We’re excited to take part in <strong>Shoilpik Sondhya</strong> –
+              a vibrant celebration of Bengali culture, music, and theatre,
+              bringing together artists and audiences from across Canada. Join
+              us for an evening filled with rhythm, stories, and shared
+              heritage.
+              <br />
+              <a
+                href="https://www.google.com/maps?q=6767+Chemin+de+la+Côte-des-Neiges,+Montreal,+QC+H3S+2T6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-green-700 font-semibold underline hover:text-green-900"
               >
-            </div>
+                📍 View Venue on Google Maps
+              </a>
+            </p>
           </div>
         </div>
       </div>
