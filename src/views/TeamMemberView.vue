@@ -438,14 +438,6 @@ export default {
           location: "Montreal, Quebec, Canada",
         },
         {
-          name: "Anwesha Bhattacharjee ",
-          position: "Founder",
-          role: "General Manager",
-          image: image1,
-          bio: "Journalism and content production have been Anwesha's passion for almost 20 years now, from her school years well into collegiate journalism. She hopes to contribute with her experiences both as a member of the diaspora and as a content producer toward B.A.N.G.L.A.'s mission",
-          location: "Montreal, Quebec, Canada",
-        },
-        {
           name: "Moinak Banerjee",
           position: "Founder",
           role: "VP - Organization",
@@ -548,6 +540,14 @@ export default {
           image: image16,
           bio: "Rooted in the vibrant spirit of Kolkata, I carry the essence of Bengal wherever I go. By profession, I navigate the structured world of IT, but my heart belongs to art—especially painting. My canvas reflects the colors of my heritage, infused with a global perspective, life’s rhythm, and raw emotion. I find inspiration in the harmony of order and chaos, much like the city itself.",
           location: "Toronto, Ontario",
+        },
+        {
+          name: "Anwesha Bhattacharjee ",
+          position: "Member",
+
+          image: image1,
+          bio: "Journalism and content production have been Anwesha's passion for almost 20 years now, from her school years well into collegiate journalism. She hopes to contribute with her experiences both as a member of the diaspora and as a content producer toward B.A.N.G.L.A.'s mission",
+          location: "Montreal, Quebec, Canada",
         },
 
         {
