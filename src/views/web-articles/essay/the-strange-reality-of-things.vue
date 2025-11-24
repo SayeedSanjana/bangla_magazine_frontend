@@ -49,7 +49,7 @@
             <div class="flex items-center">
               <img
                 src="@/assets/authorImage/AtreyeeMajumder.jpg"
-                class="rounded-full h-28 w-28 mr-3"
+                class="rounded-full h-28 w-28 mr-3 object-cover"
                 alt="Author 2"
               />
               <div>
