@@ -47,11 +47,12 @@
           <!-- Authors Section -->
           <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
-              <!-- Initials Avatar (fixed for mobile & desktop) -->
-              <div
-                class="mr-3 bg-midnight-sapphire text-white flex items-center justify-center font-semibold rounded-full aspect-square h-16 w-16 text-base lg:h-24 lg:w-24 lg:text-3xl"
-              >
-                AM
+              <div class="h-28 w-28 rounded-full overflow-hidden mr-3">
+                <img
+                  src="@/assets/authorImage/AtreyeeMajumder.jpg"
+                  class="h-full w-full object-cover object-center"
+                  alt="Author Image"
+                />
               </div>
 
               <div>
@@ -252,9 +253,9 @@
               />
 
               <p class="text-sm mt-1 text-center">
-                <span class="font-semibold">Figure: </span> SEQ Figure \* ARABIC
-                1. Parc la Fontaine, Montreal. February 2025. Image courtesy of
-                the author.
+                <span class="font-semibold">Figure: </span>Parc la Fontaine,
+                Montreal. February 2025.
+                <span class="font-semibold">Image courtesy: </span>Author.
               </p>
             </div>
             <p class="mt-6 text-gray-700">
@@ -431,14 +432,20 @@
               sacred city of Vrindavan and its surround in northern India. This
               research journey has received the support of the Wenner-Gren
               Foundation Post-PhD grant (2024-25). She has published widely in
-              academic and popular venues including the South Asian
-              Multidisciplinary Academic Journal, Religions, Economic and
-              Political Weekly, 3AM magazine, India Today, and LSE Review of
-              Books. Her poems and short fiction have been featured in RIC
-              Journal, Bombay Review, Bangalore Review, Gulmohur Quarterly,
-              Nether Quarterly, Anthropology and Humanism, Sunflower Collective,
-              Cafe Dissensus. Her first book of poems, The Book of Blue, was
-              published by Red River in 2024.
+              academic and popular venues including the
+              <span class="italic"
+                >South Asian Multidisciplinary Academic Journal, Religions,
+                Economic and Political Weekly, 3AM magazine, India Today, and
+                LSE Review of Books. </span
+              >Her poems and short fiction have been featured in
+              <span class="italic"
+                >RIC Journal, Bombay Review, Bangalore Review, Gulmohur
+                Quarterly, Nether Quarterly, Anthropology and Humanism,
+                Sunflower Collective, Cafe Dissensus.</span
+              >
+              Her first book of poems,
+              <span class="italic">The Book of Blue</span>, was published by
+              <span>Red River</span> in 2024.
             </p>
           </div>
         </div>
