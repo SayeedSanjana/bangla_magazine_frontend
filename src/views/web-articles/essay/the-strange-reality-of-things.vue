@@ -49,7 +49,7 @@
             <div class="flex items-center">
               <!-- Initials Avatar (fixed for mobile & desktop) -->
               <div
-                class="mr-3 bg-midnight-sapphire text-white flex items-center justify-center font-semibold rounded-full aspect-square h-16 w-16 text-xl lg:h-24 lg:w-24 lg:text-3xl"
+                class="mr-3 bg-midnight-sapphire text-white flex items-center justify-center font-semibold rounded-full aspect-square h-16 w-16 text-base lg:h-24 lg:w-24 lg:text-3xl"
               >
                 AM
               </div>
