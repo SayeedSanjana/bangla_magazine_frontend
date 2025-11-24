@@ -245,7 +245,7 @@
             <div class="flex flex-col mt-8 justify-center items-center">
               <img
                 src="@/assets/WebPrintArticles/essay01.png"
-                class="w-auto h-auto rounded-lg shadow-lg"
+                class="rounded-lg shadow-lg"
                 alt="Featured Image"
               />
 
@@ -442,7 +442,7 @@
               >
               Her first book of poems,
               <span class="italic">The Book of Blue</span>, was published by
-              <span>Red River</span> in 2024.
+              <span class="italic">Red River</span> in 2024.
             </p>
           </div>
         </div>
