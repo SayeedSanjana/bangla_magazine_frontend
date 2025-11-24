@@ -47,9 +47,9 @@
           <!-- Authors Section -->
           <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
-              <!-- Initials Avatar -->
+              <!-- Initials Avatar (fixed for mobile & desktop) -->
               <div
-                class="rounded-full h-16 w-16 lg:w-24 lg:h-24 mr-3 bg-midnight-sapphire text-white flex items-center justify-center text-lg lg:text-3xl font-semibold"
+                class="mr-3 bg-midnight-sapphire text-white flex items-center justify-center font-semibold rounded-full aspect-square h-16 w-16 text-xl lg:h-24 lg:w-24 lg:text-3xl"
               >
                 AM
               </div>
