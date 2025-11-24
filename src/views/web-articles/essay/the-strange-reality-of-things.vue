@@ -47,14 +47,11 @@
           <!-- Authors Section -->
           <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
-              <div class="h-28 w-28 rounded-full overflow-hidden mr-3">
-                <img
-                  src="@/assets/authorImage/AtreyeeMajumder.jpg"
-                  class="h-full w-full object-cover object-center"
-                  alt="Author Image"
-                />
-              </div>
-
+              <img
+                src="@/assets/authorImage/AtreyeeMajumder.jpg"
+                class="h-28 w-28 rounded-full object-cover object-center mr-3"
+                alt="Author Image"
+              />
               <div>
                 <p class="text-lg font-semibold">Atreyee Majumder</p>
                 <p class="text-sm text-gray-600">
