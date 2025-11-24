@@ -245,7 +245,7 @@
             <div class="flex flex-col mt-8 justify-center items-center">
               <img
                 src="@/assets/WebPrintArticles/essay01.png"
-                class="rounded-lg shadow-lg"
+                class="w-full md:w-4/5 rounded-lg shadow-lg"
                 alt="Featured Image"
               />
 
