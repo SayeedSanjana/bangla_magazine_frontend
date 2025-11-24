@@ -27,6 +27,8 @@ import InteractiveDiscussionView from "../views/InteractiveDiscussionView.vue";
 import PdfViewer from "@/components/PdfViewer.vue";
 import EventsView from "@/views/EventsView.vue";
 import ShoilpikShondhaView from "@/views/ShoilpikShondhaView.vue";
+import WebPrintArticlesView from "@/views/web-articles/WebPrintArticles.vue";
+import DynamicWebArticlesView from "@/views/DynamicWebArticles.vue";
 
 // Router Setup
 const router = createRouter({
@@ -141,6 +143,17 @@ const router = createRouter({
       path: "/view-pdf/:filename",
       name: "pdf-viewer",
       component: PdfViewer,
+      props: true,
+    },
+    {
+      path: "/web-articles",
+      name: "web-articles-view",
+      component: WebPrintArticlesView,
+    },
+    {
+      path: "/web-articles/:type/:slug",
+      name: "article-web-view",
+      component: DynamicWebArticlesView,
       props: true,
     },
   ],

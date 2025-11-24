@@ -2,7 +2,7 @@
   <div class="min-h-screen">
     <template v-if="loading">
       <!-- Loading Animation (Spinner) -->
-      <div class="flex flex-col items-center min-h-screen">
+      <div class="flex flex-col items-center justify-center min-h-screen">
         <div
           class="animate-spin rounded-full h-12 w-12 border-b-4 border-blue-500"
         ></div>
@@ -16,7 +16,7 @@
 
     <template v-else>
       <!-- When article is not found, still show a loading screen -->
-      <div class="flex flex-col items-center min-h-screen">
+      <div class="flex flex-col items-center justify-center min-h-screen">
         <div
           class="animate-spin rounded-full h-12 w-12 border-b-4 border-red-500"
         ></div>

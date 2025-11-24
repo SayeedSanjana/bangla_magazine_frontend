@@ -20,6 +20,8 @@
           <router-link to="/" :class="desktopHomeClass" class="font-medium">
             Home
           </router-link>
+
+          <!-- Dropdown menus -->
           <DropdownMenu
             v-for="menu in menus"
             :key="menu.title"
@@ -27,13 +29,29 @@
             :basePath="menu.basePath"
             :links="menu.items"
           />
+
           <!-- Direct Events Link -->
           <router-link
             to="/events"
             class="font-medium text-white hover:text-amber-200"
-            :class="{ 'border-b-2 border-amber-400 text-amber-200': isActiveRoute('/events') }"
+            :class="{
+              'border-b-2 border-amber-400 text-amber-200':
+                isActiveRoute('/events'),
+            }"
           >
             Events
+          </router-link>
+
+          <!-- Web Print Articles -->
+          <router-link
+            to="/web-articles"
+            class="font-medium text-white hover:text-amber-200"
+            :class="{
+              'border-b-2 border-amber-400 text-amber-200':
+                isActiveRoute('/web-articles'),
+            }"
+          >
+            Web Articles
           </router-link>
         </div>
 
@@ -51,7 +69,6 @@
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               stroke-linecap="round"
@@ -80,9 +97,12 @@
                 Home
               </router-link>
             </li>
+
+            <!-- Dropdown sections -->
             <li v-for="menu in menus" :key="menu.title">
               <hr class="border mb-1" />
               <p class="font-semibold mb-1">{{ menu.title }}</p>
+
               <span class="space-y-2">
                 <router-link
                   v-for="item in menu.items"
@@ -96,7 +116,8 @@
                 </router-link>
               </span>
             </li>
-            <!-- Direct Events Link in Mobile Menu -->
+
+            <!-- Events -->
             <li>
               <hr class="border mb-1" />
               <router-link
@@ -106,6 +127,19 @@
                 @click="closeMobileMenu"
               >
                 Events
+              </router-link>
+            </li>
+
+            <!-- Web Print Articles -->
+            <li>
+              <hr class="border mb-1" />
+              <router-link
+                to="/web-articles"
+                class="block font-semibold"
+                :class="mobileMenuLinkClass('/web-articles')"
+                @click="closeMobileMenu"
+              >
+                Web Articles
               </router-link>
             </li>
           </ul>
@@ -119,9 +153,8 @@
 import DropdownMenu from "./DropdownMenu.vue";
 
 export default {
-  components: {
-    DropdownMenu,
-  },
+  components: { DropdownMenu },
+
   data() {
     return {
       isMobileMenuExpanded: false,
@@ -158,41 +191,46 @@ export default {
             },
           ],
         },
-        // Removed Events dropdown from here
       ],
     };
   },
+
   computed: {
     desktopHomeClass() {
       return {
-        "border-b-2 border-amber-400 text-amber-200": this.isActiveRoute("/"),
-        "text-white hover:text-amber-200": !this.isActiveRoute("/"),
+        "border-b-2 border-amber-400 text-amber-200": this.$route.path === "/",
+        "text-white hover:text-amber-200": this.$route.path !== "/",
       };
     },
+
     mobileHomeClass() {
       return {
-        "text-amber-200 font-bold": this.isActiveRoute("/"),
-        "text-white": !this.isActiveRoute("/"),
+        "text-amber-200 font-bold": this.$route.path === "/",
+        "text-white": this.$route.path !== "/",
       };
     },
   },
+
   watch: {
     $route() {
       this.isMobileMenuExpanded = false;
       this.updateBodyScrollLock();
     },
   },
+
   methods: {
     toggleMobileMenu() {
       this.isMobileMenuExpanded = !this.isMobileMenuExpanded;
       this.updateBodyScrollLock();
     },
+
     closeMobileMenu() {
       setTimeout(() => {
         this.isMobileMenuExpanded = false;
         this.updateBodyScrollLock();
       }, 50);
     },
+
     updateBodyScrollLock() {
       if (this.isMobileMenuExpanded) {
         document.body.classList.add("no-scroll");
@@ -200,13 +238,16 @@ export default {
         document.body.classList.remove("no-scroll");
       }
     },
+
+    // ⭐ NEW: Detect nested section routes
     isActiveRoute(route) {
-      return this.$route.path === route;
+      return this.$route.path.startsWith(route);
     },
+
     mobileMenuLinkClass(path) {
       return {
-        "text-amber-200 font-bold": this.isActiveRoute(path),
-        "text-white": !this.isActiveRoute(path),
+        "text-amber-200 font-bold": this.$route.path.startsWith(path),
+        "text-white": !this.$route.path.startsWith(path),
       };
     },
   },
@@ -249,7 +290,6 @@ export default {
   );
 }
 
-/* Desktop-specific styles */
 @media (min-width: 768px) {
   .nav-bg {
     background: linear-gradient(

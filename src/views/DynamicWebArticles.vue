@@ -28,8 +28,8 @@
 
 <script>
 export default {
-  name: "DynamicPohelaBaishakhArticle",
-  props: ["slug"], // Get the slug from the route
+  name: "DynamicWebArticle",
+  props: ["type", "slug"], // Get the slug from the route
   data() {
     return {
       articleComponent: null, // Placeholder for dynamically imported component
@@ -40,7 +40,7 @@ export default {
     try {
       // ✅ Update the path to `ekushe-articles` instead of `articles`
       this.articleComponent = (
-        await import(`@/views/pohela-baishakh-articles/${this.slug}.vue`)
+        await import(`@/views/web-articles/${this.type}/${this.slug}.vue`)
       ).default;
     } catch (error) {
       console.error("Article not found:", error);
