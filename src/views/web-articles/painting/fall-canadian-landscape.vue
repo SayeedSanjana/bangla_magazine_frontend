@@ -195,36 +195,8 @@
           </div>
         </div>
 
-        <!-- ===================== ARTIST BIO (ENGLISH) ===================== -->
-        <div class="mt-24">
-          <h1
-            class="text-3xl text-midnight-sapphire font-cormorant font-semibold"
-          >
-            Artist's Bio
-          </h1>
-
-          <p class="mt-2 text-gray-700">
-            Asoke Chakravarty, BOIMELA-UTSAV Award winner, is a poet, writer,
-            artist, playwright, musician and humanist who is of Indian origin
-            and has lived in Canada for 55 years. Chakravarty’s written work
-            appears in 18 publications and has been translated to Spanish,
-            French, German, Turkish and other languages. He published his first
-            short story in 1955. He contributes his written work to over 80
-            leading magazines across three continents and many International
-            Anthologies. Chakravarty has exhibited at 22 solo art shows in three
-            continents. He has played classical tabla with leading musicians of
-            India. Chakravarty is the founder-director of Krittibas Literary
-            Group of Toronto and was the former President of The International
-            Festival of Poetry of Resistance in Toronto. His collection of poems
-            <span class="italic">Vaater thaalaai eto kaantaajhop</span> was
-            nominated for the Shahityo Academy in Delhi. He regularly speaks at
-            seminars and literary conferences. He is an Engineer with an MBA and
-            holds Fine Arts Diplomas.
-          </p>
-        </div>
-
         <!-- ===================== শিল্পীর পরিচিতি (BANGLA) ===================== -->
-        <div class="mt-12">
+        <div class="mt-24">
           <h1
             class="text-xl text-midnight-sapphire font-cormorant font-semibold"
           >
@@ -261,6 +233,34 @@
               সম্পর্কে কানাডা ও কলকাতার টেলিভিশনে অজস্র সাক্ষাত্কার দিয়েছেন।
             </p>
           </div>
+        </div>
+
+        <!-- ===================== ARTIST BIO (ENGLISH) ===================== -->
+        <div class="mt-12">
+          <h1
+            class="text-3xl text-midnight-sapphire font-cormorant font-semibold"
+          >
+            Artist's Bio
+          </h1>
+
+          <p class="mt-2 text-gray-700">
+            Asoke Chakravarty, BOIMELA-UTSAV Award winner, is a poet, writer,
+            artist, playwright, musician and humanist who is of Indian origin
+            and has lived in Canada for 55 years. Chakravarty’s written work
+            appears in 18 publications and has been translated to Spanish,
+            French, German, Turkish and other languages. He published his first
+            short story in 1955. He contributes his written work to over 80
+            leading magazines across three continents and many International
+            Anthologies. Chakravarty has exhibited at 22 solo art shows in three
+            continents. He has played classical tabla with leading musicians of
+            India. Chakravarty is the founder-director of Krittibas Literary
+            Group of Toronto and was the former President of The International
+            Festival of Poetry of Resistance in Toronto. His collection of poems
+            <span class="italic">Vaater thaalaai eto kaantaajhop</span> was
+            nominated for the Shahityo Academy in Delhi. He regularly speaks at
+            seminars and literary conferences. He is an Engineer with an MBA and
+            holds Fine Arts Diplomas.
+          </p>
         </div>
       </div>
     </div>
