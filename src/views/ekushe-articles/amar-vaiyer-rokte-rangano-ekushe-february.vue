@@ -483,7 +483,7 @@ export default {
   },
   methods: {
     join() {
-      this.$router.push("/join");
+      this.$router.push("/contribute/membership");
     },
   },
 };

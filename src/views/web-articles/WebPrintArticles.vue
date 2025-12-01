@@ -117,7 +117,7 @@
                 stroke-width="1.6"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="w-8 h-8 text-amber-800"
+                class="w-10 h-10 text-amber-800"
               >
                 <rect x="5" y="3" width="14" height="18" rx="2" ry="2" />
                 <path d="M15 3v4a1 1 0 0 0 1 1h3" />
@@ -194,12 +194,110 @@
             </div>
           </section>
 
+          <!-- PAITING SECTION -->
+          <section id="painting-section" class="scroll-mt-20">
+            <!-- Poems Heading -->
+            <div class="flex items-center gap-2 mb-2 h-10">
+              <h2
+                class="text-3xl lg:text-4xl font-bold text-midnight-sapphire font-cormorant leading-none"
+              >
+                Art & Paintings
+              </h2>
+
+              <!-- Painting Icon (Framed Artwork) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-10 h-10 text-blue-900"
+              >
+                <!-- Frame -->
+                <rect x="3" y="4" width="18" height="14" rx="2" ry="2" />
+                <!-- Little “sun” / spotlight -->
+                <circle cx="9" cy="9" r="1.3" />
+                <!-- Stylized mountains / landscape -->
+                <path d="M7 15l3-3 3 4 2-2 3 3" />
+              </svg>
+            </div>
+
+            <!-- Subtitle Line Under Poems -->
+            <p
+              class="text-gray-700 mb-8 font-cormorant text-lg lg:text-xl italic"
+            >
+              A curated space of evocative paintings and visual narratives,
+              bringing together colours, emotions, and moments that linger long
+              after the viewing ends.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+              <!-- When no results -->
+              <div
+                v-if="paintingCards.length === 0"
+                class="col-span-full text-left text-gray-600 text-lg py-6 font-medium"
+              >
+                Coming Soon...
+              </div>
+              <div
+                v-for="article in filteredSortedPaintings"
+                :key="article.title"
+                class="group bg-white rounded-2xl shadow-lg hover:shadow-xl border overflow-hidden flex flex-col h-[420px] w-[300px]"
+              >
+                <!-- Large Image (unchanged height) -->
+                <div class="relative h-80 overflow-hidden">
+                  <img
+                    :src="article.img"
+                    class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                  />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/60 to-transparent"
+                  ></div>
+                </div>
+
+                <div class="p-4 flex flex-col h-full justify-between">
+                  <div>
+                    <h3 class="text-lg font-semibold">{{ article.title }}</h3>
+                    <p class="text-sm text-gray-600 line-clamp-3 mt-1 mb-2">
+                      {{ article.excerpt }}
+                    </p>
+
+                    <!-- Reduced gap above metadata -->
+                    <div
+                      class="flex items-center text-xs text-gray-500 gap-2 mt-3 pt-1 border-t"
+                    >
+                      <span class="flex items-center gap-1">
+                        <i class="fa-solid fa-user text-amber-600"></i
+                        ><strong>{{ article.author }}</strong>
+                      </span>
+                      <span class="text-gray-400">|</span>
+                      <span class="flex items-center gap-1">
+                        <i class="fa-solid fa-calendar-days text-blue-600"></i
+                        >{{ article.date }}
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Reduced gap above button -->
+                  <button
+                    @click="goToArticle(article.type, article.slug)"
+                    class="mt-1 px-4 py-3 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg"
+                  >
+                    See More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!-- POEM SECTION -->
           <section id="poem-section" class="scroll-mt-20">
             <!-- Poems Heading -->
             <div class="flex items-center gap-2 mb-2 h-10">
               <h2
-                class="text-3xl lg:text-4xl font-bold text-midnight-sapphire font-cormorant leading-none"
+                class="text-3xl lg:text-4xl font-bold text-amber-700 font-cormorant leading-none"
               >
                 Poems
               </h2>
@@ -209,7 +307,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
                 fill="currentColor"
-                class="w-8 h-8 text-blue-900"
+                class="w-10 h-10 text-amber-800"
               >
                 <path
                   d="M31.009 0.878c-5.937 0.218-10.752 1.502-14.433 3.482l-1.838 3.073-0.31-1.752c-0.657 0.462-1.266 0.949-1.827 1.46l-0.917 2.813-0.315-1.572c-2.724 3.049-3.942 6.736-3.635 10.504h-4.602v3.063h2.519l-2.703 2.373-1.389 5.303 0.907 0.99h11.058l0.907-0.99-1.389-5.303-2.558-2.373h2.206v-3.063h-4.055c1.596-0.827 3.146-1.971 4.68-3.293l-1.862 0.097 0.017-0.019 3.343-1.423c2.923-2.722 5.828-5.925 8.936-8.625l-1.529-0.324 3.535-1.317c1.673-1.276 3.413-2.358 5.254-3.105z"
@@ -287,12 +385,56 @@
       </div>
     </div>
 
+    <div
+      class="relative px-2 bg-gradient-to-r from-amber-50 to-blue-50 bg-img bg-cover bg-center h-96 group pt-8"
+    >
+      <!-- Overlay for Background Image -->
+      <div class="absolute inset-0 bg-gray-900 opacity-85"></div>
+
+      <!-- Tooltip for Image Credit -->
+      <div
+        class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      >
+        Background Image by:
+        <a
+          class="hover:underline"
+          href="https://ca.pinterest.com/pin/2251868554953302/"
+          >https://ca.pinterest.com/pin/2251868554953302/</a
+        >
+        <div
+          class="absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-black"
+        ></div>
+      </div>
+
+      <!-- Content Overlay -->
+      <div
+        class="container md:mx-auto py-6 px-4 space-y-3 lg:px-32 relative z-10"
+      >
+        <h2
+          class="text-4xl md:text-5xl font-bold mb-2 text-white font-cormorant pt-6"
+        >
+          Join Our Network
+        </h2>
+        <p class="text-white text-lg text-justify my-2 mb-6">
+          Join - Bangali Abhibasi Network: a Glocal Linguo-cultural Association
+        </p>
+        <button
+          @click="join"
+          aria-label="Contribute to the community"
+          class="text-base px-4 py-3 border-2 border-yellow-500 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg lg:hover:bg-gradient-to-r lg:hover:from-gray-50 lg:hover:to-white lg:hover:border-honey-gold lg:hover:border-2 lg:hover:text-honey-gold transition duration-300 ease-in-out"
+        >
+          Join Our Network
+        </button>
+      </div>
+    </div>
+
     <CookieConsent />
   </div>
 </template>
 
 <script>
-import essay01 from "@/assets/WebPrintArticles/essay01.png";
+import essay01 from "@/assets/WebPrintArticles/essay/AtrayeeMajumderEssay01.png";
+import painting01 from "@/assets/WebPrintArticles/painting/painting01.png";
 import heroBackground from "@/assets/WebPrintArticles/webPrintArticlesCover.png";
 import CookieConsent from "@/components/CookieConsent.vue";
 
@@ -308,7 +450,8 @@ export default {
 
       webArticlesTopics: [
         { id: 1, name: "Essays" },
-        { id: 2, name: "Poems" },
+        { id: 2, name: "Art & Paintings" },
+        { id: 3, name: "Poems" },
       ],
 
       selectedTopicId: 1,
@@ -325,6 +468,18 @@ export default {
           type: "essay",
         },
       ],
+      paintingCards: [
+        {
+          title: "Fall Canadian Landscape",
+          excerpt:
+            "Fall, Canadian Landscape Paintings by Asoke Chakravarty ...",
+          author: "Asoke Chakravarty",
+          date: "2025-11-30",
+          img: painting01,
+          slug: "fall-canadian-landscape",
+          type: "painting",
+        },
+      ],
 
       poemCards: [],
     };
@@ -336,6 +491,9 @@ export default {
     },
     filteredSortedPoems() {
       return this.processList(this.poemCards);
+    },
+    filteredSortedPaintings() {
+      return this.processList(this.paintingCards);
     },
   },
 
@@ -358,8 +516,19 @@ export default {
 
     scrollToSection(id) {
       this.selectedTopicId = id;
-      const section = id === 1 ? "essay-section" : "poem-section";
-      document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+
+      const sectionMap = {
+        1: "essay-section",
+        2: "painting-section",
+        3: "poem-section",
+      };
+
+      const sectionId = sectionMap[id];
+      const section = document.getElementById(sectionId);
+
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
     },
 
     goToArticle(type, slug) {
@@ -368,6 +537,10 @@ export default {
         return;
       }
       this.$router.push(`/web-articles/${type}/${slug}`);
+    },
+
+    join() {
+      this.$router.push("/contribute/membership");
     },
   },
 };

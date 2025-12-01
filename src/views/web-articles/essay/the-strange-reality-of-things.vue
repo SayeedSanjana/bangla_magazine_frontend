@@ -22,9 +22,8 @@
             Essays
           </h1>
           <p class="text-lg md:text-2l italic font-light drop-shadow">
-            A curated space of reflective essays and immersive features,
-            bringing together voices, stories, and ideas that inspire, resonate,
-            and linger long after the reading ends.
+            A curated selection of thought-provoking essays that delve into
+            diverse topics, offering fresh perspectives and deep insights.
           </p>
         </div>
       </div>
@@ -116,7 +115,7 @@
 
             <p class="mt-6 text-gray-700">
               Annie Ernaux writes at the end of
-              <span class="font-semibold italic">Girl’s Story</span>:
+              <span class="font-semibold italic"> A Girl’s Story</span>:
             </p>
             <p class="mt-6 ml-8 italic text-gray-700">
               The memory of what I have written is already fading. I do not know
@@ -232,7 +231,7 @@
               alienation in the United States of America was briefly kept in
               abeyance by second world solidarities. I have spent any evenings
               in the early years of graduate school (where I used not to eat for
-              days on end) in MS’s home, eating hot, nourishing borscht. I
+              days on end) in M’s home, eating hot, nourishing borscht. I
               remember particularly the Russian dumplings lined with vodka. M
               towered over me, a lithe Caucasian woman of almost of six feet in
               height. I remained ever anxious about getting assignments done on
@@ -244,7 +243,7 @@
             </p>
             <div class="flex flex-col mt-8 justify-center items-center">
               <img
-                src="@/assets/WebPrintArticles/essay01.png"
+                src="@/assets/WebPrintArticles/essay/AtrayeeMajumderEssay01.png"
                 class="w-full md:w-4/5 rounded-lg shadow-lg"
                 alt="Featured Image"
               />
@@ -490,6 +489,8 @@
         </button>
       </div>
     </div>
+
+    <CookieConsent />
   </div>
 </template>
 
@@ -510,7 +511,7 @@ export default {
   },
   methods: {
     join() {
-      this.$router.push("/join");
+      this.$router.push("/contribute/membership");
     },
   },
 };
