@@ -315,6 +315,10 @@
       class="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
       @click.self="closeModal"
     >
+      <div
+        class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle,rgba(0,0,0,0)_40%,rgba(0,0,0,0.6)_100%)]"
+      ></div>
+
       <button
         @click="closeModal"
         class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gray-300"
@@ -324,7 +328,7 @@
 
       <img
         :src="modalImage"
-        class="max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-lg"
+        class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl shadow-black/60 ring-4 ring-white/20 ring-offset-4 ring-offset-black"
         alt="Fullscreen painting"
       />
     </div>
