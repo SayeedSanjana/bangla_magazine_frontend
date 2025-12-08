@@ -434,6 +434,8 @@
 
 <script>
 import essay01 from "@/assets/WebPrintArticles/essay/AtrayeeMajumderEssay01.png";
+import essay02 from "@/assets/WebPrintArticles/essay/JoyshreeNathEssay02.jpg";
+import essay03 from "@/assets/WebPrintArticles/essay/AliviaChowdhuryEssay03.jpg";
 import painting01 from "@/assets/WebPrintArticles/painting/painting01.png";
 import heroBackground from "@/assets/WebPrintArticles/webPrintArticlesCover.png";
 import CookieConsent from "@/components/CookieConsent.vue";
@@ -465,6 +467,26 @@ export default {
           date: "2025-11-23",
           img: essay01,
           slug: "the-strange-reality-of-things",
+          type: "essay",
+        },
+        {
+          title: "What We Leave Behind",
+          excerpt:
+            "What a beautiful planet our Earth is. The scenic beauty we see, the warm people we mingle with, the delicious food we eat, the gorgeous clothes we wear ...",
+          author: "Joyshree Nath",
+          date: "2025-12-07",
+          img: essay02,
+          slug: "what-we-leave-behind",
+          type: "essay",
+        },
+        {
+          title: "Meowly's First Day of School",
+          excerpt:
+            "Meowly was a cute and shy cat. She was 5 years  [b]old. She had an owner. The owner’s name was Sally. Sally was 19 years ...",
+          author: "Alivia Chowdhury",
+          date: "2025-12-07",
+          img: essay03,
+          slug: "meowly's-first-day-of-school",
           type: "essay",
         },
       ],
