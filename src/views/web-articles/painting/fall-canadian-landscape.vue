@@ -63,36 +63,95 @@
         <div class="grid grid-cols-1 lg:grid-cols-[35%_65%] gap-16 mt-20">
           <!-- LEFT — POEM -->
           <div class="space-y-3">
-            <h2
-              class="text-2xl font-cormorant font-bold text-autumn-auburn pl-4"
-            >
-              পাতাঝরার গান
-            </h2>
-            <h5
-              class="text-lg font-cormorant font-semibold text-gray-600 mb-8 pl-4"
-            >
-              অশোক চক্রবর্তী
-            </h5>
+            <div>
+              <h2
+                class="text-2xl font-cormorant font-bold text-autumn-auburn pl-4"
+              >
+                পাতাঝরার গান
+              </h2>
+              <h5
+                class="text-lg font-cormorant font-semibold text-gray-600 pl-4"
+              >
+                অশোক চক্রবর্তী
+              </h5>
+              <h5
+                class="text-sm font-cormorant font-semibold text-gray-600 mb-8 pl-4"
+              >
+                ( সৈকত বাগচী,অনুজপ্রতিমেষু )
+              </h5>
 
-            <div
-              class="text-gray-700 italic text-base space-y-2 pt-8 border-opacity-20 border-l-2 border-autumn-auburn pl-4"
-            >
-              <p>অশ্রুনদীর পারে গান হয় কোমল নিষাদে</p>
-              <p>ঈষৎ বিষন্ন সুর। পুরিয়া ধানেশ্রী। বিলম্বিত</p>
-              <p>পাতা ঝরে সুন্দরের ভয়ঙ্কর মৃত্যুর বিষাদে</p>
-              <p>শীতের প্রার্থনা ওই হাহাকারে গোপনে নিহিত</p>
+              <div
+                class="text-gray-700 italic text-base space-y-2 pt-4 border-opacity-20 border-l-2 border-autumn-auburn pl-4"
+              >
+                <p>অশ্রুনদীর পারে গান হয় কোমল নিষাদে</p>
+                <p>ঈষৎ বিষন্ন সুর। পুরিয়া ধানেশ্রী। বিলম্বিত</p>
+                <p>পাতা ঝরে সুন্দরের ভয়ঙ্কর মৃত্যুর বিষাদে</p>
+                <p>শীতের প্রার্থনা ওই হাহাকারে গোপনে নিহিত</p>
 
-              <br />
+                <br />
 
-              <p>এখন প্রস্তুতি চলে, শীতঘুমে শোধ করে ঋণ</p>
-              <p>আবার জীবিত হবে ফুলে ফলে রঙে ও রেখায়</p>
-              <p>মুছে দেবে পৃথিবীর সমূহ বিষাদ ভরা দিন</p>
-              <p>ঝরাপাতা! ঋতুরঙ্গ। নবজাতকের গান গায়</p>
+                <p>এখন প্রস্তুতি চলে, শীতঘুমে শোধ করে ঋণ</p>
+                <p>আবার জীবিত হবে ফুলে ফলে রঙে ও রেখায়</p>
+                <p>মুছে দেবে পৃথিবীর সমূহ বিষাদ ভরা দিন</p>
+                <p>ঝরাপাতা! ঋতুরঙ্গ। নবজাতকের গান গায়</p>
 
-              <br />
+                <br />
 
-              <p>শীত তো ভূমিকা মাত্র, জীবন বৃত্তকে ঘুরে দেখা</p>
-              <p>শীত তো ভূমিকা মাত্র, জীবন বৃত্তকে ঘুরে দেখা</p>
+                <p>শীত তো ভূমিকা মাত্র, জীবন বৃত্তকে ঘুরে দেখা</p>
+                <p>বসন্তের ওম তাই যন্ত্রণার গান দিয়ে লেখা।</p>
+              </div>
+            </div>
+
+            <div class="pt-12">
+              <h2
+                class="text-2xl font-cormorant font-bold text-autumn-auburn pl-4"
+              >
+                A Song for Falling Leaves
+              </h2>
+              <h5
+                class="text-lg font-cormorant font-semibold text-gray-600 pl-4"
+              >
+                Asoke Chakravarty
+              </h5>
+              <h5
+                class="text-base font-cormorant font-semibold text-gray-600 mb-8 pl-4"
+              >
+                (Saikat Bagchi with love)
+              </h5>
+
+              <div
+                class="text-gray-700 italic text-base space-y-2 pt-4 border-opacity-20 border-l-2 border-autumn-auburn pl-4"
+              >
+                <p>Beyond the tear-river, in Komal Nishad,</p>
+                <p>a sad, silent melody drifts—</p>
+                <p>a slow Puriadhaneshree trembling in the dusk</p>
+
+                <br />
+
+                <p>The leaves fall, knowing the briefness</p>
+                <p>of this brutal beauty.</p>
+                <p>Each leaf groans softly,</p>
+                <p>already praying for winter.</p>
+
+                <br />
+
+                <p>For after winter’s deep, dreamless sleep,</p>
+                <p>they will rise again—</p>
+                <p>in full bloom, in fruit,</p>
+                <p>in colors that erase</p>
+                <p>the melancholy of nature’s dimming days.</p>
+                <p>The falling leaves sing of birth,</p>
+                <p>of seasons turning.</p>
+
+                <br />
+
+                <p>Winter? Only a prelude</p>
+                <p>to the circle of life—</p>
+                <p>a cold that conceals</p>
+                <p>the warmth of the womb,</p>
+                <p>where every suffering song</p>
+                <p>becomes a promise of return.</p>
+              </div>
             </div>
           </div>
 
@@ -121,6 +180,8 @@
                   class="w-full h-auto object-contain max-h-[750px] rounded-sm group-hover:scale-[1.02] transition duration-300"
                   alt="Painting 1"
                 />
+                <p class="text-center mt-2">Hibernation</p>
+                <p class="text-center mt-1">Oil on canvas, 20"X30"</p>
               </div>
 
               <!-- Painting 3 -->
@@ -143,6 +204,8 @@
                   class="w-full h-auto object-contain max-h-[750px] rounded-sm group-hover:scale-[1.02] transition duration-300"
                   alt="Painting 3"
                 />
+                <p class="text-center mt-2">A Song for falling leaves</p>
+                <p class="text-center mt-1">Oil on Canvas, 20"X24"</p>
               </div>
             </div>
 
@@ -168,6 +231,8 @@
                   class="w-full h-auto object-contain max-h-[850px] rounded-sm group-hover:scale-[1.02] transition duration-300"
                   alt="Painting 2"
                 />
+                <p class="text-center mt-2">Praying for the Winter</p>
+                <p class="text-center mt-1">Oil on Canvas, 20"X24"</p>
               </div>
 
               <!-- Painting 4 -->
@@ -190,6 +255,8 @@
                   class="w-full h-auto object-contain max-h-[850px] rounded-sm group-hover:scale-[1.02] transition duration-300"
                   alt="Painting 4"
                 />
+                <p class="text-center mt-2">Waiting for the Winter</p>
+                <p class="text-center mt-1">Oil on Canvas, 20"X24"</p>
               </div>
             </div>
           </div>
