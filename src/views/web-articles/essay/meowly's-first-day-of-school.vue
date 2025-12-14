@@ -59,7 +59,7 @@
           <!-- Article Content -->
           <div class="mt-8">
             <p class="mt-8 text-gray-700">
-              Meowly was a cute and shy cat. She was 5 years [b]old. She had an
+              Meowly was a cute and shy cat. She was 5 years old. She had an
               owner. The owner’s name was Sally. Sally was 19 years old. Meowly
               went to school. But she was not ready for school yet. When her
               teacher asked a question, she got it wrong. But her teacher was a
