@@ -38,7 +38,7 @@ export default {
   },
   async created() {
     try {
-      // ✅ Update the path to `ekushe-articles` instead of `articles`
+    
       this.articleComponent = (
         await import(`@/views/web-articles/${this.type}/${this.slug}.vue`)
       ).default;

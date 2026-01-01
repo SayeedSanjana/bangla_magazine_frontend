@@ -487,8 +487,7 @@ export default {
         },
         {
           name: "Trisha Ghosh",
-          position: "Founder",
-          role: "Executive Director - Communication And Publicity",
+          position: "Member",
           image: image6,
           bio: "Scientist by day and artist by night. Graduate student in Synthetic Biology, at Concordia University, Montreal. ",
           location: "Montreal, Quebec, Canada",

@@ -145,7 +145,7 @@
           <div class="py-4">
             <p class="text-base text-gray-800">Address:</p>
             <p class="text-gray-600 text-base">
-              4003 Bd Décarie Apt-102 Montréal QC H4A 3J8
+              4870 Avenue Bourret, Apt - 306, Montréal, Québec, Canada - H3W 1L1
             </p>
           </div>
           <div class="pt-4 text-center md:text-left">

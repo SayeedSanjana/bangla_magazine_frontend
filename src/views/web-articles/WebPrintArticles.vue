@@ -436,6 +436,7 @@
 import essay01 from "@/assets/WebPrintArticles/essay/AtrayeeMajumderEssay01.png";
 import essay02 from "@/assets/WebPrintArticles/essay/JoyshreeNathEssay02.jpg";
 import essay03 from "@/assets/WebPrintArticles/essay/AliviaChowdhuryEssay03.jpg";
+import essay04 from "@/assets/WebPrintArticles/essay/MeghomitaDasEssay04.png";
 import painting01 from "@/assets/WebPrintArticles/painting/painting01.png";
 import heroBackground from "@/assets/WebPrintArticles/webPrintArticlesCover.png";
 import CookieConsent from "@/components/CookieConsent.vue";
@@ -489,6 +490,17 @@ export default {
           slug: "meowly's-first-day-of-school",
           type: "essay",
         },
+        {
+          title: "Goalondo Chicken Curry: Cooking on the Ferry",
+          excerpt:
+            "A simple chicken curry that brings together epar and opar Bangla to take you on a historic ...",
+          author: "Meghomita Das",
+          date: "2025-12-31",
+          img: essay04,
+          slug: "goalando-chicken-curry",
+          type: "essay",
+        },
+        
       ],
       paintingCards: [
         {
