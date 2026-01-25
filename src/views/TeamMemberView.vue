@@ -502,8 +502,7 @@ export default {
         },
         {
           name: "Urmibhushan Bhakta",
-          position: "Founder",
-          role: "Treasurer",
+          position: "Member",
           image: image4,
           bio: "Scientist by profession, love literature, deeply interested in politics.",
           location: "Montreal, Quebec, Canada",
