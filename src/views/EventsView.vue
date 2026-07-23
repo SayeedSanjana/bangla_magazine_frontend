@@ -244,6 +244,7 @@ import img4 from "@/assets/birth-anniversary/image.png";
 import img5 from "@/assets/img/rabindra-nazrul.png";
 import img6 from "@/assets/interactiveSession/habiba-zaman-book.jpg";
 import img7 from "@/assets/img/shoilpik2.jpeg";
+import img8 from "@/assets/bangladeshDayParade/img2.png";
 
 export default {
   name: "EventsView",
@@ -317,10 +318,9 @@ export default {
         },
         {
           date: "25th July 2026",
-          heading: "Bangladesg Day Parade",
-          description:
-            "We’re excited to take part in Shoilpik Sondhya, a vibrant celebration of Bengali culture, music, and theatre, bringing together artists and audiences from across Canada. Join us for an evening filled with rhythm, stories, and shared heritage.",
-          image: img7,
+          heading: "Bangladesh Day Parade",
+          description: "Our association is proud to participate in Bangladesh Day Parade with a special group dance performance celebrating Bengali culture and heritage.",
+          image: img8,
           route: "/events/bangladesh-day-parade",
         },
       ],
