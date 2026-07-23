@@ -27,6 +27,7 @@ import InteractiveDiscussionView from "../views/InteractiveDiscussionView.vue";
 import PdfViewer from "@/components/PdfViewer.vue";
 import EventsView from "@/views/EventsView.vue";
 import ShoilpikShondhaView from "@/views/ShoilpikShondhaView.vue";
+import BangladeshDayParadeView from "@/views/BangladeshDayParadeView.vue";
 import WebPrintArticlesView from "@/views/web-articles/WebPrintArticles.vue";
 import DynamicWebArticlesView from "@/views/DynamicWebArticles.vue";
 
@@ -137,6 +138,12 @@ const router = createRouter({
       path: "/events/shoilpik-shondha/",
       name: "shoilpik-shondha",
       component: ShoilpikShondhaView,
+      props: true,
+    },
+    {
+      path: "/events/bangladesh-day-parade/",
+      name: "bangladesh-day-parade",
+      component: BangladeshDayParadeView,
       props: true,
     },
     {

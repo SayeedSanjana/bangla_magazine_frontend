@@ -315,6 +315,14 @@ export default {
           image: img7,
           route: "/events/shoilpik-shondha",
         },
+        {
+          date: "25th July 2026",
+          heading: "Bangladesg Day Parade",
+          description:
+            "We’re excited to take part in Shoilpik Sondhya, a vibrant celebration of Bengali culture, music, and theatre, bringing together artists and audiences from across Canada. Join us for an evening filled with rhythm, stories, and shared heritage.",
+          image: img7,
+          route: "/events/bangladesh-day-parade",
+        },
       ],
     };
   },
