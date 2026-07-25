@@ -280,18 +280,6 @@
                 5366 Côte-des-Neiges, Montréal, Québec, H3T 1Y2
               </a>
             </div>
-
-            <!-- Entry -->
-            <div
-              class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3"
-            >
-              <div class="flex items-center gap-2">
-                <span class="text-xl">🎟️</span>
-                <strong class="text-teal-800">Entry:</strong>
-              </div>
-
-              <span>Free admission</span>
-            </div>
           </div>
         </div>
       </div>

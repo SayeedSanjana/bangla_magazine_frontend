@@ -192,7 +192,7 @@
   <p
     class="text-gray-600 leading-7"
   >
-    Bangladesh Day Parade is a vibrant community celebration of
+    Bangladesh Day Parade organized by <span class="text-amber-800">Global Allaince Against Atrocity And Violence on Humanity</span> is a vibrant community celebration of
     Bangladeshi culture, tradition and heritage. The event brings
     together families, artists and community members for a day filled
     with a colourful parade, cultural performances, music, dance,
@@ -247,7 +247,7 @@
         <img
           src="@/assets/bangladeshDayParade/img5.png"
           alt=""
-          class="absolute right-0 top-1/2 -translate-y-1/2 h-[90%] opacity-5 pointer-events-none select-none"
+          class="absolute right-0 top-1/2 -translate-y-1/2 h-[90%] opacity-10 pointer-events-none select-none"
         />
 
         <div class="grid lg:grid-cols-2 items-center">
@@ -293,8 +293,7 @@
               </span>
               by
               <span class="font-semibold text-amber-700">
-                Poet Kazi Nazrul Islam
-              </span>,
+                Poet Kazi Nazrul Islam</span>, 
               celebrating the richness of Bengali music, culture and artistic
               expression.
             </p>
@@ -392,18 +391,6 @@
               >
                 5366 Côte-des-Neiges, Montréal, Québec, H3T 1Y2
               </a>
-            </div>
-
-            <!-- Entry -->
-            <div
-              class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3"
-            >
-              <div class="flex items-center gap-2">
-                <span class="text-xl">🎟️</span>
-                <strong class="text-yellow-800">Entry:</strong>
-              </div>
-
-              <span>Free admission</span>
             </div>
           </div>
         </div>
