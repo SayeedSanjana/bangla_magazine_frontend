@@ -151,56 +151,61 @@
     </div>
 
     <!-- About the Event Section -->
-    <section
-      class="min-h-screen flex flex-col justify-center items-center bg-white py-16 px-4"
-    >
-      <div class="text-center max-w-6xl">
-        <h2
-          class="text-4xl md:text-6xl text-autumn-auburn font-cormorant"
-        >
-          About the Event
-        </h2>
-
-        <p
-          class="text-gray-600 mt-4 mb-16 md:mb-24 max-w-4xl mx-auto leading-7"
-        >
-          Bangladesh Day Parade is a vibrant community celebration of
-          Bangladeshi culture, tradition and heritage. The event brings
-          together families, artists and community members for a day filled
-          with a colourful parade, cultural performances, music, dance,
-          children’s activities and shared celebration.
-        </p>
-      </div>
-
-      
-      <!-- Event Image -->
-      <div class="flex justify-center mt-10">
-        <div class="relative w-full max-w-5xl">
-
-          <!-- Decorative frame -->
-          <div
-            class="absolute -top-5 -left-5 w-full h-full rounded-3xl border-4 border-yellow-500 border-opacity-75"
-          ></div>
-
-          <div
-            class="absolute -bottom-5 -right-5 w-full h-full rounded-3xl border-4 border-red-800 border-opacity-55"
-          ></div>
-
-          <img
-            src="@/assets/bangladeshDayParade/img2.jpeg"
-            alt="Bangladesh Day Parade"
-            class="relative rounded-3xl shadow-2xl w-full h-[550px] md:h-[700px] object-cover"
-          />
-        </div>
-      </div>
-    </section>
-
     
+<section
+  class="min-h-screen flex flex-col justify-center items-center bg-white py-16 px-4"
+>
+  <!-- Heading -->
+  <div class="text-center max-w-5xl">
+    <h2
+      class="text-4xl md:text-6xl text-autumn-auburn font-cormorant"
+    >
+      About the Event
+    </h2>
+      <div class="grid lg:grid-cols-2 gap-6 lg:gap-2 items-center mt-12 lg:mt-20 mb-12">
 
-<!-- Association Performance -->
-<!-- Association Performance -->
-<section class="bg-amber-50 py-20">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Image -->
+  <div class="flex justify-center">
+    <div class="relative w-full max-w-sm">
+
+      <!-- Decorative Border -->
+      <div
+        class="absolute -top-3 -left-3 w-full h-full rounded-3xl border-4 border-yellow-500/60"
+      ></div>
+
+      <div
+        class="absolute -bottom-3 -right-3 w-full h-full rounded-3xl border-4 border-red-800/40"
+      ></div>
+
+      <img
+        src="@/assets/bangladeshDayParade/img2.jpeg"
+        alt="Bangladesh Day Parade"
+        class="relative rounded-3xl shadow-xl w-full h-auto object-contain"
+      />
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div
+  class="text-left border-l-4 border-amber-200 pl-6"
+>
+  <p
+    class="text-gray-600 leading-7"
+  >
+    Bangladesh Day Parade is a vibrant community celebration of
+    Bangladeshi culture, tradition and heritage. The event brings
+    together families, artists and community members for a day filled
+    with a colourful parade, cultural performances, music, dance,
+    children’s activities and shared celebration.
+  </p>
+</div>
+
+</div>
+
+  </div>
+
+  <!-- Participation Card -->
+  <div class="max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-12">
 
     <div
       class="bg-white rounded-3xl shadow-xl border border-amber-200 p-8 md:p-12 text-center"
@@ -221,8 +226,9 @@
       </h2>
 
       <!-- Description -->
+       
       <p
-        class="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-8"
+        class="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-10"
       >
         We are delighted to announce that our association will proudly
         participate in the Bangladesh Day Parade through a special
@@ -232,79 +238,101 @@
         celebrating the rich cultural heritage of Bangladesh.
       </p>
 
-      <!-- Highlight -->
-<section class="py-20">
-    <div
+      <!-- Performance Card -->
+      <div
         class="relative overflow-hidden bg-gradient-to-r from-amber-100 to-yellow-50 rounded-3xl border border-amber-200 shadow-xl"
-    >
+      >
 
         <!-- Background Portrait -->
         <img
-            src="@/assets/bangladeshDayParade/img5.png"
-            alt=""
-            class="absolute right-0 top-1/2 -translate-y-1/2 h-[90%] opacity-5 pointer-events-none select-none"
+          src="@/assets/bangladeshDayParade/img5.png"
+          alt=""
+          class="absolute right-0 top-1/2 -translate-y-1/2 h-[90%] opacity-5 pointer-events-none select-none"
         />
 
         <div class="grid lg:grid-cols-2 items-center">
 
-            <!-- LEFT IMAGE -->
-            <div>
-                <img
-                    src="@/assets/bangladeshDayParade/img4.png"
-                    class="w-full h-full object-cover"
-                />
+          <!-- LEFT IMAGE -->
+          <div>
+            <img
+              src="@/assets/bangladeshDayParade/img4.png"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="relative z-10 p-10 lg:p-14">
+
+            <div class="text-5xl mb-6">
+              💃
             </div>
 
-            <!-- RIGHT CONTENT -->
-            <div class="relative z-10 p-10 lg:p-14">
+            <h3
+              class="text-3xl lg:text-4xl font-cormorant text-amber-900 mb-5"
+            >
+              Duet Dance Performance
+            </h3>
 
-                <div class="text-5xl mb-6">
-                    💃
-                </div>
+            <p class="text-gray-700 leading-8">
+              As part of the cultural programme, our association is proud
+              to present a
+              <span class="font-semibold text-amber-800">
+                duet dance performance
+              </span>
+              by
+              <span class="font-semibold text-rose-700">
+                Soumie Mukhopadhyay
+              </span>
+              and
+              <span class="font-semibold text-rose-700">
+                Arpita Adikary
+              </span>,
+              beautifully choreographed to the timeless song
+              <span class="font-semibold text-emerald-700">
+                "Shyamo Sudor Giridhari"
+              </span>
+              by
+              <span class="font-semibold text-amber-700">
+                Poet Kazi Nazrul Islam
+              </span>,
+              celebrating the richness of Bengali music, culture and artistic
+              expression.
+            </p>
 
-                <h3
-                    class="text-3xl lg:text-4xl font-cormorant text-amber-900 mb-5"
-                >
-                    Duet Dance Performance
-                </h3>
-
-                <p class="text-gray-700 leading-8">
-                    As part of the cultural programme, our association is proud
-                    to present a
-                    <span class="font-semibold text-amber-800">
-                        duet dance performance
-                    </span>
-                    by
-                    <span class="font-semibold text-rose-700">
-                        Soumie Mukhopadhyay
-                    </span>
-                    and
-                    <span class="font-semibold text-rose-700">
-                        Arpita Adikary
-                    </span>,
-                    beautifully choreographed to the timeless song
-                    <span class="font-semibold text-emerald-700">
-                        "Shyamo Sudor Giridhari"
-                    </span>
-                    by
-                    <span class="font-semibold text-amber-700">
-                        National Poet Kazi Nazrul Islam
-                    </span>,
-                    celebrating the richness of Bengali music, culture, and
-                    artistic expression.
-                </p>
-
-            </div>
+          </div>
 
         </div>
 
-    </div>
-</section>
+      </div>
 
     </div>
 
   </div>
+
+  <!-- Event Image -->
+  <!--
+  <div class="flex justify-center mt-10">
+    <div class="relative w-full max-w-5xl">
+
+      <div
+        class="absolute -top-5 -left-5 w-full h-full rounded-3xl border-4 border-yellow-500 border-opacity-75"
+      ></div>
+
+      <div
+        class="absolute -bottom-5 -right-5 w-full h-full rounded-3xl border-4 border-red-800 border-opacity-55"
+      ></div>
+
+      <img
+        src="@/assets/bangladeshDayParade/img2.jpeg"
+        alt="Bangladesh Day Parade"
+        class="relative rounded-3xl shadow-2xl w-full h-[550px] md:h-[700px] object-cover"
+      />
+    </div>
+  </div>
+  -->
+
 </section>
+
 
     <!-- Event Details Section -->
     <section
