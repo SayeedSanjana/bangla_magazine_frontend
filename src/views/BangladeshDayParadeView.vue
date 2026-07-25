@@ -187,7 +187,7 @@
           ></div>
 
           <img
-            src="@/assets/bangladeshDayParade/img2.png"
+            src="@/assets/bangladeshDayParade/img2.jpeg"
             alt="Bangladesh Day Parade"
             class="relative rounded-3xl shadow-2xl w-full h-[550px] md:h-[700px] object-cover"
           />
@@ -195,131 +195,7 @@
       </div>
     </section>
 
-    <!-- Event Highlights -->
-<!-- Event Highlights -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-  <div class="text-center mb-14">
-    <h2
-      class="text-4xl md:text-5xl font-cormorant text-amber-800"
-    >
-      Event Highlights
-    </h2>
-
-    <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-      The celebration is divided into three exciting segments for all ages to
-      enjoy.
-    </p>
-  </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-    <!-- First Part -->
-    <div
-      class="relative bg-white rounded-2xl shadow-lg border border-amber-200 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
-    >
-      <div class="h-2 bg-amber-500"></div>
-
-      <div class="p-8">
-
-        <span
-          class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-sm font-semibold mb-5"
-        >
-          First Part
-        </span>
-
-        <div
-          class="w-16 h-16 rounded-full bg-amber-500 flex items-center justify-center text-3xl text-white mb-6"
-        >
-          🚩
-        </div>
-
-        <h3
-          class="text-2xl font-cormorant font-semibold text-gray-800 mb-4"
-        >
-          Bangladesh Day Parade
-        </h3>
-
-        <p class="text-gray-600 leading-7">
-          Celebrate Bangladesh Day by proudly marching together with the
-          Bangladesh flag, showcasing our culture, heritage, and community
-          spirit.
-        </p>
-      </div>
-    </div>
-
-    <!-- Second Part -->
-    <div
-      class="relative bg-white rounded-2xl shadow-lg border border-amber-200 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
-    >
-      <div class="h-2 bg-yellow-500"></div>
-
-      <div class="p-8">
-
-        <span
-          class="inline-block px-4 py-1 rounded-full bg-yellow-100 text-yellow-800 text-sm font-semibold mb-5"
-        >
-          Second Part
-        </span>
-
-        <div
-          class="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center text-3xl text-white mb-6"
-        >
-          🎨
-        </div>
-
-        <h3
-          class="text-2xl font-cormorant font-semibold text-gray-800 mb-2"
-        >
-          Children's Activities
-        </h3>
-
-        <p class="text-amber-700 font-semibold mb-4">
-          "As You Like It" Dress-Up & Drawing Competition
-        </p>
-
-        <p class="text-gray-600 leading-7">
-          Children can participate in the "As You Like It" costume competition
-          and drawing competition. Every participant will receive a prize.
-        </p>
-      </div>
-    </div>
-
-    <!-- Third Part -->
-    <div
-      class="relative bg-white rounded-2xl shadow-lg border border-amber-200 overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
-    >
-      <div class="h-2 bg-orange-500"></div>
-
-      <div class="p-8">
-
-        <span
-          class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-semibold mb-5"
-        >
-          Third Part
-        </span>
-
-        <div
-          class="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center text-3xl text-white mb-6"
-        >
-          🎶
-        </div>
-
-        <h3
-          class="text-2xl font-cormorant font-semibold text-gray-800 mb-4"
-        >
-          Dance, Music & Recitation
-        </h3>
-
-        <p class="text-gray-600 leading-7">
-          Enjoy wonderful performances by local artists featuring traditional
-          dance, music, and recitation, celebrating the beauty of Bangladeshi
-          culture and heritage.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
+    
 
 <!-- Association Performance -->
 <!-- Association Performance -->
@@ -351,37 +227,79 @@
         We are delighted to announce that our association will proudly
         participate in the Bangladesh Day Parade through a special
         <span class="font-semibold text-amber-800">
-          group dance performance
+          duet dance performance
         </span>
         celebrating the rich cultural heritage of Bangladesh.
       </p>
 
       <!-- Highlight -->
-<div
-  class="bg-gradient-to-r from-amber-100 to-yellow-50 rounded-2xl p-8 border border-amber-200"
->
-  <div class="text-5xl mb-4">
-    💃
-  </div>
+<section class="py-20">
+    <div
+        class="relative overflow-hidden bg-gradient-to-r from-amber-100 to-yellow-50 rounded-3xl border border-amber-200 shadow-xl"
+    >
 
-  <h3
-    class="text-2xl md:text-3xl font-cormorant text-amber-900 mb-4"
-  >
-    Group Dance Performance
-  </h3>
+        <!-- Background Portrait -->
+        <img
+            src="@/assets/bangladeshDayParade/img5.png"
+            alt=""
+            class="absolute right-0 top-1/2 -translate-y-1/2 h-[90%] opacity-5 pointer-events-none select-none"
+        />
 
-  <p class="text-gray-700 leading-8">
-    As part of the cultural programme, our association will present a
-    <span class="font-semibold text-amber-800">
-      group dance performance
-    </span>
-    choreographed to one of the timeless songs of
-    <span class="font-semibold text-amber-800">
-      National Poet Kazi Nazrul Islam
-    </span>,
-    celebrating the beauty of Bengali music, culture and artistic expression.
-  </p>
-</div>
+        <div class="grid lg:grid-cols-2 items-center">
+
+            <!-- LEFT IMAGE -->
+            <div>
+                <img
+                    src="@/assets/bangladeshDayParade/img4.png"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="relative z-10 p-10 lg:p-14">
+
+                <div class="text-5xl mb-6">
+                    💃
+                </div>
+
+                <h3
+                    class="text-3xl lg:text-4xl font-cormorant text-amber-900 mb-5"
+                >
+                    Duet Dance Performance
+                </h3>
+
+                <p class="text-gray-700 leading-8">
+                    As part of the cultural programme, our association is proud
+                    to present a
+                    <span class="font-semibold text-amber-800">
+                        duet dance performance
+                    </span>
+                    by
+                    <span class="font-semibold text-rose-700">
+                        Soumie Mukhopadhyay
+                    </span>
+                    and
+                    <span class="font-semibold text-rose-700">
+                        Arpita Adikary
+                    </span>,
+                    beautifully choreographed to the timeless song
+                    <span class="font-semibold text-emerald-700">
+                        "Shyamo Sudor Giridhari"
+                    </span>
+                    by
+                    <span class="font-semibold text-amber-700">
+                        National Poet Kazi Nazrul Islam
+                    </span>,
+                    celebrating the richness of Bengali music, culture, and
+                    artistic expression.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     </div>
 

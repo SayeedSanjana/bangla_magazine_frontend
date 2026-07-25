@@ -244,7 +244,7 @@ import img4 from "@/assets/birth-anniversary/image.png";
 import img5 from "@/assets/img/rabindra-nazrul.png";
 import img6 from "@/assets/interactiveSession/habiba-zaman-book.jpg";
 import img7 from "@/assets/img/shoilpik2.jpeg";
-import img8 from "@/assets/bangladeshDayParade/img2.png";
+import img8 from "@/assets/bangladeshDayParade/img2.jpeg";
 
 export default {
   name: "EventsView",
